@@ -1,59 +1,83 @@
-import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React, { Component } from 'react'
+import MenuPrimary from './MenuPrimary'
+import MenuSecondary from './MenuSecondary'
+import MenuSocial from './MenuSocial'
+import HeaderLogo from './HeaderLogo'
+import HeaderButton from './HeaderButton'
 
-const Navbar = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allWordpressPage(sort: { fields: wordpress_id }, limit: 5) {
-          edges {
-            node {
-              title
-              slug
-            }
-          }
-        }
+class Navbar extends Component {
+  state = {}
+  prevScrollpos = window.pageYOffset
+  currentScrollPos = window.pageYOffset
+
+  // constructor to set state and bind "this"
+  constructor(props) {
+    super(props);
+    this.state = {
+      hidden: false,
+      visible: true,
+      top: false
+    }
+    this.prevScrollpos = window.pageYOffset;
+    this.currentScrollPos = window.pageYOffset;
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', (event) => ((navbar) => {
+      // console.log('scroll');
+      // console.log(event, navbar);
+      navbar.setHeaderOffsets(false);
+    })(this)); // pass "this" as "navbar" parameter inside the function
+  }
+
+  setHeaderOffsets(just_loaded) {
+    this.currentScrollPos = window.pageYOffset;
+    // console.log("prev:" + this.prevScrollpos + "; current:" + this.currentScrollPos);
+    if (this.currentScrollPos == 0){
+        this.setState({hidden: false, visible: false, top: true});
+    } else if (just_loaded){
+        this.setState({hidden: false, visible: true, top: false});
+    } else {
+      if (this.prevScrollpos > this.currentScrollPos) {
+        this.setState({hidden: false, visible: true, top: false});
+      } else {
+        this.setState({hidden: true, visible: false, top: false});
       }
-    `}
-    render={data => (
-      <nav className="navbar is-transparent">
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item">
-              <figure className="image">
-                <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-              </figure>
-            </Link>
-          </div>
-          <div className="navbar-start">
-            {data.allWordpressPage.edges.map(edge => (
-              <Link
-                className="navbar-item"
-                to={edge.node.slug}
-                key={edge.node.slug}
-              >
-                {edge.node.title}
-              </Link>
-            ))}
-          </div>
-          <div className="navbar-end">
-            <a
-              className="navbar-item"
-              href="https://github.com/GatsbyCentral/gatsby-starter-wordpress"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <img src={github} alt="Github" />
-              </span>
-            </a>
-          </div>
-        </div>
-      </nav>
-    )}
-  />
-)
+    }
+    // console.log(this.state);
+    this.prevScrollpos = this.currentScrollPos;
+  };
 
-export default Navbar
+  render() {
+    var navbarClassName = 'navbar ' + (this.props.menuOpen ? 'is-menu-open ': '') + (this.state.hidden ? 'hidden ': '') + (this.state.visible ? 'visible ': '') + (this.state.top ? 'top ': '');
+    return (
+      <nav 
+        id="navbar"
+        className={navbarClassName}
+        >
+        <HeaderLogo></HeaderLogo>
+        <div className="navbar__menus">
+          <MenuPrimary></MenuPrimary>
+          <MenuSecondary></MenuSecondary>
+          <MenuSocial></MenuSocial>
+        </div>
+        <HeaderButton></HeaderButton>
+        <a
+          id="menulink"
+          className="navbar__menulink bars"
+          rel="noopener noreferrer"
+          // onClick={ () => {this.setState({open: !this.state.open});}}
+          onClick={this.props.menuLinkClick}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <div className="other-bar"></div>
+        </a>
+      </nav>
+    )
+  }
+}
+
+
+export default Navbar;
