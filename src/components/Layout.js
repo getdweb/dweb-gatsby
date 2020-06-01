@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 import Navbar from './Navbar'
 import Events from './Events'
+import Voices from './Voices'
 import './all.sass'
 
 class TemplateWrapper extends Component {
@@ -40,6 +41,7 @@ class TemplateWrapper extends Component {
           <div className="container">
             <div className="row">
               <div className="col col-12 col-xs-12">
+                <Voices />
                 <Events />
               </div>
             </div>

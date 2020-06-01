@@ -80,7 +80,7 @@ export default function Events() {
             past
           </a>
       </div>
-      <div className="events__notice">Know the event worth mentioning?<br /><a href="#">Submit it here</a></div>
+      <div className="header-notice events__notice">Know the event worth mentioning?<br /><a href="#">Submit it here</a></div>
       {events.map(event => (
         <Event event={event} cities={cities} key={event.id} />
       ))}
