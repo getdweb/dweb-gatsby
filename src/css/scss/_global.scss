@@ -455,6 +455,7 @@ h3{
   width: 100%;
   min-height: 0;
   overflow: hidden;
+  text-align: left;
 }
 .masonry > div{
   position: absolute; 
@@ -463,6 +464,33 @@ h3{
 }
 .voices{
   padding-bottom: 60px;
+  &__footer{
+    min-height: 46px;
+    width: 100%;
+    text-align: center;
+  }
+  &__show-more{
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+  &__loader{
+    width: 46px;
+    height: 46px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    display: inline-block;
+    &:after{
+      content: "";
+      display: block;
+      background-image: url('../images/loader-tail-spin.svg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 46px;
+      height: 46px;
+      z-index: 2;
+    }
+  }
 }
 .voice{
   padding: 67px 0 10px 0;
@@ -542,4 +570,19 @@ h3{
     width: 100%;
     padding-bottom: 10px;
   }
+}
+.show-more{
+  height: 52px;
+  padding: 0 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: LabMono;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.73;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 1px solid $white;
 }

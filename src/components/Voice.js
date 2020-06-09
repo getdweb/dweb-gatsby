@@ -24,11 +24,6 @@ class Voice extends Component {
     };
   }
 
-  componentDidMount() {
-    // pass the requested ref here
-    this.props.passRefUpward(this.refs);
-  }   
-
   toggleHover() {
     this.setState({hover: !this.state.hover});
   }
@@ -39,7 +34,7 @@ class Voice extends Component {
       ? (<span className="voice__category">{this.voice.acf.voice_category.name}.&ensp;</span>)  
       : "";
     var image = "";
-    if (this.voice.acf.image != null){
+    if (this.voice.acf.image){
       image = (<img className="voice__image" src={this.voice.acf.image.localFile.url} />);
     }
     var date_parts = this.voice.acf.date.split('#');
@@ -54,7 +49,8 @@ class Voice extends Component {
           <div className="voice__byauthor">by <span className="voice__author">{this.voice.acf.author}</span></div>
           <div className="voice__ondate">on <span className="voice_date">{date_parts[1]}</span></div>
           <div>
-            {category}<a className="voice__title">{this.voice.title}</a>
+            {category}
+            <a className="voice__title">{this.voice.title.rendered}</a>
           </div>
           <div className="voice__intro">{this.voice.acf.intro}</div>
       </div>
