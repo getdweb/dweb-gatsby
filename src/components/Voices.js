@@ -7,15 +7,13 @@ import ScrollService from '../services/scroll-service';
 export default function Voices() {
 
   const VOICES_PER_PAGE = 7;
-  const RENDER_TIMEOUT = 1000;
+  const RENDER_TIMEOUT = 200;
 
   let timeouts = [];
 
   const [loading, setLoading] = useState(true);
   const [finished, setFinished] = useState(false);
   const [page, setPage] = useState(1);
-  const [totalCount, setTotalCount] = useState(1);
-  const [pagesCount, setPagesCount] = useState(1);
   const [voices, setVoices] = useState([]);
 
   const dbService = new DbService();
@@ -33,8 +31,6 @@ export default function Voices() {
 
   const onVoicesReceived = async function (newVoices) {
     setVoices([...voices, ...newVoices.json]);
-    setPagesCount(newVoices.pagesCount);
-    setTotalCount(newVoices.totalCount);
     if (newVoices.pagesCount <= page){
       setTimeout(() => {
         setFinished(true);
@@ -111,6 +107,7 @@ export default function Voices() {
   }
 
   const masonryGetCurrentOptions = () => {
+    if (typeof window === `undefined`) return;
     for (var key in masonryOptions) {
       var el = masonryOptions[key];
       if (el.minWidth < window.innerWidth) {
@@ -165,25 +162,20 @@ export default function Voices() {
   }
 
   const masonryRestart = () => {
-    // masonryInit(document.getElementById("masonry"));
-    // window.addEventListener('resize', (e) => ((voices) => {
-    //   voices.masonryInit(document.getElementById("masonry"));
-    // })(this));
-    // return;
-
+    if (typeof window === `undefined`) return;
     timeouts.forEach(timeout => clearTimeout(timeout));
     const firstTimeout = setTimeout(function () {
       masonryInit(document.getElementById("masonry"));
       window.addEventListener('resize', () => {
+        scrollService.saveScroll(); // Save scroll position
         masonryInit(document.getElementById("masonry"));
       }); // pass "this" as "navbar" parameter inside the function
     }, RENDER_TIMEOUT);
     timeouts.push(firstTimeout);
-    // timeouts.push(secondTimeout);
   }
 
   return (
-    <div className="voices">
+    <div className="voices" id="voices">
       <div className="header">Voices and ideas of<br />the decentralised web</div>
       <div className="header-notice voices__notice">If there is an article or video you believe we should mention here,<br />don’t wait - <a href="#">submit a story</a>.</div>
       <div>

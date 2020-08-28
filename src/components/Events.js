@@ -45,25 +45,25 @@ export default function Events() {
     `
   )
 
-  var events = data.allWordpressWpEvent.nodes;
+  let events = data.allWordpressWpEvent.nodes;
   
-  var cities_temp = data.allWordpressAcfCity.nodes;
-  var cities = [];
+  const citiesTemp = data.allWordpressAcfCity.nodes;
+  const cities = [];
   
-  cities_temp.map(city => {
+  citiesTemp.map(city => {
     cities[city.wordpress_id] = city.acf.color;
   });
   events = events
     .filter(event => {
-      var milliseconds = Date.now() - Date.parse(event.acf.ended_at);
-      var event_period = milliseconds > 0 ? "past" : "upcoming";
+      const milliseconds = Date.now() - Date.parse(event.acf.ended_at);
+      const eventPeriod = milliseconds > 0 ? "past" : "upcoming";
       // console.log(event_period);
-      return event_period == period;
+      return eventPeriod === period;
     });
   // console.log(events);
 
   return (
-    <div className="events">
+    <div className="events" id="events">
       <div className="header events__header">Events around the world</div>
       <div className="events__headerlinks">
         <a 

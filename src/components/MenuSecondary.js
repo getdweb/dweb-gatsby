@@ -28,13 +28,13 @@ export default function MenuSecondary() {
   return (
     <div className="navbar__menus__item menu-secondary">
       {Object.entries(menu_items).map(([key,item]) => (
-        <a
+        <Link
           className="menu-secondary__item"
-          href={item.url}
+          to={item.url}
           key={item.object_id}
           >
           {item.title}
-        </a>
+        </Link>
       ))}
     </div>
   )

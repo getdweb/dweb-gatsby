@@ -1,9 +1,7 @@
 export default class DbService {
 
-  _apiBase = 'http://dweb/wp-json/wp/v2';
-
   async getResource(url) {
-    const res = await fetch(`${this._apiBase}${url}`, {
+    const res = await fetch(`${process.env.GATSBY_API_URL}${url}`, {
       crossDomain: true,
       method: 'GET',
       headers: {

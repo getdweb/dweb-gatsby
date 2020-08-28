@@ -25,6 +25,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-particles-js": "^3.3.0",
     "uuid": "^3.4.0"
   },
   "keywords": [
@@ -35,9 +36,9 @@
   "scripts": {
     "start": "npm run develop",
     "clean": "rimraf .cache public",
-    "build": "npm run clean && gatsby build",
+    "build": "npm run clean && gatsby build --prefix-paths",
     "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

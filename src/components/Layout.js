@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 
 import Navbar from './Navbar'
-import Events from './Events'
-import Voices from './Voices'
-import './all.sass'
 
 class TemplateWrapper extends Component {
   state = {}
@@ -16,10 +13,11 @@ class TemplateWrapper extends Component {
       menuOpen: false
     }
     this.menuLinkClick = this.menuLinkClick.bind(this);
+
+    this.content = props.content;
   }
 
   menuLinkClick(){
-    console.log("menuLinkClick()");
     this.setState({
       menuOpen: !this.state.menuOpen
     })
@@ -38,14 +36,9 @@ class TemplateWrapper extends Component {
           className="content"
           style={contentInlineStyle}
           >
-          <div className="container">
-            <div className="row">
-              <div className="col col-12 col-xs-12">
-                <Voices />
-                <Events />
-              </div>
-            </div>
-          </div>
+          
+          {this.content}
+          
         </div>
       </div>
     )

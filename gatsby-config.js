@@ -1,7 +1,12 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + WordPress Starter',
   },
+  // pathPrefix: `/aaa/bbb`,
+  // assetPrefix: `/ccc/ddd`,
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

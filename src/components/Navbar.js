@@ -7,8 +7,8 @@ import HeaderButton from './HeaderButton'
 
 class Navbar extends Component {
   state = {}
-  prevScrollpos = window.pageYOffset
-  currentScrollPos = window.pageYOffset
+  prevScrollpos = 0;
+  currentScrollPos = 0;
 
   // constructor to set state and bind "this"
   constructor(props) {
@@ -18,11 +18,13 @@ class Navbar extends Component {
       visible: true,
       top: false
     }
+    if (typeof window === `undefined`) return;
     this.prevScrollpos = window.pageYOffset;
     this.currentScrollPos = window.pageYOffset;
   }
 
   componentDidMount() {
+    if (typeof window === `undefined`) return;
     window.addEventListener('scroll', (event) => ((navbar) => {
       // console.log('scroll');
       // console.log(event, navbar);
@@ -31,6 +33,7 @@ class Navbar extends Component {
   }
 
   setHeaderOffsets(just_loaded) {
+    if (typeof window === `undefined`) return;
     this.currentScrollPos = window.pageYOffset;
     // console.log("prev:" + this.prevScrollpos + "; current:" + this.currentScrollPos);
     if (this.currentScrollPos == 0){

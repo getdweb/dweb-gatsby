@@ -28,13 +28,13 @@ export default function MenuPrimary() {
   return (
     <div className="navbar__menus__item menu-primary">
       {Object.entries(menu_items).map(([key,item]) => (
-        <a
+        <Link
           className="menu-primary__item"
-          href={item.url}
+          to={item.url}
           key={item.object_id}
           >
           {item.title}
-        </a>
+        </Link>
       ))}
     </div>
   )
