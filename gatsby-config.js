@@ -14,11 +14,11 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'dweb',
+        baseUrl: process.env.BASE_URL || 'dweb',
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
         // The protocol. This can be http or https.
-        protocol: 'http',
+        protocol: process.env.PROTOCOL || 'http',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: true,
         auth: {},
@@ -38,6 +38,6 @@ module.exports = {
     //     purgeOnly: ['/all.sass'],
     //   },
     // }, // must be after other CSS plugins
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    // 'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
