@@ -8,14 +8,12 @@ const child_process = require('child_process')
 // create a server object:
 http.createServer(async function (req, res) {
   if (req.method === "POST" && req.url === TRIGGER_URL) {
-    try {
-      await runGatsbyBuild()
-      res.write(JSON.stringify({ message: "ok" }))
-    } catch (err) {
+    res.write(JSON.stringify({ message: "ok" }))
+    runGatsbyBuild().catch((err) => {
       console.error('Build failed', err)
-      res.writeHead(HTTP_STATUS_CODES.INTERNAL_ERROR)
-    }
+    })
   } else {
+    console.error('bad request', req.method, req.url)
     res.writeHead(HTTP_STATUS_CODES.BAD_REQUEST)
   }
   res.end(); //end the response
