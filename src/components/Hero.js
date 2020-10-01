@@ -161,6 +161,7 @@ export default function Network() {
         <div className="hero__quotes">
           {
             options.hero_quotes.map((quote) => {
+              // console.log(quote);
             return (
               <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quote.image.link})`}} onClick={((e) => quoteClick(e, data))}></a>
             );
