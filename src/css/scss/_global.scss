@@ -25,19 +25,19 @@ textarea, select, input, button {
   }
 }
 a{
-  // color: $white;
+  // color: $yellow;
   text-decoration: underline;
   cursor: pointer;
   &:hover{
-    // color: $white;
+    // color: $yellow;
     text-decoration: none;
   }
 }
 
 a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover{
-  // color: $white;
+  // color: $yellow;
   &:hover{
-    // color: $white;
+    // color: $yellow;
   }
 }
 
@@ -92,39 +92,32 @@ h3{
   }
 }
 
-// @mixin btn{
-//   display: block;
-//   border-radius: 8px;
-//   color: $white;
-//   font-size: 14px;
-//   line-height: 16px;
-//   letter-spacing: -1px;
-//   background: $black;
-//   text-align: center;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-decoration: none;
-//   height: 40px;
-//   padding: 0 38px;
-//   @include media-breakpoint-up(lg) {
-//     height: 72px;
-//     padding: 0 47px;
-//     font-size: 24px;
-//     line-height: 32px;
-//   }
-//   &:hover, &:not([href]), &:not([href]):hover, &:not([tabindex]):hover, &:not([href]):not([tabindex]):hover{
-//       text-decoration: none;
-//       color: $white;
-//   }
-//   &:focus {
-//     outline: 0;
-//     box-shadow: 0 0 0 0 rgba(0,123,255,.25) !important;
-//   }
-// }
-// .btn, a.btn{
-//   @include btn;
-// }
+@mixin btn{
+  min-height: 64px;
+  padding: 20px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: $white;
+  border: 1px solid $white;
+  text-align: center;
+  &:hover, &:not([href]), &:not([href]):hover, &:not([tabindex]):hover, &:not([href]):not([tabindex]):hover{
+      text-decoration: none;
+      color: $white;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.25) !important;
+  }
+}
+.btn, a.btn{
+  @include btn;
+}
 
 // @mixin btn_white{
 //   background: $white;
@@ -136,6 +129,16 @@ h3{
 //   @include btn_white;
 // }
 
+@mixin typed{
+  font-family: LabMono;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.1px;
+  color: #ffffffcc;
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+}
 
 .popup{
   width: 100vw;
@@ -284,12 +287,7 @@ h3{
 }
 .header-notice{
   margin-top: 40px;
-  opacity: 0.9;
-  font-family: LabMono;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: -0.1px;
-  color: $white;
+  @include typed;
   @include media-breakpoint-up(lg) {
     font-size: 15px;
     line-height: 1.87;
@@ -299,6 +297,7 @@ h3{
   }
 }
 .events{
+  padding-bottom: 120px;
   &__headerlinks{
     max-width: 100%;
   }
@@ -571,16 +570,8 @@ h3{
     }
   }
   &__intro{
+    @include typed;
     padding-top: 20px;
-    font-family: LabMono;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: -0.1px;
-    color: #ffffffcc;
-    @include media-breakpoint-up(lg) {
-      font-size: 14px;
-      line-height: 1.57;
-    }
   }
   &__image{
     width: 100%;
@@ -588,19 +579,15 @@ h3{
   }
 }
 .show-more{
-  height: 52px;
-  padding: 0 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  @include btn;
+  text-transform: uppercase;
   font-family: LabMono;
   font-size: 15px;
-  text-transform: uppercase;
   line-height: 1.73;
+  font-weight: 400;
   letter-spacing: 2px;
-  color: $white;
-  border: 1px solid $white;
+  height: 52px;
+  padding: 0 40px;
 }
 
 .network{
@@ -608,12 +595,7 @@ h3{
   padding-top: 40px;
   padding-bottom: 100px;
   &__intro{
-    opacity: 0.9;
-    font-family: LabMono;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: -0.1px;
-    color: $white;
+    @include typed;
     @include media-breakpoint-up(md) {
       max-width: 639px;
     }
@@ -743,6 +725,9 @@ h3{
 
 .faq{
   margin-top: 60px;
+  .header-notice{
+    margin-bottom: 60px;
+  }
   &-section{
     &__header{
       opacity: 0.6;
@@ -846,12 +831,11 @@ h3{
       
     }
     &__answer{
-      opacity: 0.9;
       font-family: LabMono;
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: -0.1px;
-      color: #ffffff;
+      color: #ffffffcc;
       box-sizing: border-box;
       max-height: 0;
       transition: max-height 0.2s ease-out;
@@ -867,18 +851,20 @@ h3{
           height: 24px;
       }
       p{
-        margin: 0 0 16px 0;
+        margin: 14px 0 16px 0;
+      }
+      ol, ul{
+        margin-top: 14px;
+        padding-left: 26px;
+      }
+      li{
+        margin-bottom: 14px;
       }
     }
   }
   &-notice{
     padding: 60px 0 100px;
-    opacity: 0.9;
-    font-family: LabMono;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: -0.1px;
-    color: #ffffff;
+    @include typed;
   }
 }
 
@@ -1157,5 +1143,95 @@ h3{
   height: 620px;
   @include media-breakpoint-up(md) {
     height: 640px;
+  }
+}
+
+
+.about-us{
+  &__text{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    @include media-breakpoint-up(md) {
+      font-size: 28px;
+      line-height: 1.36;
+      letter-spacing: -0.05px;
+    }
+    p{
+      margin: 15px 0;
+    }
+    a{
+      color: $yellow;
+      &:hover{
+        color: $yellow;
+      }
+    }
+  }
+  &__btn{
+    margin-top: 25px;
+    margin-bottom: 100px;
+    @include media-breakpoint-up(md) {
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+  }
+}
+
+.partners{
+  border-top: 1px solid #fff;
+  padding-top: 120px;
+  text-align: center;
+  &__intro{
+    @include typed;
+    max-width: 674px;
+    margin: 40px auto 0;
+  }
+  &__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 0 80px;
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+    }
+    .btn{
+      margin: 15px 0;
+      @include media-breakpoint-up(lg) {
+        margin: 0 15px;
+      }
+    }
+  }
+  &__middletext{
+    @include typed;
+    margin-bottom: 40px;
+  }
+}
+
+.logos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #fff;
+  &__item{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-bottom: calc(100% * 2 / 6);
+    min-width: calc(100% / 2);
+    border-right: 1px solid $grey;
+    border-top: 1px solid $grey;
+    @include media-breakpoint-up(sm) {
+      min-width: calc(100% / 3);
+      padding-bottom: calc(100% * 2 / 9);
+    }
+    @include media-breakpoint-up(md) {
+      min-width: calc(100% / 6);
+      padding-bottom: calc(100% * 2 / 18);
+    }
   }
 }
