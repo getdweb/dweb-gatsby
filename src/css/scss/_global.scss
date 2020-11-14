@@ -297,7 +297,13 @@ h3{
   }
 }
 .events{
-  padding-bottom: 120px;
+  .building-block{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 60px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 120px;
+    }
+  }
   &__headerlinks{
     max-width: 100%;
   }
@@ -478,6 +484,7 @@ h3{
   left: 0;
 }
 .voices{
+  padding-top: 120px;
   padding-bottom: 60px;
   &__footer{
     min-height: 46px;
@@ -489,8 +496,8 @@ h3{
     margin-bottom: 85px;
   }
   &__loader{
-    width: 46px;
-    height: 46px;
+    width: 57px;
+    height: 57px;
     margin-top: 85px;
     margin-bottom: 85px;
     display: inline-block;
@@ -875,7 +882,6 @@ h3{
   justify-content: center;
   flex-direction: column;
   border-bottom: 1px solid #fff;
-  margin-bottom: 76px;
   @include media-breakpoint-up(md) {
       flex-direction: row;
       height: 100vh;
@@ -900,6 +906,11 @@ h3{
     bottom: 63px;
     width: 100%;
     padding: 0 20px;
+    /* Non standard for WebKit */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+            hyphens: auto;
     @include media-breakpoint-up(lg) {
       font-size: 53px;
       line-height: 1.06;
@@ -1148,6 +1159,7 @@ h3{
 
 
 .about-us{
+  padding-top: 76px;
   &__text{
     font-family: Poppins;
     font-size: 20px;
@@ -1215,7 +1227,6 @@ h3{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #fff;
   &__item{
     background-size: cover;
     background-position: center center;
@@ -1233,5 +1244,155 @@ h3{
       min-width: calc(100% / 6);
       padding-bottom: calc(100% * 2 / 18);
     }
+  }
+}
+
+.building-blocks{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1px;
+}
+.building-block{
+  position: relative;
+  border-top: 1px solid #fff;
+  min-height: 400px;
+  @include media-breakpoint-up(xl) {
+    min-height: 630px;
+  }
+  &__left{
+    padding: 40px 0 80px;
+    @include media-breakpoint-up(md) {
+      padding: 120px 0;
+    }
+    .container{
+      width: 100%;
+      padding-top: 100%;
+      @include media-breakpoint-up(md) {
+        padding-top: unset;
+        padding-right: 400px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-right: 630px;
+      }
+      .col{
+        text-align: center;
+        @include media-breakpoint-up(md) {
+          text-align: left;
+        }
+      }
+    }
+  }
+  &__right{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include media-breakpoint-up(md) {
+      width: 400px;
+      min-height: 400px;
+      height: 100%;
+      padding-bottom: unset;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 630px;
+      min-height: 630px;
+    }
+  }
+  &__header{
+    text-align: left;
+  }
+  &__text{
+    @include typed;
+    margin-top: 40px;
+    text-align: left;
+  }
+  &__btn{
+    margin-top: 40px;
+    @include media-breakpoint-up(md) {
+      margin-top: 60px;
+    }
+  }
+}
+
+.get-involved-hero{
+  position: relative;
+  height: calc(100vh - 88px);
+  width: 100%;
+  background-size: 0px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #fff;
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+    background-size: contain;
+  }
+  &__header{
+    font-family: Poppins, Montserrat;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.1px;
+    position: absolute;
+    bottom: 63px;
+    left: 20px;
+    right: 20px;
+    @include media-breakpoint-up(md) {
+      font-size: 53px;
+      line-height: 1.06;
+      bottom: 40px;
+      left: 60px;
+    }
+  }
+}
+
+.get-involved-main-quote{
+  background-size: 0;
+  padding: 40px 20px 50px 20px;
+  @include media-breakpoint-up(md) {
+    padding: 52px 264px 50px 60px;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+  &__words{
+    font-family: Poppins, Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      font-size: 28px;
+      line-height: 1.36;
+      letter-spacing: -0.05px;
+    }
+  }
+  &__person{
+    font-family: LabMono;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.09px;
+    @include media-breakpoint-up(md) {
+      opacity: 0.9;
+    }
+  }
+}
+
+.quotes-slider{
+  padding: 20px 0;
+  @include media-breakpoint-up(md) {
+    padding: 60px 0;
+  }
+}
+.swiper-slide img{
+  width: 100% !important;
+  height: 100% !important;
+  @include media-breakpoint-up(md) {
+    width: 440px;
+    height: 440px;
   }
 }

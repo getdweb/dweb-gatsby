@@ -24,7 +24,7 @@ export default function AboutUs() {
   var options = data.allWordpressAcfOptions.edges[0].node.options;
 
   return (
-    <div className="about-us">
+    <div className="about-us" id="mission">
       <div className="container">
         <div className="row">
           <div className="col col-12 col-md-10 col-lg-8">

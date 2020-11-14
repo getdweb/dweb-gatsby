@@ -1,8 +1,9 @@
 import React, { useRef, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Particles from 'react-particles-js';
+import HeroAnimation from '../components/HeroAnimation';
+// import Particles from 'react-particles-js';
 
-export default function Network() {
+export default function Hero() {
 
   const [previewDisplay, setPreviewDisplay] = useState("d-block");
   const [playDisplay, setPlayDisplay] = useState("d-flex");
@@ -21,7 +22,9 @@ export default function Network() {
               hero_announcement_caption
               hero_tagline
               hero_video_preview {
-                link
+                localFile {
+                  url
+                }
               }
               hero_video_url
               hero_video_caption
@@ -29,8 +32,10 @@ export default function Network() {
               hero_quotes {
                 image {
                   id
-                  link
                   wordpress_id
+                  localFile {
+                    url
+                  }
                 }
               }
             }
@@ -62,7 +67,7 @@ export default function Network() {
     let activeQuote;
     // First quote is active by default:
     let next_quote_active = true;
-    options.hero_quotes.map((quote) => {
+    quotes.map((quote) => {
       // Is this quote is active?
       if (next_quote_active){
         activeQuote = quote.image.wordpress_id;
@@ -82,7 +87,11 @@ export default function Network() {
 
   let quotesVisibilityTemp = [];
   let first_quote = true;
-  options.hero_quotes.map((quote) => {
+  const quotesRandNumber = Math.floor(Math.random() * Math.floor(options.hero_quotes.length));
+  const quotesPart1 = options.hero_quotes.slice(0, quotesRandNumber);
+  const quotesPart2 = options.hero_quotes.slice(quotesRandNumber);
+  const quotes = quotesPart2.concat(quotesPart1);
+  quotes.map((quote) => {
     quotesVisibilityTemp[quote.image.wordpress_id] = first_quote ? "" : "d-none";
     first_quote = false;
   });
@@ -91,7 +100,8 @@ export default function Network() {
   return (
     <div className="hero">
       <div className="hero__left">
-        <Particles params={{
+        <HeroAnimation />
+        {/* <Particles params={{
             "particles": {
               "color": {
                 "value": "random",
@@ -134,7 +144,7 @@ export default function Network() {
                   }
               }
             }
-          }} />
+          }} /> */}
         <div className="hero__header">
           {options.hero_tagline}
         </div>
@@ -149,7 +159,7 @@ export default function Network() {
               <source src={options.hero_video_url} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
-            <div className={"hero__video-preview " + previewDisplay} style={{backgroundImage: `url(${options.hero_video_preview.link})`}}></div>
+            <div className={"hero__video-preview " + previewDisplay} style={{backgroundImage: `url(${options.hero_video_preview.localFile.url})`}}></div>
           </div>
           <a className={"hero__video-button hero__video-play " + playDisplay} onClick={videoPlayBtnClick}></a>
           <a className={"hero__video-button hero__video-pause " + pauseDisplay} onClick={videoPauseBtnClick}></a>
@@ -160,10 +170,10 @@ export default function Network() {
         </div>
         <div className="hero__quotes">
           {
-            options.hero_quotes.map((quote) => {
+            quotes.map((quote) => {
               // console.log(quote);
             return (
-              <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quote.image.link})`}} onClick={((e) => quoteClick(e, data))}></a>
+              <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quote.image.localFile.url})`}} onClick={((e) => quoteClick(e, data))}></a>
             );
             })}
         </div>

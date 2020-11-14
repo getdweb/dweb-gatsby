@@ -22,8 +22,6 @@ export default function Principles() {
     `
   )
 
-console.log(data);
-
   const options = data.wordpressAcfOptions.options;
 
   return (

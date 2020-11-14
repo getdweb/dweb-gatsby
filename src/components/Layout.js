@@ -27,7 +27,7 @@ class TemplateWrapper extends Component {
     var contentInlineStyle = this.state.menuOpen ? {display: "none"} : {};
     return (
       <div>
-        <Helmet title="Home | Gatsby + WordPress" />
+        <Helmet title="DWeb" />
         <Navbar 
           menuLinkClick={this.menuLinkClick} 
           menuOpen={this.state.menuOpen} 

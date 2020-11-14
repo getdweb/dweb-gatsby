@@ -1,40 +1,38 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 export default function HeaderButton() {
   const data = useStaticQuery(
     graphql`
       query {
         allWordpressAcfOptions {
-          edges {
-            node {
-              options {
-                header_button_state_1 {
-                  localFile {
-                    url
-                  }
+          nodes {
+            options {
+              header_button_state_1 {
+                localFile {
+                  url
                 }
-                header_button_state_2 {
-                  localFile {
-                    url
-                  }
-                }
-                header_button_url
               }
+              header_button_state_2 {
+                localFile {
+                  url
+                }
+              }
+              header_button_url
             }
           }
         }
       }
     `
   )
-
-  const header_button_state_1 = data.allWordpressAcfOptions.edges[0].node.options.header_button_state_1
-  const header_button_state_2 = data.allWordpressAcfOptions.edges[0].node.options.header_button_state_2
-  const header_button_url = data.allWordpressAcfOptions.edges[0].node.options.header_button_url
+  
+  const header_button_state_1 = data.allWordpressAcfOptions.nodes[0].options.header_button_state_1
+  const header_button_state_2 = data.allWordpressAcfOptions.nodes[0].options.header_button_state_2
+  const header_button_url = data.allWordpressAcfOptions.nodes[0].options.header_button_url
 
   return (
-    <a 
-      href={header_button_url} className="navbar__button"
+    <Link 
+      to={header_button_url} className="navbar__button"
       >
         <div 
           className="navbar__button__state1"
@@ -42,6 +40,6 @@ export default function HeaderButton() {
         <div
           className="navbar__button__state2"
           style={{backgroundImage: 'url(' + header_button_state_2.localFile.url + ')'}}></div>
-    </a>
+    </Link>
   )
 }

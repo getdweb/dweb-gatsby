@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import Voice from './Voice'
 import DbService from '../services/db-service';
 import ScrollService from '../services/scroll-service';
@@ -6,7 +7,7 @@ import ScrollService from '../services/scroll-service';
 // Get page number, organize masonry layout
 export default function Voices() {
 
-  const VOICES_PER_PAGE = 7;
+  const VOICES_PER_PAGE = 9;
   const RENDER_TIMEOUT = 200;
 
   let timeouts = [];
@@ -18,6 +19,21 @@ export default function Voices() {
 
   const dbService = new DbService();
   const scrollService = new ScrollService();
+
+  const data = useStaticQuery(
+    graphql`
+      query {
+        wordpressAcfOptions {
+          options {
+            voices_header
+            voices_intro
+          }
+        }
+      }
+    `
+  )
+
+  const options = data.wordpressAcfOptions.options;
 
   const loadVoices = async function() {
     setLoading(true);
@@ -176,28 +192,34 @@ export default function Voices() {
 
   return (
     <div className="voices" id="voices">
-      <div className="header">Voices and ideas of<br />the decentralised web</div>
-      <div className="header-notice voices__notice">If there is an article or video you believe we should mention here,<br />don’t wait - <a href="#">submit a story</a>.</div>
-      <div>
-        <div className="masonry" id="masonry" style={{ minHeight: 0 }}>
-            {Object.entries(voices).map(([key, voice]) => {
-                return (
-                    <Voice
-                        voice={voice}
-                        key={voice.id}
-                        i={key}
-                    />
-                )
-            })}
-        </div>
-        <div className="voices__footer">
-          <a 
-            className={"show-more voices__show-more " + ((loading || finished) && "d-none")}
-            onClick={loadVoices}
-            >
-            show more
-          </a>
-          <div className={"voices__loader " + ((!loading || finished) && "d-none")}></div>
+      <div className="container">
+        <div className="row">
+          <div className="col col-12 col-xs-12">
+            <div className="header" dangerouslySetInnerHTML={{__html: options.voices_header}}></div>
+            <div className="header-notice voices__notice" dangerouslySetInnerHTML={{__html: options.voices_intro}}></div>
+            <div>
+              <div className="masonry" id="masonry" style={{ minHeight: 0 }}>
+                  {Object.entries(voices).map(([key, voice]) => {
+                      return (
+                          <Voice
+                              voice={voice}
+                              key={voice.id}
+                              i={key}
+                          />
+                      )
+                  })}
+              </div>
+              <div className="voices__footer">
+                <a 
+                  className={"show-more voices__show-more " + ((loading || finished) && "d-none")}
+                  onClick={loadVoices}
+                  >
+                  show more
+                </a>
+                <div className={"voices__loader " + ((!loading || finished) && "d-none")}></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

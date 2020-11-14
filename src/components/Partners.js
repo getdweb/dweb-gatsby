@@ -29,10 +29,11 @@ export default function Partners() {
     `
   )
 
-  var options = data.wordpressAcfOptions.options;
+  const options = data.wordpressAcfOptions.options;
+  let i = 0;
 
   return (
-    <div className="partners">
+    <div className="partners" id="partners">
       <div className="container">
         <div className="row">
           <div className="col col-12 col-xs-12">
@@ -42,15 +43,17 @@ export default function Partners() {
               <Link to={options.partners_left_button_link} className="btn">{options.partners_left_button_caption}</Link>
               <Link to={options.partners_right_button_link} className="btn">{options.partners_right_button_caption}</Link>
             </div>
-            <div className="partners__middletext">We are grateful for the generous support of sponsors:</div>
+            <div className="partners__middletext">{options.partners_sponsors_text}</div>
           </div>
         </div>
       </div>
       <div className="logos">
         {options.partners_sponsors.map((sponsor) => {
+          i++;
           return (
             <div 
               className="logos__item" 
+              key={sponsor.logo.id + i}
               style={{backgroundImage: 'url(' + sponsor.logo.localFile.url + ')'}}>
             </div>
           );

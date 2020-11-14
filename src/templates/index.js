@@ -14,15 +14,9 @@ const Index = () => {
   <div>
     <Hero />
     <AboutUs />
-    <div className="container">
-      <div className="row">
-        <div className="col col-12 col-xs-12">
-          <Network />
-          <Voices />
-          <Events />
-        </div>
-      </div>
-    </div>
+    <Network />
+    <Events />
+    <Voices />
     <Partners />
     <Footer />
   </div>

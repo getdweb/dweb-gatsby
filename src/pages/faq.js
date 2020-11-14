@@ -5,13 +5,9 @@ import Footer from '../components/Footer'
 
 const FaqPage = () => {
   const content = 
-    <div className="container">
-      <div className="row">
-        <div className="col col-12 col-xs-12">
-          <Faq />
-          <Footer />
-        </div>
-      </div>
+    <div>
+      <Faq />
+      <Footer />
     </div>
 
   return (

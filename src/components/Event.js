@@ -26,7 +26,7 @@ class Event extends Component {
     
     return (
       <a 
-        className={"event " + (this.event.acf.image != null ? "event_with-image" : "")}
+        className={"event " + (this.event.acf.event_image != null ? "event_with-image" : "")}
         style={linkStyle} 
         onMouseEnter={() => {this.toggleHover();}} 
         onMouseLeave={() => {this.toggleHover();}} 
@@ -42,7 +42,7 @@ class Event extends Component {
               return elem.name;
             }).join(" + ")
           }</div>
-          {this.event.acf.image != null ? (<img src={this.event.acf.image.localFile.url} className="event__image" />) : ("")} 
+          {this.event.acf.event_image != null ? (<img src={this.event.acf.event_image.localFile.url} className="event__image" />) : ("")} 
       </a>
     )
   }

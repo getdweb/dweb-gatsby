@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import HtmlEntitiesService from '../services/html-entities-service';
 
 class Voice extends Component {
   state = {
     top: 0,
     left: 0
   };
+  htmlEntitiesService = new HtmlEntitiesService();
 
   // rand=(min, max)=>Math.floor(Math.random() * max) + min;
   // randHeight=()=>this.rand(100, 250)
@@ -29,15 +31,16 @@ class Voice extends Component {
   }
 
   render() {
-    var category = 
+    const category = 
       this.voice.acf.voice_category != null 
-      ? (<span className="voice__category">{this.voice.acf.voice_category.name}.&ensp;</span>)  
+      ? (<span className="voice__category">{this.voice.acf.voice_category.name}&ensp;</span>)  
       : "";
-    var image = "";
+    let image = "";
     if (this.voice.acf.image){
       image = (<img className="voice__image" src={this.voice.acf.image.localFile.url} />);
     }
-    var date_parts = this.voice.acf.date.split('#');
+    const date_parts = this.voice.acf.date.split('#');
+    const title = this.htmlEntitiesService.decodeHtmlEntity(this.voice.title.rendered);
     return (
       <div
         className="voice"
@@ -50,7 +53,7 @@ class Voice extends Component {
           <div className="voice__ondate">on <span className="voice_date">{date_parts[1]}</span></div>
           <div>
             {category}
-            <a className="voice__title">{this.voice.title.rendered}</a>
+            <a href={this.voice.acf.link} className="voice__title" target="_blank">{title}</a>
           </div>
           <div className="voice__intro">{this.voice.acf.intro}</div>
       </div>

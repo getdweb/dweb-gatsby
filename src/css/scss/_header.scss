@@ -160,7 +160,7 @@
     }
 
     &__button {
-        display: block;
+        display: none;
         width: 150px;
         height: 46px;
         z-index: 90;
@@ -177,8 +177,9 @@
         }
 
         @include media-breakpoint-up(lg) {
+            display: block;
             width: 180px;
-            height: 55px;
+            height: 64px;
             right: 0;
             bottom: 0;
         }
