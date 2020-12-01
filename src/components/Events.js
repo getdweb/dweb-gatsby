@@ -79,6 +79,11 @@ export default function Events() {
       return eventPeriod === period;
     });
 
+  const events_top_button_link = 
+    options.events_top_button_link.substr(0,1) == "/"
+    ? <Link to={options.events_top_button_link} className="btn building-block__btn">{options.events_top_button_caption}</Link>
+    : <a href={options.events_top_button_link} className="btn building-block__btn">{options.events_top_button_caption}</a>
+
   return (
     <div className="events" id="events">
       <div className="building-block">
@@ -90,7 +95,7 @@ export default function Events() {
               <div className="col">
                 <div className="header building-block__header">{options.events_top_header}</div>
                 <div className="building-block__text" dangerouslySetInnerHTML={{__html: options.events_top_intro}}></div>
-                <Link to={options.events_top_button_link} className="btn building-block__btn">{options.events_top_button_caption}</Link>
+                {events_top_button_link}
               </div>
             </div>
           </div>

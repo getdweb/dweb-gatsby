@@ -145,14 +145,10 @@ export default function Hero() {
               }
             }
           }} /> */}
-        <div className="hero__header">
-          {options.hero_tagline}
-        </div>
+        <div className="hero__header" dangerouslySetInnerHTML={{__html: options.hero_tagline}}></div>
       </div>
       <div className="hero__right">
-        <a className="hero__announcement" target="_blank" href={options.hero_announcement_link}>
-          {options.hero_announcement_caption}
-        </a>
+        <a className="hero__announcement" target="_blank" href={options.hero_announcement_link} dangerouslySetInnerHTML={{__html: options.hero_announcement_caption}}></a>
         <div className="hero__video">
           <div className="hero__video-frame">
             <video className="hero__video-embed" ref={videoEmbed} width="419" height="235">

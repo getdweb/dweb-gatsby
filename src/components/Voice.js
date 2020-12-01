@@ -33,14 +33,15 @@ class Voice extends Component {
   render() {
     const category = 
       this.voice.acf.voice_category != null 
-      ? (<span className="voice__category">{this.voice.acf.voice_category.name}&ensp;</span>)  
+      ? (<span className="voice__category">{this.voice.acf.voice_category.name} </span>)  
       : "";
     let image = "";
     if (this.voice.acf.image){
       image = (<img className="voice__image" src={this.voice.acf.image.localFile.url} />);
     }
     const date_parts = this.voice.acf.date.split('#');
-    const title = this.htmlEntitiesService.decodeHtmlEntity(this.voice.title.rendered);
+    // const title = this.htmlEntitiesService.decodeHtmlEntity(this.voice.title.rendered);
+    const title = this.htmlEntitiesService.decodeHtmlEntity(this.voice.title);
     return (
       <div
         className="voice"

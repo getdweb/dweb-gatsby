@@ -39,7 +39,7 @@ export default function Network() {
   let preloadArray = [];
 
   return (
-    <div className="network" id="network">
+    <div className="network" id="nodes">
       <div className="container">
         <div className="row">
           <div className="col col-12 col-xs-12">

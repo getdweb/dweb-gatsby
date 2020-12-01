@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Voice from './Voice'
-import DbService from '../services/db-service';
+// import DbService from '../services/db-service';
 import ScrollService from '../services/scroll-service';
 
 // Get page number, organize masonry layout
@@ -17,12 +17,34 @@ export default function Voices() {
   const [page, setPage] = useState(1);
   const [voices, setVoices] = useState([]);
 
-  const dbService = new DbService();
+  // const dbService = new DbService();
   const scrollService = new ScrollService();
+
+  var voicesLoadedEvent = new Event('voicesLoaded'); // Это событие используется в Layout.js
 
   const data = useStaticQuery(
     graphql`
       query {
+        allWordpressWpVoices {
+          nodes {
+            acf {
+              author
+              date
+              intro
+              link
+              voice_category {
+                name
+              }
+              image {
+                localFile {
+                  url
+                }
+              }
+            }
+            title
+            wordpress_id
+          }
+        }
         wordpressAcfOptions {
           options {
             voices_header
@@ -33,31 +55,42 @@ export default function Voices() {
     `
   )
 
+  const voicesAll = data.allWordpressWpVoices.nodes;
   const options = data.wordpressAcfOptions.options;
 
-  const loadVoices = async function() {
-    setLoading(true);
+  // const loadVoices = async function() {
+  //   setLoading(true);
+  //   scrollService.saveScroll(); // Save scroll position
+  //   dbService
+  //     .getVoices(VOICES_PER_PAGE, page)
+  //     .then((voices) => onVoicesReceived(voices))  // Restore scroll position
+  //     .then(() => masonryRestart());
+  //   // .catch(onError);
+  // }
+
+  const loadVoices = function() {
     scrollService.saveScroll(); // Save scroll position
-    dbService
-      .getVoices(VOICES_PER_PAGE, page)
-      .then((voices) => onVoicesReceived(voices))  // Restore scroll position
-      .then(() => masonryRestart());
-    // .catch(onError);
+    let newVoices = voicesAll.slice(0, VOICES_PER_PAGE * page);
+    setVoices(newVoices);
+    if (VOICES_PER_PAGE * page > voicesAll.length) setFinished(true);
+    setPage(page + 1);
+    masonryRestart();
   }
 
-  const onVoicesReceived = async function (newVoices) {
-    setVoices([...voices, ...newVoices.json]);
-    if (newVoices.pagesCount <= page){
-      setTimeout(() => {
-        setFinished(true);
-      }, RENDER_TIMEOUT);
-    }
-    setPage(page + 1);
-  };
+  // const onVoicesReceived = async function (newVoices) {
+  //   setVoices([...voices, ...newVoices.json]);
+  //   if (newVoices.pagesCount <= page){
+  //     setTimeout(() => {
+  //       setFinished(true);
+  //     }, RENDER_TIMEOUT);
+  //   }
+  //   setPage(page + 1);
+  // };
 
   const onVoicesDisplayed = () => {
     scrollService.restoreY();
     setLoading(false);
+    window.dispatchEvent(voicesLoadedEvent);
   }
 
   useEffect(() => {
@@ -135,6 +168,7 @@ export default function Voices() {
   }
 
   const masonryInit = (masonryParent) => {
+    if (masonryParent == null) return;
     var children = masonryParent.children;
     if (children.length > 0) {
       masonryGetCurrentOptions();
@@ -203,7 +237,7 @@ export default function Voices() {
                       return (
                           <Voice
                               voice={voice}
-                              key={voice.id}
+                              key={"voice_"+voice.wordpress_id}
                               i={key}
                           />
                       )

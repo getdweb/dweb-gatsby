@@ -17,6 +17,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  &__left, &__right{
+    @include media-breakpoint-up(xl) {
+        width: 50%;
+    }
+  }
   &__text{
     font-family: Poppins;
     font-size: 14px;
@@ -29,7 +34,7 @@
     }
     @include media-breakpoint-up(tn) {
       font-size: 20px;
-      line-height: 1.8;
+      line-height: 1.4;
     }
     @include media-breakpoint-up(md) {
       margin-right: 122px;
@@ -103,6 +108,9 @@
       display: inline-block;
       position: relative;
       text-decoration: none;
+      &:hover{
+        color: #fff !important;
+      }
       &:after{
           content: "//";
           position: absolute;
@@ -110,7 +118,7 @@
           font-size: 13px;
           line-height: 2.15;
           letter-spacing: -4px;
-          color: rgba(255, 255, 255, 0.4);
+          color: rgba(255, 255, 255, 0.4) !important;
       }
     }
   }
@@ -123,6 +131,10 @@
     color: #ffffff;
     padding-right: 35px;
     position: relative;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
     &:after{
         content: '⟶';
         position: absolute;
@@ -158,6 +170,9 @@
       text-decoration: none;
       margin-right: 30px;
       margin-bottom: 30px;
+      &:hover{
+        opacity: 0.5;
+      }
       svg{
         max-width: 20px;
         max-height: 20px;
@@ -221,6 +236,9 @@
       color: #ffffff;
       display: block;
       text-decoration: none;
+      &:hover{
+          text-decoration: underline;
+      }
     }
   }
   &__bottom{
@@ -261,6 +279,9 @@
       margin-right: 35px;
       position: relative;
       text-decoration: none;
+      &:hover{
+          text-decoration: underline;
+      }
       &:after{
           content: "//";
           position: absolute;

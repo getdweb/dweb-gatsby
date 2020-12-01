@@ -63,7 +63,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col col-12 col-xs-12">
-            <div className="d-xl-inline-block">
+            <div className="d-xl-inline-block footer__left">
               <div className="footer__text" dangerouslySetInnerHTML={{__html: options.footer_text}}></div>
 
               <div className="footer__social d-none d-md-inline-block">
@@ -84,7 +84,7 @@ export default function Footer() {
               </div>
             </div>
             
-            <div className="d-xl-inline-block">
+            <div className="d-xl-inline-block footer__right">
               <div className="footer__network-nodes-header">{options.network_nodes_header}</div>
               <div className="footer__network-nodes">
                 {cities.map(city => (

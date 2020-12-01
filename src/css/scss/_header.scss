@@ -223,6 +223,7 @@
     }
 
     &__item {
+        text-decoration: none;
         font-family: Poppins;
         font-size: 36px;
         font-weight: 500;
@@ -230,10 +231,20 @@
         text-decoration: none;
         margin-bottom: 12px;
         color: $white;
-
+        border-bottom: 1px solid transparent;
+        &:hover{
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+        }
+        &.active{
+            background-color: #fff;
+            color: $black;
+        }
         @include media-breakpoint-up(lg) {
             font-size: 20px;
-            line-height: 1.1;
+            line-height: 1.2;
+            margin-bottom: 9px;
+            padding: 0 1px;
         }
         
     }
@@ -258,12 +269,22 @@
         text-decoration: none;
         margin-bottom: 16px;
         color: $white;
-
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid #fff;
+        }
         @include media-breakpoint-up(lg) {
             font-size: 13px;
-            line-height: 2;
+            line-height: 1.4;
             letter-spacing: -0.46px;
-            margin-bottom: 0;
+            margin: 4px 0;
+            padding: 0 1px;
+        }
+
+        &.active{
+            background-color: #fff;
+            color: $black;
+            opacity: 1;
         }
     }
 }
