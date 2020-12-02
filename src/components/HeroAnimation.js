@@ -17,7 +17,7 @@ export default function HeroAnimation() {
     let wh;
 
     const initialize = function(){
-        // if (typeof window === `undefined`) return null;
+        if (typeof window === `undefined`) return null;
 
         canvas = document.querySelector("#scene");
         ctx = canvas.getContext("2d");
@@ -109,6 +109,8 @@ export default function HeroAnimation() {
     }
 
 	function initScene(){
+		if (typeof window === `undefined`) return null;
+		
 		ww = canvas.width = window.innerWidth;
 		wh = canvas.height = window.innerHeight;
 

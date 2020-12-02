@@ -28,6 +28,8 @@ export default function Index () {
   }, []);
 
   const defineMenuValues = () => {
+    if (typeof window === `undefined`) return;
+
     const menu_items = document.querySelectorAll("#menu-primary a[href]");
     menu_items_length = menu_items.length;
     menu_items_offsets = new Array();
@@ -47,6 +49,8 @@ export default function Index () {
   }
 
   const highlightCurrentMenuPoint = () => {
+    if (typeof window === `undefined`) return;
+
     if (typeof menu_items_offsets != 'undefined' && menu_items_offsets.length != 0){
       var i = menu_items_length;
       var y_scroll_pos = window.pageYOffset + screen_height*0.5;
@@ -80,6 +84,8 @@ export default function Index () {
   }, 250, true, true);
 
   const bindMenuHighlightActions = () => {
+    if (typeof window === `undefined`) return;
+
     // Bind reloading of menu highlight action on window resize:
     window.addEventListener('resize', defineMenuValues);
     window.addEventListener('resize', highlightCurrentMenuPoint);
@@ -92,6 +98,8 @@ export default function Index () {
 
   // Unbind all actions from bindMenuHighlightActions()
   const unbindMenuHighlightActions = () => {
+    if (typeof window === `undefined`) return;
+    
     window.removeEventListener('resize', defineMenuValues);
     window.removeEventListener('resize', highlightCurrentMenuPoint);
     window.removeEventListener('voicesLoaded', defineMenuValues);

@@ -88,6 +88,7 @@ export default function Voices() {
   // };
 
   const onVoicesDisplayed = () => {
+    if (typeof window === `undefined`) return;
     scrollService.restoreY();
     setLoading(false);
     window.dispatchEvent(voicesLoadedEvent);

@@ -48,6 +48,7 @@ export default class UtilsService {
     };
 
     getOffset(el) {
+        if (typeof window === `undefined`) return {left: 0, top: 0};
         const rect = el.getBoundingClientRect();
         return {
             left: rect.left + window.scrollX,

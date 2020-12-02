@@ -16,32 +16,12 @@ export default function Navbar(props) {
   });
 
   useEffect(() => {
+    if (typeof window === `undefined`) return;
+    
     prevScrollPos = window.pageYOffset;
     currentScrollPos = window.pageYOffset;
     window.addEventListener('scroll', setHeaderOffsets(false)); // pass "this" as "navbar" parameter inside the function
   }, []);
-
-  // constructor to set state and bind "this"
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     hidden: false,
-  //     visible: true,
-  //     top: false
-  //   }
-  //   if (typeof window === `undefined`) return;
-  //   prevScrollPos = window.pageYOffset;
-  //   currentScrollPos = window.pageYOffset;
-  // }
-
-  // componentDidMount() {
-  //   if (typeof window === `undefined`) return;
-  //   window.addEventListener('scroll', (event) => ((navbar) => {
-  //     // console.log('scroll');
-  //     // console.log(event, navbar);
-  //     navbar.setHeaderOffsets(false);
-  //   })(this)); // pass "this" as "navbar" parameter inside the function
-  // }
 
   function setHeaderOffsets(just_loaded) {
     if (typeof window === `undefined`) return;

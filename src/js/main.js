@@ -1,40 +1,4 @@
 window.addEventListener('DOMContentLoaded', function() {
-    // setMobileMenuMaxHeight();
-    // moveAuctionBlocks();
-
-    window.onresize = function(){
-        // setMobileMenuMaxHeight();
-        // slickInit();
-        // moveAuctionBlocks();
-    };
-
-    // window.onload = function(){
-    //     preload([
-    //         template_url+'/static/images/loader-tail-spin.svg'
-    //     ]);
-    // };
-        
-    // window.addEventListener('DOMContentLoaded', function() {
-    //     var btn = document.getElementById("cookie-alert-btn");
-    //     btn.onclick = function(){
-    //         var expiration_date = new Date();
-    //         expiration_date.setFullYear( expiration_date.getFullYear() + 10 );
-    //         cookie('cookie_got_it', '1', {path: "/", expires: expiration_date});
-    //         document.getElementById("cookie-alert").remove();
-    //     };
-    // });
-        
-        
-
-    // if (cookie('cookie_got_it') != 1){
-    //     document.getElementById("cookie-alert").style.display("flex");
-    // }
-
-    // slickInit();
-
-    // loaderShow();
-    // loaderHide();
-
     var popupsCloseBtns = document.querySelectorAll(".popup .x");
     popupsCloseBtns.forEach(function(btn){
         btn.onclick = function(){
@@ -47,7 +11,6 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     
 });
-
 
 var popupShow = function(el){
     hideBodyScroll();
@@ -74,28 +37,6 @@ var enableBodyScroll = function(){
     window.scrollTop = window.body_scroll_pos;
 }
 
-
-/* Preload some images: */
-// var preload = function (imageArray, index) {
-//     index = index || 0;
-//     if (imageArray && imageArray.length > index) {
-//         var img = new Image ();
-//         img.onload = function() {
-//             preload(imageArray, index + 1);
-//         };
-//         img.src = imageArray[index];
-//     }
-// };
-
-
-// document.getElementById("menulink").onclick = function(){
-//     document.getElementById("blog-categories-menulink").classList.remove("open");
-//     document.getElementById("blog-categories-menu").classList.remove("open");
-//     this.classList.toggle("open");
-//     document.getElementById("menu").classList.toggle("open");
-// };
-
-
 var mobileMenuTopOffset = false;
 // var viewportMinHeight = false; // This value will contain initial height of viewport when page is just loaded and top mobile browser panel (the one with address bar) is still displayed.
 var setMobileMenuMaxHeight = function(){
@@ -108,8 +49,6 @@ var setMobileMenuMaxHeight = function(){
         document.getElementById("menu").style.height = ''; // Remove inline "height" style
     }
 };
-
-
 
 var cookie = function(name, value, options) {
     if (typeof value != 'undefined') { // name and value given, set cookie

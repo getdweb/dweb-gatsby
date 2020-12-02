@@ -29,6 +29,7 @@ function MenuSecondary() {
   return (
     <div className="navbar__menus__item menu-secondary" id="menu-secondary">
       {Object.entries(menu_items).map(([key,item]) => {
+          if (typeof window === `undefined`) return;
           let activeClass = item.url == window.location.pathname ? " active " : "";
           let link;
           if (item.url.substr(0,1) == "/") {
