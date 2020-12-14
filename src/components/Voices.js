@@ -20,7 +20,9 @@ export default function Voices() {
   // const dbService = new DbService();
   const scrollService = new ScrollService();
 
-  var voicesLoadedEvent = new Event('voicesLoaded'); // Это событие используется в Layout.js
+  if (typeof window !== `undefined`){
+    let voicesLoadedEvent = new Event('voicesLoaded'); // This event is used in ./templates/index.js
+  }
 
   const data = useStaticQuery(
     graphql`
