@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import md5 from '../services/md5-service'
 
 export default function BuildingBlocks() {
 

@@ -1,11 +1,12 @@
 
 .footer{
-  border-top: 1px solid $white;
+  border-top: 1px solid $grey;
   padding: 30px 0 26px 0;
   @include media-breakpoint-up(tn) {
     padding: 40px 0 26px 0;
   }
   @include media-breakpoint-up(md) {
+    border-top: 1px solid $white;
     padding-top: 50px;
   }
   @include media-breakpoint-up(lg) {

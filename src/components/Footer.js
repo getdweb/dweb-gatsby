@@ -132,7 +132,7 @@ export default function Footer() {
                   <a className="footer__menuline-item" href={item.link} target="_blank" key={md5(item.label)}>{item.label}</a>
                 ))}
               </div>
-              <div className="footer__copyright" dangerouslySetInnerHTML={{__html: `(c) ${new Date().getFullYear()} ${options.footer_copyright}`}}></div>
+              <div className="footer__copyright" dangerouslySetInnerHTML={{__html: `${new Date().getFullYear()} ${options.footer_copyright}`}}></div>
             </div>
           </div>
         </div>

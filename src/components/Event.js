@@ -18,7 +18,6 @@ class Event extends Component {
   render() {
     var linkStyle;
     if (this.state.hover) {
-      // linkStyle = {color: this.event.acf.hover_color}
       linkStyle = {color: this.cities[this.event.acf.city.wordpress_id]};
     } else {
       linkStyle = {}
@@ -47,6 +46,5 @@ class Event extends Component {
     )
   }
 }
-
 
 export default Event;

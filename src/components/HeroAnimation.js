@@ -23,7 +23,7 @@ export default function HeroAnimation() {
         ctx = canvas.getContext("2d");
         particles = [];
         amount = 0;
-        mouse = {x:0,y:0};
+        mouse = {x:0, y:0};
         radius = 1;
 
         colors = ["#BBE022","#FF4F2C", "#00D6C6","#FCC924", "#E16EF9","#00B3F1"];
@@ -111,8 +111,9 @@ export default function HeroAnimation() {
 	function initScene(){
 		if (typeof window === `undefined`) return null;
 		
-		ww = canvas.width = window.innerWidth;
-		wh = canvas.height = window.innerHeight;
+		const dimentionSize = Math.max(window.innerWidth, window.innerHeight);
+		ww = canvas.width = dimentionSize;
+		wh = canvas.height = dimentionSize;
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 

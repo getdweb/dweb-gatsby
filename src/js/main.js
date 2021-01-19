@@ -28,11 +28,13 @@ var loaderHide = function(){
 }
 
 var disableBodyScroll = function(){
+    if (typeof window === 'undefined') return;
     window.body_scroll_pos = window.pageYOffset || document.documentElement.scrollTop;
     document.querySelector('body').style.overflowY = 'hidden';
 }
 
 var enableBodyScroll = function(){
+    if (typeof window === 'undefined') return;
     document.querySelector('body').style.overflowY = 'scroll';
     window.scrollTop = window.body_scroll_pos;
 }

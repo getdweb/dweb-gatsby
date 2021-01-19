@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
-function MenuSecondary() {
+export default function MenuSecondary() {
 
   const data = useStaticQuery(
     graphql`
@@ -55,7 +55,3 @@ function MenuSecondary() {
     </div>
   )
 }
-
-// export default withRouter(MenuSecondary)
-export default MenuSecondary
-

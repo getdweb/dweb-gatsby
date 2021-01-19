@@ -23,8 +23,8 @@ export default class DbService {
     console.log(res_json);
     let result = {};
     result.json = await res_json.map(this._transformVoice);
-    result.totalCount  = res.headers.get( 'x-wp-total' );
-    result.pagesCount       = res.headers.get( 'x-wp-totalpages' );
+    result.totalCount = res.headers.get( 'x-wp-total' );
+    result.pagesCount = res.headers.get( 'x-wp-totalpages' );
     return await result;
   }
 
@@ -39,9 +39,6 @@ export default class DbService {
       newVoice.acf.image 
       ? { localFile: { url: newVoice.acf.image.sizes.large } }
       : null;
-    // newVoice.acf.voice_category 
-    //   ? { localFile: { url: newVoice.acf.image.sizes.large } }
-    //   : null;
     return newVoice;
   }
 }

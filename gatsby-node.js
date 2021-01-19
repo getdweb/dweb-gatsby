@@ -1,7 +1,6 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const { paginate } = require('gatsby-awesome-pagination')
 
 const getOnlyPublished = edges =>
   _.filter(edges, ({ node }) => node.status === 'publish')
@@ -17,6 +16,76 @@ exports.createPages = ({ actions, graphql }) => {
             id
             slug
             status
+            title
+            content
+            acf {
+              page_blocks {
+                block_type
+                cta_button {
+                  button_caption
+                  button_link_direction
+                  button_link_url
+                  text
+                  title
+                }
+                feature_block {
+                  button_caption
+                  button_link_direction
+                  button_link_url
+                  text
+                  title
+                  image {
+                    localFile {
+                      url
+                    }
+                    id
+                  }
+                }
+                highlighted_statement_content {
+                  author
+                  background_color
+                  background_image {
+                    id
+                    localFile {
+                      url
+                    }
+                  }
+                  quote
+                }
+                opening_section_content {
+                  text
+                  title
+                  hero_image_desktop {
+                    id
+                    localFile {
+                      url
+                    }
+                  }
+                  hero_image_mobile {
+                    id
+                    localFile {
+                      url
+                    }
+                  }
+                }
+                body_content {
+                  text
+                }
+                body_wide_image {
+                  image {
+                    id
+                    localFile {
+                      url
+                    }
+                  }
+                }
+                body_button {
+                  button_caption
+                  button_link_direction
+                  button_link_url
+                }
+              }
+            }
           }
         }
       }
@@ -46,7 +115,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: `/${page.slug}/`,
         component: pageTemplate,
         context: {
-          id: page.id,
+          page: page,
         },
       })
     })

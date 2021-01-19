@@ -1,10 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import md5 from '../services/md5-service'
 
 export default function Network() {
-
-  const [cityHover, setCityHover] = useState(false);
 
   const data = useStaticQuery(
     graphql`

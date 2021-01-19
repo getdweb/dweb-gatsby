@@ -56,12 +56,15 @@ h1{
   line-height: 1.06;
   letter-spacing: -0.1px;
 }
-h2{
+@mixin h2{
   font-family: Poppins;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.36;
   letter-spacing: -0.05px;
+}
+h2{
+  @include h2;
 }
 @mixin h3{
   font-family: Poppins;
@@ -163,6 +166,9 @@ h4{
   }
   a{
     @include natgeo-effect(20px, #ffcd03, 1px, 1px);
+  }
+  h2{
+    margin: 40px 0 24px;
   }
 }
 
@@ -325,10 +331,11 @@ h4{
 }
 .events{
   .building-block{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $grey;
     margin-bottom: 60px;
     @include media-breakpoint-up(md) {
       margin-bottom: 120px;
+      border-bottom: 1px solid $white;
     }
   }
   &__headerlinks{
@@ -622,9 +629,12 @@ h4{
 }
 
 .network{
-  border-top: 1px solid $white;
+  border-top: 1px solid $grey;
   padding-top: 100px;
   padding-bottom: 110px;
+  @include media-breakpoint-up(md) {
+    border-top: 1px solid $white;
+  }
   &__intro{
     @include typed;
     color: #ffffffcc;
@@ -753,7 +763,10 @@ h4{
 }
 
 .faq{
-  margin-top: 60px;
+  margin-top: 80px;
+  @include media-breakpoint-down(md) {
+  	margin-bottom: 120px;
+  }
   .header-notice{
     margin-bottom: 60px;
   }
@@ -789,6 +802,21 @@ h4{
     }
     &:last-child{
       border-bottom: 1px solid #fff;
+    }
+    .faq-pair__answer{
+      p:first-child, ol:first-child, ul:first-child{
+      	@include media-breakpoint-down(md) {
+          margin-top: 5px;
+        }
+      }
+      p:last-child, ol:last-child, ul:last-child{
+        @include media-breakpoint-down(md) {
+          margin-bottom: 40px;
+        }
+      }
+      li{
+        margin-left: 5px;
+      }
     }
     &.open{
       .faq-pair__answer{
@@ -887,9 +915,12 @@ h4{
     }
   }
   &-notice{
-    padding: 60px 0 100px;
+    padding: 60px 0 0;
     @include typed;
     color: #ffffffcc;
+    @include media-breakpoint-up(md) {
+  	  padding: 60px 0 100px;
+    }
   }
 }
 
@@ -899,15 +930,19 @@ h4{
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $grey;
   @include media-breakpoint-up(md) {
       flex-direction: row;
       height: 100vh;
+      border-top: 1px solid $white;
   }
   &__left{
     width: 100%;
     position: relative;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include media-breakpoint-up(md) {
       width: calc(100% - 419px);
       height: 100%;
@@ -1122,10 +1157,22 @@ h4{
 }
 
 #scene{
-  width: 100%;
+  // width: 100%;
   height: 620px;
+  width: 620px;
+  margin-top: -100px;
+  margin-bottom: 100px;
   @include media-breakpoint-up(md) {
     height: 640px;
+    width: 640px;
+    margin-top: -150px;
+    margin-bottom: unset;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: -350px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: -250px;
   }
 }
 
@@ -1136,17 +1183,16 @@ h4{
 .marquee span {   
   display: inline-block;
   white-space: nowrap;
-  // text-shadow: 484px 0 currentColor, // При изменении бегущей строки надо изменить значение этого свойства
-  //             calc(484px * 2) 0 currentColor; // При изменении бегущей строки надо изменить значение этого свойства
   padding-right: 50px;
   will-change: transform;
   animation: marquee 5s linear infinite;
-  animation-play-state: paused;
-}
-
-.marquee:hover span {
+  // animation-play-state: paused; // Если не надо запускать при загрузке страницы, надо сделать animation-play-state: paused
   animation-play-state: running;
 }
+
+// .marquee:hover span { // Если надо запускать при hover, надо сделать animation-play-state: running
+//   animation-play-state: running;
+// }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -1207,9 +1253,7 @@ h4{
   }
 }
 
-.partners{
-  border-top: 1px solid #fff;
-  padding-top: 120px;
+@mixin cta{
   text-align: center;
   &__intro{
     @include typed;
@@ -1221,13 +1265,16 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 45px 0 80px;
+    margin: 45px 0 50px;
     flex-direction: column;
+    @include media-breakpoint-up(md) {
+      margin: 45px 0 80px;
+    }
     @include media-breakpoint-up(lg) {
         flex-direction: row;
     }
     .btn{
-      margin: 15px 0;
+      margin: 10px 0;
       @include media-breakpoint-up(lg) {
         margin: 0 15px;
       }
@@ -1236,15 +1283,28 @@ h4{
   &__middletext{
     @include typed;
     color: #ffffffcc;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.partners{
+  @include cta;
+  border-top: 1px solid $grey;
+  padding-top: 80px;
+  @include media-breakpoint-up(md) {
+    padding-top: 120px;
+    border-top: 1px solid $white;
   }
 }
 
 .logos{
+  border-top: 1px solid $grey;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   &__item{
     background-size: cover;
@@ -1254,7 +1314,7 @@ h4{
     padding-bottom: calc(100% * 2 / 6);
     min-width: calc(100% / 2);
     border-right: 1px solid $grey;
-    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
     @include media-breakpoint-up(sm) {
       min-width: calc(100% / 3);
       padding-bottom: calc(100% * 2 / 9);
@@ -1267,13 +1327,19 @@ h4{
 }
 
 .building-blocks{
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $grey;
   padding-bottom: 1px;
+  @include media-breakpoint-up(md) {
+    border-top: 1px solid $white;
+  }
 }
-.building-block{
+@mixin building-block{
   position: relative;
-  border-top: 1px solid #fff;
+  border-top: 1px solid $grey;
   min-height: 400px;
+  @include media-breakpoint-up(md) {
+    border-top: 1px solid $white;
+  }
   @include media-breakpoint-up(xl) {
     min-height: 630px;
   }
@@ -1324,11 +1390,14 @@ h4{
   }
   &__header{
     text-align: left;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+    }
   }
   &__text{
     @include typed;
     color: #ffffffcc;
-    margin-top: 40px;
     text-align: left;
   }
   &__btn{
@@ -1338,6 +1407,9 @@ h4{
     }
   }
 }
+.building-block{
+  @include building-block;
+}
 
 .get-involved-hero{
   position: relative;
@@ -1346,10 +1418,11 @@ h4{
   background-size: 0px;
   background-position: top left;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $grey;
   @include media-breakpoint-up(md) {
     height: 100vh;
     background-size: contain;
+    border-bottom: 1px solid $white;
   }
   &__header{
     font-family: Poppins, Montserrat;
@@ -1401,10 +1474,25 @@ h4{
 }
 
 .quotes-slider{
+  width: calc(100% - 7.5%);
   padding: 20px 0;
+  margin-left: -15%;
+  @include media-breakpoint-up(sm) {
+    width: calc(100% - 10%);
+    margin-left: -6%;
+  }
   @include media-breakpoint-up(md) {
     padding: 60px 0;
+    width: calc(100% - 10%);
+    margin-left: -6%;
   }
+  @include media-breakpoint-up(xl) {
+    width: calc(100% - 5%);
+    margin-left: -4.5%;
+  }
+}
+.swiper-container{
+  overflow: visible !important;
 }
 .swiper-slide img{
   width: 100% !important;
@@ -1463,5 +1551,187 @@ h4{
   }
   &__toplink{
     @include natgeo-effect(19px, #ffcd03, 2px, 1px);
+  }
+}
+
+.master-page-content{
+  padding-bottom: 60px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 40px;
+  }
+}
+.page-block-opening{
+  margin-bottom: 80px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 120px;
+  }
+  &__image-desktop{
+    width: 100%;
+    display: none;
+    margin-bottom: -7px;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+  &__image-mobile{
+    width: 100%;
+    margin-bottom: -40px;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+  &__title{
+    margin: 80px 0 24px;
+    @include media-breakpoint-up(md) {
+      margin: 80px 0 40px;
+    }
+  }
+  &__text{
+    @include typed;
+    p{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.page-block-highlighted{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 52px 20px 51px 20px;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    padding: 52px 60px 51px 60px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 52px 264px 51px 60px;
+  }
+  &__bgimage{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+  &__quote{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.05px;
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-up(md) {
+      font-size: 28px;
+      line-height: 1.36;
+    }
+  }
+  &__author{
+    @include typed;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: "-";
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  }
+}
+.page-block-content{
+  @include typed;
+  margin-top: 60px; //
+  margin-bottom: 60px; //
+  @include media-breakpoint-up(md) {
+    margin-top: 120px; //
+    margin-bottom: 120px; //
+    & + .page-block-content, & + .page-block-button, & + .page-block-wide-image{
+      margin-top: -40px; //
+    }
+  }
+  p{
+    &:first-child{
+      margin-top: 0;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 60px auto;
+      @include media-breakpoint-up(md) {
+        margin: 80px auto;
+      }
+    }
+    iframe{
+      display: block;
+      max-width: 100%;
+      margin: 60px auto;
+      @include media-breakpoint-up(md) {
+        margin: 80px auto;
+      }
+    }
+  }
+}
+.page-block-wide-image{
+  width: 100%;
+  margin-top: 0; //
+  margin-bottom: 0; //
+  @include media-breakpoint-up(md) {
+    margin-top: 0; //
+    margin-bottom: 0; //
+    & + .page-block-content{
+      margin-top: 100px; //
+    }
+  }
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+.page-block-button{
+  width: 100%;
+  text-align: center;
+  margin-top: 60px; //
+  margin-bottom: 60px; //
+  @include media-breakpoint-up(md) {
+    margin-top: 80px; //
+    margin-bottom: 120px; //
+    & + .page-block-content, & + .page-block-button, & + .page-block-wide-image{
+      margin-top: -40px; //
+    }
+  }
+}
+.page-block-cta{
+  @include cta;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media-breakpoint-up(md) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  &__buttons{
+    margin-bottom: 0;
+  }
+}
+.page-block-border{
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  & + .page-block-border{
+    border-top: 0;
+  }
+  &:last-child{
+    border-bottom: 0;
   }
 }

@@ -24,6 +24,18 @@ module.exports = {
         auth: {},
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
+        excludedRoutes: [
+          "**/wp-site-health/**",
+          "**/yoast/**",
+          "**/wp/v2/users/**",
+          "**/batch/**",
+          "**/wp-rest-yoast-meta/**",
+          "**/wp/v2/block-types**",
+          "**/wp/v2/settings**",
+          "**/wp/v2/themes**",
+          "**/wp/v2/plugins**",
+          "**/wp/v2/block-directory/**",
+        ],
       },
     },
     'gatsby-plugin-sharp',

@@ -1,16 +1,14 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import HeroAnimation from '../components/HeroAnimation';
-// import Particles from 'react-particles-js';
 
 export default function Hero() {
-
   const [previewDisplay, setPreviewDisplay] = useState("d-block");
   const [playDisplay, setPlayDisplay] = useState("d-flex");
   const [pauseDisplay, setPauseDisplay] = useState("d-none");
-  
 
   const videoEmbed = useRef(null);
+  const marqueeEl = useRef(null);
 
   const data = useStaticQuery(
     graphql`
@@ -46,7 +44,6 @@ export default function Hero() {
   )
 
   const options = data.allWordpressAcfOptions.nodes[0].options;
-  // console.log(options);
 
   const videoPlayBtnClick = function(){
     setPreviewDisplay("d-none");
@@ -97,54 +94,18 @@ export default function Hero() {
   });
   const [quotesVisibility, setQuotesVisibility] = useState(quotesVisibilityTemp);
 
+  useEffect(() => {
+    setTimeout(()=>{
+      const captionLength = +marqueeEl.current.offsetWidth;
+      marqueeEl.current.style.textShadow = `${captionLength}px 0 currentColor, calc(${captionLength}px * 2) 0 currentColor`;
+    }, 1000);
+    
+  });
+
   return (
     <div className="hero">
       <div className="hero__left">
         <HeroAnimation />
-        {/* <Particles params={{
-            "particles": {
-              "color": {
-                "value": "random",
-                "animation": {
-                  "enable": false,
-                  "speed": 1,
-                  "sync": false
-                }
-              },
-              "number": {
-                  "value": 160,
-                  "density": {
-                      "enable": false
-                  }
-              },
-              "size": {
-                  "value": 10,
-                  "random": true
-              },
-              "opacity": {
-                  "value": 1
-              },
-              "move": {
-                  "direction": "none",
-                  "out_mode": "out"
-              },
-              "line_linked": {
-                  "enable": false
-              }
-            },
-            "interactivity": {
-              "events": {
-                  "onclick": {
-                      "enable": false
-                  }
-              },
-              "modes": {
-                  "remove": {
-                      "particles_nb": 10
-                  }
-              }
-            }
-          }} /> */}
         <div className="hero__header" dangerouslySetInnerHTML={{__html: options.hero_tagline}}></div>
       </div>
       <div className="hero__right">
@@ -160,14 +121,12 @@ export default function Hero() {
           <a className={"hero__video-button hero__video-play " + playDisplay} onClick={videoPlayBtnClick}></a>
           <a className={"hero__video-button hero__video-pause " + pauseDisplay} onClick={videoPauseBtnClick}></a>
           <div className="hero__video-caption marquee">
-            <span style={{textShadow: `${options.hero_video_caption_length}px 0 currentColor, calc(${options.hero_video_caption_length}px * 2) 0 currentColor`}}>{options.hero_video_caption}</span>
-            {/* <span style={{textShadow: `484px 0 currentColor, calc(484px * 2) 0 currentColor`}}>{options.hero_video_caption}</span> */}
+            <span ref={marqueeEl}>{options.hero_video_caption}</span>
           </div>
         </div>
         <div className="hero__quotes">
           {
             quotes.map((quote) => {
-              // console.log(quote);
             return (
               <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quote.image.localFile.url})`}} onClick={((e) => quoteClick(e, data))}></a>
             );

@@ -19,7 +19,6 @@ export default function ComingSoon() {
   )
 
   const options = data.allWordpressAcfOptions.nodes[0].options;
-  // console.log(options);
 
   return (
     <div className="coming-soon">

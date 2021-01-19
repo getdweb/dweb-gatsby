@@ -26,7 +26,6 @@ export default function Navbar(props) {
   function setHeaderOffsets(just_loaded) {
     if (typeof window === `undefined`) return;
     currentScrollPos = window.pageYOffset;
-    // console.log("prev:" + prevScrollPos + "; current:" + currentScrollPos);
     if (currentScrollPos == 0){
         setState({hidden: false, visible: false, top: true});
     } else if (just_loaded){
@@ -38,11 +37,13 @@ export default function Navbar(props) {
         setState({hidden: true, visible: false, top: false});
       }
     }
-    // console.log(state);
     prevScrollPos = currentScrollPos;
   };
 
   var navbarClassName = 'navbar ' + (props.menuOpen ? 'is-menu-open ': '') + (state.hidden ? 'hidden ': '') + (state.visible ? 'visible ': '') + (state.top ? 'top ': '');
+
+  const pathname = typeof window !== `undefined` ? window.location.pathname : "";
+  const headerButton = pathname !== '/get-involved' ? <HeaderButton></HeaderButton> : "";
   
   return (
     <nav 
@@ -55,12 +56,11 @@ export default function Navbar(props) {
         <MenuSecondary></MenuSecondary>
         <MenuSocial></MenuSocial>
       </div>
-      <HeaderButton></HeaderButton>
+      {headerButton}
       <a
         id="menulink"
         className="navbar__menulink bars"
         rel="noopener noreferrer"
-        // onClick={ () => {setState({open: !this.state.open});}}
         onClick={props.menuLinkClick}
       >
         <span></span>
@@ -71,4 +71,3 @@ export default function Navbar(props) {
     </nav>
   );
 }
-

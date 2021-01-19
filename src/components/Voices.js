@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Voice from './Voice'
-// import DbService from '../services/db-service';
 import ScrollService from '../services/scroll-service';
 
-// Get page number, organize masonry layout
 export default function Voices() {
 
   const VOICES_PER_PAGE = 9;
@@ -17,12 +15,11 @@ export default function Voices() {
   const [page, setPage] = useState(1);
   const [voices, setVoices] = useState([]);
 
-  // const dbService = new DbService();
   const scrollService = new ScrollService();
 
-  if (typeof window !== `undefined`){
-    let voicesLoadedEvent = new Event('voicesLoaded'); // This event is used in ./templates/index.js
-  }
+  let voicesLoadedEvent;
+  if (typeof window !== `undefined`) 
+    voicesLoadedEvent = new Event('voicesLoaded'); // This event is used in ./templates/index.js
 
   const data = useStaticQuery(
     graphql`
@@ -37,6 +34,8 @@ export default function Voices() {
               voice_category {
                 name
               }
+              thumbnail_type
+              image_url
               image {
                 localFile {
                   url
@@ -60,16 +59,6 @@ export default function Voices() {
   const voicesAll = data.allWordpressWpVoices.nodes;
   const options = data.wordpressAcfOptions.options;
 
-  // const loadVoices = async function() {
-  //   setLoading(true);
-  //   scrollService.saveScroll(); // Save scroll position
-  //   dbService
-  //     .getVoices(VOICES_PER_PAGE, page)
-  //     .then((voices) => onVoicesReceived(voices))  // Restore scroll position
-  //     .then(() => masonryRestart());
-  //   // .catch(onError);
-  // }
-
   const loadVoices = function() {
     scrollService.saveScroll(); // Save scroll position
     let newVoices = voicesAll.slice(0, VOICES_PER_PAGE * page);
@@ -78,16 +67,6 @@ export default function Voices() {
     setPage(page + 1);
     masonryRestart();
   }
-
-  // const onVoicesReceived = async function (newVoices) {
-  //   setVoices([...voices, ...newVoices.json]);
-  //   if (newVoices.pagesCount <= page){
-  //     setTimeout(() => {
-  //       setFinished(true);
-  //     }, RENDER_TIMEOUT);
-  //   }
-  //   setPage(page + 1);
-  // };
 
   const onVoicesDisplayed = () => {
     if (typeof window === `undefined`) return;
@@ -148,11 +127,8 @@ export default function Voices() {
   }
 
   const masonrySetMinHeight = (obj, height) => {
-    // console.log("h="+height);
     var old_height = parseInt(obj.style.minHeight);
     if (isNaN(old_height)) old_height = 0;
-    // console.log(obj.style);
-    // console.log("parent height="+parseInt(old_height));
     if (parseInt(old_height) < parseInt(height)) {
       obj.style.minHeight = height + 'px';
     }
@@ -182,24 +158,16 @@ export default function Voices() {
       while (i < children.length) {
         index = i;
         var el = children[i];
-        // console.log('============');
-        // console.log(children);
-        // console.log(currentOptions);
         if (typeof el == 'undefined') continue;
-        // console.log(index);
-        // console.log(cols_offset);
         if (index < currentOptions.colsCount) {
           el.style.width = currentOptions.colsWidth + currentOptions.unit;
           el.style.top = 'unset';
           el.style.left = index * (currentOptions.colsWidth + currentOptions.gapsWidth) + currentOptions.unit;
-          // console.log(el);
           cols_offset[index] = el.offsetHeight;
           masonrySetMinWidth(masonryParent, (index + 1) * currentOptions.colsWidth + index * currentOptions.gapsWidth, currentOptions.unit);
           masonrySetMinHeight(masonryParent, cols_offset[index]);
         } else {
-          // console.log(cols_offset);
           var min = Math.min(...cols_offset);
-          // console.log('min='+min);
           index = cols_offset.indexOf(min);
           el.style.width = currentOptions.colsWidth + currentOptions.unit;
           el.style.top = cols_offset[index] + 'px';
@@ -236,15 +204,15 @@ export default function Voices() {
             <div className="header-notice voices__notice" dangerouslySetInnerHTML={{__html: options.voices_intro}}></div>
             <div>
               <div className="masonry" id="masonry" style={{ minHeight: 0 }}>
-                  {Object.entries(voices).map(([key, voice]) => {
-                      return (
-                          <Voice
-                              voice={voice}
-                              key={"voice_"+voice.wordpress_id}
-                              i={key}
-                          />
-                      )
-                  })}
+                {Object.entries(voices).map(([key, voice]) => {
+                  return (
+                    <Voice
+                      voice={voice}
+                      key={"voice_"+voice.wordpress_id}
+                      i={key}
+                    />
+                  )
+                })}
               </div>
               <div className="voices__footer">
                 <a 

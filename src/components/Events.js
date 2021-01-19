@@ -62,7 +62,6 @@ export default function Events() {
 
   let events = data.allWordpressWpEvent.nodes;
 
-  // const options = data.allWordpressAcfOptions.nodes[0].options;
   const options = data.wordpressAcfOptions.options;
   
   const citiesTemp = data.allWordpressAcfCity.nodes;
@@ -75,7 +74,6 @@ export default function Events() {
     .filter(event => {
       const milliseconds = Date.now() - Date.parse(event.acf.ended_at);
       const eventPeriod = milliseconds > 0 ? "past" : "upcoming";
-      // console.log(event_period);
       return eventPeriod === period;
     });
 

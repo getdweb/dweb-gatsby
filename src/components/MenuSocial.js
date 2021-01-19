@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import md5 from '../services/md5-service'
 
 export default function MenuSocial() {
 
@@ -15,6 +16,11 @@ export default function MenuSocial() {
                   github
                   meetup
                 }
+                footer_social_links {
+                  icon_code
+                  label
+                  link
+                }
               }
             }
           }
@@ -23,21 +29,20 @@ export default function MenuSocial() {
     `
   )
   
-  const social_links = data.allWordpressAcfOptions.edges[0].node.options.social
+  const options = data.allWordpressAcfOptions.edges[0].node.options
 
   return (
     <div className="navbar__menus__social menu-social">
-      {Object.entries(social_links).filter(function([key,value]) {
-          return (value != ""); // Do not print a link if its URL==""
-        }).map(([key,value]) => (
-          <a
-            className={"menu-social__item icon_" + key}
-            href={value}
-            target="_blank"
-            key={key}
-            >
-          </a>
-      ))}
+      {options.footer_social_links.map(item => 
+        (
+        <a 
+          className="menu-social__item" 
+          href={item.link} 
+          target="_blank" 
+          key={"menu-social-" + md5(item.label)} 
+          dangerouslySetInnerHTML={{__html: item.icon_code}}></a>
+        )
+      )}
     </div>
   )
 }

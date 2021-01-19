@@ -8,7 +8,7 @@ export default function Faq() {
   const data = useStaticQuery(
     graphql`
       query {
-        allWordpressWpFaqSection(sort: {order: ASC, fields: title}) {
+        allWordpressWpFaqSection(sort: {order: ASC, fields: date}) {
           nodes {
             id
             title

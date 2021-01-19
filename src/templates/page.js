@@ -1,56 +1,59 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import Footer from '../components/Footer'
 import Layout from '../components/Layout'
+import PageBlockOpening from '../components/PageBlockOpening'
+import PageBlockHighlighted from '../components/PageBlockHighlighted'
+import PageBlockContent from '../components/PageBlockContent'
+import PageBlockWideImage from '../components/PageBlockWideImage'
+import PageBlockButton from '../components/PageBlockButton'
+import PageBlockBorder from '../components/PageBlockBorder'
+import PageBlockCTA from '../components/PageBlockCTA'
+import PageBlockFeature from '../components/PageBlockFeature'
 
-export const PageTemplate = ({ title, content }) => {
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <div
-                className="content"
-                dangerouslySetInnerHTML={{ __html: content }}
-              />
-            </div>
-          </div>
-        </div>
+const MasterPage = (props) => {
+  const page = props.pageContext.page;
+
+  let blockKey = 0;
+
+  const content = <>
+      <div
+        className="master-page-content"
+        >
+        {
+          page.acf.page_blocks.map(block => {
+            blockKey++;
+            switch(block.block_type){
+              case "opening":
+                return <PageBlockOpening key={"page_block_" + blockKey} fields={block.opening_section_content} />;
+              case "highlighted":
+                return <PageBlockHighlighted key={"page_block_" + blockKey} fields={block.highlighted_statement_content} />;
+              case "feature_block":
+                return <PageBlockFeature key={"page_block_" + blockKey} fields={block.feature_block} />;
+              case "body_content":
+                return <PageBlockContent key={"page_block_" + blockKey} fields={block.body_content} />;
+              case "body_wide_image":
+                return <PageBlockWideImage key={"page_block_" + blockKey} fields={block.body_wide_image} />;
+              case "body_button":
+                return <PageBlockButton key={"page_block_" + blockKey} fields={block.body_button} />;
+              case "cta_button":
+                return <PageBlockCTA key={"page_block_" + blockKey} fields={block.cta_button} />;
+              case "border":
+                return <PageBlockBorder key={"page_block_" + blockKey} />;
+              default:
+                return <></>;
+            }
+          })
+        }
       </div>
-    </section>
-  )
-}
-
-PageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-}
-
-const Page = ({ data }) => {
-  const { wordpressPage: page } = data
+      <Footer />
+    </>
 
   return (
-    <Layout>
-      <PageTemplate title={page.title} content={page.content} />
+    <Layout content={content}>
+      
     </Layout>
   )
 }
 
-Page.propTypes = {
-  data: PropTypes.object.isRequired,
-}
+export default MasterPage
 
-export default Page
-
-export const pageQuery = graphql`
-  query PageById($id: String!) {
-    wordpressPage(id: { eq: $id }) {
-      title
-      content
-    }
-  }
-`

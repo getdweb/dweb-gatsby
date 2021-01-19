@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-// import Particles from 'react-particles-js';
 
 export default function GetInvolvedHero() {
 
@@ -24,7 +23,6 @@ export default function GetInvolvedHero() {
   )
 
   const options = data.allWordpressAcfOptions.nodes[0].options;
-  // console.log(options);
 
   return (
     <div className="get-involved-hero" style={{backgroundImage: `url(${options.get_involved_hero_image.localFile.url})`}}>
