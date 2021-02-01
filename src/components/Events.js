@@ -9,7 +9,7 @@ export default function Events() {
   const data = useStaticQuery(
     graphql`
       query {
-        allWordpressWpEvent {
+        allWordpressWpEvent(sort: {fields: acf___started_at, order: DESC}) {
           nodes {
             title
             id
@@ -70,18 +70,22 @@ export default function Events() {
   citiesTemp.map(city => {
     cities[city.wordpress_id] = city.acf.color;
   });
+  
   events = events
-    .filter(event => {
+    .filter((event, key) => {
       const milliseconds = Date.now() - Date.parse(event.acf.ended_at);
       const eventPeriod = milliseconds > 0 ? "past" : "upcoming";
+      events[key].period = eventPeriod;
       return eventPeriod === period;
     });
 
   const events_top_button_link = 
     options.events_top_button_link.substr(0,1) == "/"
     ? <Link to={options.events_top_button_link} className="btn building-block__btn">{options.events_top_button_caption}</Link>
-    : <a href={options.events_top_button_link} className="btn building-block__btn">{options.events_top_button_caption}</a>
+    : <a href={options.events_top_button_link} className="btn building-block__btn" target="_blank">{options.events_top_button_caption}</a>
 
+  let pastEventsLength = 0;
+  
   return (
     <div className="events" id="events">
       <div className="building-block">
@@ -115,13 +119,16 @@ export default function Events() {
                 className={"events__headerlink " + (period == "past" ? "events__headerlink_active " : "")} 
                 onClick={ () => setPeriod("past")}
                 >
-                  past
+                  recent
                 </a>
             </div>
             <div className="header-notice events__notice" dangerouslySetInnerHTML={{__html: options.events_list_text}}></div>
-            {events.map(event => (
-              <Event event={event} cities={cities} key={event.id} />
-            ))}
+            {events.map(event => {
+              pastEventsLength++;
+              if (pastEventsLength <= 7 || event.period === 'upcoming'){
+                return <Event event={event} cities={cities} key={event.id} />
+              }
+            })}
           </div>
         </div>
       </div>

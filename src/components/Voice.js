@@ -11,6 +11,7 @@ class Voice extends Component {
   constructor(props) {
     super(props);
     this.voice = props.voice;
+    this.color = props.color;
     this.i = props.i;
     this.state = {
       top: 0,
@@ -25,7 +26,7 @@ class Voice extends Component {
   render() {
     const category = 
       this.voice.acf.voice_category != null 
-      ? (<span className="voice__category">{this.voice.acf.voice_category.name} </span>)  
+      ? (<span className="voice__category" style={{color: this.color}}>{this.voice.acf.voice_category.name} </span>)  
       : "";
     let image = "";
     if (this.voice.acf.thumbnail_type !== 'url' && this.voice.acf.image){

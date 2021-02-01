@@ -110,7 +110,7 @@
       position: relative;
       text-decoration: none;
       &:hover{
-        color: #fff !important;
+        // color: #fff !important;
       }
       &:after{
           content: "//";
@@ -273,7 +273,7 @@
       width: 498px;
     }
     @include media-breakpoint-up(xxl) {
-      width: 600px;
+      width: 50%;
     }
     a{
       color: #ffffff;

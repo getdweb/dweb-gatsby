@@ -62,6 +62,7 @@ h1{
   font-weight: 500;
   line-height: 1.36;
   letter-spacing: -0.05px;
+  color: #fff;
 }
 h2{
   @include h2;
@@ -71,6 +72,9 @@ h2{
   font-size: 20px;
   font-weight: 500;
   line-height: 1.4;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 h3{
   @include h3;
@@ -330,6 +334,7 @@ h4{
   }
 }
 .events{
+  padding-bottom: 145px;
   .building-block{
     border-bottom: 1px solid $grey;
     margin-bottom: 60px;
@@ -389,11 +394,11 @@ h4{
   @include media-breakpoint-up(md) {
     padding-bottom: 0;
   }
-  // &_with-image{
-  //   @include media-breakpoint-up(md) {
-  //     min-height: 199px;
-  //   }
-  // }
+  &_with-image{
+    @include media-breakpoint-up(md) {
+      min-height: 156px;
+    }
+  }
   &__date{
     font-size: 28px;
     font-weight: 500;
@@ -513,8 +518,16 @@ h4{
   left: 0;
 }
 .voices{
-  padding-top: 120px;
+  border-top: 1px solid $grey;
+  padding-top: 80px;
   padding-bottom: 60px;
+  @include media-breakpoint-up(md) {
+    padding-top: 120px;
+    border-top: 1px solid $white;
+  }
+  &__notice{
+    margin-bottom: 10px;
+  }
   &__footer{
     min-height: 46px;
     width: 100%;
@@ -675,7 +688,8 @@ h4{
             display: block !important;
           }
           & + .network__node-image{
-            display: block !important;
+            // display: block !important;
+            opacity: 1;
           }
         }
       }
@@ -696,7 +710,8 @@ h4{
     }
     
     &-image{
-      display: none;
+      // display: none;
+      opacity: 0;
       position: absolute;
       right: 0;
       top: 20px;
@@ -705,6 +720,7 @@ h4{
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
+      transition: opacity 0.4s linear;
     }
   }
   &__add-node-pre{
@@ -934,11 +950,12 @@ h4{
   @include media-breakpoint-up(md) {
       flex-direction: row;
       height: 100vh;
-      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
   }
   &__left{
     width: 100%;
     position: relative;
+    overflow: hidden;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1074,14 +1091,14 @@ h4{
       height: 100%;
     }
     &-button{
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       display: flex;
       align-items: center;
       justify-content: center;
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: -1px;
+      left: -1px;
       &:hover{
         background-color: #fff;
         & + .marquee span {
@@ -1184,15 +1201,16 @@ h4{
   display: inline-block;
   white-space: nowrap;
   padding-right: 50px;
+  color: #fff;
   will-change: transform;
-  animation: marquee 5s linear infinite;
-  // animation-play-state: paused; // Если не надо запускать при загрузке страницы, надо сделать animation-play-state: paused
-  animation-play-state: running;
+  animation: marquee linear infinite;
+  animation-play-state: paused; // Если не надо запускать при загрузке страницы, надо сделать animation-play-state: paused
+  // animation-play-state: running;
 }
 
-// .marquee:hover span { // Если надо запускать при hover, надо сделать animation-play-state: running
-//   animation-play-state: running;
-// }
+.marquee:hover span { // Если надо запускать при hover, надо сделать animation-play-state: running
+  animation-play-state: running;
+}
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -1241,6 +1259,8 @@ h4{
     }
     a{
       @include natgeo-effect(35px, #ffcd03, 7px, 2px);
+      display: inline-block;
+      max-height: 35px;
     }
   }
   &__btn{
@@ -1415,14 +1435,20 @@ h4{
   position: relative;
   height: calc(100vh - 88px);
   width: 100%;
-  background-size: 0px;
-  background-position: top left;
-  background-repeat: no-repeat;
   border-bottom: 1px solid $grey;
   @include media-breakpoint-up(md) {
     height: 100vh;
-    background-size: contain;
     border-bottom: 1px solid $white;
+  }
+  &__image{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% auto;
+    background-position: top left;
+    background-repeat: no-repeat;
   }
   &__header{
     font-family: Poppins, Montserrat;
@@ -1561,9 +1587,9 @@ h4{
   }
 }
 .page-block-opening{
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   @include media-breakpoint-up(md) {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
   &__image-desktop{
     width: 100%;
@@ -1649,13 +1675,18 @@ h4{
 }
 .page-block-content{
   @include typed;
-  margin-top: 60px; //
-  margin-bottom: 60px; //
+  margin-top: 60px;
+  margin-bottom: 80px;
   @include media-breakpoint-up(md) {
-    margin-top: 120px; //
-    margin-bottom: 120px; //
+    margin-top: 120px;
+    margin-bottom: 120px;
     & + .page-block-content, & + .page-block-button, & + .page-block-wide-image{
-      margin-top: -40px; //
+      margin-top: -40px;
+    }
+  }
+  h2, h3, h4, h5, h6{
+    &:first-child{
+      margin-top: 0;
     }
   }
   p{
@@ -1686,13 +1717,13 @@ h4{
 }
 .page-block-wide-image{
   width: 100%;
-  margin-top: 0; //
-  margin-bottom: 0; //
+  margin-top: 0;
+  margin-bottom: 0;
   @include media-breakpoint-up(md) {
-    margin-top: 0; //
-    margin-bottom: 0; //
+    margin-top: 0;
+    margin-bottom: 0;
     & + .page-block-content{
-      margin-top: 100px; //
+      margin-top: 100px;
     }
   }
   img{
@@ -1703,13 +1734,13 @@ h4{
 .page-block-button{
   width: 100%;
   text-align: center;
-  margin-top: 60px; //
-  margin-bottom: 60px; //
+  margin-top: 60px;
+  margin-bottom: 60px;
   @include media-breakpoint-up(md) {
-    margin-top: 80px; //
-    margin-bottom: 120px; //
+    margin-top: 80px;
+    margin-bottom: 120px;
     & + .page-block-content, & + .page-block-button, & + .page-block-wide-image{
-      margin-top: -40px; //
+      margin-top: -40px;
     }
   }
 }
@@ -1720,6 +1751,12 @@ h4{
   @include media-breakpoint-up(md) {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  &:last-child{
+    padding-bottom: 50px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 90px;
+    }
   }
   &__buttons{
     margin-bottom: 0;
@@ -1733,5 +1770,13 @@ h4{
   }
   &:last-child{
     border-bottom: 0;
+  }
+}
+.page-block-feature{
+  &:last-child{
+    margin-bottom: -60px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: -40px;
+    }
   }
 }

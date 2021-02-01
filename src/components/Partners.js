@@ -32,6 +32,9 @@ export default function Partners() {
   const options = data.wordpressAcfOptions.options;
   let i = 0;
 
+  const leftButton = <Link to={options.partners_left_button_link} className="btn">{options.partners_left_button_caption}</Link>;
+  const rightButton = options.partners_right_button_caption != "" ? <Link to={options.partners_right_button_link} className="btn">{options.partners_right_button_caption}</Link> : "";
+
   return (
     <div className="partners" id="partners">
       <div className="container">
@@ -40,8 +43,8 @@ export default function Partners() {
             <div className="header">{options.partners_header}</div>
             <div className="partners__intro" dangerouslySetInnerHTML={{__html: options.partners_intro}}></div>
             <div className="partners__buttons">
-              <Link to={options.partners_left_button_link} className="btn">{options.partners_left_button_caption}</Link>
-              <Link to={options.partners_right_button_link} className="btn">{options.partners_right_button_caption}</Link>
+              {leftButton}
+              {rightButton}
             </div>
             <div className="partners__middletext">{options.partners_sponsors_text}</div>
           </div>

@@ -7,7 +7,7 @@ class Event extends Component {
     super(props);
     this.event = props.event;
     this.cities = props.cities;
-    this.period = props.period;
+    this.started_at = this.event.acf.started_at.split("*");
     this.state = {hover: false};
   }
 
@@ -29,13 +29,14 @@ class Event extends Component {
         style={linkStyle} 
         onMouseEnter={() => {this.toggleHover();}} 
         onMouseLeave={() => {this.toggleHover();}} 
-        href={this.event.acf.link}
+        href={this.event.acf.registration_link}
+        target="_blank"
         >
-          <div className="event__date">{this.event.acf.started_at.split("#")[0]}</div>
-          <div className="event__time">{this.event.acf.started_at.split("#")[1].toUpperCase()}</div>
+          <div className="event__date">{this.started_at[1].split("#")[0]}</div>
+          <div className="event__time">{this.started_at[1].split("#")[1].toUpperCase()}</div>
           <div className="event__underline"></div>
           <div className="event__city" style={{color: this.cities[this.event.acf.city.wordpress_id]}}>{this.event.acf.city.post_title}:</div>
-          <div className="event__title">{this.event.title}</div>
+          <div className="event__title" dangerouslySetInnerHTML={{__html: this.event.title}}></div>
           <div className="event__tags">{
             this.event.acf.event_type.map(function(elem){
               return elem.name;

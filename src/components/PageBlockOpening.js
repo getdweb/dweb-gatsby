@@ -17,12 +17,12 @@ export default function PageBlockOpening (props) {
         : "";
 
     return (
-        <div className="page-block-opening">
+        <div className="page-block-opening page-block-border">
             {imageDesktop}
             {imageMobile}
             <div className="container">
                 <div className="row">
-                    <div className="col col-12">
+                    <div className="col col-12 col-md-9">
                         <h1 className="page-block-opening__title">{fields.title}</h1>
                         <div className="page-block-opening__text" dangerouslySetInnerHTML={{__html: fields.text}}></div>
                     </div>

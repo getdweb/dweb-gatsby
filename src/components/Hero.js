@@ -50,12 +50,14 @@ export default function Hero() {
     setPlayDisplay("d-none");
     setPauseDisplay("d-flex");
     videoEmbed.current.play();
+    marqueeEl.current.style.animationPlayState = 'paused';
   }
 
   const videoPauseBtnClick = function(){
     setPlayDisplay("d-flex");
     setPauseDisplay("d-none");
     videoEmbed.current.pause();
+    marqueeEl.current.style.animationPlayState = 'running';
   }
 
   const quoteClick = (e) => {
@@ -97,7 +99,9 @@ export default function Hero() {
   useEffect(() => {
     setTimeout(()=>{
       const captionLength = +marqueeEl.current.offsetWidth;
+      const period = (captionLength/80);
       marqueeEl.current.style.textShadow = `${captionLength}px 0 currentColor, calc(${captionLength}px * 2) 0 currentColor`;
+      marqueeEl.current.style.animationDuration = `${period}s`;
     }, 1000);
     
   });
@@ -112,7 +116,7 @@ export default function Hero() {
         <a className="hero__announcement" target="_blank" href={options.hero_announcement_link} dangerouslySetInnerHTML={{__html: options.hero_announcement_caption}}></a>
         <div className="hero__video">
           <div className="hero__video-frame">
-            <video className="hero__video-embed" ref={videoEmbed} width="419" height="235">
+            <video controls className="hero__video-embed" ref={videoEmbed} width="419" height="235">
               <source src={options.hero_video_url} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>

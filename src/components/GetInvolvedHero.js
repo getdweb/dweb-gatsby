@@ -15,6 +15,11 @@ export default function GetInvolvedHero() {
                   url
                 }
               }
+              get_involved_hero_image_mobile {
+                localFile {
+                  url
+                }
+              }
             }
           }
         }
@@ -25,7 +30,9 @@ export default function GetInvolvedHero() {
   const options = data.allWordpressAcfOptions.nodes[0].options;
 
   return (
-    <div className="get-involved-hero" style={{backgroundImage: `url(${options.get_involved_hero_image.localFile.url})`}}>
+    <div className="get-involved-hero">
+      <div className="get-involved-hero__image d-none d-md-block" style={{backgroundImage: `url(${options.get_involved_hero_image.localFile.url})`}}></div>
+      <div className="get-involved-hero__image d-md-none" style={{backgroundImage: `url(${options.get_involved_hero_image_mobile.localFile.url})`}}></div>
       <div className="get-involved-hero__header">
         {options.get_involved_hero_header}
       </div>
