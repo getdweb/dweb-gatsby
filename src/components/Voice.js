@@ -34,7 +34,7 @@ class Voice extends Component {
     }else if (this.voice.acf.thumbnail_type == 'url' && this.voice.acf.image_url !== ''){
       image = (<img className="voice__image" src={this.voice.acf.image_url} />);
     }
-    const date_parts = this.voice.acf.date.split('#');
+    const date_parts = typeof this.voice.acf.date !== 'undefined' ? this.voice.acf.date.split('#') : [];
     const title = this.htmlEntitiesService.decodeHtmlEntity(this.voice.title);
     return (
       <div
