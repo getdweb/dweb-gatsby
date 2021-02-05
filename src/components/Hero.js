@@ -98,10 +98,12 @@ export default function Hero() {
 
   useEffect(() => {
     setTimeout(()=>{
-      const captionLength = +marqueeEl.current.offsetWidth;
-      const period = (captionLength/80);
-      marqueeEl.current.style.textShadow = `${captionLength}px 0 currentColor, calc(${captionLength}px * 2) 0 currentColor`;
-      marqueeEl.current.style.animationDuration = `${period}s`;
+      if (marqueeEl.current !== null){
+        const captionLength = +marqueeEl.current.offsetWidth;
+        const period = (captionLength/80);
+        marqueeEl.current.style.textShadow = `${captionLength}px 0 currentColor, calc(${captionLength}px * 2) 0 currentColor`;
+        marqueeEl.current.style.animationDuration = `${period}s`;
+      }
     }, 1000);
     
   });
