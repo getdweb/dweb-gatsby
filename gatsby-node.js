@@ -52,7 +52,7 @@ exports.createPages = ({ actions, graphql }) => {
                 author
                 background_color
                 quote
-                bg_image{
+                background_image{
                   localFile {
                     url
                   }
