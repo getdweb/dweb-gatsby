@@ -184,6 +184,12 @@
             bottom: 0;
         }
 
+        &:hover{
+            .navbar__button__state2 {
+                opacity: 1;
+            }
+        }
+
         &__state2 {
             opacity: 0;
             transition: opacity 0.5s linear;

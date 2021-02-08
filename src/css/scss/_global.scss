@@ -1499,8 +1499,11 @@ h4{
   }
 }
 
+.quotes-slider-parent{
+  overflow: hidden;
+}
 .quotes-slider{
-  width: calc(100% - 7.5%);
+  width: calc(100vw - 7.5%);
   padding: 20px 0;
   margin-left: -15%;
   @include media-breakpoint-up(sm) {

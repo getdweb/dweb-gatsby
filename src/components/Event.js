@@ -7,7 +7,7 @@ class Event extends Component {
     super(props);
     this.event = props.event;
     this.cities = props.cities;
-    this.started_at = typeof this.event.acf.started_at !== 'undefined' ? this.event.acf.started_at.split("*") : [];
+    this.started_at = typeof this.event.acf.started_at !== 'undefined' ? this.event.acf.started_at.split("*") : []; // "Started At" field must return data in "Y-m-d H:i:s*j M#D, H:i" format!
     this.state = {hover: false};
   }
 

@@ -8,16 +8,8 @@ export default function HeaderButton() {
         allWordpressAcfOptions {
           nodes {
             options {
-              header_button_state_1 {
-                localFile {
-                  url
-                }
-              }
-              header_button_state_2 {
-                localFile {
-                  url
-                }
-              }
+              header_button_state_one
+              header_button_state_two
               header_button_url
             }
           }
@@ -26,9 +18,7 @@ export default function HeaderButton() {
     `
   )
   
-  const header_button_state_1 = data.allWordpressAcfOptions.nodes[0].options.header_button_state_1
-  const header_button_state_2 = data.allWordpressAcfOptions.nodes[0].options.header_button_state_2
-  const header_button_url = data.allWordpressAcfOptions.nodes[0].options.header_button_url
+  const {header_button_state_one, header_button_state_two, header_button_url} = data.allWordpressAcfOptions.nodes[0].options;
 
   return (
     <Link 
@@ -36,10 +26,10 @@ export default function HeaderButton() {
       >
         <div 
           className="navbar__button__state1"
-          style={{backgroundImage: 'url(' + header_button_state_1.localFile.url + ')'}}></div>
+          dangerouslySetInnerHTML={{__html: header_button_state_one}}></div>
         <div
           className="navbar__button__state2"
-          style={{backgroundImage: 'url(' + header_button_state_2.localFile.url + ')'}}></div>
+          dangerouslySetInnerHTML={{__html: header_button_state_two}}></div>
     </Link>
   )
 }

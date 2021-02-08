@@ -6,7 +6,7 @@ import ScrollService from '../services/scroll-service';
 export default function Voices() {
 
   const VOICES_PER_PAGE = 9;
-  const RENDER_TIMEOUT = 200;
+  const RENDER_TIMEOUT = 500;
 
   let timeouts = [];
 
@@ -24,7 +24,7 @@ export default function Voices() {
   const data = useStaticQuery(
     graphql`
       query {
-        allWordpressWpVoices {
+        allWordpressWpVoices(sort: {fields: acf___date, order: DESC}){
           nodes {
             acf {
               author
