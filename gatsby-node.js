@@ -13,77 +13,82 @@ exports.createPages = ({ actions, graphql }) => {
       allWordpressPage {
         edges {
           node {
+            wordpress_id
             id
             slug
             status
             title
-            content
-            acf {
-              page_blocks {
-                block_type
-                cta_button {
-                  button_caption
-                  button_link_direction
-                  button_link_url
-                  text
-                  title
+          }
+        }
+      }
+      allWordpressAcfPages {
+        nodes {
+          id
+          wordpress_id
+          acf {
+            page_blocks {
+              block_type
+              cta_button {
+                button_caption
+                button_link_direction
+                button_link_url
+                text
+                title
+              }
+              feature_block {
+                button_caption
+                button_link_direction
+                button_link_url
+                text
+                title
+                image {
+                  localFile {
+                    url
+                  }
+                  id
                 }
-                feature_block {
-                  button_caption
-                  button_link_direction
-                  button_link_url
-                  text
-                  title
-                  image {
-                    localFile {
-                      url
-                    }
-                    id
+              }
+              highlighted_statement_content {
+                author
+                background_color
+                quote
+                bg_image{
+                  localFile {
+                    url
                   }
                 }
-                highlighted_statement_content {
-                  author
-                  background_color
-                  background_image {
-                    id
-                    localFile {
-                      url
-                    }
-                  }
-                  quote
-                }
-                opening_section_content {
-                  text
-                  title
-                  hero_image_desktop {
-                    id
-                    localFile {
-                      url
-                    }
-                  }
-                  hero_image_mobile {
-                    id
-                    localFile {
-                      url
-                    }
+              }
+              opening_section_content {
+                text
+                title
+                hero_image_desktop {
+                  id
+                  localFile {
+                    url
                   }
                 }
-                body_content {
-                  text
-                }
-                body_wide_image {
-                  image {
-                    id
-                    localFile {
-                      url
-                    }
+                hero_image_mobile {
+                  id
+                  localFile {
+                    url
                   }
                 }
-                body_button {
-                  button_caption
-                  button_link_direction
-                  button_link_url
+              }
+              body_content {
+                text
+              }
+              body_wide_image {
+                image {
+                  id
+                  localFile {
+                    url
+                  }
                 }
+              }
+              body_button {
+                button_caption
+                button_link_direction
+                button_link_url
               }
             }
           }
@@ -103,6 +108,12 @@ exports.createPages = ({ actions, graphql }) => {
     // excludes drafts, future posts, etc. They will appear in development,
     // but not in a production build.
 
+    const allAcfPages = result.data.allWordpressAcfPages.nodes
+    acfPages = [];
+    _.each(allAcfPages, (acfPage) => {
+      acfPages[acfPage.wordpress_id] = acfPage
+    });
+
     const allPages = result.data.allWordpressPage.edges
     const pages =
       process.env.NODE_ENV === 'production'
@@ -115,7 +126,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: `/${page.slug}/`,
         component: pageTemplate,
         context: {
-          page: page,
+          page: acfPages[page.wordpress_id],
         },
       })
     })
