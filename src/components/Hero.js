@@ -84,17 +84,22 @@ export default function Hero() {
     setQuotesVisibility(quotesVisibilityTemp);
   }
 
-  let quotesVisibilityTemp = [];
-  let first_quote = true;
-  const quotesRandNumber = Math.floor(Math.random() * Math.floor(options.hero_quotes.length));
-  const quotesPart1 = options.hero_quotes.slice(0, quotesRandNumber);
-  const quotesPart2 = options.hero_quotes.slice(quotesRandNumber);
-  const quotes = quotesPart2.concat(quotesPart1);
-  quotes.map((quote) => {
-    quotesVisibilityTemp[quote.image.wordpress_id] = first_quote ? "" : "d-none";
-    first_quote = false;
-  });
-  const [quotesVisibility, setQuotesVisibility] = useState(quotesVisibilityTemp);
+  let quotes = options.hero_quotes;
+  const [quotesVisibility, setQuotesVisibility] = useState([]);
+  
+  useEffect(() => {
+    let quotesVisibilityTemp = [];
+    let first_quote = true;
+    const quotesRandNumber = Math.floor(Math.random() * Math.floor(options.hero_quotes.length));
+    const quotesPart1 = options.hero_quotes.slice(0, quotesRandNumber);
+    const quotesPart2 = options.hero_quotes.slice(quotesRandNumber);
+    quotes = quotesPart2.concat(quotesPart1);
+    quotes.map((quote) => {
+      quotesVisibilityTemp[quote.image.wordpress_id] = first_quote ? "" : "d-none";
+      first_quote = false;
+    });
+    setQuotesVisibility(quotesVisibilityTemp);
+  }, []);
 
   useEffect(() => {
     setTimeout(()=>{
@@ -105,7 +110,6 @@ export default function Hero() {
         marqueeEl.current.style.animationDuration = `${period}s`;
       }
     }, 1000);
-    
   });
 
   return (
