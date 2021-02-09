@@ -160,16 +160,23 @@
     }
 
     &__button {
-        // display: none;
-        width: 150px;
-        height: 46px;
+        @include h3;
+        margin: 0;
+        line-height: 1.1;
         z-index: 90;
         position: absolute;
-        right: 66px;
-
-        @include media-breakpoint-up(xs) {
-            width: 170px;
-            height: 52px;
+        right: 72px;
+        text-decoration: none;
+        background-image: linear-gradient(#fff 0%, #fff 100%);
+        background-position: left bottom;
+        background-size: auto 0;
+        transition: background-size 0.2s ease, color 0.2s, border-color 0.2s;
+        border-bottom: 1px solid $yellow;
+        background-repeat: no-repeat;
+        &:hover {
+            background-size: auto 40px;
+            color: #000;
+            border-bottom: 1px solid transparent;
         }
 
         @include media-breakpoint-up(md) {
@@ -177,33 +184,32 @@
         }
 
         @include media-breakpoint-up(lg) {
-            display: block;
-            width: 180px;
+            width: 100%;
             height: 64px;
             right: 0;
-            bottom: 0;
-        }
-
-        &:hover{
-            .navbar__button__state2 {
-                opacity: 1;
+            bottom: 1px;
+            min-height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            border: 1px solid #fff;
+            background-image: none;
+            transition: background-color 0.4s linear, color 0.4s linear, border-color 0.4s linear;
+            &:hover,
+            &:not([href]),
+            &:not([href]):hover,
+            &:not([tabindex]):hover,
+            &:not([href]):not([tabindex]):hover {
+                text-decoration: none;
+                color: $black;
+                border: 1px solid $yellow;
+                background-color: #fff;
             }
-        }
-
-        &__state2 {
-            opacity: 0;
-            transition: opacity 0.5s linear;
-        }
-
-        div {
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 0;
+            &:focus {
+                outline: 0;
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25) !important;
+            }
         }
     }
 
@@ -238,11 +244,11 @@
         margin-bottom: 12px;
         color: $white;
         border-bottom: 1px solid transparent;
-        &:hover{
+        &:hover {
             text-decoration: none;
             border-bottom: 1px solid #fff;
         }
-        &.active{
+        &.active {
             background-color: #fff;
             color: $black;
         }
@@ -252,15 +258,15 @@
             margin-bottom: 9px;
             padding: 0 1px;
         }
-        
     }
 }
 
 .menu-secondary {
     margin: 51px 22px 50px 47px;
-
+    padding-bottom: 90px;
     @include media-breakpoint-up(md) {
         margin: 50px 110px 120px 110px;
+        padding-bottom: 0;
     }
 
     @include media-breakpoint-up(lg) {
@@ -276,7 +282,7 @@
         margin-bottom: 16px;
         color: $white;
         border-bottom: 1px solid transparent;
-        &:hover{
+        &:hover {
             border-bottom: 1px solid #fff;
         }
         @include media-breakpoint-up(lg) {
@@ -287,7 +293,7 @@
             padding: 0 1px;
         }
 
-        &.active{
+        &.active {
             background-color: #fff;
             color: $black;
             opacity: 1;
@@ -350,13 +356,6 @@
         }
     }
 
-    .navbar__button__state2 {
-        opacity: 1;
-        @include media-breakpoint-up(lg) {
-            opacity: 0;
-        }
-    }
-
     .menu-social {
         bottom: 0;
         @include media-breakpoint-up(lg) {
@@ -409,19 +408,19 @@
 
         &.icon_twitter {
             &:before {
-                background-image: url('../images/icon-twitter-white.svg');
+                background-image: url("../images/icon-twitter-white.svg");
             }
         }
 
         &.icon_github {
             &:before {
-                background-image: url('../images/icon-github-white.svg');
+                background-image: url("../images/icon-github-white.svg");
             }
         }
 
         &.icon_meetup {
             &:before {
-                background-image: url('../images/icon-meetup-white.svg');
+                background-image: url("../images/icon-meetup-white.svg");
             }
         }
     }
@@ -430,7 +429,7 @@
 .logo {
     width: 27px;
     height: 28px;
-    background-image: url('../images/logo-mobile.svg');
+    background-image: url("../images/logo-mobile.svg");
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -441,7 +440,7 @@
     @include media-breakpoint-up(lg) {
         width: 155px;
         height: 30px;
-        background-image: url('../images/logo.svg');
+        background-image: url("../images/logo.svg");
         margin-bottom: 5px;
     }
 }
@@ -472,7 +471,7 @@
     &:after {
         content: "";
         display: block;
-        background-image: url('../images/loader-tail-spin.svg');
+        background-image: url("../images/loader-tail-spin.svg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

@@ -1,0 +1,82 @@
+@mixin h2 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: -0.05px;
+    color: #fff;
+}
+@mixin h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+@mixin natgeo-effect($height, $underline_color, $underline_offset, $underline_height) {
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(#fff 0%, #fff 100%);
+    background-position: left bottom;
+    background-size: auto 0;
+    transition: background-size 0.2s ease, color 0.2s, border-color 0.2s;
+    border-bottom: $underline_height solid $underline_color;
+    background-repeat: no-repeat;
+    height: ($height + $underline_offset);
+    &:hover {
+        background-size: auto $height;
+        color: #000;
+        border-bottom: $underline_height solid transparent;
+    }
+}
+
+@mixin btn {
+    min-height: 64px;
+    padding: 17px 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #ffcc00;
+    border: 1px solid #808081;
+    text-align: center;
+    border-radius: 1px;
+    transition: background-color 0.4s linear, color 0.4s linear, border-color 0.4s linear;
+    &:hover,
+    &:not([href]),
+    &:not([href]):hover,
+    &:not([tabindex]):hover,
+    &:not([href]):not([tabindex]):hover {
+        text-decoration: none;
+        color: $black;
+        border: 1px solid #ffcd03;
+        background-color: #fff;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25) !important;
+    }
+}
+
+@mixin typed {
+    font-family: LabMono;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.1px;
+    color: #ffffffcc;
+    @include media-breakpoint-up(lg) {
+        font-size: 14px;
+    }
+    a {
+        @include natgeo-effect(20px, $yellow, 1px, 1px);
+    }
+    h2 {
+        margin: 40px 0 24px;
+    }
+}

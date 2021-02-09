@@ -234,7 +234,7 @@ export default function Voices() {
                 className={"show-more voices__show-more " + ((loading || finished) && "d-none")}
                 onClick={loadVoices}
                 >
-                show more
+                Load more
               </a>
               <div className={"voices__loader " + ((!loading || finished) && "d-none")}></div>
             </div>

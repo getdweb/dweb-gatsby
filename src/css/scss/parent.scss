@@ -44,7 +44,7 @@ $white: #ffffff;
 $grey: #2a2a2c;
 $facebook: #3D5A96;
 $twitter: #2AA3EF;
-$yellow: #ffff02;
+$yellow: #ffcd03;
 
 // ================ EFFECTS: ==================
 $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
@@ -70,6 +70,7 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
 } 
 
 
+@import "_mixins.scss";
 @import "_global.scss";
 @import "_header.scss";
 @import "_footer.scss";

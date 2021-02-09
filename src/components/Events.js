@@ -54,6 +54,7 @@ export default function Events() {
             }
             events_list_header
             events_list_text
+            events_show_more_url
           }
         }
       }
@@ -123,12 +124,20 @@ export default function Events() {
                 </a>
             </div>
             <div className="header-notice events__notice" dangerouslySetInnerHTML={{__html: options.events_list_text}}></div>
-            {events.map(event => {
-              pastEventsLength++;
-              if (pastEventsLength <= 7 || event.period === 'upcoming'){
-                return <Event event={event} cities={cities} key={event.id} />
-              }
-            })}
+              {events.map(event => {
+                pastEventsLength++;
+                if (pastEventsLength <= 7 || event.period === 'upcoming'){
+                  return <Event event={event} cities={cities} key={event.id} />
+                }
+              })}
+              <div className="events__show_more">
+                <Link 
+                  className={"show-more " + (period=='upcoming' && "d-none")}
+                  to={options.events_show_more_url}
+                  >
+                  Load more
+                </Link>
+              </div>
           </div>
         </div>
       </div>
