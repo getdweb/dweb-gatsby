@@ -1080,22 +1080,30 @@ a.btn {
 }
 
 #scene {
-  // width: 100%;
   height: 620px;
   width: 620px;
   margin-top: -100px;
   margin-bottom: 100px;
-  @include media-breakpoint-up(md) {
-    height: 640px;
-    width: 640px;
-    margin-top: -150px;
+  @include media-breakpoint-up(sm) {
+    height: 900px;
+    width: 900px;
+    margin-top: -200px;
     margin-bottom: unset;
   }
+  @include media-breakpoint-up(md) {
+    height: 700px;
+    width: 700px;
+    margin-top: -300px;
+  }
   @include media-breakpoint-up(lg) {
-    margin-top: -350px;
+    height: 1100px;
+    width: 1100px;
+    margin-top: -200px;
   }
   @include media-breakpoint-up(xl) {
-    margin-top: -250px;
+    height: 1300px;
+    width: 1300px;
+    margin-top: -100px;
   }
 }
 
@@ -1453,24 +1461,45 @@ a.btn {
   overflow: hidden;
   &__animation {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    top: -15vh;
-    @include media-breakpoint-up(md) {
-      width: 80%;
-      left: 10%;
-      bottom: 0;
-      top: unset;
-      height: 70vh !important;
-    }
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
   }
   #scene {
-    width: 100%;
-    height: 100vh !important;
-    position: absolute;
+    height: 620px;
+    width: 620px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    @include media-breakpoint-up(tn) {
+      height: 800px;
+      width: 800px;
+      margin-top: -200px;
+      margin-bottom: unset;
+    }
+    @include media-breakpoint-up(sm) {
+      height: 900px;
+      width: 900px;
+      margin-top: -200px;
+    }
     @include media-breakpoint-up(md) {
-      height: 70vh !important;
-      position: unset;
+      height: 1100px;
+      width: 1100px;
+      margin-top: 150px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 1300px;
+      width: 1300px;
+      margin-top: 150px;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 1500px;
+      width: 1500px;
+      margin-top: 200px;
     }
   }
   &__content {
