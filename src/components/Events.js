@@ -135,7 +135,7 @@ export default function Events() {
                   className={"show-more " + (period=='upcoming' && "d-none")}
                   to={options.events_show_more_url}
                   >
-                  Load more
+                  Browse all past events
                 </Link>
               </div>
           </div>
