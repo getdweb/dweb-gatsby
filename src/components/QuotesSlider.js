@@ -33,7 +33,7 @@ export default function QuotesSlider() {
     <div className="quotes-slider-parent">
       <div className="quotes-slider">
           <Swiper
-            spaceBetween={20}
+            spaceBetween={0}
             slidesPerView={1}
             slidesPerGroup={1}
             loop={true}
@@ -45,11 +45,11 @@ export default function QuotesSlider() {
             breakpoints={{
               576: {
                 slidesPerView: 2,
-                spaceBetween: 50,
+                spaceBetween: 0,
               },
               1280: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 0,
               },
             }}
           >
