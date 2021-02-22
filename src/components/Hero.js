@@ -112,6 +112,8 @@ export default function Hero() {
     }, 1000);
   });
 
+  const heroVideoPreviewBgUrl = options.hero_video_preview.localFile !== null ? options.hero_video_preview.localFile.url : "";
+
   return (
     <div className="hero">
       <div className="hero__left">
@@ -126,7 +128,7 @@ export default function Hero() {
               <source src={options.hero_video_url} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
-            <div className={"hero__video-preview " + previewDisplay} style={{backgroundImage: `url(${options.hero_video_preview.localFile.url})`}}></div>
+            <div className={"hero__video-preview " + previewDisplay} style={{backgroundImage: `url(${heroVideoPreviewBgUrl})`}}></div>
           </div>
           <a className={"hero__video-button hero__video-play " + playDisplay} onClick={videoPlayBtnClick}></a>
           <a className={"hero__video-button hero__video-pause " + pauseDisplay} onClick={videoPauseBtnClick}></a>
@@ -137,9 +139,10 @@ export default function Hero() {
         <div className="hero__quotes">
           {
             quotes.map((quote) => {
-            return (
-              <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quote.image.localFile.url})`}} onClick={((e) => quoteClick(e, data))}></a>
-            );
+              const quoteImageUrl = quote.image.localFile !== null ? quote.image.localFile.url : "";
+              return (
+                <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quoteImageUrl})`}} onClick={((e) => quoteClick(e, data))}></a>
+              );
             })}
         </div>
       </div>

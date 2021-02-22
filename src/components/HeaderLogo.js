@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 
-const HeaderLogo = () => (
-  <StaticQuery
-    query={graphql`
+export default function HeaderLogo() {
+  const data = useStaticQuery(
+    graphql`
       query {
         allWordpressAcfOptions {
           edges {
@@ -23,17 +23,22 @@ const HeaderLogo = () => (
           }
         }
       }
-    `}
-    render={data => (
-      <Link 
-        to="/"
-        className="navbar__logo"
-        style={{backgroundImage: 'url(' + data.allWordpressAcfOptions.edges[0].node.options.logo.url.localFile.url + ')'}}
-        alt={data.allWordpressAcfOptions.edges[0].node.options.logo.url.alt_text} 
-        title={data.allWordpressAcfOptions.edges[0].node.options.logo.url.alt_text}>
-      </Link>
-    )}
-  />
-)
+    `
+  )
 
-export default HeaderLogo
+  const logoObj = data.allWordpressAcfOptions.edges[0].node.options.logo;
+  const bgUrl = logoObj !== null && logoObj.url.localFile !== null 
+    ? logoObj.url.localFile.url 
+    : logoObj.filename;
+  
+  return (
+    <Link 
+      to="/"
+      className="navbar__logo"
+      style={{backgroundImage: `url(${bgUrl})`}}
+      alt={data.allWordpressAcfOptions.edges[0].node.options.logo.url.alt_text} 
+      title={data.allWordpressAcfOptions.edges[0].node.options.logo.url.alt_text}>
+    </Link>
+  )
+}
+

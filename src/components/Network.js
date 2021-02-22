@@ -44,10 +44,10 @@ export default function Network() {
             <div className="network__intro">{options.network_intro}</div>
             <div className="network__nodes">
               {cities.map((city) => {
-                if (city.acf.city_image && city.acf.city_image !== null ){
+                if (city.acf.city_image && city.acf.city_image !== null && city.acf.city_image.localFile !== null){
                   if (typeof window === `undefined`) return;
                   let preloadImage = new Image();
-                  preloadImage.src=city.acf.city_image.localFile.url;
+                  preloadImage.src = city.acf.city_image.localFile.url;
                   preloadArray.push(preloadImage);
                 }
                 return (
@@ -58,7 +58,7 @@ export default function Network() {
                         <path fill={city.acf.color} fillRule="evenodd" d="M12 0v8.755h-1.75l-.001-5.767L1.239 12 0 10.762 9.011 1.75H3.245V0H12z"/>
                       </svg>
                     </a>
-                    {city.acf.city_image && city.acf.city_image !== null 
+                    {city.acf.city_image && city.acf.city_image !== null && city.acf.city_image.localFile !== null
                       ? <div style={{backgroundImage: `url(${city.acf.city_image.localFile.url})`}} className="network__node-image"></div>
                       : ""}
                   </div>

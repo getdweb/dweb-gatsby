@@ -53,11 +53,12 @@ export default function Partners() {
       <div className="logos">
         {options.partners_sponsors.map((sponsor) => {
           i++;
+          const sponsorLogoUrl = sponsor.logo.localFile !== null ? sponsor.logo.localFile.url : "";
           return (
             <div 
               className="logos__item" 
               key={sponsor.logo.id + i}
-              style={{backgroundImage: 'url(' + sponsor.logo.localFile.url + ')'}}>
+              style={{backgroundImage: `url(${sponsorLogoUrl})`}}>
             </div>
           );
         })}

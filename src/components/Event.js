@@ -44,7 +44,7 @@ class Event extends Component {
               return elem.name;
             }).join(" + ")
           }</div>
-          {this.event.acf.event_image != null ? (<img src={this.event.acf.event_image.localFile.url} className="event__image" />) : ("")} 
+          {this.event.acf.event_image != null && this.event.acf.event_image.localFile != null ? (<img src={this.event.acf.event_image.localFile.url} className="event__image" />) : ("")} 
       </a>
     )
   }
