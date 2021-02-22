@@ -25,7 +25,11 @@ export default function Footer() {
                   header
                   links {
                     label
-                    link
+                    link {
+                      localFile {
+                        url
+                      }
+                    }
                     direction
                   }
                 }
@@ -120,9 +124,11 @@ export default function Footer() {
                   <div className="footer__menu" key={md5(block.header)}>
                     <div className="footer__menu-header">{block.header}</div>
                     {block.links.map(item => {
+                      if (typeof item.link === "object" && item.link !== null && item.link.localFile !== null)
+                        return <a className="footer__menu-link" href={item.link.localFile.url} target="_blank" key={md5(item.label)}>{item.label}</a>
                       if (item.direction == 'internal')
                         return <Link className="footer__menu-link" to={item.link} key={md5(item.label)}>{item.label}</Link>
-                      else if (item.direction == 'external')
+                      if (item.direction == 'external')
                         return <a className="footer__menu-link" href={item.link} target="_blank" key={md5(item.label)}>{item.label}</a>
                     })}
                   </div>
