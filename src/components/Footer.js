@@ -25,12 +25,15 @@ export default function Footer() {
                   header
                   links {
                     label
-                    link {
+                    direction
+                    link_internal
+                    link_external
+                    link_file {
                       localFile {
                         url
                       }
                     }
-                    direction
+                    
                   }
                 }
                 footer_copyright
@@ -124,12 +127,12 @@ export default function Footer() {
                   <div className="footer__menu" key={md5(block.header)}>
                     <div className="footer__menu-header">{block.header}</div>
                     {block.links.map(item => {
-                      if (typeof item.link === "object" && item.link !== null && item.link.localFile !== null)
-                        return <a className="footer__menu-link" href={item.link.localFile.url} target="_blank" key={md5(item.label)}>{item.label}</a>
                       if (item.direction == 'internal')
-                        return <Link className="footer__menu-link" to={item.link} key={md5(item.label)}>{item.label}</Link>
+                        return <Link className="footer__menu-link" to={item.link_internal} key={md5(item.label)}>{item.label}</Link>
+                      if (item.direction == 'file' && item.link_file !== null && item.link_file.localFile !== null)
+                        return <a className="footer__menu-link" href={item.link_file.localFile.url} target="_blank" key={md5(item.label)}>{item.label}</a>
                       if (item.direction == 'external')
-                        return <a className="footer__menu-link" href={item.link} target="_blank" key={md5(item.label)}>{item.label}</a>
+                        return <a className="footer__menu-link" href={item.link_external} target="_blank" key={md5(item.label)}>{item.label}</a>
                     })}
                   </div>
                 )
