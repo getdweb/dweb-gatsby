@@ -126,13 +126,13 @@ export default function Events() {
             <div className="header-notice events__notice" dangerouslySetInnerHTML={{__html: options.events_list_text}}></div>
               {events.slice(0).reverse().map(event => {
                 if (event.period === 'upcoming'){
-                  return <Event event={event} cities={cities} key={event.id} />
+                  return <Event event={event} cities={cities} key={`event_${event.id}`} />
                 }
               })}
               {events.map(event => {
                 pastEventsLength++;
                 if (pastEventsLength <= 7 && event.period === 'past'){
-                  return <Event event={event} cities={cities} key={event.id} />
+                  return <Event event={event} cities={cities} key={`event_${event.id}`} />
                 }
               })}
               <div className="events__show_more">
