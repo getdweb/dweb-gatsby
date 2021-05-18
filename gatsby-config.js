@@ -4,9 +4,10 @@ require("dotenv").config({
 console.log(`Using .env.${process.env.NODE_ENV}`);
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + WordPress Starter',
+    title: 'GetDWeb',
   },
   // pathPrefix: `/aaa/bbb`,
+  pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   // assetPrefix: `/ccc/ddd`,
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -41,6 +42,7 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-ipfs'
     // {
     //   // Removes unused css rules
     //   resolve:'gatsby-plugin-purgecss',
