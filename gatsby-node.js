@@ -10,10 +10,9 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allWordpressPage {
+      allWpPage {
         edges {
           node {
-            wordpress_id
             id
             slug
             status
@@ -21,10 +20,9 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      allWordpressAcfPages {
+      allWpAcfPages {
         nodes {
           id
-          wordpress_id
           acf {
             page_blocks {
               block_type
