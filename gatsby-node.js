@@ -17,13 +17,6 @@ exports.createPages = ({ actions, graphql }) => {
             slug
             status
             title
-          }
-        }
-      }
-      allWpAcfPages {
-        nodes {
-          id
-          acf {
             page_blocks {
               block_type
               cta_button {
@@ -106,13 +99,13 @@ exports.createPages = ({ actions, graphql }) => {
     // excludes drafts, future posts, etc. They will appear in development,
     // but not in a production build.
 
-    const allAcfPages = result.data.allWordpressAcfPages.nodes
+    const allAcfPages = result.data.allWpAcfPages.nodes
     acfPages = [];
     _.each(allAcfPages, (acfPage) => {
-      acfPages[acfPage.wordpress_id] = acfPage
+      acfPages[acfPage.id] = acfPage
     });
 
-    const allPages = result.data.allWordpressPage.edges
+    const allPages = result.data.allWpPage.edges
     const pages =
       process.env.NODE_ENV === 'production'
         ? getOnlyPublished(allPages)
@@ -124,7 +117,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: `/${page.slug}/`,
         component: pageTemplate,
         context: {
-          page: acfPages[page.wordpress_id],
+          page: acfPages[page.id],
         },
       })
     })
