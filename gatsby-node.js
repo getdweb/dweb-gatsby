@@ -38,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
               feature_block {
                 button_caption
                 button_link_direction
-                button_link_url
+                button_link_url { link } 
                 text
                 title
                 image {
