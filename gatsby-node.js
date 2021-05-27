@@ -9,83 +9,74 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   return graphql(`
-    {
-      allWpPage {
-        edges {
-          node {
-            id
-            slug
-            status
-            title
+  {   
+    pages {
+      edges {     
+        node {    
+          id    
+            slug  
             page_blocks {
-              block_type
-              cta_button {
-                button_caption
-                button_link_direction
-                button_link_url
-                text
-                title
-              }
-              feature_block {
-                button_caption
-                button_link_direction
-                button_link_url
-                text
-                title
-                image {
-                  localFile {
-                    url
+              pageBlocks {  
+                blockType   
+                  ctaButton {
+                    buttonCaption
+                      buttonLinkDirection
+                      buttonLinkUrl    
+                      text    
+                      title    
                   }
-                  id
+                featureBlock {  
+                  buttonCaption
+                    buttonLinkDirection
+                    buttonLinkUrl
+                    text      
+                    title       
+                    image {
+                      mediaItemUrl
+                      id
+                      }  
+                }  
+                highlightedStatementContent { 
+                  author
+                    backgroundColor
+                    quote
+                    backgroundImage{
+                      mediaItemUrl
+                      id
+                      } 
                 }
-              }
-              highlighted_statement_content {
-                author
-                background_color
-                quote
-                background_image{
-                  localFile {
-                    url
-                  }
+                openingSectionContent { 
+                  text
+                    title
+                    heroImageDesktop {
+                      mediaItemUrl
+                      id
+                      } 
+                  heroImageMobile {
+                      mediaItemUrl
+                      id
+                      } 
                 }
-              }
-              opening_section_content {
-                text
-                title
-                hero_image_desktop {
-                  id
-                  localFile {
-                    url
-                  }
+                bodyContent {
+                  text
                 }
-                hero_image_mobile {
-                  id
-                  localFile {
-                    url
-                  }
+                bodyWideImage { 
+                  image {
+                      mediaItemUrl
+                      id
+                      } 
                 }
-              }
-              body_content {
-                text
-              }
-              body_wide_image {
-                image {
-                  id
-                  localFile {
-                    url
-                  }
+                bodyButton {
+                  buttonCaption
+                    buttonLinkDirection
+                    buttonLinkUrl
                 }
-              }
-              body_button {
-                button_caption
-                button_link_direction
-                button_link_url
               }
             }
-          }
-        }
+        }  
       }
     }
+  }
   `)
   .then(result => {
     if (result.errors) {
