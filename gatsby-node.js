@@ -10,7 +10,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
   {   
-    pages {
+    allWpPage {
       edges {     
         node {    
           id    
@@ -90,11 +90,11 @@ exports.createPages = ({ actions, graphql }) => {
     // excludes drafts, future posts, etc. They will appear in development,
     // but not in a production build.
 
-    const allAcfPages = result.data.allWpAcfPages.nodes
-    acfPages = [];
-    _.each(allAcfPages, (acfPage) => {
-      acfPages[acfPage.id] = acfPage
-    });
+    // const allAcfPages = result.data.allWpAcfPages.nodes
+    // acfPages = [];
+    // _.each(allAcfPages, (acfPage) => {
+    //   acfPages[acfPage.id] = acfPage
+    // });
 
     const allPages = result.data.allWpPage.edges
     const pages =
@@ -108,7 +108,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: `/${page.slug}/`,
         component: pageTemplate,
         context: {
-          page: acfPages[page.id],
+          page: page,
         },
       })
     })
