@@ -31,14 +31,14 @@ exports.createPages = ({ actions, graphql }) => {
               cta_button {
                 button_caption
                 button_link_direction
-                button_link_url  { link } 
+                button_link_url
                 text
                 title
               }
               feature_block {
                 button_caption
                 button_link_direction
-                button_link_url { link } 
+                button_link_url
                 text
                 title
                 image {
