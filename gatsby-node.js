@@ -1,4 +1,5 @@
 const _ = require('lodash')
+const fs = require('fs')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -66,7 +67,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     button_link_direction: String
     button_link_url: String
   }
-  
+
   type wordpress__PAGEAcfPage_blocksCta_button @dontInfer {
     title: String
     text: String
@@ -74,7 +75,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     button_link_direction: String
     button_link_url: String
   }
-  
+
   type wordpress__PAGEAcfPage_blocksFeature_block @dontInfer {
     title: String
     text: String
@@ -82,7 +83,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     button_caption: String
     button_link_direction: String
     button_link_url: String
-  }  
+  }
   `
   createTypes(typeDefs)
 }
@@ -120,7 +121,7 @@ exports.createPages = ({ actions, graphql }) => {
               feature_block {
                 button_caption
                 button_link_direction
-                button_link_url   { id }
+                button_link_url
                 text
                 title
                 image {
@@ -191,12 +192,28 @@ exports.createPages = ({ actions, graphql }) => {
     // but not in a production build.
 
     const allAcfPages = result.data.allWordpressAcfPages.nodes
-    acfPages = [];
+
+    // Write out allAcfPages output to a JSON file for inspection
+    fs.writeFile('./allAcfPages.json', JSON.stringify(allAcfPages), err => {
+      if (err) {
+        console.error(err)
+      }
+    })
+
+    const acfPages = [];
     _.each(allAcfPages, (acfPage) => {
       acfPages[acfPage.wordpress_id] = acfPage
     });
 
     const allPages = result.data.allWordpressPage.edges
+
+    // Write out allPages output to a JSON file for inspection
+    fs.writeFile('./allPages.json', JSON.stringify(allPages), err => {
+      if (err) {
+        console.error(err)
+      }
+    })
+
     const pages =
       process.env.NODE_ENV === 'production'
         ? getOnlyPublished(allPages)
