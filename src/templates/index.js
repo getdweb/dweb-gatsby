@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Layout from '../components/Layout'
-import ComingSoon from '../components/ComingSoon'
 import Helmet from 'react-helmet'
 import favicon from '../img/favicon.svg'
 import Hero from '../components/Hero'
@@ -34,7 +33,7 @@ export default function Index () {
     menu_items_length = menu_items.length;
     menu_items_offsets = new Array();
     current_menu_item_name = "";
-    
+
     screen_height = window.innerHeight;
     menu_items.forEach(function(menu_item){
         const href = menu_item.getAttribute("href");
@@ -54,7 +53,7 @@ export default function Index () {
     if (typeof menu_items_offsets != 'undefined' && menu_items_offsets.length != 0){
       var i = menu_items_length;
       var y_scroll_pos = window.pageYOffset + screen_height*0.5;
-      
+
       var nearest = {"pos": 0, "id": ""};
       while (i--){
           if (menu_items_offsets[i].pos < y_scroll_pos && menu_items_offsets[i].pos > nearest.pos){
@@ -99,7 +98,7 @@ export default function Index () {
   // Unbind all actions from bindMenuHighlightActions()
   const unbindMenuHighlightActions = () => {
     if (typeof window === `undefined`) return;
-    
+
     window.removeEventListener('resize', defineMenuValues);
     window.removeEventListener('resize', highlightCurrentMenuPoint);
     window.removeEventListener('voicesLoaded', defineMenuValues);
@@ -107,20 +106,7 @@ export default function Index () {
     window.removeEventListener('scroll', highlightCurrentMenuPointThrottled);
   }
 
-  // COMING SOON page:
-  // console.log(process.env.COMING_SOON);
-  if (process.env.COMING_SOON == 'true'){
-    return (
-      <div>
-        <Helmet title="DWeb">
-            <link rel="icon" href={favicon} />
-        </Helmet>
-        <ComingSoon />
-      </div>
-    );
-  }
-
-  const content = 
+  const content =
     <div>
       <Hero />
       <AboutUs />
@@ -135,4 +121,3 @@ export default function Index () {
     <Layout content={content}></Layout>
   )
 }
-
