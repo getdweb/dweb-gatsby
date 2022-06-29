@@ -1,7 +1,11 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import 'swiper/scss'
+// import 'swiper/swiper.scss';
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.scss';
+
 
 export default function QuotesSlider() {
 
@@ -155,7 +159,7 @@ export default function QuotesSlider() {
   }
 }`)
 
-  const {hero_quotes} = data.allWordpressAcfOptions.nodes[0].options;
+  const {hero_quotes} = data.data.allWordpressAcfOptions.nodes[0].options;
 
   return (
     <div className="quotes-slider-parent">
