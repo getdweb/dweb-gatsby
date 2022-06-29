@@ -2868,7 +2868,7 @@ exports.createPages = ({ actions, graphql }) => {
     const allAcfPages = result.data.allWordpressAcfPages.nodes
 
     // Write out allAcfPages output to a JSON file for inspection
-    fs.writeFile('./allAcfPages.json', "NEW!\n" + JSON.stringify(allAcfPages), err => {
+    fs.writeFile('./allAcfPages.json', JSON.stringify(allAcfPages), err => {
       if (err) {
         console.error(err)
       }
@@ -2882,7 +2882,7 @@ exports.createPages = ({ actions, graphql }) => {
     const allPages = result.data.allWordpressPage.edges
 
     // Write out allPages output to a JSON file for inspection
-    fs.writeFile('./allPages.json', "NEW!\n" + JSON.stringify(allPages), err => {
+    fs.writeFile('./allPages.json', JSON.stringify(allPages), err => {
       if (err) {
         console.error(err)
       }

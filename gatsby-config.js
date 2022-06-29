@@ -20,33 +20,6 @@ module.exports = {
     //   },
     // },
     // {
-    //   resolve: 'gatsby-source-wordpress',
-    //   options: {
-    //     // The base url to your WP site.
-    //     baseUrl: process.env.BASE_URL || 'dweb',
-    //     // WP.com sites set to true, WP.org set to false
-    //     hostingWPCOM: false,
-    //     // The protocol. This can be http or https.
-    //     protocol: process.env.PROTOCOL || 'http',
-    //     // Use 'Advanced Custom Fields' Wordpress plugin
-    //     useACF: true,
-    //     auth: {},
-    //     // Set to true to debug endpoints on 'gatsby build'
-    //     verboseOutput: false,
-    //     excludedRoutes: [
-    //       "**/wp-site-health/**",
-    //       "**/yoast/**",
-    //       "**/wp/v2/users/**",
-    //       "**/batch/**",
-    //       "**/wp-rest-yoast-meta/**",
-    //       "**/wp/v2/block-types**",
-    //       "**/wp/v2/settings**",
-    //       "**/wp/v2/themes**",
-    //       "**/wp/v2/plugins**",
-    //       "**/wp/v2/block-directory/**",
-    //     ],
-    //   },
-    // },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     // `gatsby-transformer-yaml`,

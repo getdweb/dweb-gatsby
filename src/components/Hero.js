@@ -10,40 +10,169 @@ export default function Hero() {
   const videoEmbed = useRef(null);
   const marqueeEl = useRef(null);
 
-  const data = useStaticQuery(
-    graphql`
-      query {
-        allWordpressAcfOptions {
-          nodes {
-            options {
-              hero_announcement_link
-              hero_announcement_caption
-              hero_tagline
-              hero_video_preview {
-                localFile {
-                  url
+  const data = JSON.parse(`{
+    "data": {
+      "allWordpressAcfOptions": {
+        "nodes": [
+          {
+            "options": {
+              "hero_announcement_link": "https://dwebcamp.org/",
+              "hero_announcement_caption": "DWeb Camp is back in 2022!<br>\\r\\nAug. 24-28, Navarro, CA. Join us!",
+              "hero_tagline": "Connecting people,<br>projects and protocols to build a decentralized web",
+              "hero_video_preview": {
+                "localFile": {
+                  "url": "https://getdweb.net/wp-content/uploads/2022/06/METRO-DWeb-home-ditther.png"
                 }
-              }
-              hero_video_url
-              hero_video_caption
-              hero_video_caption_length
-              hero_quotes {
-                image {
-                  id
-                  wordpress_id
-                  localFile {
-                    url
+              },
+              "hero_video_url": "https://archive.org/details/goodbye-facebook-hello-decentralized-social-media",
+              "hero_video_caption": "Webinar recording: \\\"Goodbye Facebook. Hello Decentralized Social Media?\\\"",
+              "hero_video_caption_length": "775",
+              "hero_quotes": [
+                {
+                  "image": {
+                    "id": "ffae89f6-ea4e-5b19-b330-4fe82f3134fb",
+                    "wordpress_id": 437,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-Benedict-lau.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "caf339c4-6b18-5aea-9484-2462b1016324",
+                    "wordpress_id": 435,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote_jennifer-granick.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "cf07271a-7000-51e0-b984-9537542e1c73",
+                    "wordpress_id": 440,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-joachim-lohkamp.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "ac32df71-38c0-5956-8440-289caf5c04fe",
+                    "wordpress_id": 436,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote_wendy-hanamura.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "ef32a020-670f-5621-abc5-9d4941c9eef8",
+                    "wordpress_id": 441,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-mai-sutton.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "04537eff-986d-5de2-8533-6d2d571d2b51",
+                    "wordpress_id": 442,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-Matt-zumwalt.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "2b5d67e6-45e2-5410-b153-242336317ea0",
+                    "wordpress_id": 444,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-Redecentralize.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "9010d0fd-720e-5290-b5be-d80c47bd13c3",
+                    "wordpress_id": 443,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-primavera-de-filippi.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "839860a7-5fae-5ba7-b8f4-1c1564c10294",
+                    "wordpress_id": 433,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote_brandon-wallace.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "21821861-15ae-582a-9332-f4c255c97531",
+                    "wordpress_id": 439,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2020/12/quote-jay-graber.png"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "b6b33425-d7b2-5392-a008-6c02e89e0198",
+                    "wordpress_id": 824,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2021/03/DWeb-principle-01.jpg"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "421a04ea-29b5-5e3b-8078-3783af65f2de",
+                    "wordpress_id": 825,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2021/03/DWeb-principle-02.jpg"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "2ae3dd33-3f54-5d1a-871c-85092aa64097",
+                    "wordpress_id": 826,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2021/03/DWeb-principle-03.jpg"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "62ca7994-dd34-5fb9-a75d-dde77d63aae4",
+                    "wordpress_id": 827,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2021/03/DWeb-principle-04.jpg"
+                    }
+                  }
+                },
+                {
+                  "image": {
+                    "id": "b378dc07-aed5-5ab7-a592-669f83ba18d8",
+                    "wordpress_id": 828,
+                    "localFile": {
+                      "url": "https://getdweb.net/wp-content/uploads/2021/03/DWeb-principle-05.jpg"
+                    }
                   }
                 }
-              }
+              ]
             }
           }
-        }
+        ]
       }
-    `
-  )
+    }
+  }
+  `)
 
-  const options = data.allWordpressAcfOptions.nodes[0].options;
+  const options = data.data.allWordpressAcfOptions.nodes[0].options;
 
   const videoPlayBtnClick = function(){
     setPreviewDisplay("d-none");
@@ -86,7 +215,7 @@ export default function Hero() {
 
   let quotes = options.hero_quotes;
   const [quotesVisibility, setQuotesVisibility] = useState([]);
-  
+
   useEffect(() => {
     let quotesVisibilityTemp = [];
     let first_quote = true;
@@ -141,7 +270,7 @@ export default function Hero() {
             quotes.map((quote) => {
               const quoteImageUrl = quote.image.localFile !== null ? quote.image.localFile.url : "";
               return (
-                <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quoteImageUrl})`}} onClick={((e) => quoteClick(e, data))}></a>
+                <a className={"hero__quote " + quotesVisibility[quote.image.wordpress_id]} data-wordpress-id={quote.image.wordpress_id} key={quote.image.id} style={{backgroundImage: `url(${quoteImageUrl})`}} onClick={((e) => quoteClick(e, data.data))}></a>
               );
             })}
         </div>
