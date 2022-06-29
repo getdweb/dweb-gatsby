@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-wordpress",
-  "description": "Gatsby v2 starter for WordPress",
-  "version": "0.1.0",
-  "author": "Dmitry Kulahin, Arkadiy Kukarkin ",
+  "name": "getdweb.net",
+  "description": "DWeb connects the people, projects and protocols essential to building a decentralized web. A web that is more private, reliable, secure and open. A web with many winners—returning to the original vision of the World Wide Web and internet.",
+  "version": "0.2.0",
+  "author": "Dmitry Kulahin, Arkadiy Kukarkin, Will Howes",
   "dependencies": {
     "@mdx-js/mdx": "^1.0.0",
     "@mdx-js/react": "^1.0.0",
