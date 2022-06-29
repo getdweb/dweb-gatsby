@@ -6,7 +6,7 @@ require("dotenv").config({
 console.log(`Using .env.${process.env.NODE_ENV}`);
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + WordPress Starter',
+    title: 'Get Dweb Dot Net',
   },
   // pathPrefix: `/aaa/bbb`,
   // assetPrefix: `/ccc/ddd`,
