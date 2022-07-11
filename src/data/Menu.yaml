@@ -1,0 +1,40 @@
+- label: primary
+  items:
+  - title: Mission
+    url: /#mission
+    object_id: '18'
+  - title: Nodes
+    url: /#nodes
+    object_id: '20'
+  - title: Events
+    url: /#events
+    object_id: '19'
+  - title: Voices
+    url: /#voices
+    object_id: '21'
+  - title: Sponsors
+    url: /#partners
+    object_id: '22'
+- label: secondary
+  items:
+  - title: DWeb principles
+    url: /principles
+    object_id: '23'
+  - title: DWeb Camp
+    url: https://dwebcamp.org/
+    object_id: '1182'
+  - title: Webinars
+    url: /dweb-webinar-series/
+    object_id: '1181'
+  - title: Resources
+    url: /resources
+    object_id: '25'
+  - title: FAQ
+    url: /faq
+    object_id: '26'
+  - title: Newsletter
+    url: https://mailchi.mp/archive/dweb-updates
+    object_id: '27'
+  - title: Get in touch
+    url: /contact
+    object_id: '28'
