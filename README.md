@@ -36,3 +36,7 @@ There is an ESLint configuation which extends the [airbnb](https://github.com/ai
 
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for
 details
+
+## Known Issues
+
+- [ ] CSS build process is broken - the [all.min.css](static/css/all.min.css) file is made available to all files through [gatsby-browser.js](gatsby-browser.js), but all.min.css is not built using the scss files found in [src/css/scss](src/css/scss). Also, [gulpfile.js](gulpfile.js) does not provide a working build process and it's not currently known what is broken. For now, update both all.min.css and the relevant scss file directly in order to update the site styles.
