@@ -25,7 +25,7 @@ export default function Footer() {
             link
           }
         }
-        allSocialYaml {
+        allSocialMediaYaml {
           nodes {
             icon_code
             label
@@ -36,7 +36,7 @@ export default function Footer() {
     `
   )
 
-  const social = data.allSocialYaml.nodes
+  const social = data.allSocialMediaYaml.nodes
   var options = data.allFooterYaml.nodes
   const cities = data.allNetworkYaml.nodes
 
