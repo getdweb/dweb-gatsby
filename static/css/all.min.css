@@ -8277,6 +8277,9 @@ a.btn:focus {
   letter-spacing: -4px;
   color: rgba(255, 255, 255, 0.4) !important;
 }
+.footer__network-nodes-item:hover {
+  text-decoration: underline
+}
 .footer__network-nodes-bottom-link {
   display: inline-block;
   font-family: LabMono;
