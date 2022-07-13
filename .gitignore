@@ -13,7 +13,3 @@ yarn-error.log
 .env.production_SERVER
 .env.development_LOCAL
 .env.production_LOCAL
-
-allAcfPages.json
-allPages.json
-data.json
