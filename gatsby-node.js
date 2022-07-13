@@ -1,5 +1,4 @@
 const _ = require('lodash')
-const fs = require('fs')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -2785,26 +2784,12 @@ exports.createPages = ({ actions, graphql }) => {
 
     const allAcfPages = result.data.allWordpressAcfPages.nodes
 
-    // Write out allAcfPages output to a JSON file for inspection
-    fs.writeFile('./allAcfPages.json', JSON.stringify(allAcfPages), err => {
-      if (err) {
-        console.error(err)
-      }
-    })
-
     const acfPages = [];
     _.each(allAcfPages, (acfPage) => {
       acfPages[acfPage.wordpress_id] = acfPage
     });
 
     const allPages = result.data.allWordpressPage.edges
-
-    // Write out allPages output to a JSON file for inspection
-    fs.writeFile('./allPages.json', JSON.stringify(allPages), err => {
-      if (err) {
-        console.error(err)
-      }
-    })
 
     const pages =
       process.env.NODE_ENV === 'production'
