@@ -5,7 +5,7 @@ var concatcss = require('gulp-concat-css');
 var csso = require('gulp-csso');
 // var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 // var urlAdjuster = require('gulp-css-url-adjuster');
 // var mergeStream =   require('merge-stream');
 
@@ -54,5 +54,5 @@ gulp.task('watch',function(){
 });
 
 gulp.task('default', gulp.series (gulp.parallel('styles', 'scripts'/*, 'lint'*/), 'watch',
-    function (done) { done(); }    
+    function (done) { done(); }
 ));
