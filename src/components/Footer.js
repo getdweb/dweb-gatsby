@@ -40,12 +40,6 @@ export default function Footer() {
   var options = data.allFooterYaml.nodes
   const cities = data.allNetworkYaml.nodes
 
-  let social_links_last_3 = []
-  if (social.length >= 7) {
-    social_links_last_3 = social.slice(Math.max(social.length - 3, 0))
-    social = social.slice(0, Math.max(social.length - 3, 0))
-  }
-
   return (
     <div className="footer">
       <div className="container">
@@ -63,17 +57,6 @@ export default function Footer() {
               <div className="footer__social d-none d-md-inline-block">
                 <div>
                   {social.map((item) => (
-                    <a
-                      className="footer__social-item"
-                      href={item.link}
-                      target="_blank"
-                      key={md5(item.label)}
-                      dangerouslySetInnerHTML={{ __html: item.icon_code }}
-                    ></a>
-                  ))}
-                </div>
-                <div>
-                  {social_links_last_3.map((item) => (
                     <a
                       className="footer__social-item"
                       href={item.link}
@@ -112,17 +95,6 @@ export default function Footer() {
               <div className="footer__social d-md-none">
                 <div>
                   {social.map((item) => (
-                    <a
-                      className="footer__social-item"
-                      href={item.link}
-                      target="_blank"
-                      key={md5(item.label)}
-                      dangerouslySetInnerHTML={{ __html: item.icon_code }}
-                    ></a>
-                  ))}
-                </div>
-                <div>
-                  {social_links_last_3.map((item) => (
                     <a
                       className="footer__social-item"
                       href={item.link}
