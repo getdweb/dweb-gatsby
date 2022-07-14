@@ -166,12 +166,12 @@ export default function Footer() {
                   Report a bug
                 </a>
               </div>
-              <div
+              {/* <div
                 className="footer__copyright"
                 dangerouslySetInnerHTML={{
                   __html: `${new Date().getFullYear()} View this website on <a href=\"ipns://getdweb.net\">IPFS</a> and <a href=\"hyper://4392a5062f7bf93c26543ca7a85a009b4e568117d107f31788676377e7b4ef45\">Hypercore</a>.`,
                 }}
-              ></div>
+              ></div> */}
             </div>
           </div>
         </div>
