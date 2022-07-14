@@ -131,7 +131,7 @@ a.btn {
       @include media-breakpoint-up(md) {
       }
       .x {
-        background-image: url("../images/close.svg");
+        background-image: url( "../../../static/images/close.svg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -215,13 +215,13 @@ a.btn {
   &_facebook {
     background-color: $facebook;
     &:before {
-      background-image: url("../images/icon-facebook-white.svg");
+      background-image: url( "../../../static/images/icon-facebook-white.svg");
     }
   }
   &_twitter {
     background-color: $twitter;
     &:before {
-      background-image: url("../images/icon-twitter-white.svg");
+      background-image: url( "../../../static/images/icon-twitter-white.svg");
     }
   }
 }
@@ -457,7 +457,7 @@ a.btn {
     &:after {
       content: "";
       display: block;
-      background-image: url("../images/loader-tail-spin.svg");
+      background-image: url( "../../../static/images/loader-tail-spin.svg");
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -661,7 +661,7 @@ a.btn {
     &:after {
       content: "";
       position: absolute;
-      background-image: url("../images/big-right-arrow.svg");
+      background-image: url( "../../../static/images/big-right-arrow.svg");
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
@@ -756,7 +756,7 @@ a.btn {
             position: absolute;
             right: 0px;
             top: 8px;
-            background-image: url("../images/minus-more-icon.svg");
+            background-image: url( "../../../static/images/minus-more-icon.svg");
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
@@ -783,7 +783,7 @@ a.btn {
             position: absolute;
             right: 0px;
             top: 8px;
-            background-image: url("../images/plus-more-icon.svg");
+            background-image: url( "../../../static/images/plus-more-icon.svg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -796,7 +796,7 @@ a.btn {
             position: absolute;
             right: 0px;
             top: 8px;
-            background-image: url("../images/minus-more-icon.svg");
+            background-image: url( "../../../static/images/minus-more-icon.svg");
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
@@ -931,7 +931,7 @@ a.btn {
     &:after {
       content: "";
       position: absolute;
-      background-image: url("../images/announcement-bar-arrow.svg");
+      background-image: url( "../../../static/images/announcement-bar-arrow.svg");
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
@@ -950,10 +950,10 @@ a.btn {
         background-color: #fff;
       }
       &:after {
-        background-image: url("../images/announcement-bar-arrow-hover.svg");
+        background-image: url( "../../../static/images/announcement-bar-arrow-hover.svg");
         @include media-breakpoint-up(md) {
           display: block;
-          background-image: url("../images/top-right-open-arrow.svg");
+          background-image: url( "../../../static/images/top-right-open-arrow.svg");
           width: 14px;
           height: 14px;
           right: 12px;
@@ -1136,9 +1136,9 @@ a.btn {
   }
 }
 
-/*  
-* on MacOs: System Preferences > 
-*           Accessibility > 
+/*
+* on MacOs: System Preferences >
+*           Accessibility >
 *           Display > Reduce motion
 */
 

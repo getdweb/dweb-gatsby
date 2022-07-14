@@ -12,7 +12,12 @@ module.exports = {
   // assetPrefix: `/ccc/ddd`,
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("node-sass"),
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-mdx`,
     //   options: {
