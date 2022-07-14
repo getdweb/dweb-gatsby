@@ -8,20 +8,25 @@ projects and protocols to build a decentralized web.
 These instructions will give you a copy of the project up and running on
 your local machine for development and testing purposes.
 
+**NOTE** It is vital that you are running Node v16+, otherwise compatibility with node-sass will be broken
+
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push
 
 - [node](https://nodejs.org/en/download/)
+- [nvm] (https://github.com/nvm-sh/nvm)
 - [gatsby-cli](https://www.npmjs.com/package/gatsby-cli)
 
 ### Installing
 
-1. Clone the repository to your machine
+1. Install nvm to your machine
+1. Run `nvm install 16`
+1. Clone the get-dweb-dot-com repository to your machine
 1. `cd` into the respository folder
-1. run `npm install`
-1. run `npm install -g gatsby-cli` if you don't already have gatsby-cli installed globally
-1. run `npm run develop` to spin up a development server or `npm run build` to build a production-ready version of the site
+1. Run `npm install`
+1. Run `npm install -g gatsby-cli` if you don't already have gatsby-cli installed globally
+1. Run `npm run develop` to spin up a development server or `npm run build` to build a production-ready version of the site
 
 ### Style test
 
@@ -39,4 +44,4 @@ details
 
 ## Known Issues
 
-- [ ] CSS build process is broken - the [all.min.css](static/css/all.min.css) file is made available to all files through [gatsby-browser.js](gatsby-browser.js), but all.min.css is not built using the scss files found in [src/css/scss](src/css/scss). Also, [gulpfile.js](gulpfile.js) does not provide a working build process and it's not currently known what is broken. For now, update both all.min.css and the relevant scss file directly in order to update the site styles.
+- [ ] CSS build process is working, but needs to be updated. Once node-sass enables compatibility with Node v18, the project should be able to build in Node v18 (currently stuck in v16). See [here](https://github.com/sass/node-sass/pull/3257) for information regarding the node-sass compatibility update.
