@@ -1,9 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import 'swiper/scss'
-// import 'swiper/swiper.scss';
-import 'swiper/scss/navigation'
-import 'swiper/scss/pagination'
+import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function QuotesSlider() {
