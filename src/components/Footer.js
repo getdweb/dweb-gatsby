@@ -157,14 +157,6 @@ export default function Footer() {
                 >
                   Privacy policy
                 </a>
-                <a
-                  className="footer__menuline-item"
-                  href="https://form.jotform.com/210875439674164"
-                  target="_blank"
-                  key={md5('Report a bug')}
-                >
-                  Report a bug
-                </a>
               </div>
               {/* <div
                 className="footer__copyright"
