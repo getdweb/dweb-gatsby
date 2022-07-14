@@ -2791,10 +2791,13 @@ exports.createPages = ({ actions, graphql }) => {
 
     const allPages = result.data.allWordpressPage.edges
 
-    const pages =
-      process.env.NODE_ENV === 'production'
-        ? getOnlyPublished(allPages)
-        : allPages
+    // Reference for how to reimplment production only / all pages ternary
+    // const pages =
+    //   process.env.NODE_ENV === 'production'
+    //     ? getOnlyPublished(allPages)
+    //     : allPages
+
+    const pages = allPages
 
     // Call `createPage()` once per WordPress page
     _.each(pages, ({ node: page }) => {
