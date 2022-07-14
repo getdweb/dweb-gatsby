@@ -35,6 +35,7 @@ module.exports = {
       options: {
         develop: true,
         printRejected: true,
+        ignore: ['.cache/'],
         content: [
           path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
           path.join(
