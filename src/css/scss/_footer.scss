@@ -111,7 +111,7 @@
       text-decoration: none;
       cursor: default;
       &:hover{
-        // color: #fff !important;
+        text-decoration: underline !important;
       }
       &:after{
           content: "//";

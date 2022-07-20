@@ -4,59 +4,61 @@ import FaqQuestion from './FaqQuestion'
 import md5 from '../services/md5-service'
 
 export default function Faq() {
-
   const data = useStaticQuery(
     graphql`
       query {
-        allWordpressWpFaqSection(sort: {order: ASC, fields: date}) {
+        allFaqYaml(sort: { order: ASC, fields: title }) {
           nodes {
             id
             title
-            acf {
-              questions {
-                answer
-                question
-              }
+            questions {
+              answer
+              question
             }
-          }
-        }
-        wordpressAcfOptions {
-          options{
-            faq_header
-            faq_bottom_text
           }
         }
       }
     `
   )
 
-  const options = data.wordpressAcfOptions.options;
-
-  const sections = data.allWordpressWpFaqSection.nodes;
-  let i = 0;
+  const sections = data.allFaqYaml.nodes
+  let i = 0
 
   return (
     <div className="container">
       <div className="row">
         <div className="col col-12 col-xs-12">
           <div className="faq">
-            <div className="header">{options.faq_header}</div>
+            <div className="header">FAQ</div>
             <div className="faq-sections">
               {sections.map((section) => {
-                i++;
+                i++
                 return (
                   <div className="faq-section" key={section.id}>
-                    <div className="faq-section__header"><span className="faq-section__number">{i<10 ? "0"+i : i}. </span>{section.title}</div>
-                    {section.acf.questions.map((pair) => {
+                    <div className="faq-section__header">
+                      <span className="faq-section__number">
+                        {i < 10 ? '0' + i : i}.{' '}
+                      </span>
+                      {section.title}
+                    </div>
+                    {section.questions.map((pair) => {
                       return (
                         <FaqQuestion pair={pair} key={md5(pair.question)} />
-                      );
+                      )
                     })}
                   </div>
-                );
-                })}
+                )
+              })}
             </div>
-            <div className="faq-notice" dangerouslySetInnerHTML={{__html: options.faq_bottom_text}}></div>
+            <div className="faq-notice">
+              Have a question of your own?
+              <br />
+              Let us know via{' '}
+              <a href="https://matrix.to/#/!WBhcGXTDMlzyTPWoJv:matrix.org?via=matrix.org&via=tomesh.net&via=privacytools.io">
+                community chat
+              </a>{' '}
+              or by emailing us at dweb [at] archive.org.
+            </div>
           </div>
         </div>
       </div>

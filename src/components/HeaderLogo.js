@@ -1,44 +1,16 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 export default function HeaderLogo() {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        allWordpressAcfOptions {
-          edges {
-            node {
-              options {
-                logo {
-                  filename
-                  url {
-                    localFile {
-                      url
-                    }
-                    alt_text
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-
-  const logoObj = data.allWordpressAcfOptions.edges[0].node.options.logo;
-  const bgUrl = logoObj !== null && logoObj.url.localFile !== null 
-    ? logoObj.url.localFile.url 
-    : logoObj.filename;
-  
   return (
-    <Link 
+    <Link
       to="/"
       className="navbar__logo"
-      style={{backgroundImage: `url(${bgUrl})`}}
-      alt={data.allWordpressAcfOptions.edges[0].node.options.logo.url.alt_text} 
-      title={data.allWordpressAcfOptions.edges[0].node.options.logo.url.alt_text}>
-    </Link>
+      style={{
+        backgroundImage: `url(https://getdweb.net/wp-content/uploads/2020/11/DWeb-logo-original.svg)`,
+      }}
+      alt=""
+      title=""
+    ></Link>
   )
 }
-

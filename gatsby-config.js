@@ -1,56 +1,49 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
-console.log(`Using .env.${process.env.NODE_ENV}`);
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + WordPress Starter',
+    title: 'Get Dweb Dot Net',
   },
-  // pathPrefix: `/aaa/bbb`,
-  // assetPrefix: `/ccc/ddd`,
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-source-wordpress',
-      options: {
-        // The base url to your WP site.
-        baseUrl: process.env.BASE_URL || 'dweb',
-        // WP.com sites set to true, WP.org set to false
-        hostingWPCOM: false,
-        // The protocol. This can be http or https.
-        protocol: process.env.PROTOCOL || 'http',
-        // Use 'Advanced Custom Fields' Wordpress plugin
-        useACF: true,
-        auth: {},
-        // Set to true to debug endpoints on 'gatsby build'
-        verboseOutput: false,
-        excludedRoutes: [
-          "**/wp-site-health/**",
-          "**/yoast/**",
-          "**/wp/v2/users/**",
-          "**/batch/**",
-          "**/wp-rest-yoast-meta/**",
-          "**/wp/v2/block-types**",
-          "**/wp/v2/settings**",
-          "**/wp/v2/themes**",
-          "**/wp/v2/plugins**",
-          "**/wp/v2/block-directory/**",
-        ],
-      },
-    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('node-sass'),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
     // {
-    //   // Removes unused css rules
-    //   resolve:'gatsby-plugin-purgecss',
+    //   resolve: `gatsby-plugin-mdx`,
     //   options: {
-    //     // Activates purging in gatsby develop
-    //     develop: true,
-    //     // Purge only the main css file
-    //     purgeOnly: ['/all.sass'],
+    //     defaultLayouts: {
+    //       default: path.resolve('./src/components/Layout-MDX.js'),
+    //     },
     //   },
-    // }, // must be after other CSS plugins
-    // 'gatsby-plugin-netlify', // make sure to keep it last in the array
+    // },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        develop: true,
+        printRejected: true,
+        ignore: ['.cache/'],
+        content: [
+          path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
+          path.join(
+            process.cwd(),
+            'node_modules/swiper/react/!(*.d).{ts,js,jsx,tsx}'
+          ),
+        ],
+      },
+    }, // must be after other CSS plugins
   ],
 }

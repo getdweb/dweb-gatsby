@@ -1,0 +1,66 @@
+- header: 'About:'
+  links:
+  - label: Our story
+    direction: internal
+    link_internal: /origin-story
+    link_external: ''
+    link_file:
+  - label: Code of Conduct
+    direction: internal
+    link_internal: /code-of-conduct
+    link_external: ''
+    link_file:
+  - label: Partners
+    direction: internal
+    link_internal: /#partners
+    link_external: ''
+    link_file:
+  - label: Website team
+    direction: internal
+    link_internal: /website-team
+    link_external: ''
+    link_file:
+  - label: Contact
+    direction: internal
+    link_internal: /contact
+    link_external: ''
+    link_file:
+- header: 'Take action:'
+  links:
+  - label: Start a Node
+    direction: internal
+    link_internal: /start-a-dweb-node
+    link_external: ''
+    link_file:
+  - label: Sponsor DWeb (PDF)
+    direction: file
+    link_internal: ''
+    link_external: ''
+    link_file: https://getdweb.net/wp-content/uploads/2021/02/DWeb-Become-a-global-Sponsor.pdf
+  - label: Volunteer
+    direction: internal
+    link_internal: /join-the-team
+    link_external: ''
+    link_file:
+- header: 'Knowledge base:'
+  links:
+  - label: DWeb Webinars
+    direction: internal
+    link_internal: /dweb-webinar-series
+    link_external: ''
+    link_file:
+  - label: Resources
+    direction: internal
+    link_internal: /resources
+    link_external: ''
+    link_file:
+  - label: Projects directory
+    direction: external
+    link_internal: /resources
+    link_external: https://kumu.io/DigLife/decentralized-tech
+    link_file:
+  - label: FAQ
+    direction: internal
+    link_internal: /faq
+    link_external: https://kumu.io/DigLife/decentralized-tech
+    link_file:

@@ -57,17 +57,17 @@ $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
 // font-family 'Poppins':
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 
-// font-family 'LabMono': 
+// font-family 'LabMono':
 @font-face {
     font-family: 'LabMono';
-    src: url( '../fonts/Lab-Mono-master/webfont/labmono-regular-web.eot' );
-    src: url( '../fonts/Lab-Mono-master/webfont/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
-         url( '../fonts/Lab-Mono-master/webfont/labmono-regular-web.woff2' ) format( 'woff2' ),
-         url( '../fonts/Lab-Mono-master/webfont/labmono-regular-web.woff' ) format( 'woff' ),
-         url( '../fonts/Lab-Mono-master/webfont/labmono-regular-web.ttf' ) format( 'truetype' );
+    src: url( '../../../static/fonts/Lab-Mono-master/webfont/labmono-regular-web.eot' );
+    src: url( '../../../static/fonts/Lab-Mono-master/webfont/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
+         url( '../../../static/fonts/Lab-Mono-master/webfont/labmono-regular-web.woff2' ) format( 'woff2' ),
+         url( '../../../static/fonts/Lab-Mono-master/webfont/labmono-regular-web.woff' ) format( 'woff' ),
+         url( '../../../static/fonts/Lab-Mono-master/webfont/labmono-regular-web.ttf' ) format( 'truetype' );
     font-weight: normal;
     font-style: normal;
-} 
+}
 
 
 @import "_mixins.scss";

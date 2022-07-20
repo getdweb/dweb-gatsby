@@ -408,19 +408,19 @@
 
         &.icon_twitter {
             &:before {
-                background-image: url("../images/icon-twitter-white.svg");
+                background-image: url( "../../../static/images/icon-twitter-white.svg");
             }
         }
 
         &.icon_github {
             &:before {
-                background-image: url("../images/icon-github-white.svg");
+                background-image: url( "../../../static/images/icon-github-white.svg");
             }
         }
 
         &.icon_meetup {
             &:before {
-                background-image: url("../images/icon-meetup-white.svg");
+                background-image: url( "../../../static/images/icon-meetup-white.svg");
             }
         }
     }
@@ -429,7 +429,7 @@
 .logo {
     width: 27px;
     height: 28px;
-    background-image: url("../images/logo-mobile.svg");
+    background-image: url( "../../../static/images/logo-mobile.svg");
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -440,7 +440,7 @@
     @include media-breakpoint-up(lg) {
         width: 155px;
         height: 30px;
-        background-image: url("../images/logo.svg");
+        background-image: url( "../../../static/images/logo.svg");
         margin-bottom: 5px;
     }
 }
@@ -471,7 +471,7 @@
     &:after {
         content: "";
         display: block;
-        background-image: url("../images/loader-tail-spin.svg");
+        background-image: url( "../../../static/images/loader-tail-spin.svg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

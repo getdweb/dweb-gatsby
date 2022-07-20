@@ -1,45 +1,47 @@
-# Gatsby v2 WordPress Starter
+# get-dweb-dot-net
 
-This starter is forked from the
-[gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
-and modified to use WordPress instead of netlify-cms, using the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin as the data connector.
+Official repo for [getdweb.net](https://getdweb.net/), a website built for connecting people,
+projects and protocols to build a decentralized web.
 
-Demo: https://gatsby-starter-wordpress.netlify.com/
+## Getting Started
 
-## Use It Now
+These instructions will give you a copy of the project up and running on
+your local machine for development and testing purposes.
 
-    gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
+**NOTE** It is vital that you are running Node v16+, otherwise compatibility with node-sass will be broken
 
-* Edit `gatsby-config.js`, change `baseUrl`
-  - Make sure you have at least 1 post and 1 page on your WordPress site
-  - Make sure at least 1 post has at least 1 tag
-* Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress
-* Rejoice
-  - For more information on the source plugin, check out the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page
-  - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
+### Prerequisites
 
-### Known Limitations
+Requirements for the software and other tools to build, test and push
 
-* This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.
-* Your WordPress site must have at least 1 post with 1 tag, or the starter will crash
-* Nested pages / categories will not render with nested pages
-  - A WordPress page like `/about/team/` will render on Gatsby as `/team/`
-  - Likewise for categories
-  - Discussion here https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/24
+- [node](https://nodejs.org/en/download/)
+- [nvm] (https://github.com/nvm-sh/nvm)
+- [gatsby-cli](https://www.npmjs.com/package/gatsby-cli)
 
-## CSS Processing
+### Installing
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgecss this is reduced 90%.
+1. Install nvm to your machine
+1. Clone the get-dweb-dot-com repository to your machine
+1. `cd` into the respository folder
+1. Run `nvm use`, which utilizes the .nvmrc file
+1. Run `npm install`
+1. Run `npm install -g gatsby-cli` if you don't already have gatsby-cli installed globally
+1. Run `npm run develop` to spin up a development server or `npm run build` to build a production-ready version of the site
 
-## WordPress Setup
+### Style test
 
-Check the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin for more information. If you want to copy the demo content, you can grab the [WordPress XML export here](https://wpdemo.gatsbycentral.com/gatsbystarterwordpress.WordPress.2019-09-12.xml) and import it into your WordPress site as a starting point.
+There is an ESLint configuation which extends the [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [prettier](https://github.com/prettier/eslint-config-prettier/) configurations. Please adhere to these standards to preserve maintainability of the codebase.
 
-## Contributors
+## Built With
 
-This starter was forked from the netlify starter by the
-[GatsbyCentral](https://www.gatsbycentral.com/) crew. Additional contributions
-were gratefully received from the following folks:
+- [Gatsby](https://www.gatsbyjs.com/) - Used to build the static site
+- [MDX](https://mdxjs.com/) - Used to organize page structure
 
-* https://github.com/tomByrer
-* https://github.com/dajocarter
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for
+details
+
+## Known Issues
+
+- [ ] CSS build process is working, but needs to be updated. Once node-sass enables compatibility with Node v18, the project should be able to build in Node v18 (currently stuck in v16). See [here](https://github.com/sass/node-sass/pull/3257) for information regarding the node-sass compatibility update.
