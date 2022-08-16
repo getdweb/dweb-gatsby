@@ -1,0 +1,131 @@
+{
+  "data": {
+    "allWordpressWpCity": {
+      "nodes": [
+        {
+          "title": "Arizona",
+          "acf": {
+            "color": "#EA9F67",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/05/AZ-c3-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/Desert-Blockchain"
+          },
+          "wordpress_id": 63
+        },
+        {
+          "title": "Austin",
+          "acf": {
+            "color": "#4fccf6",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/05/Aus-c1-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/DWeb-Austin/"
+          },
+          "wordpress_id": 62
+        },
+        {
+          "title": "Berlin",
+          "acf": {
+            "color": "#aae1d7",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/05/bl-c-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/dweb-berlin/"
+          },
+          "wordpress_id": 61
+        },
+        {
+          "title": "Boston",
+          "acf": {
+            "color": "#F63139",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/06/Bos-c1-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/DWeb-BOS/"
+          },
+          "wordpress_id": 246
+        },
+        {
+          "title": "Perm",
+          "acf": {
+            "color": "#e9e0cb",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/06/perm-c1-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/Permanently-decentralized/"
+          },
+          "wordpress_id": 252
+        },
+        {
+          "title": "Prague",
+          "acf": {
+            "color": "#1e72ff",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/06/prague-c2-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/dweb-prague"
+          },
+          "wordpress_id": 247
+        },
+        {
+          "title": "San Francisco",
+          "acf": {
+            "color": "#ffff00",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/06/sf-c1-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/dwebsf"
+          },
+          "wordpress_id": 248
+        },
+        {
+          "title": "Seattle",
+          "acf": {
+            "color": "#38edb4",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2021/02/seattle-c1-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/"
+          },
+          "wordpress_id": 657
+        },
+        {
+          "title": "Shanghai",
+          "acf": {
+            "color": "#9DBCB6",
+            "city_image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/06/shanghai-c1-800.png"
+              }
+            },
+            "link": "https://www.meetup.com/dweb-shanghai/"
+          },
+          "wordpress_id": 249
+        }
+      ]
+    },
+    "wordpressAcfOptions": {
+      "options": {
+        "network_intro": "Our DWeb network has Nodes, or DWeb Meetup groups, based in cities around the world. These Nodes organize local events for people to meet others, exchange knowledge, and deepen connections across the Dweb community.",
+        "start_a_node_link": "/start-a-dweb-node"
+      }
+    }
+  }
+}

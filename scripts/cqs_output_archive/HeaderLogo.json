@@ -1,0 +1,23 @@
+{
+  "data": {
+    "allWordpressAcfOptions": {
+      "edges": [
+        {
+          "node": {
+            "options": {
+              "logo": {
+                "filename": "DWeb-logo-original.svg",
+                "url": {
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/11/DWeb-logo-original.svg"
+                  },
+                  "alt_text": ""
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "allWordpressMenusMenusItems": {
+      "edges": [
+        {
+          "node": {
+            "id": "dad3e6f4-e074-5c29-a051-46acb2f380e7",
+            "slug": "secondary",
+            "name": "secondary",
+            "items": [
+              {
+                "title": "DWeb principles",
+                "url": "/principles",
+                "object_id": "23"
+              },
+              {
+                "title": "Resources",
+                "url": "/resources",
+                "object_id": "25"
+              },
+              {
+                "title": "FAQ",
+                "url": "/faq",
+                "object_id": "26"
+              },
+              {
+                "title": "Newsletter",
+                "url": "https://mailchi.mp/archive/dweb-updates",
+                "object_id": "27"
+              },
+              {
+                "title": "Get in touch",
+                "url": "/contact",
+                "object_id": "28"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

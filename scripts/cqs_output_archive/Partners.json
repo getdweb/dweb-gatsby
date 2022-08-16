@@ -1,0 +1,129 @@
+{
+  "data": {
+    "wordpressAcfOptions": {
+      "options": {
+        "partners_header": "Sponsor the DWeb",
+        "partners_intro": "<p>DWeb is a project of the nonprofit Gatherings for Good.</p>\n<p>All DWeb events are co-created and powered by a global community of volunteer designers, developers, organizers and thought leaders.</p>\n",
+        "partners_left_button_caption": "Become a global sponsor",
+        "partners_left_button_link": "/#1",
+        "partners_right_button_caption": "",
+        "partners_right_button_link": "/#",
+        "partners_sponsors": [
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Internet-Archive-logo.png"
+              },
+              "id": "3c3142ae-467a-50c0-9048-58410332e848"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Ethereum-Foundation-logo.png"
+              },
+              "id": "262aacda-a104-5fd9-af92-4b8d9c71f3a2"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Ford-Foundation-logo.png"
+              },
+              "id": "1a594d0d-cd9b-5c90-9915-72c64f9b2742"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Blue-Systems-logo.png"
+              },
+              "id": "72a26dc1-e3af-53d4-a2e2-ef24b25a1f08"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Holo-logo.png"
+              },
+              "id": "b7fbde86-f1e0-5760-b9a0-791512b7700c"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Hyperledger-logo.png"
+              },
+              "id": "7d5a6494-e0e1-575b-a4c7-9a96b7b12e31"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Jolocom-logo.png"
+              },
+              "id": "84371c07-f52b-5485-97ae-953c364be60a"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Web3Foundation-logo.png"
+              },
+              "id": "3a9000b1-9513-5734-bfc1-abfeb30634ba"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/MaidSafe-logo.png"
+              },
+              "id": "2583e7d7-c376-5eb1-b273-34fea62fc30f"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/OmniseGo-logo.png"
+              },
+              "id": "ad1390fa-51e3-56ce-969f-a27d7d9b59fb"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Orchid-logo.png"
+              },
+              "id": "75899539-37bb-5287-b97c-cbb288f1cd54"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Protocol-Labs-logo.png"
+              },
+              "id": "6e987198-04c3-5396-ab99-97dc97707e13"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Sloan-Foundation-logo.png"
+              },
+              "id": "6e0dd064-c872-5d17-95b9-96c3b1fa724b"
+            }
+          },
+          {
+            "logo": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/Blockstack-logo.png"
+              },
+              "id": "fd572910-21d6-5b4b-8ac0-0747de2e241f"
+            }
+          }
+        ],
+        "partners_sponsors_text": "We are grateful for the generous support of sponsors:"
+      }
+    }
+  }
+}
