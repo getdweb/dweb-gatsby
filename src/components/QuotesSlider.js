@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import 'swiper/css';
+import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function QuotesSlider() {
@@ -46,10 +46,10 @@ export default function QuotesSlider() {
           }}
         >
           {hero_quotes.map((quote) => (
-              <SwiperSlide key={quote.id}>
-                <img src={quote.url} />
-              </SwiperSlide>
-            ))}
+            <SwiperSlide key={quote.id}>
+              <img src={quote.url} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

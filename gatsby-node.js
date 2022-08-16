@@ -2,7 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
-const getOnlyPublished = edges =>
+const getOnlyPublished = (edges) =>
   _.filter(edges, ({ node }) => node.status === 'publish')
 
 exports.createPages = ({ actions, graphql }) => {
@@ -2770,55 +2770,54 @@ exports.createPages = ({ actions, graphql }) => {
     }
   }
   `)
-    // Then...
-    // if (result.errors) {
-    //   result.errors.forEach(e => console.error(e.toString()))
-    //   return Promise.reject(result.errors)
-    // }
+  // Then...
+  // if (result.errors) {
+  //   result.errors.forEach(e => console.error(e.toString()))
+  //   return Promise.reject(result.errors)
+  // }
 
-    const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-    // Only publish pages with a `status === 'publish'` in production. This
-    // excludes drafts, future posts, etc. They will appear in development,
-    // but not in a production build.
+  // Only publish pages with a `status === 'publish'` in production. This
+  // excludes drafts, future posts, etc. They will appear in development,
+  // but not in a production build.
 
-    const allAcfPages = result.data.allWordpressAcfPages.nodes
+  const allAcfPages = result.data.allWordpressAcfPages.nodes
 
-    const acfPages = [];
-    _.each(allAcfPages, (acfPage) => {
-      acfPages[acfPage.wordpress_id] = acfPage
-    });
+  const acfPages = []
+  _.each(allAcfPages, (acfPage) => {
+    acfPages[acfPage.wordpress_id] = acfPage
+  })
 
-    const allPages = result.data.allWordpressPage.edges
+  const allPages = result.data.allWordpressPage.edges
 
-    // Reference for how to reimplment production only / all pages ternary
-    // const pages =
-    //   process.env.NODE_ENV === 'production'
-    //     ? getOnlyPublished(allPages)
-    //     : allPages
+  // Reference for how to reimplment production only / all pages ternary
+  // const pages =
+  //   process.env.NODE_ENV === 'production'
+  //     ? getOnlyPublished(allPages)
+  //     : allPages
 
-    const pages = allPages
+  const pages = allPages
 
-    // Call `createPage()` once per WordPress page
-    _.each(pages, ({ node: page }) => {
-      createPage({
-        path: `/${page.slug}/`,
-        component: pageTemplate,
-        context: {
-          page: acfPages[page.wordpress_id],
-        },
-      })
-    })
-
-    // Then...
-    const indexTemplate = path.resolve(`./src/templates/index.js`)
-
+  // Call `createPage()` once per WordPress page
+  _.each(pages, ({ node: page }) => {
     createPage({
-      path: `/`,
-      component: indexTemplate,
-      context: {},
+      path: `/${page.slug}/`,
+      component: pageTemplate,
+      context: {
+        page: acfPages[page.wordpress_id],
+      },
     })
+  })
 
+  // Then...
+  const indexTemplate = path.resolve(`./src/templates/index.js`)
+
+  createPage({
+    path: `/`,
+    component: indexTemplate,
+    context: {},
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

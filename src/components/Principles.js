@@ -62,16 +62,16 @@ export default function Principles() {
           </div>
           <div className="faq-notice">
             {peopleGroups.map((group) => (
-                <p>
-                  {group.label}:
-                  {group.people.map((name) => (
-                      <span>
-                        <br />
-                        {name}
-                      </span>
-                    ))}
-                </p>
-              ))}
+              <p>
+                {group.label}:
+                {group.people.map((name) => (
+                  <span>
+                    <br />
+                    {name}
+                  </span>
+                ))}
+              </p>
+            ))}
             <p>
               If you would like to add your name as a supporter,{' '}
               <a href="https://form.jotform.com/210466965675165\">

@@ -8,10 +8,8 @@ import QuotesSlider from '../components/QuotesSlider'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 
-
 function GetInvolvedPage() {
-  
-  const content = 
+  const content = (
     <div>
       <GetInvolvedHero />
       <GetInvolvedQuote />
@@ -20,12 +18,9 @@ function GetInvolvedPage() {
       <Partners />
       <Footer />
     </div>
-
-  return (
-    <Layout content={content} />
   )
+
+  return <Layout content={content} />
 }
 
 export default GetInvolvedPage
-
-

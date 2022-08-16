@@ -4,16 +4,14 @@ import Principles from '../components/Principles'
 import Footer from '../components/Footer'
 
 function PrinciplesPage() {
-  const content = <>
+  const content = (
+    <>
       <Principles />
       <Footer />
     </>
-
-  return (
-    <Layout content={content} />
   )
+
+  return <Layout content={content} />
 }
 
 export default PrinciplesPage
-
-

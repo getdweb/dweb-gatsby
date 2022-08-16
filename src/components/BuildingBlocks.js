@@ -36,7 +36,8 @@ export default function BuildingBlocks() {
             <a
               href={block.button_link}
               className="btn building-block__btn"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               {block.button_label}
             </a>
@@ -47,9 +48,9 @@ export default function BuildingBlocks() {
             <div
               className="building-block__right"
               style={{
-                backgroundImage: `url(${  block.url  })`,
+                backgroundImage: `url(${block.url})`,
               }}
-             />
+            />
             <div className="building-block__left">
               <div className="container">
                 <div className="row">
@@ -60,7 +61,7 @@ export default function BuildingBlocks() {
                     <div
                       className="building-block__text"
                       dangerouslySetInnerHTML={{ __html: block.text }}
-                     />
+                    />
                     {button}
                   </div>
                 </div>
