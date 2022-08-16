@@ -37,7 +37,7 @@ export default function Footer() {
   )
 
   const social = data.allSocialMediaYaml.nodes
-  var options = data.allFooterYaml.nodes
+  const options = data.allFooterYaml.nodes
   const cities = data.allNetworkYaml.nodes
 
   return (
@@ -52,7 +52,7 @@ export default function Footer() {
                   __html:
                     'DWeb is a global network of builders and dreamers working to create a better, decentralized web.<br />\r\nThe web we want and deserve.',
                 }}
-              ></div>
+               />
 
               <div className="footer__social d-none d-md-inline-block">
                 <div>
@@ -62,8 +62,8 @@ export default function Footer() {
                       href={item.link}
                       target="_blank"
                       key={md5(item.label)}
-                      dangerouslySetInnerHTML={{ __html: item.icon_code }}
-                    ></a>
+                      dangerouslySetInnerHTML={{ __html: item.icon_code }} rel="noreferrer"
+                     />
                   ))}
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Footer() {
                     href={city.link}
                     target="_blank"
                     style={{ color: city.color }}
-                    key={md5(city.title)}
+                    key={md5(city.title)} rel="noreferrer"
                   >
                     {city.title}
                   </a>
@@ -100,8 +100,8 @@ export default function Footer() {
                       href={item.link}
                       target="_blank"
                       key={md5(item.label)}
-                      dangerouslySetInnerHTML={{ __html: item.icon_code }}
-                    ></a>
+                      dangerouslySetInnerHTML={{ __html: item.icon_code }} rel="noreferrer"
+                     />
                   ))}
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function Footer() {
                             className="footer__menu-link"
                             href={item.link_file}
                             target="_blank"
-                            key={md5(item.label)}
+                            key={md5(item.label)} rel="noreferrer"
                           >
                             {item.label}
                           </a>
@@ -137,7 +137,7 @@ export default function Footer() {
                             className="footer__menu-link"
                             href={item.link_external}
                             target="_blank"
-                            key={md5(item.label)}
+                            key={md5(item.label)} rel="noreferrer"
                           >
                             {item.label}
                           </a>
@@ -164,7 +164,7 @@ export default function Footer() {
                   // __html: `©${new Date().getFullYear()} View this website on <a href=\"ipns://getdweb.net\">IPFS</a> and <a href=\"hyper://4392a5062f7bf93c26543ca7a85a009b4e568117d107f31788676377e7b4ef45\">Hypercore</a>.`,
                   __html: `©${new Date().getFullYear()}`,
                 }}
-              ></div>
+               />
             </div>
           </div>
         </div>

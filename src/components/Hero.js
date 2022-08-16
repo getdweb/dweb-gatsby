@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import HeroAnimation from '../components/HeroAnimation';
+import HeroAnimation from "./HeroAnimation";
 
 export default function Hero() {
   const [previewDisplay, setPreviewDisplay] = useState("d-block");
@@ -41,7 +41,7 @@ export default function Hero() {
 
   const quoteClick = (e) => {
     const wordpressId = e.target.getAttribute('data-wordpress-id');
-    let quotesVisibilityTemp = [];
+    const quotesVisibilityTemp = [];
     let activeQuote;
     // First quote is active by default:
     let next_quote_active = true;
@@ -67,7 +67,7 @@ export default function Hero() {
   const [quotesVisibility, setQuotesVisibility] = useState([]);
 
   useEffect(() => {
-    let quotesVisibilityTemp = [];
+    const quotesVisibilityTemp = [];
     let first_quote = true;
     const quotesRandNumber = Math.floor(Math.random() * Math.floor(data.allHeroQuotesYaml.nodes.length));
     const quotesPart1 = data.allHeroQuotesYaml.nodes.slice(0, quotesRandNumber);
@@ -95,20 +95,20 @@ export default function Hero() {
     <div className="hero">
       <div className="hero__left">
         <HeroAnimation />
-        <div className="hero__header" dangerouslySetInnerHTML={{__html: "Connecting people,<br>projects and protocols to build a decentralized web"}}></div>
+        <div className="hero__header" dangerouslySetInnerHTML={{__html: "Connecting people,<br>projects and protocols to build a decentralized web"}} />
       </div>
       <div className="hero__right">
-        <a className="hero__announcement" target="_blank" href="https://dwebcamp.org/" dangerouslySetInnerHTML={{__html: "DWeb Camp is back in 2022!<br>\r\nAug. 24-28, Navarro, CA. Join us!"}}></a>
+        <a className="hero__announcement" target="_blank" href="https://dwebcamp.org/" dangerouslySetInnerHTML={{__html: "DWeb Camp is back in 2022!<br>\r\nAug. 24-28, Navarro, CA. Join us!"}} rel="noreferrer" />
         <div className="hero__video">
           <div className="hero__video-frame">
             <video controls className="hero__video-embed" ref={videoEmbed} width="419" height="235">
               <source src="https://archive.org/details/goodbye-facebook-hello-decentralized-social-media" type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
-            <div className={"hero__video-preview " + previewDisplay} style={{backgroundImage: `url(https://getdweb.net/wp-content/uploads/2022/06/METRO-DWeb-home-ditther.png)`}}></div>
+            <div className={`hero__video-preview ${  previewDisplay}`} style={{backgroundImage: `url(https://getdweb.net/wp-content/uploads/2022/06/METRO-DWeb-home-ditther.png)`}} />
           </div>
-          <a className={"hero__video-button hero__video-play " + playDisplay} onClick={videoPlayBtnClick}></a>
-          <a className={"hero__video-button hero__video-pause " + pauseDisplay} onClick={videoPauseBtnClick}></a>
+          <a className={`hero__video-button hero__video-play ${  playDisplay}`} onClick={videoPlayBtnClick} />
+          <a className={`hero__video-button hero__video-pause ${  pauseDisplay}`} onClick={videoPauseBtnClick} />
           <div className="hero__video-caption marquee">
             <span ref={marqueeEl}>Webinar recording: "Goodbye Facebook. Hello Decentralized Social Media?"</span>
           </div>
@@ -118,7 +118,7 @@ export default function Hero() {
             quotes.map((quote) => {
               const quoteImageUrl = quote.url !== null ? quote.url : "";
               return (
-                <a className={"hero__quote " + quotesVisibility[quote.wordpress_id]} data-wordpress-id={quote.wordpress_id} key={quote.id} style={{backgroundImage: `url(${quoteImageUrl})`}} onClick={((e) => quoteClick(e, data))}></a>
+                <a className={`hero__quote ${  quotesVisibility[quote.wordpress_id]}`} data-wordpress-id={quote.wordpress_id} key={quote.id} style={{backgroundImage: `url(${quoteImageUrl})`}} onClick={((e) => quoteClick(e, data))} />
               );
             })}
         </div>

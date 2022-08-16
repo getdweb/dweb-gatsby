@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function PageBlockWideImage (props) {
-    const fields = props.fields;
+    const {fields} = props;
 
     const image = fields.image 
         ? <img 

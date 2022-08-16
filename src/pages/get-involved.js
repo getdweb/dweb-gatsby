@@ -9,7 +9,7 @@ import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 
 
-const GetInvolvedPage = () => {
+function GetInvolvedPage() {
   
   const content = 
     <div>
@@ -22,7 +22,7 @@ const GetInvolvedPage = () => {
     </div>
 
   return (
-    <Layout content={content}></Layout>
+    <Layout content={content} />
   )
 }
 

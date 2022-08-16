@@ -2,9 +2,9 @@ export default class UtilsService {
 
     throttle(func, ms) {
 
-        let isThrottled = false,
-          savedArgs,
-          savedThis;
+        let isThrottled = false;
+          let savedArgs;
+          let savedThis;
       
         function wrapper() {
       
@@ -18,7 +18,7 @@ export default class UtilsService {
       
           isThrottled = true;
       
-          setTimeout(function() {
+          setTimeout(() => {
             isThrottled = false; // (3)
             if (savedArgs) {
               wrapper.apply(savedThis, savedArgs);
@@ -33,8 +33,8 @@ export default class UtilsService {
     debounce(func, wait, AT_THE_BEGINNING, AT_THE_END) {
         let timeout;
         return function() {
-            let context = this, args = arguments;
-            let later = function() {
+            const context = this; const args = arguments;
+            const later = function() {
                 // clearTimeout(timeout);
                 timeout = null;
                 if (AT_THE_END) func.apply(context, args); // This function is executed at the END of timeout

@@ -2,7 +2,7 @@ import React from 'react'
 import PageButton from './PageButton'
 
 export default function PageBlockCTA (props) {
-    const fields = props.fields;
+    const {fields} = props;
 
     return (
         <div className="page-block-cta page-block-border">
@@ -10,7 +10,7 @@ export default function PageBlockCTA (props) {
                 <div className="row">
                     <div className="col col-12">
                         <div className="header">{fields.title}</div>
-                        <div className="page-block-cta__intro" dangerouslySetInnerHTML={{__html: fields.text}}></div>
+                        <div className="page-block-cta__intro" dangerouslySetInnerHTML={{__html: fields.text}} />
                         {/* {button} */}
                         <div className=" page-block-cta__buttons">
                             <PageButton fields={fields} />

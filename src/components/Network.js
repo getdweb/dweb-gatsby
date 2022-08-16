@@ -19,7 +19,7 @@ export default function Network() {
   )
 
   const cities = data.allNetworkYaml.nodes
-  let preloadArray = []
+  const preloadArray = []
 
   return (
     <div className="network" id="nodes">
@@ -39,7 +39,7 @@ export default function Network() {
                   city.city_image_url !== null
                 ) {
                   if (typeof window === `undefined`) return
-                  let preloadImage = new Image()
+                  const preloadImage = new Image()
                   preloadImage.src = city.city_image_url
                   preloadArray.push(preloadImage)
                 }
@@ -72,7 +72,7 @@ export default function Network() {
                           backgroundImage: `url(${city.city_image_url})`,
                         }}
                         className="network__node-image"
-                      ></div>
+                       />
                     ) : (
                       ''
                     )}

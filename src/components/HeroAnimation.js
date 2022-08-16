@@ -50,8 +50,8 @@ export default function HeroAnimation() {
 		this.x =  Math.random()*ww;
 		this.y =  Math.random()*wh;
 		this.dest = {
-			x : x,
-			y: y
+			x,
+			y
 		};
 		this.r =  Math.random()*4 + 2;
 		this.vx = (Math.random()-0.5)*20;
@@ -79,10 +79,10 @@ export default function HeroAnimation() {
 		ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
 		ctx.fill();
 
-		var a = this.x - mouse.x;
-		var b = this.y - mouse.y;
+		const a = this.x - mouse.x;
+		const b = this.y - mouse.y;
 
-		var distance = Math.sqrt( a*a + b*b );
+		const distance = Math.sqrt( a*a + b*b );
 		if(distance<(radius*80)){
 			this.accX = (this.x - mouse.x)/100;
 			this.accY = (this.y - mouse.y)/100;
@@ -117,17 +117,17 @@ export default function HeroAnimation() {
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-		ctx.font = "bold "+(ww/6)+"px sans-serif";
+		ctx.font = `bold ${ww/6}px sans-serif`;
 		ctx.textAlign = "center";
 		ctx.fillText(text, ww/2, wh/2);
 
-		var data  = ctx.getImageData(0, 0, ww, wh).data;
+		const {data} = ctx.getImageData(0, 0, ww, wh);
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.globalCompositeOperation = "screen";
 
 		particles = [];
-		for(var i=0;i<ww;i+=Math.round(ww/80)){
-			for(var j=0;j<wh;j+=Math.round(ww/80)){
+		for(let i=0;i<ww;i+=Math.round(ww/80)){
+			for(let j=0;j<wh;j+=Math.round(ww/80)){
 				if(data[ ((i + j*ww)*4) + 3] > 100){
 					particles.push(new Particle(i,j));
 				}
@@ -147,12 +147,12 @@ export default function HeroAnimation() {
 	function render(a) {
 		requestAnimationFrame(render);
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		for (var i = 0; i < amount; i++) {
+		for (let i = 0; i < amount; i++) {
 			particles[i].render();
 		}
 	};
 
     return (
-        <canvas id="scene"></canvas>
+        <canvas id="scene" />
     );
 }

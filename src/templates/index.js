@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
 import favicon from '../img/favicon.svg'
 import Hero from '../components/Hero'
 import AboutUs from '../components/AboutUs'
@@ -35,7 +35,7 @@ export default function Index () {
     current_menu_item_name = "";
 
     screen_height = window.innerHeight;
-    menu_items.forEach(function(menu_item){
+    menu_items.forEach((menu_item)=> {
         const href = menu_item.getAttribute("href");
         if (href.substr(0, 2) == "/#"){
           const id = href.substr(2, href.length);
@@ -50,11 +50,11 @@ export default function Index () {
   const highlightCurrentMenuPoint = () => {
     if (typeof window === `undefined`) return;
 
-    if (typeof menu_items_offsets != 'undefined' && menu_items_offsets.length != 0){
-      var i = menu_items_length;
-      var y_scroll_pos = window.pageYOffset + screen_height*0.5;
+    if (typeof menu_items_offsets !== 'undefined' && menu_items_offsets.length != 0){
+      let i = menu_items_length;
+      const y_scroll_pos = window.pageYOffset + screen_height*0.5;
 
-      var nearest = {"pos": 0, "id": ""};
+      let nearest = {"pos": 0, "id": ""};
       while (i--){
           if (menu_items_offsets[i].pos < y_scroll_pos && menu_items_offsets[i].pos > nearest.pos){
               nearest = menu_items_offsets[i];
@@ -66,19 +66,19 @@ export default function Index () {
           document.querySelector("#menu-primary a.active").classList.remove("active");
         }
       } else if (current_menu_item_name != nearest.id ){
-        const nearest_link = document.querySelector("#menu-primary a[href='/#"+nearest.id+"']");
+        const nearest_link = document.querySelector(`#menu-primary a[href='/#${nearest.id}']`);
         if (active_link != null){
           document.querySelector("#menu-primary a.active").classList.remove("active");
         }
         if (nearest_link != null){
-          document.querySelector("#menu-primary a[href='/#"+nearest.id+"']").classList.add("active");
+          document.querySelector(`#menu-primary a[href='/#${nearest.id}']`).classList.add("active");
         }
       }
     }
   }
 
   const utilsService = new UtilsService();
-  let highlightCurrentMenuPointThrottled = utilsService.debounce(function() {
+  const highlightCurrentMenuPointThrottled = utilsService.debounce(() => {
     highlightCurrentMenuPoint();
   }, 250, true, true);
 
@@ -118,6 +118,6 @@ export default function Index () {
     </div>
 
   return (
-    <Layout content={content}></Layout>
+    <Layout content={content} />
   )
 }

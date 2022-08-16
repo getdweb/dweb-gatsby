@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function PageBlockOpening (props) {
-    const fields = props.fields;
+    const {fields} = props;
 
     const imageDesktop = fields.hero_image_desktop 
         ? <img 
@@ -24,7 +24,7 @@ export default function PageBlockOpening (props) {
                 <div className="row">
                     <div className="col col-12 col-md-9">
                         <h1 className="page-block-opening__title">{fields.title}</h1>
-                        <div className="page-block-opening__text" dangerouslySetInnerHTML={{__html: fields.text}}></div>
+                        <div className="page-block-opening__text" dangerouslySetInnerHTML={{__html: fields.text}} />
                     </div>
                 </div>
             </div>

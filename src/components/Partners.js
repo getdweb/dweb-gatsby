@@ -57,7 +57,7 @@ export default function Partners() {
               className="logos__item"
               key={sponsor.id + i}
               style={{ backgroundImage: `url(${sponsorLogoUrl})` }}
-            ></div>
+             />
           )
         })}
       </div>

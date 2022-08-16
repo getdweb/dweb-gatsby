@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import Faq from '../components/Faq'
 import Footer from '../components/Footer'
 
-const FaqPage = () => {
+function FaqPage() {
   const content = 
     <div>
       <Faq />
@@ -11,7 +11,7 @@ const FaqPage = () => {
     </div>
 
   return (
-    <Layout content={content}></Layout>
+    <Layout content={content} />
   )
 }
 

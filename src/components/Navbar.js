@@ -30,31 +30,29 @@ export default function Navbar(props) {
         setState({hidden: false, visible: false, top: true});
     } else if (just_loaded){
         setState({hidden: false, visible: true, top: false});
-    } else {
-      if (prevScrollPos > currentScrollPos) {
+    } else if (prevScrollPos > currentScrollPos) {
         setState({hidden: false, visible: true, top: false});
       } else {
         setState({hidden: true, visible: false, top: false});
       }
-    }
     prevScrollPos = currentScrollPos;
   };
 
-  var navbarClassName = 'navbar ' + (props.menuOpen ? 'is-menu-open ': '') + (state.hidden ? 'hidden ': '') + (state.visible ? 'visible ': '') + (state.top ? 'top ': '');
+  const navbarClassName = `navbar ${  props.menuOpen ? 'is-menu-open ': ''  }${state.hidden ? 'hidden ': ''  }${state.visible ? 'visible ': ''  }${state.top ? 'top ': ''}`;
 
   const pathname = typeof window !== `undefined` ? window.location.pathname : "";
-  const headerButton = pathname !== '/get-involved' ? <HeaderButton></HeaderButton> : "";
+  const headerButton = pathname !== '/get-involved' ? <HeaderButton /> : "";
   
   return (
     <nav 
       id="navbar"
       className={navbarClassName}
       >
-      <HeaderLogo></HeaderLogo>
+      <HeaderLogo />
       <div className="navbar__menus">
-        <MenuPrimary {...props}></MenuPrimary>
-        <MenuSecondary></MenuSecondary>
-        <MenuSocial></MenuSocial>
+        <MenuPrimary {...props} />
+        <MenuSecondary />
+        <MenuSocial />
       </div>
       {headerButton}
       <a
@@ -63,10 +61,10 @@ export default function Navbar(props) {
         rel="noopener noreferrer"
         onClick={props.menuLinkClick}
       >
-        <span></span>
-        <span></span>
-        <span></span>
-        <div className="other-bar"></div>
+        <span />
+        <span />
+        <span />
+        <div className="other-bar" />
       </a>
     </nav>
   );

@@ -11,6 +11,6 @@ export default function HeaderLogo() {
       }}
       alt=""
       title=""
-    ></Link>
+     />
   )
 }

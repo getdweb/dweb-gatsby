@@ -8,7 +8,7 @@ export default function Voices() {
   const VOICES_PER_PAGE = 9;
   const RENDER_TIMEOUT = 500;
 
-  let timeouts = [];
+  const timeouts = [];
 
   const [loading, setLoading] = useState(true);
   const [finished, setFinished] = useState(false);
@@ -2446,11 +2446,11 @@ export default function Voices() {
 
   const voicesAll = data.data.allWordpressWpVoices.nodes;
   const voiceCategories = data.data.allWordpressWpVoiceCategories.nodes;
-  const options = data.data.wordpressAcfOptions.options;
+  const {options} = data.data.wordpressAcfOptions;
 
   const loadVoices = function() {
     scrollService.saveScroll(); // Save scroll position
-    let newVoices = voicesAll.slice(0, VOICES_PER_PAGE * page);
+    const newVoices = voicesAll.slice(0, VOICES_PER_PAGE * page);
     setVoices(newVoices);
     if (VOICES_PER_PAGE * page > voicesAll.length) setFinished(true);
     setPage(page + 1);
@@ -2509,24 +2509,24 @@ export default function Voices() {
   let currentOptions = {};
 
   const masonrySetMinWidth = (obj, width, unit) => {
-    var old_width = obj.style.minWidth;
+    const old_width = obj.style.minWidth;
     if (parseInt(old_width) < parseInt(width)) {
       obj.style.minWidth = width + unit;
     }
   }
 
   const masonrySetMinHeight = (obj, height) => {
-    var old_height = parseInt(obj.style.minHeight);
+    let old_height = parseInt(obj.style.minHeight);
     if (isNaN(old_height)) old_height = 0;
     if (parseInt(old_height) < parseInt(height)) {
-      obj.style.minHeight = height + 'px';
+      obj.style.minHeight = `${height  }px`;
     }
   }
 
   const masonryGetCurrentOptions = () => {
     if (typeof window === `undefined`) return;
-    for (var key in masonryOptions) {
-      var el = masonryOptions[key];
+    for (const key in masonryOptions) {
+      const el = masonryOptions[key];
       if (el.minWidth < window.innerWidth) {
         currentOptions = el;
       } else {
@@ -2537,17 +2537,17 @@ export default function Voices() {
 
   const masonryInit = (masonryParent) => {
     if (masonryParent == null) return;
-    var children = masonryParent.children;
+    const {children} = masonryParent;
     if (children.length > 0) {
       masonryGetCurrentOptions();
       masonryParent.style.minHeight = '0px';
-      var cols_offset = [],
-        index = 0,
-        i = 0;
+      const cols_offset = [];
+        let index = 0;
+        let i = 0;
       while (i < children.length) {
         index = i;
-        var el = children[i];
-        if (typeof el == 'undefined') continue;
+        const el = children[i];
+        if (typeof el === 'undefined') continue;
         if (index < currentOptions.colsCount) {
           el.style.width = currentOptions.colsWidth + currentOptions.unit;
           el.style.top = 'unset';
@@ -2556,10 +2556,10 @@ export default function Voices() {
           masonrySetMinWidth(masonryParent, (index + 1) * currentOptions.colsWidth + index * currentOptions.gapsWidth, currentOptions.unit);
           masonrySetMinHeight(masonryParent, cols_offset[index]);
         } else {
-          var min = Math.min(...cols_offset);
+          const min = Math.min(...cols_offset);
           index = cols_offset.indexOf(min);
           el.style.width = currentOptions.colsWidth + currentOptions.unit;
-          el.style.top = cols_offset[index] + 'px';
+          el.style.top = `${cols_offset[index]  }px`;
           el.style.left = index * (currentOptions.colsWidth + currentOptions.gapsWidth) + currentOptions.unit;
           cols_offset[index] = cols_offset[index] + el.offsetHeight;
           masonrySetMinWidth(masonryParent, index * currentOptions.colsWidth + (index - 1) * currentOptions.gapsWidth, currentOptions.unit);
@@ -2574,7 +2574,7 @@ export default function Voices() {
   const masonryRestart = () => {
     if (typeof window === `undefined`) return;
     timeouts.forEach(timeout => clearTimeout(timeout));
-    const firstTimeout = setTimeout(function () {
+    const firstTimeout = setTimeout(() => {
       masonryInit(document.getElementById("masonry"));
       window.addEventListener('resize', () => {
         scrollService.saveScroll(); // Save scroll position
@@ -2589,20 +2589,18 @@ export default function Voices() {
       <div className="container">
         <div className="row">
           <div className="col col-12 col-xl-8">
-            <div className="header" dangerouslySetInnerHTML={{__html: options.voices_header}}></div>
-            <div className="header-notice voices__notice" dangerouslySetInnerHTML={{__html: options.voices_intro}}></div>
+            <div className="header" dangerouslySetInnerHTML={{__html: options.voices_header}} />
+            <div className="header-notice voices__notice" dangerouslySetInnerHTML={{__html: options.voices_intro}} />
           </div>
           <div className="col col-12">
             <div className="masonry" id="masonry" style={{ minHeight: 0 }}>
               {Object.entries(voices).map(([key, voice]) => {
-                const filtered = voiceCategories.filter(cat => {
-                  return cat.wordpress_id === voice.acf.voice_category.term_id;
-                });
+                const filtered = voiceCategories.filter(cat => cat.wordpress_id === voice.acf.voice_category.term_id);
                 return (
                   <Voice
                     voice={voice}
                     color = {filtered.length > 0 ? filtered[0].acf.color : "inherit"}
-                    key={"voice_"+voice.wordpress_id}
+                    key={`voice_${voice.wordpress_id}`}
                     i={key}
                   />
                 )
@@ -2610,12 +2608,12 @@ export default function Voices() {
             </div>
             <div className="voices__footer">
               <a
-                className={"show-more voices__show-more " + ((loading || finished) && "d-none")}
+                className={`show-more voices__show-more ${  (loading || finished) && "d-none"}`}
                 onClick={loadVoices}
                 >
                 Load more
               </a>
-              <div className={"voices__loader " + ((!loading || finished) && "d-none")}></div>
+              <div className={`voices__loader ${  (!loading || finished) && "d-none"}`} />
             </div>
           </div>
         </div>

@@ -23,11 +23,11 @@ export default function MenuSecondary() {
     <div className="navbar__menus__item menu-secondary" id="menu-secondary">
       {Object.entries(menu_items).map(([key,item]) => {
           if (typeof window === `undefined`) return;
-          let activeClass = item.url == window.location.pathname ? " active " : "";
+          const activeClass = item.url == window.location.pathname ? " active " : "";
           let link;
           if (item.url.substr(0,1) == "/") {
             link = <Link
-              className={" menu-secondary__item " + activeClass}
+              className={` menu-secondary__item ${  activeClass}`}
               to={item.url}
               key={item.object_id}
               >
