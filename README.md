@@ -15,7 +15,7 @@ your local machine for development and testing purposes.
 Requirements for the software and other tools to build, test and push
 
 - [node](https://nodejs.org/en/download/)
-- [nvm] (https://github.com/nvm-sh/nvm)
+- [nvm](https://github.com/nvm-sh/nvm)
 - [gatsby-cli](https://www.npmjs.com/package/gatsby-cli)
 
 ### Installing
@@ -23,9 +23,9 @@ Requirements for the software and other tools to build, test and push
 1. Install nvm to your machine
 1. Clone the get-dweb-dot-com repository to your machine
 1. `cd` into the respository folder
-1. Run `nvm use`, which utilizes the .nvmrc file
+1. Run `nvm use`, which utilizes the [.nvmrc](.nvmrc) file
 1. Run `npm install`
-1. Run `npm install -g gatsby-cli` if you don't already have gatsby-cli installed globally
+1. Run `npm install -g gatsby-cli` if you don't already have [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) installed globally
 1. Run `npm run develop` to spin up a development server or `npm run build` to build a production-ready version of the site
 
 ### Style test
