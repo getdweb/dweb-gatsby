@@ -10,7 +10,6 @@ export default function QuotesSlider() {
         allHeroQuotesYaml {
           nodes {
             id
-            wordpress_id
             url
           }
         }
