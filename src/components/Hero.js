@@ -10,9 +10,6 @@ export default function Hero() {
   const videoEmbed = useRef(null);
   const marqueeEl = useRef(null);
 
-  // TODO: change wordpress_id to key_id
-  // TODO: make video link, background image to YAML
-
   const data = useStaticQuery(
     graphql`
       query {
