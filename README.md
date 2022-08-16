@@ -35,7 +35,6 @@ There is an ESLint configuation which extends the [airbnb](https://github.com/ai
 ## Built With
 
 - [Gatsby](https://www.gatsbyjs.com/) - Used to build the static site
-- [MDX](https://mdxjs.com/) - Used to organize page structure
 
 ## License
 
