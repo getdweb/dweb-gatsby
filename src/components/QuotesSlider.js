@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import 'swiper/css';
+import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function QuotesSlider() {
@@ -10,7 +10,6 @@ export default function QuotesSlider() {
         allHeroQuotesYaml {
           nodes {
             id
-            wordpress_id
             url
           }
         }
@@ -27,7 +26,7 @@ export default function QuotesSlider() {
           spaceBetween={0}
           slidesPerView={1}
           slidesPerGroup={1}
-          loop={true}
+          loop
           loopFillGroupWithBlank={false}
           onSwiper={(swiper) => {
             const quotesRandNumber = Math.floor(
@@ -46,13 +45,11 @@ export default function QuotesSlider() {
             },
           }}
         >
-          {hero_quotes.map((quote) => {
-            return (
-              <SwiperSlide key={quote.id}>
-                <img src={quote.url} />
-              </SwiperSlide>
-            )
-          })}
+          {hero_quotes.map((quote) => (
+            <SwiperSlide key={quote.id}>
+              <img src={quote.url} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

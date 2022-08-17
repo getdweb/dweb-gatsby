@@ -37,15 +37,13 @@ export default function Faq() {
                   <div className="faq-section" key={section.id}>
                     <div className="faq-section__header">
                       <span className="faq-section__number">
-                        {i < 10 ? '0' + i : i}.{' '}
+                        {i < 10 ? `0${i}` : i}.{' '}
                       </span>
                       {section.title}
                     </div>
-                    {section.questions.map((pair) => {
-                      return (
-                        <FaqQuestion pair={pair} key={md5(pair.question)} />
-                      )
-                    })}
+                    {section.questions.map((pair) => (
+                      <FaqQuestion pair={pair} key={md5(pair.question)} />
+                    ))}
                   </div>
                 )
               })}

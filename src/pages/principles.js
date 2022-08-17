@@ -3,17 +3,15 @@ import Layout from '../components/Layout'
 import Principles from '../components/Principles'
 import Footer from '../components/Footer'
 
-const PrinciplesPage = () => {
-  const content = <>
+function PrinciplesPage() {
+  const content = (
+    <>
       <Principles />
       <Footer />
     </>
-
-  return (
-    <Layout content={content}></Layout>
   )
+
+  return <Layout content={content} />
 }
 
 export default PrinciplesPage
-
-

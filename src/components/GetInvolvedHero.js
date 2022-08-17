@@ -8,13 +8,13 @@ export default function GetInvolvedHero() {
         style={{
           backgroundImage: `url(https://getdweb.net/wp-content/uploads/2020/11/Get-involved-hero.png)`,
         }}
-      ></div>
+      />
       <div
         className="get-involved-hero__image d-md-none"
         style={{
           backgroundImage: `url(https://getdweb.net/wp-content/uploads/2021/01/Get-involved-hero-mobile.jpg)`,
         }}
-      ></div>
+      />
       <div className="get-involved-hero__header">
         A web for all requires everyone to get involved
       </div>

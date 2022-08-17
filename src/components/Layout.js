@@ -1,37 +1,37 @@
 import React, { useState, useEffect } from 'react'
-import favicon from '../img/favicon.svg'
 import Helmet from 'react-helmet'
+import favicon from '../img/favicon.svg'
 
 import Navbar from './Navbar'
 
 export default function Layout(props) {
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  let content = props.content;
+  const { content } = props
 
   const menuLinkClick = () => {
-    setMenuOpen(()=>{
-      return !menuOpen;
-    })
+    setMenuOpen(() => !menuOpen)
   }
 
   const closeMenu = () => {
-    setMenuOpen(false);
+    setMenuOpen(false)
   }
-  
-  let contentInlineStyle = menuOpen ? {display: "none"} : {};
+
+  const contentInlineStyle = menuOpen ? { display: 'none' } : {}
 
   return (
     <div>
       <Helmet title="DWeb">
-          <link rel="icon" href={favicon} />
+        <link rel="icon" href={favicon} />
       </Helmet>
-      <Navbar menuLinkClick={menuLinkClick} menuOpen={menuOpen} closeMenu={closeMenu} />
+      <Navbar
+        menuLinkClick={menuLinkClick}
+        menuOpen={menuOpen}
+        closeMenu={closeMenu}
+      />
       <div className="content" style={contentInlineStyle}>
         {content}
       </div>
     </div>
-  );
+  )
 }
-

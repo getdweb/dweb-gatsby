@@ -1,0 +1,115 @@
+{
+  "data": {
+    "allWordpressAcfOptions": {
+      "nodes": [
+        {
+          "options": {
+            "hero_announcement_link": "https://www.eventbrite.com/e/dweb-meetup-march-2021-the-latest-in-the-dweb-ecosystem-tickets-142013104017",
+            "hero_announcement_caption": "To sign up to give a lightning talk at the next DWeb meetup",
+            "hero_tagline": "Connecting people,<br>projects and protocols to build a decentralized web",
+            "hero_video_preview": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2021/01/Governance-Stories-hero-video.jpg"
+              }
+            },
+            "hero_video_url": "https://archive.org/download/dweb-8_1_18_FE_In_a_decentralized_world_who_decides/8_1_18_FE_In_a_decentralized_world_who_decides.mpeg4",
+            "hero_video_caption": "In a Decentralized World, Who Decides? Five Leaders Share their Governance Stories",
+            "hero_video_caption_length": "775",
+            "hero_quotes": [
+              {
+                "image": {
+                  "id": "a42e03b9-e73c-520c-b306-8b9e30cc5f1f",
+                  "wordpress_id": 437,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-Benedict-lau.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "cb656763-6c9d-5451-b3c2-a838354a7d31",
+                  "wordpress_id": 435,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote_jennifer-granick.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "f407c5c6-0e27-56ce-9ff4-8cbf203c9731",
+                  "wordpress_id": 440,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-joachim-lohkamp.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "e8c41def-4444-5ec3-b0c7-bf646cd26418",
+                  "wordpress_id": 436,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote_wendy-hanamura.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "842af87f-e8bc-5ead-8acd-7b895f3842d2",
+                  "wordpress_id": 441,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-mai-sutton.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "d23564a8-d2a1-509a-ac6c-067cd53a0192",
+                  "wordpress_id": 442,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-Matt-zumwalt.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "83e5c986-f0b0-5411-8409-06a44fd01ecc",
+                  "wordpress_id": 444,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-Redecentralize.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "4e8bba2c-541f-5c67-b2dd-cc82285a7e90",
+                  "wordpress_id": 443,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-primavera-de-filippi.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "a21227df-c3cb-5129-a304-95e3b8b50e92",
+                  "wordpress_id": 433,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote_brandon-wallace.png"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "id": "b60c0014-2308-5971-93a7-ab0edd7fd719",
+                  "wordpress_id": 439,
+                  "localFile": {
+                    "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/quote-jay-graber.png"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

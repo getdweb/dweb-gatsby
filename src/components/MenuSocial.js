@@ -26,9 +26,10 @@ export default function MenuSocial() {
           className="menu-social__item"
           href={item.link}
           target="_blank"
-          key={'menu-social-' + md5(item.label)}
+          key={`menu-social-${md5(item.label)}`}
           dangerouslySetInnerHTML={{ __html: item.icon_code }}
-        ></a>
+          rel="noreferrer"
+        />
       ))}
     </div>
   )

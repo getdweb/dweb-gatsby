@@ -44,7 +44,8 @@
     "serve": "gatsby serve --prefix-paths",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:server": "node ./build_server.js"
+    "build:server": "node ./build_server.js",
+    "lint": "eslint --fix --ext .js,.jsx ."
   },
   "devDependencies": {
     "eslint-config-airbnb": "^19.0.4",

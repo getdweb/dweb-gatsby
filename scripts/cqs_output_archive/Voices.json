@@ -1,0 +1,1086 @@
+{
+  "data": {
+    "allWordpressWpVoices": {
+      "nodes": [
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2021-02-01#1 Feb 2021",
+            "intro": "In the \u201cMapping Social Media\u201d project of the Knight First Amendment institute, Ethan Zuckerman analyses the \u2018logic\u2019 of several types of social networks (for example \u2018chat logic\u2019, \u2018civic logic\u2019 or \u2018crypto logic\u2019), by comparing networks along five axes: their technology, revenue model, ideology, governance and affordances. ",
+            "link": "https://redecentralize.org/redigest/2020/11",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; November 2020",
+          "wordpress_id": 640
+        },
+        {
+          "acf": {
+            "author": "Jay Graber",
+            "date": "2021-01-21#21 Jan 2021",
+            "intro": "Report \u2014 This overview of the decentralized social ecosystem is structured by protocols, applications, and topics. The protocols and applications sections contain summaries of existing projects. ",
+            "link": "https://matrix.org/_matrix/media/r0/download/twitter.modular.im/981b258141aa0b197804127cd2f7d298757bad20",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Bluesky: Ecosystem review",
+          "wordpress_id": 753
+        },
+        {
+          "acf": {
+            "author": "Jay Graber",
+            "date": "2021-01-21#21 Jan 2021",
+            "intro": "In decentralized social networks, communities can set their own moderation policies, but what tools are available for enforcement? This post looks at technical approaches to decentralized moderation, and points out areas that could use more experimentation and research.",
+            "link": "https://jaygraber.medium.com/designing-decentralized-moderation-a76430a8eab",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Designing decentralized moderation",
+          "wordpress_id": 620
+        },
+        {
+          "acf": {
+            "author": "Benjamin Powers",
+            "date": "2021-01-19#19 Jan 2021",
+            "intro": "The InterPlanetary File System (IPFS), a decentralized peer-to-peer protocol designed to make the web less centralized and to avoid censorship, has been integrated into the desktop web browser Brave, making it the first browser to have a native IPFS integration.",
+            "link": "https://www.coindesk.com/brave-browser-native-ipfs-integration-decentralized-web",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Brave Becomes First Browser to Offer Native IPFS Integration",
+          "wordpress_id": 622
+        },
+        {
+          "acf": {
+            "author": "Micha\u0142 \u201crysiek\u201d Wo\u017aniak",
+            "date": "2021-01-18#18 Jan 2021",
+            "intro": "After the violent events at the US Capitol social media monopolists are finally waking up to the reality that centralisation is dangerous; with power over daily communication of hundreds of millions of users comes responsibility perhaps too big even for Big Tech.",
+            "link": "https://redecentralize.org/blog/2021/01/18/centralization-is-a-danger-to-democracy.html",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Centralisation is a danger to democracy",
+          "wordpress_id": 629
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2021-01-02#2 Jan 2021",
+            "intro": "Happy new month! A good moment to look back at the last month. In this digest we\u2019ll cover: The EU\u2019s new proposals for regulating 'gatekeeper' platforms; The Remote CCC conference and DWeb meetup; and Technology\u2019s trade-offs discussed in \u201cThe Decentralized Web of Hate\u201d.\r\n",
+            "link": "https://redecentralize.org/redigest/2020/12",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; December 2020",
+          "wordpress_id": 639
+        },
+        {
+          "acf": {
+            "author": "Ethan Zuckerman",
+            "date": "2020-11-03#3 Nov 2020",
+            "intro": "Evan Henshaw-Plath (aka Rabble), founder of Planetary.Social and member of Twitter's founding team, joins the podcast to talk about decentralized social media, how context collapse makes content moderation on platforms like Facebook and Twitter impossible, and building a platform that's safe for people like furries while keeping away people like neo-Nazis.",
+            "link": "https://publicinfrastructure.org/podcast/03-evan-henshaw-plath",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Reimagining the Internet with Evan Henshaw-Plath of Planetary.Social",
+          "wordpress_id": 619
+        },
+        {
+          "acf": {
+            "author": "Ethan Zuckerman",
+            "date": "2020-11-03#3 Nov 2020",
+            "intro": "As we\u2019ve begun our work on mapping social media, several alternatives to \u201cFacebook logic\u201d have become clear. Mastodon is an example of a platform that falls under what we will call \u201cdecentralized\u201d logic. This group of platforms uses decentralized technology such as federation or peer-to-peer protocols.",
+            "link": "https://knightcolumbia.org/content/what-if-social-media-worked-more-like-email",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "What if Social Media Worked More Like Email?",
+          "wordpress_id": 585
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-11-02#2 Nov 2020",
+            "intro": "Self-sovereign identity and frictionless dystopia -- In recent years, self-sovereign identity (or SSI) has become a popular topic. Dozens of projects are inventing protocols that enable people to identify themselves online or to prove they possess specific credentials. ",
+            "link": "https://redecentralize.org/redigest/2020/10",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; October 2020",
+          "wordpress_id": 641
+        },
+        {
+          "acf": {
+            "author": "Emmi Bevensee",
+            "date": "2020-10-29#29 Oct 2020",
+            "intro": "This report looks at how hate movements are decentralizing using emerging technologies in ways that make them harder to combat. These technologies ask us critical questions about the future of society and the internet but also pose incredible potential to help us along our way.",
+            "link": "https://rebelliousdata.com/p2p/",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "The Decentralized Web of Hate",
+          "wordpress_id": 630
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-10-06#6 Oct 2020",
+            "intro": "Follow us OFF Facebook -- We got a last-minute opportunity to host a workshop at the NGI Policy Summit last week, part of the European Union\u2019s Next Generation Internet programme. ",
+            "link": "https://redecentralize.org/redigest/2020/09",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; September 2020",
+          "wordpress_id": 642
+        },
+        {
+          "acf": {
+            "author": "David Rosenthal",
+            "date": "2020-09-22#22 Sep 2020",
+            "intro": "The Ecosystem Is Moving: Challenges For Distributed And Decentralized Technology is a talk by Moxie Marlinspike that anyone interested in the movement to re-decentralize the Internet should watch and think about. Marlinspike concludes \"I'm not entirely optimistic about the future of decentralized systems, but I'd also love to be proven wrong\".",
+            "link": "https://blog.dshr.org/2020/09/moxie-marlinspike-on-decentralization.html#more",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "",
+            "image": null
+          },
+          "title": "Moxie Marlinspike On Decentralization",
+          "wordpress_id": 344
+        },
+        {
+          "acf": {
+            "author": "Nathan Schneider",
+            "date": "2020-09-11#11 Sep 2020",
+            "intro": "Lots of tech projects these days, especially crypto-networks, aspire to decentralization. Or their evangelists say they do, because they feel they need to. Decentralization is the new disruption\u2014the thing everything worth its salt (and a huge ICO) is supposed to be doing.",
+            "link": "https://hackernoon.com/decentralizing-everything-never-seems-to-work-2bb0461bd168",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://hackernoon.com/hn-images/1*ubOOkWtA8DC04-IsA93aGw.jpeg",
+            "image": null
+          },
+          "title": "What to do once you admit that decentralizing everything never seems to work",
+          "wordpress_id": 156
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-09-01#1 Sep 2020",
+            "intro": "Don\u2019t shoot the messenger -- The Google Play app store decided that several Fediverse apps (at least Subway Tooter, Fedilab, Husky, MastoPane) will be removed from the store because they \u2018promote violence or incite hatred\u2019; thereby blaming the app for the forums people could connect to by knowingly entering such a forum\u2019s address. ",
+            "link": "https://redecentralize.org/redigest/2020/08",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; August 2020",
+          "wordpress_id": 644
+        },
+        {
+          "acf": {
+            "author": "Juan Caballero",
+            "date": "2020-08-18#18 Aug 2020",
+            "intro": "There is no one single (or even central) place where decentralized identity technologies are being created. It is decentralized in its processes as well as its topography. Learning the \u201clay of the land\u201d entails bouncing around a network more than surveying a city from a high vantage point. ",
+            "link": "https://medium.com/decentralized-identity/where-to-begin-b2a55b898b3",
+            "voice_category": {
+              "term_id": 12,
+              "name": "Guide:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Where to begin?",
+          "wordpress_id": 631
+        },
+        {
+          "acf": {
+            "author": "Mai Ishikawa Sutton",
+            "date": "2020-08-12#12 Aug 2020",
+            "intro": "Four DWeb Camp 2019 Global Fellows shared how their community networks in South Africa, Brazil and India are adapting to COVID. Though they can connect to the World Wide Web, the fact that these networks maintain steady connectivity between local nodes with locally-hosted content is in many ways more valuable than their internet access.",
+            "link": "https://medium.com/decentralized-web/community-networks-adapt-to-new-realities-under-covid-a-dweb-meetup-recap-d9367f74735a",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2020/12/DWeb-eventbrite-one-year-after-DWebCamp-SF-cover.png"
+              }
+            }
+          },
+          "title": "Community Networks Adapt to New Realities Under COVID: A DWeb Meetup Recap",
+          "wordpress_id": 345
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-08-01#1 Aug 2020",
+            "intro": "Having started in July 2019, this monthly digest has been going for a full year now. Thanks for all the positive and constructive feedback so far! We hope to continue to be a helpful source of information and opinion for our readers, while looking for ways to improve it further and add value in other ways.",
+            "link": "https://redecentralize.org/redigest/2020/07",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; July 2020",
+          "wordpress_id": 645
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-07-01#1 Jul 2020",
+            "intro": "Decentralization Off The Shelf (DOTS) is a new initiative by Simply Secure and friends to help developers and (UX) designers of decentralised software make better user-facing applications.",
+            "link": "https://redecentralize.org/redigest/2020/06",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; June 2020",
+          "wordpress_id": 646
+        },
+        {
+          "acf": {
+            "author": "Alexander Cobleigh",
+            "date": "2020-06-29#29 Jun 2020",
+            "intro": "How do you remove malicious participants from a chat? For a set of participants, what are the steps needed such that the malicious participant is no longer visible by anyone in the set? This work explores an approach to implementing a subjective, trust-based system.",
+            "link": "https://cblgh.org/articles/trustnet.html",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "TrustNet: Trust-based Moderation Systems",
+          "wordpress_id": 621
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-06-01#1 Jun 2020",
+            "intro": "GDPR 2 years -- Two years after the EU\u2019s General Data Protection Regulation went into effect, the teeth it was supposed to have are rarely used to bite, leaving much of the tech industry to apply its own wishful interpretations of the law.",
+            "link": "https://redecentralize.org/redigest/2020/05",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; May 2020",
+          "wordpress_id": 647
+        },
+        {
+          "acf": {
+            "author": "Benedict Lau",
+            "date": "2020-05-08#8 May 2020",
+            "intro": "This new website about DWeb Camp\u2019s Meshnet documents how a group of enthusiastic people came together on that farm in California to build our own infrastructure of connectivity for a community of 450 people, and how this experiment may help other communities come online.",
+            "link": "https://medium.com/decentralized-web/dweb-camp-meshnet-a-model-for-bringing-communities-online-b410c3dd4e5a",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*fAgzZ2itu3tRVNsQHzmENg.jpeg",
+            "image": null
+          },
+          "title": "DWeb Camp Meshnet: A model for bringing communities online",
+          "wordpress_id": 346
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-05-01#1 May 2020",
+            "intro": "Contact tracing apps, continued -- Whereas in March some buzz was growing around bluetooth-based contact tracing apps to help contain Covid-19 (see previous digest), in April it almost felt like that was the only thing being written about.",
+            "link": "https://redecentralize.org/redigest/2020/04",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; April 2020",
+          "wordpress_id": 648
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-04-02#2 Apr 2020",
+            "intro": "It seems hard to judge what is still relevant to digest, as the corona crisis changes daily life as we knew it and fills newspapers front to back; perhaps hindsight will show obvious omissions. Coincidentally, but with a great sense of timing, Ira joined the UK\u2019s National Health Service this month \u2014 to work on data interoperability.",
+            "link": "https://redecentralize.org/redigest/2020/03",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; March 2020",
+          "wordpress_id": 649
+        },
+        {
+          "acf": {
+            "author": "David Smooke",
+            "date": "2020-03-06#6 Mar 2020",
+            "intro": "Trying to conceptualize the dWeb can really trip people up because it is so simple, that it\u2019s easy to feel like you just don\u2019t \u201cget it,\u201d like you\u2019re missing something. But the reality is that the dWeb is a revisiting of the vintage internet in which the idea was simply to connect a bunch of computers around the globe.",
+            "link": "https://hackernoon.com/dweb-at-large-simply-connect-a-bunch-of-computers-around-the-globe-dr-cazzell-5vyt32cu",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": null,
+            "image_url": null,
+            "image": null
+          },
+          "title": "dWeb at Large: \u201cSimply Connect a Bunch of Computers Around the Globe\u201d &#8211; Dr. Cazzell",
+          "wordpress_id": 347
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-03-01#1 Mar 2020",
+            "intro": "Friends, We have finally updated our website! An early spring cleaning of the cobwebs and archiving old material, and new content on the home and \u2018about\u2019 page. We are feeling proud :D",
+            "link": "https://redecentralize.org/redigest/2020/02",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; February 2020",
+          "wordpress_id": 650
+        },
+        {
+          "acf": {
+            "author": "Irina Bolychevsky",
+            "date": "2020-02-07#7 Feb 2020",
+            "intro": "From advocates, politicians and technologists, calls for doing something about big tech grow louder by the day. Yet concrete ideas are few or failing to reach the mainstream. This post covers what breaking up big tech would mean and why it\u2019s not enough. I propose an open intervention that will give people a real choice and a way out of controlled walled gardens.",
+            "link": "https://redecentralize.org/blog/2020/02/07/breaking-big-tech-open.html",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Instead of breaking up big tech, let\u2019s break them open",
+          "wordpress_id": 652
+        },
+        {
+          "acf": {
+            "author": "Gerben",
+            "date": "2020-02-01#1 Feb 2020",
+            "intro": "DWeb SF meetup explored decentralised social media -- The Internet Archive hosted an event with various presentations around decentralising social media. This post provides both the video recording and an excellent summary, so we will skip that here and merely quote one quip from John Ryan\u2019s talk (which corresponds to his latest blog post): \"The answer to the walled garden problem is not more walled gardens.\"\r\n",
+            "link": "https://redecentralize.org/redigest/2020/01",
+            "voice_category": {
+              "term_id": 19,
+              "name": "Newsletter:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Redecentralize Digest &#8211; January 2020",
+          "wordpress_id": 651
+        },
+        {
+          "acf": {
+            "author": "Jay Graber",
+            "date": "2020-01-17#17 Jan 2020",
+            "intro": "This post will provide a survey of social applications that have incorporated a blockchain into their design. Social applications that use a blockchain are decentralized to varying degrees.",
+            "link": "https://medium.com/decentralized-web/blockchain-social-networks-c941fb337970",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": null,
+            "image_url": null,
+            "image": null
+          },
+          "title": "Blockchain Social Networks",
+          "wordpress_id": 349
+        },
+        {
+          "acf": {
+            "author": "Jay Graber",
+            "date": "2020-01-09#9 Jan 2020",
+            "intro": "This post will provide an overview of some of the most popular federated and peer-to-peer social network designs. I\u2019ll dive into detail on ActivityPub and ssb, and cover how their main implementations address the hard problems of identity, moderation, and monetization.",
+            "link": "https://medium.com/decentralized-web/decentralized-social-networks-e5a7a2603f53",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Decentralized Social Networks",
+          "wordpress_id": 350
+        },
+        {
+          "acf": {
+            "author": "John Patrick Ryan",
+            "date": "2020-01-06#6 Jan 2020",
+            "intro": "If you\u2019re a disgruntled user of social media, or an entrepreneur or investor seeing opportunity in the wave of disenchantment, you\u2019re wondering if alternative social media are important, or is \u201cjust\u201d creating more walled gardens a bad idea? Instead, do decentralized intermediaries, such as Twitter\u2019s BlueSky, ActivityPub and Digi.me, show the way forward?",
+            "link": "https://medium.com/decentralized-web/decentralizing-ending-walled-gardens-6f0d4a8b4e98",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": null,
+            "image_url": null,
+            "image": null
+          },
+          "title": "Decentralizing: ending walled gardens",
+          "wordpress_id": 351
+        },
+        {
+          "acf": {
+            "author": "Jay Graber",
+            "date": "2019-12-26#26 Dec 2019",
+            "intro": "A core component of decentralizing the web is how you store and share data. IPFS and Dat are distributed file systems that can provide data storage for the decentralized web. They can be thought of as essentially next-generation versions of bittorrent. This post will compare the high level and technical details.",
+            "link": "https://medium.com/decentralized-web/comparing-ipfs-and-dat-8f3891d3a603",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*M7NooPRLcaJnHg8Tznyb_Q.png",
+            "image": null
+          },
+          "title": "Comparing IPFS and Dat",
+          "wordpress_id": 352
+        },
+        {
+          "acf": {
+            "author": "Jack Dorsey",
+            "date": "2019-12-11#11 Dec 2019",
+            "intro": "Twitter is funding a small independent team of up to five open source architects, engineers, and designers to develop an open and decentralized standard for social media. The goal is for Twitter to ultimately be a client of this standard.",
+            "link": "https://twitter.com/jack/status/1204766078468911106",
+            "voice_category": {
+              "term_id": 12,
+              "name": "Guide:"
+            },
+            "thumbnail_type": null,
+            "image_url": null,
+            "image": null
+          },
+          "title": "Twitter CEO Jack Dorsey&#8217;s Project Bluesky Announcement",
+          "wordpress_id": 353
+        },
+        {
+          "acf": {
+            "author": "John Patrick Ryan",
+            "date": "2019-09-30#30 Sep 2019",
+            "intro": "There\u2019s a rising tide of interest in re-thinking the World Wide Web, toward a decentralized model. This piece \u2014 but of course \u2014 does not attempt to create a definitive, centralized answer. Instead, this note offers a frame for considering the types of answers, and looks at some really good examples. The goal here: discuss. Take to conference or party, refine, revise, rinse, repeat.",
+            "link": "https://medium.com/decentralized-web/why-decentralize-5d8e9dcedb2c",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*ix9UgxGHFwugyyG4nzqYvw.jpeg",
+            "image": null
+          },
+          "title": "Why Decentralize?",
+          "wordpress_id": 354
+        },
+        {
+          "acf": {
+            "author": "Mike Masnick",
+            "date": "2019-08-21#21 Aug 2019",
+            "intro": "This article proposes an entirely different approach\u2014one that might seem counterintuitive but might actually provide for a workable plan that enables more free speech, while minimizing the impact of trolling, hateful speech, and large-scale disinformation efforts. As a bonus, it also might help the users of these platforms regain control of their privacy. And to top it all off, it could even provide an entirely new revenue stream for these platforms. That approach: build protocols, not platforms.",
+            "link": "https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Protocols, Not Platforms: A Technological Approach to Free Speech",
+          "wordpress_id": 592
+        },
+        {
+          "acf": {
+            "author": "Jolocom",
+            "date": "2019-08-13#13 Aug 2019",
+            "intro": "Looking to expand beyond the traditional confines of a tech conference, DWeb Camp was a chance to join other technologists, designers, writers, artists, and other creatives and dreamers for a four-day retreat to get re/connected and continue the conversation around creating the next generation of the Web \u2014 a decentralized Web 3.0, a web we deserve.",
+            "link": "https://medium.com/decentralized-web/jolocom-dwebcamp-recap-d2db0881000a",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*v0yKFPOhJpmXUHi_eob2Tw.png",
+            "image": null
+          },
+          "title": "DWeb Camp: building a web that we deserve",
+          "wordpress_id": 593
+        },
+        {
+          "acf": {
+            "author": "Dr. Carley Corrado",
+            "date": "2019-08-06#6 Aug 2019",
+            "intro": "At DWeb Camp, this craving I\u2019ve felt across industries for a decade of professional development was satiated delightfully with a shared set of values and playful engagement. They set the stage for ease of connection and conversations that matter.",
+            "link": "https://medium.com/decentralized-web/dweb-camp-powered-by-play-new-paths-to-authentic-learning-4654347b0d41",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*Nw6KCTDWkmZTrsGwDRlf2A.jpeg",
+            "image": null
+          },
+          "title": "DWeb Camp Powered by Play: New Paths to Authentic Learning",
+          "wordpress_id": 594
+        },
+        {
+          "acf": {
+            "author": "Brandon D. Wallace",
+            "date": "2019-08-04#4 Aug 2019",
+            "intro": "The Internet Archive led DWeb Camp took place on the coastline of California, around 40 miles south of San Francisco \u2014 hosted by a majestic organic farm community focused on regenerative solutions. While previous DWeb events have occurred, not much was known about exactly what would unfold at what was ultimately a highly intentioned camp experience.",
+            "link": "https://medium.com/decentralized-web/decentralized-webcamp-2019-experience-plan-systems-9cc5cde8d4b2",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/1000/1*iXrZ7HE-aAARL7HkD0GGUA.jpeg",
+            "image": null
+          },
+          "title": "Decentralized WebCamp 2019 Experience | PLAN Systems",
+          "wordpress_id": 595
+        },
+        {
+          "acf": {
+            "author": "Jay Graber",
+            "date": "2019-07-29#29 Jul 2019",
+            "intro": "On the last night of the Decentralized Web Camp, I was hanging around outside after dinner when an older white-haired man walked past, shouting \u201cOld timer\u2019s circle starting soon! Everyone who\u2019s been doing stuff with computers 30 years or more.\u201d ",
+            "link": "https://medium.com/decentralized-web/the-internets-old-guard-c10b0ff0fb8d",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*SuUu9KViRBEFJw6c2pY1vA.jpeg",
+            "image": null
+          },
+          "title": "The Internet\u2019s Old Guard",
+          "wordpress_id": 597
+        },
+        {
+          "acf": {
+            "author": "Frances Sawyer",
+            "date": "2019-07-21#21 Jul 2019",
+            "intro": "Held on a farm near Pescadero, California, the first ever DWeb Camp brought together more than 375 campers from six continents to workshop, relax, build, and strengthen the community working on the decentralized web.",
+            "link": "https://medium.com/decentralized-web/remembering-the-first-dweb-camp-july-2019-b96614636291",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/0*iCcSBSLr6V_TVicj",
+            "image": null
+          },
+          "title": "Remembering the First DWeb Camp, July 2019",
+          "wordpress_id": 596
+        },
+        {
+          "acf": {
+            "author": "Frances Sawyer",
+            "date": "2019-07-18#18 Jul 2019",
+            "intro": "I connected with Mary Lou Jepsen to talk about how she is currently thinking about the transformations happening in the technologies where she spends most of her time today and the possible implications of the decentralized web for privacy, healthcare, power, and society.",
+            "link": "https://medium.com/decentralized-web/dweb-camp-profile-mary-lou-jepson-on-the-future-of-practical-telepathy-and-learning-from-pioneers-e8df05da0451",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/225/1*dD58krYkvYSzSyAsXe4ctQ.jpeg",
+            "image": null
+          },
+          "title": "DWeb Camp Profile: Mary Lou Jepson on the Future of Practical Telepathy and Learning from Pioneers",
+          "wordpress_id": 599
+        },
+        {
+          "acf": {
+            "author": "Shannon Wu",
+            "date": "2019-07-18#18 Jul 2019",
+            "intro": "Perhaps best known as the early CTO of Ripple, Stefan Thomas\u2019s contributions to the decentralized web extend long before his rise to fame. With years of significant contributions to the open source, blockchain, and development communities, his vision for scaling open technology sets him apart",
+            "link": "https://medium.com/decentralized-web/dweb-camp-profile-ripples-former-cto-stefan-thomas-loves-the-open-web-and-is-changing-the-de78787a127d",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/1*5gC9YwWj7FmdRg0iniPHEQ.jpeg",
+            "image": null
+          },
+          "title": "DWeb Camp Profile: Ripple\u2019s Former CTO Stefan Thomas",
+          "wordpress_id": 598
+        },
+        {
+          "acf": {
+            "author": "Mai Ishikawa Sutton",
+            "date": "2019-07-17#17 Jul 2019",
+            "intro": "DWeb Camp is about bringing the people behind decentralized technologies together, and reflect, as peers and co-creators, on how we shape the networks and applications we\u2019re building. It\u2019s about recognizing how personal and interpersonal dynamics need to be explored in the same way we experiment and build new networking technologies.",
+            "link": "https://medium.com/decentralized-web/transforming-ourselves-to-transform-our-networks-f4511a3d7483",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/641/1*Mt-7FOr3baH3lux8Xi20Aw.png",
+            "image": null
+          },
+          "title": "Transforming Ourselves to Transform Our Networks",
+          "wordpress_id": 600
+        },
+        {
+          "acf": {
+            "author": "Mai Ishikawa Sutton",
+            "date": "2019-07-16#16 Jul 2019",
+            "intro": "We identified some of these remarkable social-tech innovators and have invited ten of them to join us at DWeb Camp. They are coming from all corners of the world to share their experience building decentralized networks and applications.",
+            "link": "https://medium.com/decentralized-web/https-medium-com-decentralized-web-introducing-2019-dweb-camp-global-fellows-1fafe29c3c9f",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/400/1*g5UzI4TE_qRD3l2Go4DBHw.png",
+            "image": null
+          },
+          "title": "Introducing the 2019 DWeb Camp Global Fellows",
+          "wordpress_id": 603
+        },
+        {
+          "acf": {
+            "author": "Lawrence Wilkinson and Richard Whitt",
+            "date": "2019-07-16#16 Jul 2019",
+            "intro": "Summary of a conversation the authors led at the 2018 DWeb Summit on the topic of the language and terminology we use to talk about the Decentralized Web.",
+            "link": "https://medium.com/decentralized-web/defining-our-terms-conversations-7a5f34261bba",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://miro.medium.com/max/700/0*JQDmDT-ZGshSC_6y",
+            "image": null
+          },
+          "title": "\u201cDefining Our Terms\u201d Conversations",
+          "wordpress_id": 602
+        },
+        {
+          "acf": {
+            "author": "Frances Sawyer",
+            "date": "2019-07-16#16 Jul 2019",
+            "intro": "...I spoke with Kelsey Breseman, a rockstar engineer and entrepreneur working to solve climate change, protect public access to scientific data, and build a better web.",
+            "link": "https://medium.com/decentralized-web/getting-ready-for-dweb-camp-a-conversation-with-kelsey-breseman-be4e396c704d",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Getting Ready for DWeb Camp: A Conversation with Kelsey Breseman",
+          "wordpress_id": 601
+        },
+        {
+          "acf": {
+            "author": "Wendy Hanamura",
+            "date": "2019-07-14#14 Jul 2019",
+            "intro": "The Decentralized Web is a concept. It\u2019s a set of technologies. It\u2019s a network of builders and designers and dreamers. What started with small gatherings in San Francisco, London, Los Angeles, Toronto and Berlin is growing into a global movement. ",
+            "link": "https://medium.com/decentralized-web/branding-the-decentralized-web-8f3c9af1682c",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2021/01/DWeb-logo-story-black-for-voices.png"
+              }
+            }
+          },
+          "title": "Branding the Decentralized Web",
+          "wordpress_id": 604
+        },
+        {
+          "acf": {
+            "author": "Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, and Mark McGranaghan",
+            "date": "2019-04-01#1 Apr 2019",
+            "intro": "In this article we propose \u201clocal-first software\u201d: a set of principles for software that enables both collaboration and ownership for users. Local-first ideals include the ability to work offline and collaborate across multiple devices, while also improving the security, privacy, long-term preservation, and user control of data.",
+            "link": "https://www.inkandswitch.com/local-first.html",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Local-first software: You own your data, in spite of the cloud",
+          "wordpress_id": 605
+        },
+        {
+          "acf": {
+            "author": "Alek Tarkowski, Sophie Bloemen, & Paul Keller",
+            "date": "2018-12-21#21 Dec 2018",
+            "intro": "In the last decade, centralised and even monopolistic services have been built on top of the decentralised infrastructure of the Internet. Since these are all very large and often non-European commercial entities, the centralisation of control over the digital networks is a form of market capture of a resource that should be treated as a universal basic service that needs to be governed as a commons.",
+            "link": "https://shared-digital.eu/decentralise-infrastructure/",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://shared-digital.eu/content/images/2020/01/pie_infra-wide-1200.png",
+            "image": null
+          },
+          "title": "Shared Digital Europe Principle: Decentralise infrastructure",
+          "wordpress_id": 606
+        },
+        {
+          "acf": {
+            "author": "Sarah Friend",
+            "date": "2018-12-10#10 Dec 2018",
+            "intro": "(VIDEO) There is building movement to decentralize the web (or re-decentralize the web) with newer technologies, such as secure scuttlebutt, peer-to-peer file storage like dat or ipfs, and blockchain gaining popularity. Older technologies like mesh networking are enjoying a resurgence as well. Communities that engage with these technologies often frame decentralization as a moral good in and of itself - but to what extent has this claim been validated?",
+            "link": "https://www.youtube.com/watch?v=9mRhvltGs8A",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "",
+            "image": null
+          },
+          "title": "Decentralization and its Discontents",
+          "wordpress_id": 607
+        },
+        {
+          "acf": {
+            "author": "Iryna Nezhynska",
+            "date": "2018-10-05#5 Oct 2018",
+            "intro": "A month ago, more than 750 tech minds interested in building the web we want \u2014 and the web we deserve \u2014 gathered at the old San Francisco Mint for DWeb Summit. While my dev team was busy running workshops, I joined the UX/UI session on Builders Day as a storyteller to later share with the world what puzzled our minds at the time.",
+            "link": "https://jolocom.io/blog/looking-back-at-dweb-summit-ux-ui-workshop/",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": {
+              "localFile": {
+                "url": "https://staging.getdweb.net/wp-content/uploads/2021/01/A02-hero-mob.png"
+              }
+            }
+          },
+          "title": "Looking back at DWeb Summit UX/UI workshop",
+          "wordpress_id": 608
+        },
+        {
+          "acf": {
+            "author": "Irina Bolychevsky",
+            "date": "2018-09-18#18 Sep 2018",
+            "intro": "As the decentralisation movement grows, I consider the characteristics of decentralisation, what decentralisation is a tactic for, why and what work still needs to happen to re-decentralize the digital world.",
+            "link": "https://medium.com/@shevski/how-decentralised-are-you-a6539eeb27ff",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "There\u2019s more to decentralisation than blockchains and bitcoin",
+          "wordpress_id": 609
+        },
+        {
+          "acf": {
+            "author": "Irina Bolychevsky",
+            "date": "2018-08-18#18 Aug 2018",
+            "intro": "As the decentralisation movement grows, I consider the characteristics of decentralisation, what decentralisation is a tactic for, why and what work still needs to happen to re-decentralize the digital world.",
+            "link": "https://redecentralize.org/blog/2018/08/18/theres-more-to-decentralisation-than-blockchains-and-bitcoin.html",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "There\u2019s more to decentralisation than blockchains and bitcoin",
+          "wordpress_id": 653
+        },
+        {
+          "acf": {
+            "author": "David Cassel",
+            "date": "2018-08-12#12 Aug 2018",
+            "intro": "As August began, the non-profit Internet Archive convened the Decentralized Web Summit in San Francisco, promising appearances by \u201cthe creators and builders of the original Internet and World Wide Web, plus other developers of cutting-edge decentralized protocols and representatives of civil society, human rights and government from around the world.\u201d",
+            "link": "https://thenewstack.io/the-people-pushing-for-a-decentralized-web/",
+            "voice_category": {
+              "term_id": 10,
+              "name": "Profile:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "The People Pushing for a Decentralized Web",
+          "wordpress_id": 610
+        },
+        {
+          "acf": {
+            "author": "Ola Kohut",
+            "date": "2018-06-06#6 Jun 2018",
+            "intro": "The time has come to take a step back and look at the big picture. Are efforts to decentralize the Web paying off, which aspects of decentralization are the most crucial as we move towards a mature Web 3.0, and on which goals can we all agree as we work towards improving the status quo?",
+            "link": "https://medium.com/epicenterpodcast/decentralization-expectations-vs-reality-651ebe3b6b4c",
+            "voice_category": {
+              "term_id": 9,
+              "name": "Flashback:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Decentralization: Expectations vs Reality",
+          "wordpress_id": 611
+        },
+        {
+          "acf": {
+            "author": "Tom Simonite",
+            "date": "2018-03-05#5 Mar 2018",
+            "intro": "Proponents as varied as privacy activists and marquee venture capitalists talk about the decentralized internet as a kind of digital Garden of Eden that can restore the freedom and goodwill of the internet's early days. The argument goes that big tech companies have locked up our data and minds inside stockholder-serving platforms that crush competition and privacy.",
+            "link": "https://www.wired.com/story/the-decentralized-internet-is-here-with-some-glitches/",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "https://media.wired.com/photos/5a99edeeb4bf6c3e4d405aba/master/w_2560%2Cc_limit/baran_nets-FINAL.jpg",
+            "image": null
+          },
+          "title": "The Decentralized Internet Is Here, With Some Glitches",
+          "wordpress_id": 591
+        },
+        {
+          "acf": {
+            "author": "Chris Dixon",
+            "date": "2018-02-18#18 Feb 2018",
+            "intro": "The internet is the ultimate software-based network, consisting of a relatively simple core layer connecting billions of fully programmable computers at the edge. Software is simply the encoding of human thought, and as such has an almost unbounded design space. ",
+            "link": "https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Why Decentralization Matters",
+          "wordpress_id": 632
+        },
+        {
+          "acf": {
+            "author": "Ruben Verborgh",
+            "date": "2017-12-20#20 Dec 2017",
+            "intro": "Decentralizing the Web means that people gain the ability to store their data wherever they want, while still getting the services they need. This requires major changes in the way we develop applications, as we migrate from a closed back-end database to the open Web as our data source.",
+            "link": "https://ruben.verborgh.org/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Paradigm shifts for the decentralized Web",
+          "wordpress_id": 633
+        },
+        {
+          "acf": {
+            "author": "Ruben Verborgh",
+            "date": "2017-12-20#20 Dec 2017",
+            "intro": "Ultimately, decentralization is about choice: we will choose where we store our data, who we give access to which parts of that data, which services we want on top of it, and how we pay for those. Nowadays, we are instead forced to accept package deals we cannot customize.",
+            "link": "https://ruben.verborgh.org/blog/2017/12/20/paradigm-shifts-for-the-decentralized-web/",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "Paradigm shifts for the decentralized Web",
+          "wordpress_id": 590
+        },
+        {
+          "acf": {
+            "author": "Andr\u00e9 Staltz",
+            "date": "2017-12-18#18 Dec 2017",
+            "intro": "I want to share with you our plan, which in short is: Build the mobile mesh Web that works with or without Internet access, to reach 4 billion people currently offline. To explain this plan, we need to realize that the Web can be independent from the Internet.",
+            "link": "https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html",
+            "voice_category": {
+              "term_id": 8,
+              "name": "Opinion:"
+            },
+            "thumbnail_type": "image",
+            "image_url": null,
+            "image": null
+          },
+          "title": "A plan to rescue the Web from the Internet",
+          "wordpress_id": 589
+        },
+        {
+          "acf": {
+            "author": "Vitalik Buterin",
+            "date": "2017-02-06#6 Feb 2017",
+            "intro": "Thousands of hours of research, and billions of dollars of hashpower, have been spent for the sole purpose of attempting to achieve decentralization, and to protect and improve it, and when discussions get rivalrous it is extremely common for proponents of one protocol (or protocol extension) to claim that the opposing proposals are \u201ccentralized\u201d as the ultimate knockdown argument. But there is often a lot of confusion as to what this word actually means.",
+            "link": "https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274",
+            "voice_category": {
+              "term_id": 11,
+              "name": "Analysis:"
+            },
+            "thumbnail_type": "url",
+            "image_url": "",
+            "image": null
+          },
+          "title": "The Meaning of Decentralization",
+          "wordpress_id": 588
+        }
+      ]
+    },
+    "allWordpressWpVoiceCategories": {
+      "nodes": [
+        {
+          "acf": {
+            "color": "#dcc6e0"
+          },
+          "wordpress_id": 11
+        },
+        {
+          "acf": {
+            "color": "#92c428"
+          },
+          "wordpress_id": 9
+        },
+        {
+          "acf": {
+            "color": "#ffd800"
+          },
+          "wordpress_id": 12
+        },
+        {
+          "acf": {
+            "color": "#4bc46f"
+          },
+          "wordpress_id": 19
+        },
+        {
+          "acf": {
+            "color": "#00e3e3"
+          },
+          "wordpress_id": 8
+        },
+        {
+          "acf": {
+            "color": "#FFB27A"
+          },
+          "wordpress_id": 10
+        }
+      ]
+    },
+    "wordpressAcfOptions": {
+      "options": {
+        "voices_header": "Voices and ideas of<br />the decentralised web",
+        "voices_intro": "If there is an article or video you believe we should mention here,<br />don\u2019t wait - <a href=\"https://form.jotform.com/210467232320140\">submit a story</a>."
+      }
+    }
+  }
+}

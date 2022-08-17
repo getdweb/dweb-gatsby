@@ -6,55 +6,52 @@ import HeaderLogo from './HeaderLogo'
 import HeaderButton from './HeaderButton'
 
 export default function Navbar(props) {
-  let prevScrollPos = 0;
-  let currentScrollPos = 0;
+  let prevScrollPos = 0
+  let currentScrollPos = 0
 
   const [state, setState] = useState({
     hidden: false,
     visible: true,
-    top: false
-  });
+    top: false,
+  })
 
   useEffect(() => {
-    if (typeof window === `undefined`) return;
-    
-    prevScrollPos = window.pageYOffset;
-    currentScrollPos = window.pageYOffset;
-    window.addEventListener('scroll', setHeaderOffsets(false)); // pass "this" as "navbar" parameter inside the function
-  }, []);
+    if (typeof window === `undefined`) return
+
+    prevScrollPos = window.pageYOffset
+    currentScrollPos = window.pageYOffset
+    window.addEventListener('scroll', setHeaderOffsets(false)) // pass "this" as "navbar" parameter inside the function
+  }, [])
 
   function setHeaderOffsets(just_loaded) {
-    if (typeof window === `undefined`) return;
-    currentScrollPos = window.pageYOffset;
-    if (currentScrollPos == 0){
-        setState({hidden: false, visible: false, top: true});
-    } else if (just_loaded){
-        setState({hidden: false, visible: true, top: false});
+    if (typeof window === `undefined`) return
+    currentScrollPos = window.pageYOffset
+    if (currentScrollPos == 0) {
+      setState({ hidden: false, visible: false, top: true })
+    } else if (just_loaded) {
+      setState({ hidden: false, visible: true, top: false })
+    } else if (prevScrollPos > currentScrollPos) {
+      setState({ hidden: false, visible: true, top: false })
     } else {
-      if (prevScrollPos > currentScrollPos) {
-        setState({hidden: false, visible: true, top: false});
-      } else {
-        setState({hidden: true, visible: false, top: false});
-      }
+      setState({ hidden: true, visible: false, top: false })
     }
-    prevScrollPos = currentScrollPos;
-  };
+    prevScrollPos = currentScrollPos
+  }
 
-  var navbarClassName = 'navbar ' + (props.menuOpen ? 'is-menu-open ': '') + (state.hidden ? 'hidden ': '') + (state.visible ? 'visible ': '') + (state.top ? 'top ': '');
+  const navbarClassName = `navbar ${props.menuOpen ? 'is-menu-open ' : ''}${
+    state.hidden ? 'hidden ' : ''
+  }${state.visible ? 'visible ' : ''}${state.top ? 'top ' : ''}`
 
-  const pathname = typeof window !== `undefined` ? window.location.pathname : "";
-  const headerButton = pathname !== '/get-involved' ? <HeaderButton></HeaderButton> : "";
-  
+  const pathname = typeof window !== `undefined` ? window.location.pathname : ''
+  const headerButton = pathname !== '/get-involved' ? <HeaderButton /> : ''
+
   return (
-    <nav 
-      id="navbar"
-      className={navbarClassName}
-      >
-      <HeaderLogo></HeaderLogo>
+    <nav id="navbar" className={navbarClassName}>
+      <HeaderLogo />
       <div className="navbar__menus">
-        <MenuPrimary {...props}></MenuPrimary>
-        <MenuSecondary></MenuSecondary>
-        <MenuSocial></MenuSocial>
+        <MenuPrimary {...props} />
+        <MenuSecondary />
+        <MenuSocial />
       </div>
       {headerButton}
       <a
@@ -63,11 +60,11 @@ export default function Navbar(props) {
         rel="noopener noreferrer"
         onClick={props.menuLinkClick}
       >
-        <span></span>
-        <span></span>
-        <span></span>
-        <div className="other-bar"></div>
+        <span />
+        <span />
+        <span />
+        <div className="other-bar" />
       </a>
     </nav>
-  );
+  )
 }
