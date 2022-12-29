@@ -8,8 +8,6 @@ projects and protocols to build a decentralized web.
 These instructions will give you a copy of the project up and running on
 your local machine for development and testing purposes.
 
-**NOTE** It is vital that you are running Node v16+, otherwise compatibility with node-sass will be broken
-
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push
