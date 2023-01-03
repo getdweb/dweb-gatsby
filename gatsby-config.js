@@ -4,7 +4,9 @@ module.exports = {
   siteMetadata: {
     title: 'Get Dweb Dot Net',
   },
+  pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
+    'gatsby-plugin-ipfs',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
