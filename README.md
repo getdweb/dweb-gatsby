@@ -3,7 +3,7 @@
 Official repo for [getdweb.net](https://getdweb.net/), a website built for connecting people, projects and protocols to build a decentralized web. The normal gatsby build process has been modified to allow serving the site from content-addressed p2p origins such as IPFS.
 
 The following enhancements have been made to accomodate the web3 environment:
-- internal links are relativized using https://github.com/willmhowes/gatsby-plugin-ipfs (upstreaming changes to https://github.com/moxystudio/gatsby-plugin-ipfs [pending](https://github.com/moxystudio/gatsby-plugin-ipfs/pull/27))
+- internal links are relativized using https://github.com/willmhowes/gatsby-plugin-ipfs (upstreaming changes to https://github.com/moxystudio/gatsby-plugin-ipfs is [pending](https://github.com/moxystudio/gatsby-plugin-ipfs/pull/27))
 - images referenced by pages and templates are downloaded to the repo and packaged in the build
 - hooks are provided for ipfs publish (similar to https://github.com/hyphacoop/distributed.press) (in progress)
 - assorted other gatsby quirks are addressed
