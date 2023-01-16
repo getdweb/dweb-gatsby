@@ -134,7 +134,7 @@ export default function Hero() {
             <div
               className={`hero__video-preview ${previewDisplay}`}
               style={{
-                backgroundImage: `url(https://getdweb.net/wp-content/uploads/2022/06/METRO-DWeb-home-ditther.png)`,
+                backgroundImage: `url(/images/METRO-DWeb-home-ditther.png)`,
               }}
             />
           </div>

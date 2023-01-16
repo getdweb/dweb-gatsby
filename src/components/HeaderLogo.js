@@ -7,7 +7,7 @@ export default function HeaderLogo() {
       to="/"
       className="navbar__logo"
       style={{
-        backgroundImage: `url(https://getdweb.net/wp-content/uploads/2020/11/DWeb-logo-original.svg)`,
+        backgroundImage: `url(/images/DWeb-logo-original.svg)`,
       }}
       alt=""
       title=""

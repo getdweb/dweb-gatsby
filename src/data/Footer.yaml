@@ -36,7 +36,7 @@
     direction: file
     link_internal: ''
     link_external: ''
-    link_file: https://getdweb.net/wp-content/uploads/2021/02/DWeb-Become-a-global-Sponsor.pdf
+    link_file: /images/DWeb-Become-a-global-Sponsor.pdf
   - label: Volunteer
     direction: internal
     link_internal: /join-the-team
