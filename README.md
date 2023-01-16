@@ -32,7 +32,7 @@ Requirements for the software and other tools to build, test and push
 1. Run `nvm use`, which utilizes the [.nvmrc](.nvmrc) file
 1. Run `npm install`
 1. Run `npm install -g gatsby-cli` if you don't already have [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) installed globally
-1. Run `npm run develop` to spin up a development server or `npm run build --prefix-paths` to build a production-ready version of the site
+1. Run `npm run develop` to spin up a development server or `npm run build` to build a production-ready version of the site
 1. Run `ipfs add --pin -r public` to publish site on local IPFS node
 
 ### Style test
