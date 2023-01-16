@@ -177,13 +177,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "39cefb72-664f-59cc-a2ba-b59dd8456ca8",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/03/DWebCamp2022-heroD.jpg"
+                        "url": "/images/DWebCamp2022-heroD.jpg"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "7dfaba36-fd69-5fe0-8d6c-b5b95a302a2e",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/03/DWebCamp2022-heroM.jpg"
+                        "url": "/images/DWebCamp2022-heroM.jpg"
                       }
                     }
                   },
@@ -257,7 +257,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Meet Builders and Dreamers",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/03/dreamers-02.jpg"
+                        "url": "/images/dreamers-02.jpg"
                       },
                       "id": "4eb8f58c-efda-5a0a-83cb-2c2f53228471"
                     }
@@ -303,7 +303,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "What can you share?",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/03/share-and-learn.jpg"
+                        "url": "/images/share-and-learn.jpg"
                       },
                       "id": "c848c714-1720-5b4c-8137-46d4e6fb1483"
                     }
@@ -368,7 +368,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "image": {
                       "id": "5595e383-8f4e-56b3-aac5-de9a26472a85",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/03/DWebCamp-nature-scaled.jpg"
+                        "url": "/images/DWebCamp-nature-scaled.jpg"
                       }
                     }
                   },
@@ -436,7 +436,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Join DWeb Camp",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/10/join-the-team-cta-dweb.jpeg"
+                        "url": "/images/join-the-team-cta-dweb.jpeg"
                       },
                       "id": "df96ab70-7334-58fc-a511-e7e1ba1f1f0f"
                     }
@@ -543,13 +543,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "53bac4df-6b01-5da6-b5d8-0cea29e93c05",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/01/DWeb-METRO-orgs-hero.jpg"
+                        "url": "/images/DWeb-METRO-orgs-hero.jpg"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "812d7925-545d-5a2e-abb0-9b522f4bd559",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/01/DWeb-METRO-orgs-hero-M.jpg"
+                        "url": "/images/DWeb-METRO-orgs-hero-M.jpg"
                       }
                     }
                   },
@@ -582,7 +582,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Decentralized Web: An Introduction",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/02/DWeb-session-01-guide.jpg"
+                        "url": "/images/DWeb-session-01-guide.jpg"
                       },
                       "id": "8d1b6f7b-9f83-5899-b212-b77c2af7d23e"
                     }
@@ -628,7 +628,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Using decentralized storage",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/03/DWeb-session-02-guide.jpg"
+                        "url": "/images/DWeb-session-02-guide.jpg"
                       },
                       "id": "35971f2f-31ab-5df8-b55e-0676ea85fda3"
                     }
@@ -674,7 +674,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Decentralized Identity",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/04/DWeb-Resource-Guide-03-website.png"
+                        "url": "/images/DWeb-Resource-Guide-03-website.png"
                       },
                       "id": "701889b6-b9c4-546c-ab78-6b0f412886fe"
                     }
@@ -720,7 +720,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Decentralized Social Media",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/05/DWeb-Resource-Guide-04-website.png"
+                        "url": "/images/DWeb-Resource-Guide-04-website.png"
                       },
                       "id": "6d787ea1-ff49-58d5-8518-fa32280f13e8"
                     }
@@ -766,7 +766,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "The Metaverse and the “Next Big Thing”",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2022/05/DWeb-METRO-session-05-Metaverse.png"
+                        "url": "/images/DWeb-METRO-session-05-Metaverse.png"
                       },
                       "id": "4e09b829-b1fd-54cf-b02d-69982a9a55d1"
                     }
@@ -873,13 +873,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "566ba261-c22d-55db-8bc5-f28c2c2a401b",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-master-top-line-black.png"
+                        "url": "/images/DWeb-master-top-line-black.png"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "566ba261-c22d-55db-8bc5-f28c2c2a401b",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-master-top-line-black.png"
+                        "url": "/images/DWeb-master-top-line-black.png"
                       }
                     }
                   },
@@ -931,7 +931,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "image": {
                       "id": "fb7e04e6-2bf2-58f6-8cf3-7aa27cf68fd0",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-design-Nezhynska-visual-language-01-scaled.jpg"
+                        "url": "/images/DWeb-design-Nezhynska-visual-language-01-scaled.jpg"
                       }
                     }
                   },
@@ -999,7 +999,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Our logo",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-main-logo-clearspace.png"
+                        "url": "/images/DWeb-main-logo-clearspace.png"
                       },
                       "id": "c693bb1f-011a-58f9-9cec-ebb83aa686f5"
                     }
@@ -1127,7 +1127,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Node branding",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/06/prague-c2-800.png"
+                        "url": "/images/prague-c2-800.png"
                       },
                       "id": "55fa881b-83aa-59ef-8c02-94470f1680ce"
                     }
@@ -1144,13 +1144,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "a592287c-6d87-5a2f-bdc3-a6d3d23adc20",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-colors-hor-01.png"
+                        "url": "/images/DWeb-colors-hor-01.png"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "b00647ad-79eb-5f97-8bbe-cf0c096de756",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-colors-hor-alt.png"
+                        "url": "/images/DWeb-colors-hor-alt.png"
                       }
                     }
                   },
@@ -1183,7 +1183,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Dithering effect",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/11/DWeb-dither-effect-2022update.png"
+                        "url": "/images/DWeb-dither-effect-2022update.png"
                       },
                       "id": "edc0672c-8299-596c-a268-237ddc0d5260"
                     }
@@ -1270,7 +1270,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Node branding",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/06/perm-c1-800.png"
+                        "url": "/images/perm-c1-800.png"
                       },
                       "id": "f7d2a2df-fccd-5175-b93b-aaf0c258c0fa"
                     }
@@ -1316,7 +1316,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "DWeb Principles",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-Principles-graphics-square-03.png"
+                        "url": "/images/DWeb-Principles-graphics-square-03.png"
                       },
                       "id": "ac8abf3b-6d7b-5a2e-90b3-ce43f87c3b23"
                     }
@@ -1333,13 +1333,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "0f0ce3dc-cc7d-5cf1-a56d-02bea1d6e1e3",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-design-Nezhynska-branding-moodboard.jpg"
+                        "url": "/images/DWeb-design-Nezhynska-branding-moodboard.jpg"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "0f0ce3dc-cc7d-5cf1-a56d-02bea1d6e1e3",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-design-Nezhynska-branding-moodboard.jpg"
+                        "url": "/images/DWeb-design-Nezhynska-branding-moodboard.jpg"
                       }
                     }
                   },
@@ -1372,7 +1372,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "DWeb Principles",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-Principles-graphics-square-03.png"
+                        "url": "/images/DWeb-Principles-graphics-square-03.png"
                       },
                       "id": "ac8abf3b-6d7b-5a2e-90b3-ce43f87c3b23"
                     }
@@ -1467,7 +1467,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Get community updates",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/DWeb-contact-newsletter-color03.png"
+                        "url": "/images/DWeb-contact-newsletter-color03.png"
                       },
                       "id": "4c89e619-532e-516a-9c5f-8b3266b53747"
                     }
@@ -1533,13 +1533,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "996f93be-5f24-5997-a654-e5339c6a5902",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/11/dweb-camp-hero.jpg"
+                        "url": "/images/dweb-camp-hero.jpg"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "996f93be-5f24-5997-a654-e5339c6a5902",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/11/dweb-camp-hero.jpg"
+                        "url": "/images/dweb-camp-hero.jpg"
                       }
                     }
                   },
@@ -1578,7 +1578,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "quote": "abc",
                     "background_image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/11/dweb-camp-hero.jpg"
+                        "url": "/images/dweb-camp-hero.jpg"
                       }
                     }
                   },
@@ -1617,7 +1617,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "abc",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/11/dweb-camp-hero.jpg"
+                        "url": "/images/dweb-camp-hero.jpg"
                       },
                       "id": "996f93be-5f24-5997-a654-e5339c6a5902"
                     }
@@ -1723,7 +1723,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "image": {
                       "id": "996f93be-5f24-5997-a654-e5339c6a5902",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2020/11/dweb-camp-hero.jpg"
+                        "url": "/images/dweb-camp-hero.jpg"
                       }
                     }
                   },
@@ -1963,7 +1963,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "DWeb Camp 2019",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/DWeb-camp-for-archive.jpg"
+                        "url": "/images/DWeb-camp-for-archive.jpg"
                       },
                       "id": "1f8b07ab-a852-51df-b77b-3d50df2eb80e"
                     }
@@ -2050,7 +2050,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "DWeb Summit 2018",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/DWebSummit2018-xs.jpg"
+                        "url": "/images/DWebSummit2018-xs.jpg"
                       },
                       "id": "24336714-1755-5338-9d29-52d9508c1f50"
                     }
@@ -2096,7 +2096,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "DWeb Summit 2018",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/DWebSummit2016.jpg"
+                        "url": "/images/DWebSummit2016.jpg"
                       },
                       "id": "0b6b9cb8-785a-5f61-91af-03df3d3d3c62"
                     }
@@ -2191,7 +2191,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Volunteer",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/DWeb-contact-newsletter-color03.png"
+                        "url": "/images/DWeb-contact-newsletter-color03.png"
                       },
                       "id": "4c89e619-532e-516a-9c5f-8b3266b53747"
                     }
@@ -2404,13 +2404,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "5126d974-83e8-5b12-bb89-ac6286b7920c",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/01/Volunteering-hero-WT-1280.png"
+                        "url": "/images/Volunteering-hero-WT-1280.png"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "82b27529-130f-5308-b532-77fb1636fa7d",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/01/Volunteering-hero-WT-mob.png"
+                        "url": "/images/Volunteering-hero-WT-mob.png"
                       }
                     }
                   },
@@ -2586,13 +2586,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "143b6925-8951-5f79-8a18-923109a5e688",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/start-a-node-hero-02.png"
+                        "url": "/images/start-a-node-hero-02.png"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "57255331-57a3-505a-82d9-e2e076912acf",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/02/start-a-node-mob-02.png"
+                        "url": "/images/start-a-node-mob-02.png"
                       }
                     }
                   },
@@ -2625,7 +2625,7 @@ exports.createPages = ({ actions, graphql }) => {
                     "title": "Other ways to get involved?",
                     "image": {
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/01/DWebDesign3-BLN-eileen.jpeg"
+                        "url": "/images/DWebDesign3-BLN-eileen.jpeg"
                       },
                       "id": "1e5b3b42-a7c3-51e7-aba5-4da4f93757fc"
                     }
@@ -2691,13 +2691,13 @@ exports.createPages = ({ actions, graphql }) => {
                     "hero_image_desktop": {
                       "id": "bfd02911-23ef-58f4-a5a4-6ce9f4fcb45c",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/01/DWeb-about-page-1280xs.png"
+                        "url": "/images/DWeb-about-page-1280xs.png"
                       }
                     },
                     "hero_image_mobile": {
                       "id": "8a4e9b55-750d-5a7f-ae57-ae839ee9c589",
                       "localFile": {
-                        "url": "https://getdweb.net/wp-content/uploads/2021/01/DWeb-about-page-mob.jpg"
+                        "url": "/images/DWeb-about-page-mob.jpg"
                       }
                     }
                   },

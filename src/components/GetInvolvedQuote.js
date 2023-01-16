@@ -5,7 +5,7 @@ export default function GetInvolvedQuote() {
     <div
       className="get-involved-main-quote"
       style={{
-        backgroundImage: `url(https://getdweb.net/wp-content/uploads/2020/11/brewster-kale.jpg)`,
+        backgroundImage: `url(/images/brewster-kale.jpg)`,
       }}
     >
       <div className="get-involved-main-quote__words">

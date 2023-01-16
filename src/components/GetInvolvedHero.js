@@ -6,13 +6,13 @@ export default function GetInvolvedHero() {
       <div
         className="get-involved-hero__image d-none d-md-block"
         style={{
-          backgroundImage: `url(https://getdweb.net/wp-content/uploads/2020/11/Get-involved-hero.png)`,
+          backgroundImage: `url(/images/Get-involved-hero.png)`,
         }}
       />
       <div
         className="get-involved-hero__image d-md-none"
         style={{
-          backgroundImage: `url(https://getdweb.net/wp-content/uploads/2021/01/Get-involved-hero-mobile.jpg)`,
+          backgroundImage: `url(/images/Get-involved-hero-mobile.jpg)`,
         }}
       />
       <div className="get-involved-hero__header">
