@@ -77,7 +77,7 @@ There are a number of pages which are constructed from data that lives in the di
     - button_link_direction:
     - button_link_url:
 
-There is also [PageBlockBorder](src/components/PageBlockBorder.js) component, but this is coded directly into the pages and is not invoked a page's YAML file.
+There is also the [PageBlockBorder](src/components/PageBlockBorder.js) component, but this is coded directly into the pages and is not invoked a page's YAML file.
 
 ## Built With
 
