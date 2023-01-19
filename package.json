@@ -30,6 +30,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^6.1.0",
+    "react-markdown": "^8.0.5",
     "swiper": "^8.2.5"
   },
   "keywords": [
