@@ -1,3 +1,4 @@
+# dweb-camp-2022.yaml
 - PageBlockOpening:
     title: DWeb Camp 2022 is coming!
     text: "SAVE THE DATE: August 24-28, 2022 at Camp Navarro, near Philo, California\n\n
@@ -11,14 +12,12 @@
     quote: "\"Synchronicity brought me to DWebCamp...there couldn't have been a better place to be. The openness and infectious excitement of the community helped me to understand the bigger picture of DWeb….how the DWeb can help liberate individuals and communities to more fully unlock all the skills and resources just waiting to build a better world.\""
 - PageBlockFeature:
     button_caption: Get ticket updates
-    button_link_direction: external
     button_link_url: https://mailchi.mp/archive/dweb-updates
     text: "DWeb Camp is a chance to make deep connections: to builders of Web 3.0, to the pioneers of the World Wide Web, to global communities calling for better technologies."
     title: Meet Builders and Dreamers
     image_url: /images/dreamers-02.jpg
 - PageBlockFeature:
     button_caption: Watch talks
-    button_link_direction: external
     button_link_url: https://archive.org/details/dwebcamp2019
     text: DWeb Camp is a co-created event where we ask everyone to share their gifts. You can give a talk or lead a workshop. Volunteer to help build & take down the camp. Be a Space Steward and host a room. Be a Weaver and facilitate a small group. Host a policy salon. Create an artistic activation. Organize a game night. Come as a Global Fellow to build bridges between communities. The only limitation is your imagination.
     title: What can you share?
@@ -30,7 +29,6 @@
           WHAT TO EXPECT: Stay in a cabin, glamping tent, or bring your own RV or camping gear. We'll have ample hacking space, workshops, small groups, talks and three farm-to-table meals served each day. Families are welcome to enjoy our private swimming hole, STEAM projects, archery range, climbing wall &amp; amazing hiking trails. DWeb Camp will be fun! While building a better web, we will also deepen our connection to the planet."
 - PageBlockFeature:
     button_caption: Help us plan
-    button_link_direction: external
     button_link_url: https://forms.gle/havb3LFZe22p9Fim8
     text: Come build bridges and community while you hack, hike, converse and create a better society together with us amidst the giant redwoods! You can help us prepare by filling out the questionnaire below.
     title: Join DWeb Camp
@@ -39,5 +37,4 @@
     title: Be the first to hear
     text: We are finalizing the new dwebcamp.org website. Meanwhile, sign up for the DWeb newsletter and be the first to hear when DWeb Camp registration opens.
     button_caption: Sign up for the DWeb newsletter
-    button_link_direction: external
     button_link_url: https://mailchi.mp/archive/dweb-updates
