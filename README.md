@@ -1,7 +1,15 @@
 # get-dweb-dot-net
 
-Official repo for [getdweb.net](https://getdweb.net/), a website built for connecting people,
-projects and protocols to build a decentralized web.
+Official repo for [getdweb.net](https://getdweb.net/), a website built for connecting people, projects and protocols to build a decentralized web. The normal gatsby build process has been modified to allow serving the site from content-addressed p2p origins such as IPFS.
+
+The following enhancements have been made to accomodate the web3 environment:
+- internal links are relativized using https://github.com/willmhowes/gatsby-plugin-ipfs (upstreaming changes to https://github.com/moxystudio/gatsby-plugin-ipfs is [pending](https://github.com/moxystudio/gatsby-plugin-ipfs/pull/27))
+- images referenced by pages and templates are downloaded to the repo and packaged in the build
+- hooks are provided for ipfs publish (similar to https://github.com/hyphacoop/distributed.press) (in progress)
+- assorted other gatsby quirks are addressed
+
+
+This repo contains both the gatsby build pipeline and the getdweb.net site content. Factoring out a reusable template project is currently in progress, but you may clone the existing codebase and replace the content directories (pages, img, data, etc) for your own use.
 
 ## Getting Started
 
@@ -25,6 +33,7 @@ Requirements for the software and other tools to build, test and push
 1. Run `npm install`
 1. Run `npm install -g gatsby-cli` if you don't already have [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) installed globally
 1. Run `npm run develop` to spin up a development server or `npm run build` to build a production-ready version of the site
+1. Run `ipfs add --pin -r public` to publish site on local IPFS node
 
 ### Style test
 
