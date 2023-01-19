@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
 
 export default function PageBlockFeature(props) {
   const { fields } = props
@@ -24,7 +25,7 @@ export default function PageBlockFeature(props) {
     <div className="building-block page-block-feature page-block-border">
       <div
         className="building-block__right"
-        style={{ backgroundImage: `url(${fields.image.localFile.url})` }}
+        style={{ backgroundImage: `url(${fields.image_url})` }}
       />
       <div className="building-block__left">
         <div className="container">
@@ -33,10 +34,13 @@ export default function PageBlockFeature(props) {
               <div className="header building-block__header">
                 {fields.title}
               </div>
-              <div
-                className="building-block__text"
-                dangerouslySetInnerHTML={{ __html: fields.text }}
-              />
+              <div className="building-block__text">
+                <ReactMarkdown components={{
+                  a: ({ node, ...props }) => <a target="_blank" {...props} />
+                }}>
+                  {fields.text}
+                </ReactMarkdown>
+              </div>
               {button}
             </div>
           </div>

@@ -3,8 +3,8 @@ import React from 'react'
 export default function PageBlockWideImage(props) {
   const { fields } = props
 
-  const image = fields.image ? (
-    <img src={fields.image.localFile.url} alt="" />
+  const image = fields.image_url ? (
+    <img src={fields.image_url} alt="" />
   ) : (
     ''
   )
