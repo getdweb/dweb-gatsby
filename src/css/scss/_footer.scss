@@ -111,6 +111,7 @@
       text-decoration: none;
       cursor: default;
       &:hover{
+        cursor: pointer;
         text-decoration: underline !important;
       }
       &:after{
