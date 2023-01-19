@@ -30,6 +30,55 @@ Requirements for the software and other tools to build, test and push
 
 There is an ESLint configuation which extends the [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [prettier](https://github.com/prettier/eslint-config-prettier/) configurations. Please adhere to these standards to preserve maintainability of the codebase.
 
+### About relative linking
+
+By default, the repository builds the website with relative linking. This includes  If you wanted to build this repo without relative linking, you would need to comment out `pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',` and `'gatsby-plugin-ipfs',` found in [gatsby-config.js](gatsby-config.js). Additionally, you would have to disable the post-build process in [gatsby-node.js](gatsby-node.js) that replaces all image urls with the correct relative paths.
+
+## Information about Modular Page Construction
+
+There are a number of pages which are constructed from data that lives in the directory [/static/page-data/](/static/page-data/). The data for each page lives in it's own YAML file, but there are a few things to note:
+
+1. YAML is composed of key and value pairs. [Here](https://quickref.me/yaml) is a cheat sheet for more information, but you can gather most of what you need to know to edit these pages by mimicking the formatting of the data that is already present in the YAML files.
+1. There are seven unique modular components any given page might use. The structure of a page is dictated by the order of components given in the page's YAML file. For example, the Contact page is defined by the [Contact.yaml](static/page-data/Contact) file which invokes [PageBlockOpening](src/components/PageBlockOpening.js) followed by [PageBlockFeature](src/components/PageBlockFeature.js). Beneath each component key is the relevant information each component needs to function properly. [Below](#modular-components-and-their-properties) is a complete list of modules and their properties:
+1. For any component that has a key specifically called `text`, the value given for that key will be rendered on the page as Markdown. Additionally, any link within that markdown will be rendered as a url that opens in a new tab upon being clicked, even if the link is internal. This choice was made in order to have consistent behavior across all components. **Values entered for all other keys can be expected to be read as plaintext.**
+    - Due the unorthodox flow of data from YAML to Markdown to HTML, the rendering of newlines can be a bit funky. In short, you can use any one of three sequences for a new paragraph in the rendered HTML: `\n\n`, `\n` + a literal newline, or two literal newlines. Additionally, `\\\n` will allow for a newline without starting a new paragraph. Compare the YAMl for the [Contact.yaml](static/page-data/Contact.yaml) page to the HTML on the website for the Contact page for an good example.
+1. Unlike the always-external behavior of urls written inside of the "text" key found in some components, the components [PageBlockCTA](src/components/PageBlockCTA.js), [PageBlockFeature](src/components/PageBlockFeature.js), and [PageBlockButton](src/components/PageBlockButton.js) have a url stored in `button_link_url` as well as a key called `button_link_direction` that allows a distinction to be made between whether the link in `button_link_url` is `internal` or `external`. By default, the link is external and the value of `button_link_direction` may be left blank. If the desired link is external, then the following `key: value` pair may be written in the relevant YAML file: `button_link_direction: internal`.
+
+### Modular Components and their properties
+- [PageBlockCTA](src/components/PageBlockCTA.js):
+    - title:
+    - text:
+    - button_caption:
+    - button_link_direction:
+    - button_link_url:
+- [PageBlockFeature](src/components/PageBlockFeature.js):
+    - title:
+    - text:
+    - button_caption:
+    - button_link_direction:
+    - button_link_url:
+    - image_url:
+- [PageBlockHighlighted](src/components/PageBlockHighlighted.js):
+    - author:
+    - quote:
+    - background_image:
+    - background_color:
+- [PageBlockOpening](src/components/PageBlockOpening.js):
+    - title:
+    - text:
+    - hero_image_desktop_url:
+    - hero_image_mobile_url:
+- [PageBlockContent](src/components/PageBlockContent.js):
+    - text:
+- [PageBlockWideImage](src/components/PageBlockWideImage.js):
+    - image:
+- [PageBlockButton](src/components/PageBlockButton.js):
+    - button_caption:
+    - button_link_direction:
+    - button_link_url:
+
+There is also [PageBlockBorder](src/components/PageBlockBorder.js) component, but this is coded directly into the pages and is not invoked a page's YAML file.
+
 ## Built With
 
 - [Gatsby](https://www.gatsbyjs.com/) - Used to build the static site
