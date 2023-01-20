@@ -42,3 +42,7 @@
   color: '#f97f60'
   link: https://linktr.ee/DWebSingapore
   city_image_url: /images/DWebSingapore-Node-cover.png
+- title: DC
+  color: '#ffc6cc'
+  link: https://www.eventbrite.com/o/55990397323
+  city_image_url: /images/DWebDC-node-cover.png
