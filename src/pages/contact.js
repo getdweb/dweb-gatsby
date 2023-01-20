@@ -8,9 +8,11 @@ import data_array from '../../static/page-data/Contact.yaml'
 function data_arrayPage() {
   const content = (
     <div>
-      <PageBlockOpening fields={data_array[0].PageBlockOpening} />
-      <PageBlockFeature fields={data_array[1].PageBlockFeature} />
+      <div className="master-page-content">
+        <PageBlockOpening fields={data_array[0].PageBlockOpening} />
+        <PageBlockFeature fields={data_array[1].PageBlockFeature} />
       <Footer />
+      </div>
     </div>
   )
 

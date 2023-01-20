@@ -9,14 +9,16 @@ import data_array from '../../static/page-data/dweb-webinar-series.yaml'
 function DWebWebinarSeries2022Page() {
     const content = (
         <div>
-            <PageBlockOpening fields={data_array[0].PageBlockOpening} />
-            <PageBlockFeature fields={data_array[1].PageBlockFeature} />
-            <PageBlockFeature fields={data_array[2].PageBlockFeature} />
-            <PageBlockFeature fields={data_array[3].PageBlockFeature} />
-            <PageBlockFeature fields={data_array[4].PageBlockFeature} />
-            <PageBlockFeature fields={data_array[5].PageBlockFeature} />
-            <PageBlockFeature fields={data_array[6].PageBlockFeature} />
-            <PageBlockCTA fields={data_array[7].PageBlockCTA} />
+            <div className="master-page-content">
+                <PageBlockOpening fields={data_array[0].PageBlockOpening} />
+                <PageBlockFeature fields={data_array[1].PageBlockFeature} />
+                <PageBlockFeature fields={data_array[2].PageBlockFeature} />
+                <PageBlockFeature fields={data_array[3].PageBlockFeature} />
+                <PageBlockFeature fields={data_array[4].PageBlockFeature} />
+                <PageBlockFeature fields={data_array[5].PageBlockFeature} />
+                <PageBlockFeature fields={data_array[6].PageBlockFeature} />
+                <PageBlockCTA fields={data_array[7].PageBlockCTA} />
+            </div>
             <Footer />
         </div>
     )
