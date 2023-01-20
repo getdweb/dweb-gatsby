@@ -3,7 +3,6 @@ import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import PageBlockOpening from '../components/PageBlockOpening'
 import PageBlockFeature from '../components/PageBlockFeature'
-import PageBlockContent from '../components/PageBlockContent'
 import data_array from '../../static/page-data/website-team.yaml'
 
 function WebsiteTeamPage() {
