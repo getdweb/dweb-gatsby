@@ -6,7 +6,7 @@ export default function Network() {
   const data = useStaticQuery(
     graphql`
       query {
-        allNetworkYaml(sort: { fields: title, order: ASC }) {
+        allNetworkYaml(sort: {title: ASC}) {
           nodes {
             color
             city_image_url

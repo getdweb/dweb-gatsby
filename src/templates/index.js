@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import favicon from '../img/favicon.svg'
 import Hero from '../components/Hero'
 import AboutUs from '../components/AboutUs'
 import Network from '../components/Network'
