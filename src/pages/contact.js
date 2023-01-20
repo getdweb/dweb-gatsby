@@ -3,16 +3,13 @@ import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import PageBlockOpening from '../components/PageBlockOpening'
 import PageBlockFeature from '../components/PageBlockFeature'
-import contact from '../../static/page-data/Contact.yaml'
+import data_array from '../../static/page-data/Contact.yaml'
 
-function ContactPage() {
+function data_arrayPage() {
   const content = (
     <div>
-      <PageBlockOpening
-        fields={contact[0].PageBlockOpening}
-      />
-      <PageBlockFeature
-        fields={contact[1].PageBlockFeature} />
+      <PageBlockOpening fields={data_array[0].PageBlockOpening} />
+      <PageBlockFeature fields={data_array[1].PageBlockFeature} />
       <Footer />
     </div>
   )
@@ -20,4 +17,4 @@ function ContactPage() {
   return <Layout content={content} />
 }
 
-export default ContactPage
+export default data_arrayPage
