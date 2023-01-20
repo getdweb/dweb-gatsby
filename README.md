@@ -8,7 +8,6 @@ The following enhancements have been made to accomodate the web3 environment:
 - hooks are provided for ipfs publish (similar to https://github.com/hyphacoop/distributed.press) (in progress)
 - assorted other gatsby quirks are addressed
 
-
 This repo contains both the gatsby build pipeline and the getdweb.net site content. Factoring out a reusable template project is currently in progress, but you may clone the existing codebase and replace the content directories (pages, img, data, etc) for your own use.
 
 ## Getting Started
@@ -103,6 +102,7 @@ details
 ## Known Issues
 
 - [X] CSS build process is working, but needs to be updated. Once node-sass enables compatibility with Node v18, the project should be able to build in Node v18 (currently stuck in v16). See [here](https://github.com/sass/node-sass/pull/3257) for information regarding the node-sass compatibility update.
+- [ ] The page [using-the-dweb-brand.js](src/pages/using-the-dweb-brand.js) isn't linked to anywhere and thus is inaccessible. Is this intentional?
 - [ ] [events-archive.yaml](static/page-data/events-archive.yaml) is left unpretty
 - [ ] The video element on the frontpage does not appear to be loading the video properly, might be a problem on the Internet Archive's end?
 - [ ] In [Hero.js](src/components/Hero.js), "wordpress_id" should be changed to "key_id". This will also require changing the contents of [HeroQuotes.yaml](src/data/HeroQuotes.yaml) in the same way. This should be done after reliance on wordpress has been severed because the python tools used to make that transfer use "wordpress_id" and will do so ever time the site is build using the wordpress data.
