@@ -81,13 +81,13 @@ export default function Network() {
             </div>
             <a
               className="network__add-node-link d-xl-none"
-              href="/start-a-dweb-node"
+              href="../start-a-dweb-node"
             >
               Start a node
             </a>
             <a
               className="network__add-node-link d-none d-xl-inline-block"
-              href="/start-a-dweb-node"
+              href="../start-a-dweb-node"
             >
               add your city
             </a>
