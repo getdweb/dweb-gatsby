@@ -20,18 +20,9 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        // name: `data`,
         path: `${__dirname}/src/data/`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     defaultLayouts: {
-    //       default: path.resolve('./src/components/Layout-MDX.js'),
-    //     },
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
