@@ -105,6 +105,7 @@ details
 ## Known Issues
 
 - [X] CSS build process is working, but needs to be updated. Once node-sass enables compatibility with Node v18, the project should be able to build in Node v18 (currently stuck in v16). See [here](https://github.com/sass/node-sass/pull/3257) for information regarding the node-sass compatibility update.
+- [ ] [events-archive.yaml](static/page-data/events-archive.yaml) is left unpretty
 - [ ] In [Hero.js](src/components/Hero.js), "wordpress_id" should be changed to "key_id". This will also require changing the contents of [HeroQuotes.yaml](src/data/HeroQuotes.yaml) in the same way. This should be done after reliance on wordpress has been severed because the python tools used to make that transfer use "wordpress_id" and will do so ever time the site is build using the wordpress data.
 - [ ] In [Principles.yaml](src/data/Principles.yaml), the YAML is storing raw HTML when it should instead lists of the principles using standard YAML syntax. Be careful when fixing this because the python transition tools output this HTML-formatted list. It would make sense to update Principles.yaml and the associated component only after the final break from Wordpress is made so that the transition tools do not interfere.
 - [ ] The link to the video and background link in [Hero.js](src/components/Hero.js) should live in a YAML file inside the [data](src/data/) folder.
