@@ -1,7 +1,7 @@
 import React from 'react'
-import PageButton from './PageButton'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
+import PageButton from './PageButton'
 
 export default function PageBlockCTA(props) {
   const { fields } = props

@@ -40,7 +40,7 @@ export default function Index() {
         const id = href.substr(2, href.length)
         if (document.getElementById(id) != null) {
           const offset = utilsService.getOffset(document.getElementById(id))
-          menu_items_offsets.push({ pos: parseInt(offset.top), id: id })
+          menu_items_offsets.push({ pos: parseInt(offset.top), id })
         }
       }
     })
