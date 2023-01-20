@@ -1,14 +1,16 @@
-const _ = require('lodash')
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
-const pMap = require('p-map');
-const globby = require('globby');
+import * as _ from 'lodash';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as util from 'util';
+// const globby = require('globby')
+// const pMap = require('p-map')
+import { globby } from 'globby'
+import pMap from 'p-map'
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
-exports.createPages = ({ actions, graphql }) => {
+let createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const indexTemplate = path.resolve(`./src/templates/index.js`)
@@ -20,9 +22,9 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-TRANSFORM_CONCURRENCY = 10
+let TRANSFORM_CONCURRENCY = 10
 
-exports.onPostBuild = async () => {
+let onPostBuild = async () => {
   // Replaces all image urls with the correct relative paths
   const paths = await globby(['public/**/*.html']);
 
@@ -41,3 +43,5 @@ exports.onPostBuild = async () => {
     await writeFileAsync(path, contents);
   }, { concurrency: TRANSFORM_CONCURRENCY });
 };
+
+export default { createPages, onPostBuild }
