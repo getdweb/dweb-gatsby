@@ -1,0 +1,48 @@
+# join-the-team.yaml
+- PageBlockOpening:
+    text: "Want to get involved in building the DWeb movement? We need people with many skills and interests. If one of these roles is not a perfect fit, please suggest a way you might get involved by writing to us at dweb [at] archive.org"
+    title: DWeb Volunteer needs
+    hero_image_desktop_url: /images/Volunteering-hero-WT-1280.png
+    hero_image_mobile_url: /images/Volunteering-hero-WT-mob.png
+- PageBlockContent:
+    text: "## Website team\n
+
+          ### Content managers\n
+
+          Upload new events from our nodes, select and upload new articles and videos, to keep our website up-to-date with a constant flow of new content (2-3 hours/month)\n
+
+          ### Volunteer coordinator\n
+
+          When members pop up through email or in person, you'll be the one to reach back out to them, hear what they are interested in doing, and connect the volunteer with the opportunities. This position requires a \"human resource\" orientation and great people skills. (1-2 hours/month)\n
+
+          ### Node coordinator\n
+
+          When someone applies to start a new node, you'll be the first person to reach back out, talk to them about their motivation and vision, and walk them through the on-boarding process. We have an on-boarding kit with graphics and assets that you'll share, and help get them going in Meetup.com and our website. (1-2 hours/month; varies depending on demand)\n
+
+          ### Frontend developer\n
+
+          We are looking for someone that can polish this website with delightful micro-interactions and lightweight transitions, making it fast to load and perfectly displayed from browser to browser. You will collaborate with our designer and other developers, and of course, you can go absolutely bananas with your creativity. Drop a line at iryna [at] jolocom.io if you would like to know more about this role."
+- PageBlockContent:
+    text: "## Events team\n
+
+          ### Event producers\n
+
+          Help manage the flow of attendees, answer questions, staff the Zoom back end, and plan for each monthly meetup. (2-3 hours/month)\n
+
+          ### Videographer / Live stream coordinator\n
+
+          In person events require a solid live streaming option for people around the world to attend. We're looking for someone to take this on for DWeb Camp and perhaps a few other live events. (Varies, but intensive during DWeb Camp)\n
+
+          ### Archivists\n
+
+          After each main event, you'll be gathering the assets for long-term preservation on Archive.org and other decentralized storage options. Photos, videos, writings, code should be archived with good metadata for the future. (2-3 hours/month)\n
+
+          ### Gather.town developer\n
+
+          Most months, the DWeb Community hangs out in our custom site on Gather.town. We can make it as customized and comfortable as we want. Help us make this DWeb environment fun, with sounds, libraries, artwork: the landscape is wide open. You do not need to be highly technical to play this role. (1-2 hours/month; varies)"
+- PageBlockCTA:
+    title: Use your skills to make a difference.
+    text: Did you find a role that sounds like it is you? Or do you have other superpowers that will help the DWeb movement? Get onboard!
+    button_caption: Yes, count me in!
+    button_link_direction: external
+    button_link_url: mailto:dweb@archive.org
