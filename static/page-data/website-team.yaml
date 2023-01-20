@@ -1,0 +1,43 @@
+# website-team.yaml
+- PageBlockOpening:
+    text: "Wendy Hanamura / project coordinator\\\n
+          Wendy coordinated the content, design, budget, tech and nodes for the website.\\\n
+          [twitter](https://twitter.com/whanamura) \u2027
+          [blog](https://blog.archive.org/author/wendy/) \u2027
+          [past events](https://decentralizedweb.net/)\n
+
+          Iryna Nezhynska / designer and website lead\\\n
+          Ira provided the creative direction for the DWeb visual design and coordinated website development.\\\n
+          [nezhynska.com](https://nezhynska.com/) \u2027
+          [twitter](https://twitter.com/iranezhynska) \u2027
+          [blog](https://jolocom.io/blog/from-medium-to-jolocom-logbook-in-five-steps/)\n
+
+          Mai Ishikawa Sutton / content editor & DWeb principles steward\\\n
+          Mai produced and edited website content and co-led development of DWeb principles.\\\n
+          [twitter](https://twitter.com/maira) \u2027
+          [maisutton.net](https://maisutton.net/) \u2027
+          [COMPOST](https://compost.digital/)\n
+
+          John Patrick Ryan / DWeb principles steward\\\n
+          John co-led development of DWeb principles.\\\n
+          [twitter](https://twitter.com/johnconorryan) \u2027
+          [johnconorryan.com](https://www.johnconorryan.com/) \u2027
+          [blog posts](https://johnconorryan.medium.com/)\n
+
+          Mina Nagy Zaki / software developer\\\n
+          Mina helps with the website hosting and server setup.\\\n
+          [github](https://github.com/mnzaki)\n
+
+          Gerben / Decentralized tech team & [Redecentralize.org](http://redecentralize.org/) editor\\\n
+          Gerben contributes by making the website decentralized across Hypercore & IPFS.\\\n
+          [twitter](https://twitter.com/johnconorryan) \u2027
+          [johnconorryan.com](https://www.johnconorryan.com/) \u2027
+          [blog posts](https://johnconorryan.medium.com/)"
+    title: The website team
+- PageBlockFeature:
+    button_caption: Join the team
+    button_link_direction: internal
+    button_link_url: /join-the-team
+    text: It takes millions to build a movement and we aspire to harness that kind of energy and support around the world. We need talented organizers, writers, designers, and engineers to coordinate our collective efforts. Interested in being part of the team? We have a list of positions we're hoping to fill. Or tell us how you'd like to get involved by emailing us a dweb [at] archive.org.
+    title: Volunteer
+    image_url: /images/DWeb-contact-newsletter-color03.png
