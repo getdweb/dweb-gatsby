@@ -31,7 +31,7 @@
     "react-helmet": "^6.1.0",
     "react-markdown": "^8.0.5",
     "rehype-raw": "^6.1.1",
-    "swiper": "^8.2.5"
+    "swiper": "^8.4.6"
   },
   "keywords": [
     "gatsby"
@@ -50,9 +50,9 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.7.1",
-    "rimraf": "^3.0.2"
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "rimraf": "^4.1.1"
   },
   "prettier": {
     "trailingComma": "es5",
