@@ -9,7 +9,7 @@ import PageBlockContent from '../components/PageBlockContent'
 import PageBlockCTA from '../components/PageBlockCTA'
 import data_array from '../../static/page-data/dweb-camp-2022.yaml'
 
-function data_arrayPage() {
+function DWebCamp2022Page() {
   const content = (
     <div>
       <div className="master-page-content">
@@ -29,4 +29,4 @@ function data_arrayPage() {
   return <Layout content={content} />
 }
 
-export default data_arrayPage
+export default DWebCamp2022Page

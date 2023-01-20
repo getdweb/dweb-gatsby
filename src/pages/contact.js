@@ -5,7 +5,7 @@ import PageBlockOpening from '../components/PageBlockOpening'
 import PageBlockFeature from '../components/PageBlockFeature'
 import data_array from '../../static/page-data/Contact.yaml'
 
-function data_arrayPage() {
+function ContactPage() {
   const content = (
     <div>
       <div className="master-page-content">
@@ -19,4 +19,4 @@ function data_arrayPage() {
   return <Layout content={content} />
 }
 
-export default data_arrayPage
+export default ContactPage
