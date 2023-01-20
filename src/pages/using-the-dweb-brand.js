@@ -6,7 +6,6 @@ import PageBlockFeature from '../components/PageBlockFeature'
 import PageBlockWideImage from '../components/PageBlockWideImage'
 import PageBlockContent from '../components/PageBlockContent'
 import PageBlockCTA from '../components/PageBlockCTA'
-import PageBlockBorder from '../components/PageBlockBorder'
 import data_array from '../../static/page-data/using-the-dweb-brand.yaml'
 
 function UsingTheDWebBrandPage() {
@@ -18,7 +17,6 @@ function UsingTheDWebBrandPage() {
                 <PageBlockContent fields={data_array[2].PageBlockContent} />
                 <PageBlockFeature fields={data_array[3].PageBlockFeature} />
                 <PageBlockContent fields={data_array[4].PageBlockContent} />
-                <PageBlockBorder />
                 <PageBlockOpening fields={data_array[5].PageBlockOpening} />
                 <PageBlockFeature fields={data_array[6].PageBlockFeature} />
                 <PageBlockOpening fields={data_array[7].PageBlockOpening} />
