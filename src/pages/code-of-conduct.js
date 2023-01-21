@@ -1,15 +1,13 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
-import PageBlockOpening from '../components/PageBlockOpening'
+import PageBlockUnzipper from '../components/PageBlockUnzipper'
 import data_array from '../../static/page-data/code-of-conduct.yaml'
 
 function CodeOfConductPage() {
     const content = (
         <div>
-            <div className="master-page-content">
-                <PageBlockOpening fields={data_array[0].PageBlockOpening} />
-            </div>
+            <PageBlockUnzipper data_array={data_array} />
             <Footer />
         </div>
     )

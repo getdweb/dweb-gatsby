@@ -1,15 +1,13 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
-import PageBlockContent from '../components/PageBlockContent'
+import PageBlockUnzipper from '../components/PageBlockUnzipper'
 import data_array from '../../static/page-data/privacy-policy.yaml'
 
 function PrivacyPolicyPage() {
     const content = (
         <div>
-            <div className="master-page-content">
-                <PageBlockContent fields={data_array[0].PageBlockContent} />
-            </div>
+            <PageBlockUnzipper data_array={data_array} />
             <Footer />
         </div>
     )
