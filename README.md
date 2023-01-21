@@ -40,7 +40,7 @@ There is an ESLint configuation which extends the [airbnb](https://github.com/ai
 
 ### About relative linking
 
-By default, the repository builds the website with relative linking. This includes  If you wanted to build this repo without relative linking, you would need to comment out `pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',` and `'gatsby-plugin-ipfs',` found in [gatsby-config.js](gatsby-config.js). Additionally, you would have to disable the post-build process in [gatsby-node.js](gatsby-node.js) that replaces all image urls with the correct relative paths.
+By default, the repository builds the website with relative linking. If you wanted to build this repo without relative linking, you would need to comment out `pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',` and `'gatsby-plugin-ipfs',` found in [gatsby-config.js](gatsby-config.js). Additionally, you would have to disable the post-build process in [gatsby-node.js](gatsby-node.js) that replaces all image urls with the correct relative paths.
 
 ## Information about Modular Page Construction
 
@@ -102,6 +102,7 @@ details
 ## Known Issues
 
 - [X] CSS build process is working, but needs to be updated. Once node-sass enables compatibility with Node v18, the project should be able to build in Node v18 (currently stuck in v16). See [here](https://github.com/sass/node-sass/pull/3257) for information regarding the node-sass compatibility update.
+- [ ] Images needs alt tags
 - [ ] The page [using-the-dweb-brand.js](src/pages/using-the-dweb-brand.js) isn't linked to anywhere and thus is inaccessible. Is this intentional?
 - [ ] [events-archive.yaml](static/page-data/events-archive.yaml) is left unpretty
 - [ ] The video element on the frontpage does not appear to be loading the video properly, it appears to be a change on the Internet Archive's end because previous version's of the site cannot load it either.
