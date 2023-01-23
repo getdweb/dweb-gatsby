@@ -13,10 +13,11 @@ let createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const pageTemplate = path.resolve(`./src/templates/page.js`)
-  const page_list = fs.readdirSync('./static/page-data/');
-  // Call `createPage()` once per WordPress page
+  const page_list = fs.readdirSync('./static/page-data/')
+  // Call `createPage()` once per page
   page_list.forEach(page_name => {
     let page_data = yaml.load(fs.readFileSync(`./static/page-data/${page_name}`, 'utf8'))
+    // remove ".yaml" from string
     const slug = page_name.substring(0, page_name.length - 5)
 
     createPage({
