@@ -1,7 +1,7 @@
 # dwebdesign.yaml
 - PageBlockOpening:
-    hero_image_desktop_url: https://getdweb.net/wp-content/uploads/2023/01/DWebDesign-webpage-hero-D3.jpg
-    hero_image_mobile_url: https://getdweb.net/wp-content/uploads/2020/10/start-a-d-web-node.jpg
+    hero_image_desktop_url: /images/DWebDesign-webpage-hero-D3.jpg
+    hero_image_mobile_url: /images/start-a-d-web-node.jpg
     text: "DWebDesign meetups aim to bring more designers to decentralized technologies through education and inspiration.\n
 
           Every two months, designers who work at the intersection of DWeb and open source share their experience with designers who are keen to enter the space. Every meetup we explore a new topic: onboarding new users, privacy-by-design, open-source design, aesthetics of decentralization, UX audits, design trends, content design etc.\n
@@ -12,25 +12,25 @@
     text: "meetup 04 • Oct, 2022 Berlin • in-person How do you design the signup experiences where everyone feels welcome regardless of their level of tech knowledge?"
     button_caption: What did we cover?
     button_link_url: https://www.linkedin.com/posts/eirena_dwebdesign-dwebdesign-designcommunity-activity-6993909883943186432-WiLvads/2023/01/DWebDesign04-feature2.png
-    image_url: https://getdweb.net/wp-content/uploads/2023/01/DWebDesign04-feature2.png
+    image_url: /images/DWebDesign04-feature2.png
 - PageBlockFeature:
     title: Open source design and design for open source
     text: "meetup 03 • Nov, 2019 Berlin • in-person What does it take to design for open-source? What are the designers'   incentives for distributing work under the open-source license?"
     button_caption: Get open-source resources
     button_link_url: https://jolocom.io/blog/open-source-design-resources/
-    image_url: https://getdweb.net/wp-content/uploads/2023/01/DWebDesign03-feature2.jpg
+    image_url: /images/DWebDesign03-feature2.jpg
 - PageBlockFeature:
     title: Typonight
     text: "meetup 02 • May, 2019 Berlin • in-person Typography & Web3: How to go beyond Google Fonts and how to know when it's time to break rules?"
     button_caption: Check the vibe
     button_link_url: https://twitter.com/GETJolocom/status/1128720391936053255
-    image_url: https://getdweb.net/wp-content/uploads/2023/01/DWebDesign02-feature.jpg
+    image_url: /images/DWebDesign02-feature.jpg
 - PageBlockFeature:
     title: Embrace variety
     text: "meetup 02 • Feb, 2019 Berlin • in-person Why does blockchain look so bland and non-human? How can designers fix it? On design trends, branding Web3 stratups and hiring designers in-house."
     button_caption: Read how it started
     button_link_url: https://jolocom.io/blog/why-did-we-organise-dribbble-berlin-meetup/
-    image_url: https://getdweb.net/wp-content/uploads/2023/01/dwebdesign-panel_alt-cover.png
+    image_url: /images/dwebdesign-panel_alt-cover.png
 - PageBlockContent:
     text: "Started by [Ira](https://twitter.com/IraNezhynska) from DWebBLN, DWebDesign meetups take place in Berlin. We are working on spinning out pop-up events around the world in 2023. If you want to get involved or if you want to bring DWebDesign to your city or event, write Ira at iryna [at] nezhynska.com"
 - PageBlockCTA:
