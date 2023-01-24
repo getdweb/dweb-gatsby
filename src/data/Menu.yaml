@@ -18,7 +18,7 @@
 - label: secondary
   items:
   - title: DWeb principles
-    url: /principles
+    url: /principles/
     object_id: '23'
   - title: DWeb Camp
     url: https://dwebcamp.org/
@@ -27,14 +27,14 @@
     url: /dweb-webinar-series/
     object_id: '1181'
   - title: Resources
-    url: /resources
+    url: /resources/
     object_id: '25'
   - title: FAQ
-    url: /faq
+    url: /faq/
     object_id: '26'
   - title: Newsletter
     url: https://mailchi.mp/archive/dweb-updates
     object_id: '27'
   - title: Get in touch
-    url: /contact
+    url: /contact/
     object_id: '28'
