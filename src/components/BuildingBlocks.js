@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
 
 export default function BuildingBlocks() {
   const data = useStaticQuery(
@@ -58,10 +59,12 @@ export default function BuildingBlocks() {
                     <div className="header building-block__header">
                       {block.title}
                     </div>
-                    <div
-                      className="building-block__text"
-                      dangerouslySetInnerHTML={{ __html: block.text }}
-                    />
+                    <div className="building-block__text" >
+                      <ReactMarkdown components={{
+                        a: ({ node, ...props }) => <a target="_blank" {...props} />
+                      }}>
+                        {block.text}
+                      </ReactMarkdown></div>
                     {button}
                   </div>
                 </div>
