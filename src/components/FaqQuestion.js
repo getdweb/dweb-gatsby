@@ -14,7 +14,9 @@ export default function Faq(props) {
       <div
         className="faq-pair__answer"
       >
-        <ReactMarkdown>{pair.answer}</ReactMarkdown>
+        <ReactMarkdown components={{
+          a: ({ node, ...props }) => <a target="_blank" {...props} />
+        }}>{pair.answer}</ReactMarkdown>
       </div>
     </div>
   )
