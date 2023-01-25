@@ -52,7 +52,7 @@ There are a number of pages which are constructed from data that lives in the di
 1. There are three components with a key field specifically called `text`: [PageBlockOpening](src/components/PageBlockOpening.js), [PageBlockFeature](src/components/PageBlockFeature.js), and [PageBlockCTA](src/components/PageBlockCTA.js). The value given for that key will be rendered on the page as Markdown. Additionally, any link within that markdown will be rendered as a url that opens in a new tab upon being clicked, even if the link is internal. This choice was made in order to have consistent behavior across all components. **Values entered for all other keys can be expected to be read as plaintext.**
     - Due the unorthodox flow of data from YAML to Markdown to HTML, the rendering of newlines can be a bit funky. In short, you can use any one of three sequences for a new paragraph in the rendered HTML: `\n\n`, `\n` + a literal newline, or two literal newlines. Additionally, `\\\n` will allow for a newline without starting a new paragraph. Compare the YAMl for the [Contact.yaml](static/page-data/Contact.yaml) page to the HTML on the website for the Contact page for an good example.
     - By default, any raw HTML within `text` is escaped due to the behavior of the [react-markdown](https://github.com/remarkjs/react-markdown#appendix-a-html-in-markdown) package. However, there is an optional key called `text_includes_raw_html` that may be set to `True` which allows for HTML to be embedded in `text` and rendered properly. An example of this can be found in [using-the-dweb-brand.yaml](/Users/scoob/internetarchive/winter-contract-2022/dweb-gatsby/static/page-data/using-the-dweb-brand.yaml) where the `<span>` tag is used for styling text a specific color.
-1. Unlike the always-external behavior of urls written inside of the "text" key found in some components, the components [PageBlockCTA](src/components/PageBlockCTA.js), [PageBlockFeature](src/components/PageBlockFeature.js), and [PageBlockButton](src/components/PageBlockButton.js) have a url stored in `button_link_url` as well as a key called `button_link_direction` that allows a distinction to be made between whether the link in `button_link_url` is `internal` or `external`. By default, the link is external and the value of `button_link_direction` may be left blank. If the desired link is external, then the following `key: value` pair may be written in the relevant YAML file: `button_link_direction: internal`.
+1. Unlike the always-external behavior of urls written inside of the "text" key found in some components, the components [PageBlockCTA](src/components/PageBlockCTA.js), [PageBlockFeature](src/components/PageBlockFeature.js), and [PageBlockButton](src/components/PageBlockButton.js) have a url stored in `button_link_url` as well as a key called `button_link_direction` that allows a distinction to be made between whether the link in `button_link_url` is `internal` or `external`. By default, the link is external and the value of `button_link_direction` may be left blank. If the desired link is internal, then the following `key: value` pair may be written in the relevant YAML file: `button_link_direction: internal`.
 
 ### Modular Components and their key/value pairs
 - [PageBlockCTA](src/components/PageBlockCTA.js):
@@ -89,6 +89,12 @@ There are a number of pages which are constructed from data that lives in the di
     - button_caption: `String`
     - button_link_direction: `String`
     - button_link_url: `String`
+
+## Other Site Notes
+
+1. Links in [Menu.yaml](src/data/Menu.yaml) under the label `secondary` must have a closing forward slash. For example, correct formatting looks like `url: /principles/` and NOT `url: /principles`. Failure to comply will break the site feature that highlights the current page if it is linked on the navigation menu.
+1. URLs to all local images should be made as if from within the static folder. In other words, all image URLs should be of the format `/images/example.jpeg`. The relativization of these links is done during the build process.
+
 
 ## Built With
 
