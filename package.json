@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.6.1",
     "gatsby": "^5.4.2",
-    "gatsby-plugin-ipfs": "github:willmhowes/gatsby-plugin-ipfs",
+    "gatsby-plugin-ipfs": "github:moxystudio/gatsby-plugin-ipfs",
     "gatsby-plugin-purgecss": "^4.0.0",
     "gatsby-plugin-react-helmet": "^6.4.0",
     "gatsby-plugin-sass": "^6.4.0",
