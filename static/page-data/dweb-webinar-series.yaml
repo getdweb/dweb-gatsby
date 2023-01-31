@@ -1,0 +1,48 @@
+# dweb-webinar-series.yaml
+- PageBlockOpening:
+    title: 'Imagining a Better Online World: Exploring the Decentralized Web'
+    text: "In this series of six workshops, \"Imagining a Better Online World: Exploring the Decentralized Web,\" we'll explore the ways in which moving to decentralized technologies may enhance your privacy, empower you to control your own data, and resist censorship. Join us to hear from experts in the leading peer-to-peer technologies, from identity to data storage. We'll see demonstrations of how decentralized tech is being used in publishing, data management and preserving cultural assets. Learn how the decentralized web might yet create systems that empower individuals by eliminating central points of control.\n\n
+      This series is a partnership between Internet Archive, [DWeb](https://getdweb.net/), [Library Futures](https://www.libraryfutures.net/), and presented by the [Metropolitan New York Library Council](https://metro.org/)."
+    hero_image_desktop_url: /images/DWeb-METRO-orgs-hero.jpg
+    hero_image_mobile_url: /images/DWeb-METRO-orgs-hero-M.jpg
+- PageBlockFeature:
+    button_caption: Watch the recording
+    button_link_url: https://youtu.be/6OWBGrQNcDU
+    title: 'Decentralized Web: An Introduction'
+    text: "Session 01  •  January 27, 2022\n\nWhat is the decentralized web, why is it important, and where is it along the path of development?"
+    image_url: /images/DWeb-session-01-guide.jpg
+- PageBlockFeature:
+    button_caption: Watch the recording
+    button_link_url: https://youtu.be/Bk87QTYwgHs
+    text: "Session 02  •  February 24, 2022\n\nHow do you create room for an ever-expanding collection and keep your materials safe?"
+    title: Using decentralized storage
+    image_url: /images/DWeb-session-02-guide.jpg
+- PageBlockFeature:
+    button_caption: Watch the recording
+    button_link_url: https://www.youtube.com/watch?v=hRBKWxAon_Y
+    text: "Session 03  •  March 31, 2022\n\nWhat if you could maintain control over your personal identity and share only what is needed?"
+    title: Decentralized Identity
+    image_url: /images/DWeb-Resource-Guide-03-website.png
+- PageBlockFeature:
+    button_caption: Watch the recording
+    button_link_url: http://blog.archive.org/2022/05/13/goodbye-facebook-hello-decentralized-social-media/
+    text: "Session 04  •  April 28, 2022\n\nCan Peer-to-Peer Lead to Less Toxic Online Platforms?"
+    title: Decentralized Social Media
+    image_url: /images/DWeb-Resource-Guide-04-website.png
+- PageBlockFeature:
+    button_caption: Watch the recording
+    button_link_url: https://blog.archive.org/2022/07/05/decentralized-apps-the-metaverse-and-the-next-big-thing/
+    text: "Session 05  •  May 26, 2022\n\nHow are artists and nonprofits racking up seven-figure payouts for otherwise mundane pieces of media called NFTs? Why are they so despised?"
+    title: The Metaverse and the “Next Big Thing”
+    image_url: /images/DWeb-Resource-Guide-05-web.png
+- PageBlockFeature:
+    button_caption: Watch the recording
+    button_link_url: http://blog.archive.org/2022/10/04/mapping-principles-for-a-better-world-ethics-of-the-decentralized-web-uses-in-humanitarian-work/
+    text: "Session 06 • June 30, 2022\n\nWhat is to prevent the decentralized web from being corrupted by profit, market domination, and bad actors?"
+    title: Ethics and Humanitarian Work
+    image_url: /images/DWeb-Resource-Guide-06-web.png
+- PageBlockCTA:
+    button_caption: Read Guides
+    button_link_url: https://archive.org/details/dweb-webinar-series
+    text: "Every session has an accompanying Resource Guide with core ideas around the topic and two pages of links. The bundle below includes guides for the first four sessions: \"Decentralized Web: An Introduction\", \"Using Decentralized Storage to Keep Your Materials Safe\", \"How Decentralized Identity Drives Data Privacy\" and \"Goodbye Facebook, Hello Decentralized Social Media?\"."
+    title: Get the Resource Guides

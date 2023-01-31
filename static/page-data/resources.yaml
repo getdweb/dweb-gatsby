@@ -1,0 +1,64 @@
+# resources.yaml
+- PageBlockOpening:
+    text: "There is much work to be done to build a decentralized web. We are committed to sharing knowledge and resources to enable anyone to jump in and get involved. Here is an ever-growing list of resources to help you along the way. If you have a resource to share, please email us at dweb [at] archive.org.\n
+
+          ## Starting out\n
+
+          [Illustrated Quick-start intro to wireframing](https://simplysecure.org/blog/wireframing-intro)\\\n
+          This 90-minute boot camp by Simply Secure will help you consider the user experience before you build any website or tool.\n
+
+          [Workshop Trailer: Distributed Web of Care](https://decentralizedweb.net/videos/workshop-distributed-web-of-care-trailer/) by Artist, Taeyoon Choi **\u2013** who simulates the P-2-P nature of the Decentralized Web in this interactive exercise\n
+
+          [Workshop Trailer](https://decentralizedweb.net/videos/workshop-internet-as-a-city-workshop-trailer/) & [Internet as a City Workshop](https://decentralizedweb.net/internet-as-a-city/) by Agnes Cameron & Gary Zhang\\\n
+          In this hands-on workshop, you\u2019ll examine decentralized forms of networking through the lenses of cities, urbanism, and architecture.\n
+
+          [Workshop Trailer](https://decentralizedweb.net/videos/workshop-prototyping-a-decentralized-web-with-browser-exensions-trailer/) & [Workshop Prototyping the Decentralized Web with Browser Extensions](https://decentralizedweb.net/prototyping-the-decentralized-web-with-browser-extensions/) by Omayeli Arenyeka & Andres Cuervo\\\n
+          This workshop explores building browser extensions as an exercise in speculating about a better web. It allows non-technical people to play with data ownership and other core concepts in the DWeb.\n
+
+          [Workshop Trailer](https://decentralizedweb.net/videos/workshop-p2p2p2p-trailer/) and [P2P2P2Pp Workshop](https://decentralizedweb.net/p2p2p2p-workshop/) by Kyle Mock and Laurel Schwulst\\\n
+          Using Beaker Browser, the leaders take you through the steps of building a P2P website\n
+
+          [Introduction to the Decentralized Web](https://bloomnetwork.org/introduction-to-the-decentralized-web-may-2020/) by Christina Bowen & John Light\\\n
+          In Bloom's monthly meetup, DWeb leaders explain the basics, from \"what is DAT and Holochain?\" to how do you govern in the DWeb?\n
+
+          ## DWeb design\n
+
+          [Decentralization, off the shelf](https://decentpatterns.xyz/)\\\n
+          A library of resources, assets, and patterns to support the design and development of better user-facing applications that are backed by decentralized architecture.\n
+
+          [Simply Secure\u2019s Knowledge Base](https://simplysecure.org/knowledge-base/)\\\n
+          Best practices for designers, developers, or researchers hoping to build trustworthy and privacy-protecting technology.\n
+
+          [Design Patterns for Decentralized Systems](https://simplysecure.org/blog/decentral-patterns)\\\n
+          What are the high-level patterns (in interfaces, workflows & writings) in decentralized and federated systems?\n
+
+          ## Get hands on!\n
+
+          [Meshnet at DWeb Camp 2019](https://dweb-camp-2019.github.io/meshnet/)\\\n
+          This website documents the design, build, and stewardship of the participatory mesh network at [DWeb Camp 2019](http://dwebcamp.org). It includes hardware inventories, design plans, and photographs. Invaluable to anyone hoping to build their own community-created mesh network.\n
+
+          [Cryptoeconomics: An Introduction](https://www.youtube.com/watch?v=F0FCI8GxO5I) by Karl Floersch, Ethereum Foundation\\\n
+          This is a 20-minute introductory video to a more in-depth online course that Karl designed for the masses.\n
+
+          [Cryptoeconomics.study](https://cryptoeconomics.study/)\\\n
+          A free, open-source course on the fundamentals of Blockchain protocols with fast-paced lectures, coding assignments, and a community forum for questions and support.\n
+
+          ## **Videos**\n
+
+          [Talks, Panels & Workshops](https://decentralizedweb.net/videos/) from the [Decentralized Web Summit 2018: Global Visions/Working Code](https://decentralizedweb.net/)\n
+
+          [Talks, Panels, Lightning Rounds](https://2016.decentralizedweb.net/) from the [Decentralized Web Summit 2016: Locking the Web Open](https://2016.decentralizedweb.net/)\n
+
+          [Lightning Talks](https://dwebcamp.org/videos/) from [DWeb Camp 2019](https://dwebcamp.org/)\n
+
+          ## Regulation papers\n
+
+          [EU Token Regulation Paper](http://thinkblocktank.org/publications/) that aims to analyze the EU legal and regulatory framework applicable to token sales in Europe.\n
+
+          [Position Paper on Decentralised Identity](https://inatba.org/reports/inatba-identity-working-group-paper/) by INATBA Identity Working Group.\n
+
+          ## **Maps of the Ecosystem**\n
+
+          [Mapping Decentralized Tech](https://kumu.io/DigLife/decentralized-tech) (2018)\\\n
+          Using a technology called Kumu.io, Christina Bowen and Robert Best invite Decentralized Tech projects and protocols to put themselves on the map, along with the network of projects they are working with."
+    title: Our growing list of DWeb Resources

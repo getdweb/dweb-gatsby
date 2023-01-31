@@ -18,7 +18,7 @@ export default function Footer() {
             header
           }
         }
-        allNetworkYaml(sort: { fields: title, order: ASC }) {
+        allNetworkYaml(sort: {title: ASC}) {
           nodes {
             color
             title
@@ -87,7 +87,7 @@ export default function Footer() {
                 ))}
                 <a
                   className="footer__network-nodes-bottom-link"
-                  href="/start-a-dweb-node/"
+                  href="../start-a-dweb-node/"
                   target="_blank"
                 >
                   Open chapter in your city
@@ -156,7 +156,7 @@ export default function Footer() {
               <div className="footer__menuline">
                 <a
                   className="footer__menuline-item"
-                  href="/privacy-policy"
+                  href="../privacy-policy"
                   target="_blank"
                   key={md5('Privacy policy')}
                 >

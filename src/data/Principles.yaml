@@ -1,12 +1,66 @@
-- description: "<ol>\n<li aria-level=\"1\">We stand for technology that enables the primacy of people as beneficiaries of the technology, by upholding their security, privacy and self-determination.</li>\n<li aria-level=\"1\">We urge coexistence and interoperability, and discourage walled gardens.</li>\n<li aria-level=\"1\">We value open source code as a fundamental building block of an open and inclusive Web.</li>\n<li aria-level=\"1\">We aim for peer-to-peer relationships, rather than hierarchical control and power imbalance.</li>\n<li aria-level=\"1\">Our technologies must minimize surveillance and manipulation of people\u2019s behavior, and optimize for social benefits and empower individuals to determine how and why their data is used.</li>\n<li aria-level=\"1\">We believe that multiple technical means will be more effective than a single technical solution to achieve ethical and people-centric outcomes.</li>\n</ol>\n"
+- description: "1.  We stand for technology that enables the primacy of people as beneficiaries of the technology, by upholding their security, privacy and self-determination.\n
+
+                2.  We urge coexistence and interoperability, and discourage walled gardens.\n
+
+                3.  We value open source code as a fundamental building block of an open and inclusive Web.\n
+
+                4.  We aim for peer-to-peer relationships, rather than hierarchical control and power imbalance.\n
+
+                5.  Our technologies must minimize surveillance and manipulation of people's behavior, and optimize for social benefits and empower individuals to determine how and why their data is used.\n
+
+                6.  We believe that multiple technical means will be more effective than a single technical solution to achieve ethical and people-centric outcomes."
   title: 01. Technology for Human Agency
-- description: "<ol>\n<li aria-level=\"1\">We believe that decentralized technologies will be most beneficial to society when the rewards and recognition of their success, monetary or otherwise, are distributed among those who contributed to that success.</li>\n<li aria-level=\"1\">If that is infeasible, proportionate benefit should flow to the community at large.</li>\n<li aria-level=\"1\">High concentration of organizational control is antithetical to the decentralized web.</li>\n</ol>\n"
+- description: "1.  We believe that decentralized technologies will be most beneficial to society when the rewards and recognition of their success, monetary or otherwise, are distributed among those who contributed to that success.\n
+
+                2.  If that is infeasible, proportionate benefit should flow to the community at large.\n
+
+                3.  High concentration of organizational control is antithetical to the decentralized web.\n"
   title: 02. Distributed Benefits
-- description: "<ol>\n<li aria-level=\"1\">We support and encourage clear codes of conduct to ensure respectful behavior and accountability.</li>\n<li aria-level=\"1\">We expect participants to remain mindful of, and take responsibility for, their speech and behavior, by acting out of respect for others and respecting physical and emotional boundaries.</li>\n<li aria-level=\"1\">We stand for open and transparent organizational practices, motivations, and governance, in a manner that actively pursues equity, mutual trust, and respect.</li>\n</ol>\n"
+- description: "1.  We support and encourage clear codes of conduct to ensure respectful behavior and accountability.\n
+
+                2.  We expect participants to remain mindful of, and take responsibility for, their speech and behavior, by acting out of respect for others and respecting physical and emotional boundaries.\n
+
+                3.  We stand for open and transparent organizational practices, motivations, and governance, in a manner that actively pursues equity, mutual trust, and respect."
   title: 03. Mutual Respect
-- description: "<ol>\n<li aria-level=\"1\">The objective of building a decentralized web is to protect human rights and empower people, especially those who experience systemic inequity and prejudice.</li>\n<li aria-level=\"1\">We stand for people having agency over their own data and relationships, rights to free expression, privacy, and knowledge, as these are essential to human empowerment and dignity.</li>\n<li aria-level=\"1\">We condemn the use of distributed tools for activities antithetical to human rights, such as human trafficking; sexual, mental, or physical abuse; and arms trading.</li>\n<li aria-level=\"1\">We encourage building with harm-reduction in mind, and support the adoption of mechanisms that mitigate the potential for abuse, and consideration of those \u2018not at the table\u2019 \u2014 not connected, not users, and the disadvantaged.</li>\n<li aria-level=\"1\">We encourage the development of tools and applications in many languages and forms, with a high degree of accessibility.</li>\n</ol>\n"
+- description: "1.  The objective of building a decentralized web is to protect human rights and empower people, especially those who experience systemic inequity and prejudice.\n
+
+                2.  We stand for people having agency over their own data and relationships, rights to free expression, privacy, and knowledge, as these are essential to human empowerment and dignity.\n
+
+                3.  We condemn the use of distributed tools for activities antithetical to human rights, such as human trafficking; sexual, mental, or physical abuse; and arms trading.\n
+
+                4.  We encourage building with harm-reduction in mind, and support the adoption of mechanisms that mitigate the potential for abuse, and consideration of those \\u2018not at the table' \\u2014 not connected, not users, and the disadvantaged.\n
+
+                5.  We encourage the development of tools and applications in many languages and forms, with a high degree of accessibility."
   title: 04. Humanity
-- description: "<ol>\n<li aria-level=\"1\">We believe projects should aim to minimize ecological harm and avoid technologies that worsen environmental health.</li>\n<li aria-level=\"1\">We value systems that work towards reducing energy consumption and device resource requirements, while increasing device lifespan by allowing repair, recycling, and recovery.</li>\n</ol>\n"
+- description: "1.  We believe projects should aim to minimize ecological harm and avoid technologies that worsen environmental health.\n
+
+                2.  We value systems that work towards reducing energy consumption and device resource requirements, while increasing device lifespan by allowing repair, recycling, and recovery."
   title: 05. Ecological Awareness
-- description: "<p><a href=\"https://www.gida-global.org/care\">CARE Principles for Indigenous Data Governance</a></p>\n<p><a href=\"https://www.humanetech.com/policy-principles\">Center for Humane Technology\u2019s Policy Principles</a></p>\n<p><a href=\"https://contractfortheweb.org/\">Contract for the Web</a></p>\n<p><a href=\"https://decentpatterns.xyz/report/\">Decentralization Off The Shelf</a></p>\n<p><a href=\"https://designjustice.org/read-the-principles\">Design Justice Principles</a></p>\n<p><a href=\"http://detroitdjc.org/principles/\">Detroit Digital Justice Coalition Principles</a></p>\n<p><a href=\"https://archive.org/details/governingthecommons\">Elinor Ostrom\u2019s Principles for Governing the Commons</a></p>\n<p><a href=\"https://ethicalsource.dev/principles/\">The Ethical Source Principles</a></p>\n<p><a href=\"https://www.manifestno.com/\">Feminist Data Manifest-No</a></p>\n<p><a href=\"https://feministinternet.org/en/principles\">Feminist Principles of the Internet</a></p>\n<p><a href=\"https://www.rfc-editor.org/rfc/rfc8280.html\">Internet Research Task Force Research into Human Rights Protocol Considerations</a></p>\n<p><a href=\"https://www.plan-systems.org/plan-technology-components/#design-principles\">PLAN Systems Technology Design Principles</a></p>\n<p><a href=\"https://shared-digital.eu/\">A Shared Digital Europe</a></p>\n<p><a href=\"https://www.un.org/en/about-us/universal-declaration-of-human-rights\">United Nations Universal Declaration of Human Rights</a></p>\n"
+- description: "[CARE Principles for Indigenous Data Governance](https://www.gida-global.org/care)\n
+
+                [Center for Humane Technology's Policy Principles](https://www.humanetech.com/policy-principles)\n
+
+                [Contract for the Web](https://contractfortheweb.org/)\n
+
+                [Decentralization Off The Shelf](https://decentpatterns.xyz/report/)\n
+
+                [Design Justice Principles](https://designjustice.org/read-the-principles)\n
+
+                [Detroit Digital Justice Coalition Principles](http://detroitdjc.org/principles/)\n
+
+                [Elinor Ostrom's Principles for Governing the Commons](https://archive.org/details/governingthecommons)\n
+
+                [The Ethical Source Principles](https://ethicalsource.dev/principles/)\n
+
+                [Feminist Data Manifest-No](https://www.manifestno.com/)\n
+
+                [Feminist Principles of the Internet](https://feministinternet.org/en/principles)\n
+
+                [Internet Research Task Force Research into Human Rights Protocol Considerations](https://www.rfc-editor.org/rfc/rfc8280.html)\n
+
+                [PLAN Systems Technology Design Principles](https://www.plan-systems.org/plan-technology-components/#design-principles)\n
+
+                [A Shared Digital Europe](https://shared-digital.eu/)\n
+
+                [United Nations Universal Declaration of Human Rights](https://www.un.org/en/about-us/universal-declaration-of-human-rights)"
   title: Related Principles

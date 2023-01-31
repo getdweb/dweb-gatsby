@@ -16,7 +16,7 @@ export default function AboutUs() {
                 internet.
               </p>
               <p>
-                <a href="/origin-story">Since 2016</a> we have been a bridge
+                <a href="../origin-story">Since 2016</a> we have been a bridge
                 enabling diverse communities to freely exchange ideas about the
                 technologies, values, markets and agreements we need to move
                 forward.

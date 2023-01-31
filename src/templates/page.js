@@ -6,82 +6,43 @@ import PageBlockHighlighted from '../components/PageBlockHighlighted'
 import PageBlockContent from '../components/PageBlockContent'
 import PageBlockWideImage from '../components/PageBlockWideImage'
 import PageBlockButton from '../components/PageBlockButton'
-import PageBlockBorder from '../components/PageBlockBorder'
 import PageBlockCTA from '../components/PageBlockCTA'
 import PageBlockFeature from '../components/PageBlockFeature'
 
 function MasterPage(props) {
-  const { page } = props.pageContext
+  const {data_array} = props.pageContext;
 
-  let blockKey = 0
+  const content = <>
+      <div className="master-page-content" >
+        {
+          data_array.map(block => {
+            if (Object.hasOwn(block, "PageBlockOpening")) {
+              return <PageBlockOpening fields={block.PageBlockOpening} />;
+            } if (Object.hasOwn(block, "PageBlockHighlighted")) {
+              return <PageBlockHighlighted fields={block.PageBlockHighlighted} />;
+            } if (Object.hasOwn(block, "PageBlockFeature")) {
+              return <PageBlockFeature fields={block.PageBlockFeature} />;
+            } if (Object.hasOwn(block, "PageBlockContent")) {
+              return <PageBlockContent fields={block.PageBlockContent} />;
+            } if (Object.hasOwn(block, "PageBlockWideImage")) {
+              return <PageBlockWideImage fields={block.PageBlockWideImage} />;
+            } if (Object.hasOwn(block, "PageBlockButton")) {
+              return <PageBlockButton fields={block.PageBlockButton} />;
+            } if (Object.hasOwn(block, "PageBlockCTA")) {
+              return <PageBlockCTA fields={block.PageBlockCTA} />;
+            } 
+              return <></>;
+            
 
-  const content = (
-    <>
-      <div className="master-page-content">
-        {page.acf.page_blocks.map((block) => {
-          blockKey++
-          switch (block.block_type) {
-            case 'opening':
-              return (
-                <PageBlockOpening
-                  key={`page_block_${blockKey}`}
-                  fields={block.opening_section_content}
-                />
-              )
-            case 'highlighted':
-              return (
-                <PageBlockHighlighted
-                  key={`page_block_${blockKey}`}
-                  fields={block.highlighted_statement_content}
-                />
-              )
-            case 'feature_block':
-              return (
-                <PageBlockFeature
-                  key={`page_block_${blockKey}`}
-                  fields={block.feature_block}
-                />
-              )
-            case 'body_content':
-              return (
-                <PageBlockContent
-                  key={`page_block_${blockKey}`}
-                  fields={block.body_content}
-                />
-              )
-            case 'body_wide_image':
-              return (
-                <PageBlockWideImage
-                  key={`page_block_${blockKey}`}
-                  fields={block.body_wide_image}
-                />
-              )
-            case 'body_button':
-              return (
-                <PageBlockButton
-                  key={`page_block_${blockKey}`}
-                  fields={block.body_button}
-                />
-              )
-            case 'cta_button':
-              return (
-                <PageBlockCTA
-                  key={`page_block_${blockKey}`}
-                  fields={block.cta_button}
-                />
-              )
-            case 'border':
-              return <PageBlockBorder key={`page_block_${blockKey}`} />
-            default:
-              return <></>
-          }
-        })}
+          })
+        }
       </div>
       <Footer />
     </>
-  )
 
-  return <Layout content={content} />
+  return (
+    <Layout content={content} />
+  )
 }
 
 export default MasterPage

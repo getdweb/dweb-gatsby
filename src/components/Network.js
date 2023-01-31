@@ -6,7 +6,7 @@ export default function Network() {
   const data = useStaticQuery(
     graphql`
       query {
-        allNetworkYaml(sort: { fields: title, order: ASC }) {
+        allNetworkYaml(sort: {title: ASC}) {
           nodes {
             color
             city_image_url
@@ -81,13 +81,13 @@ export default function Network() {
             </div>
             <a
               className="network__add-node-link d-xl-none"
-              href="/start-a-dweb-node"
+              href="../start-a-dweb-node"
             >
               Start a node
             </a>
             <a
               className="network__add-node-link d-none d-xl-inline-block"
-              href="/start-a-dweb-node"
+              href="../start-a-dweb-node"
             >
               add your city
             </a>

@@ -20,24 +20,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        // name: `data`,
         path: `${__dirname}/src/data/`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     defaultLayouts: {
-    //       default: path.resolve('./src/components/Layout-MDX.js'),
-    //     },
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         develop: true,
         printRejected: true,
         ignore: ['.cache/'],
+        // the following headers are used in markdown, but purge-css doesn't
+        // know that because the markdown lives in YAML as ## and not <h2>
+        whitelist: ['h1', 'h2', 'h3',],
         content: [
           path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
           path.join(

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 export default function Faq(props) {
   const [open, setOpen] = useState(false)
@@ -12,8 +13,11 @@ export default function Faq(props) {
       </a>
       <div
         className="faq-pair__answer"
-        dangerouslySetInnerHTML={{ __html: pair.answer }}
-      />
+      >
+        <ReactMarkdown components={{
+          a: ({ node, ...props }) => <a target="_blank" {...props} />
+        }}>{pair.answer}</ReactMarkdown>
+      </div>
     </div>
   )
 }

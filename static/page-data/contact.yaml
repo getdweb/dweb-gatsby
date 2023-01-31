@@ -1,0 +1,15 @@
+# contact.yaml
+- PageBlockOpening:
+    title: Let's connect
+    text: "Write to us at [dweb [at] archive.org](mailto:dweb@archive.org).\n
+
+      Follow DWeb on Twitter at [@GetDWeb](https://twitter.com/GETDWeb).\\\n
+      Read about the latest ideas and innovations on Medium on \"[Stories from the Decentralized Web](https://medium.com/decentralized-web)\".\n
+
+      Meet other DWeb community members on [our Matrix channel](https://matrix.to/#/!WBhcGXTDMlzyTPWoJv:matrix.org?via=matrix.org&amp;via=tomesh.net&amp;via=privacytools.io)."
+- PageBlockFeature:
+    title: Get community updates
+    text: We send out occasional emails with the latest events and developments in the DWeb community. We only send you the important stuff. Subscribe and stay up to date!
+    button_caption: Join mailing list
+    button_link_url: https://mailchi.mp/archive/dweb-updates
+    image_url: /images/DWeb-contact-newsletter-color03.png

@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import favicon from '../img/favicon.svg'
 import Hero from '../components/Hero'
 import AboutUs from '../components/AboutUs'
 import Network from '../components/Network'
@@ -40,7 +38,7 @@ export default function Index() {
         const id = href.substr(2, href.length)
         if (document.getElementById(id) != null) {
           const offset = utilsService.getOffset(document.getElementById(id))
-          menu_items_offsets.push({ pos: parseInt(offset.top), id: id })
+          menu_items_offsets.push({ pos: parseInt(offset.top), id })
         }
       }
     })
