@@ -734,7 +734,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/09/DWeb-principle-05.png"
+								"url": "/images/DWeb-principle-05.png"
 							}
 						}
 					},
@@ -772,7 +772,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/09/DWeb-principle-03.png"
+								"url": "/images/DWeb-principle-03.png"
 							}
 						}
 					},
@@ -997,7 +997,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/06/DWeb-principle-02-for-blog.jpg"
+								"url": "/images/DWeb-principle-02-for-blog.jpg"
 							}
 						}
 					},
@@ -1069,7 +1069,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/04/DWeb-eventbrite-cover-NFT-03.jpg"
+								"url": "/images/DWeb-eventbrite-cover-NFT-03.jpg"
 							}
 						}
 					},
@@ -1141,7 +1141,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/04/london-burning.jpg"
+								"url": "/images/london-burning.jpg"
 							}
 						}
 					},
@@ -1179,7 +1179,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/04/March2021_DWebSF.jpeg"
+								"url": "/images/March2021_DWebSF.jpeg"
 							}
 						}
 					},
@@ -1285,7 +1285,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/03/iryna_dweb_blog-e1617052634848.png"
+								"url": "/images/iryna_dweb_blog-e1617052634848.png"
 							}
 						}
 					},
@@ -1391,7 +1391,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/03/WaybackWheel_DWebCamp2019.jpg"
+								"url": "/images/WaybackWheel_DWebCamp2019.jpg"
 							}
 						}
 					},
@@ -1463,7 +1463,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/02/Reboot_emailstory_V2-1-1.png"
+								"url": "/images/Reboot_emailstory_V2-1-1.png"
 							}
 						}
 					},
@@ -1620,7 +1620,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/01/DWeb-eventbrite-The-latest-in-DWeb-SF-cover.png"
+								"url": "/images/DWeb-eventbrite-The-latest-in-DWeb-SF-cover.png"
 							}
 						}
 					},
@@ -1743,7 +1743,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/03/DWeb-eventbrite-SocialDilemma-SF-cover-1024x512-1.png"
+								"url": "/images/DWeb-eventbrite-SocialDilemma-SF-cover-1024x512-1.png"
 							}
 						}
 					},
@@ -1778,7 +1778,7 @@ export default function Voices() {
 							"name": "Opinion:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://hackernoon.com/hn-images/1*ubOOkWtA8DC04-IsA93aGw.jpeg",
+						"image_url": "/images/1*ubOOkWtA8DC04-IsA93aGw.jpeg",
 						"image": null
 					},
 					"title": "What to do once you admit that decentralizing everything never seems to work",
@@ -1849,7 +1849,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/DWeb-eventbrite-one-year-after-DWebCamp-SF-cover.png"
+								"url": "/images/DWeb-eventbrite-one-year-after-DWebCamp-SF-cover.png"
 							}
 						}
 					},
@@ -1935,7 +1935,7 @@ export default function Voices() {
 							"name": "Flashback:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*fAgzZ2itu3tRVNsQHzmENg.jpeg",
+						"image_url": "/images/1*fAgzZ2itu3tRVNsQHzmENg.jpeg",
 						"image": null
 					},
 					"title": "DWeb Camp Meshnet: A model for bringing communities online",
@@ -2105,7 +2105,7 @@ export default function Voices() {
 							"name": "Analysis:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*M7NooPRLcaJnHg8Tznyb_Q.png",
+						"image_url": "/images/1*M7NooPRLcaJnHg8Tznyb_Q.png",
 						"image": null
 					},
 					"title": "Comparing IPFS and Dat",
@@ -2156,7 +2156,7 @@ export default function Voices() {
 							"name": "Opinion:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*ix9UgxGHFwugyyG4nzqYvw.jpeg",
+						"image_url": "/images/1*ix9UgxGHFwugyyG4nzqYvw.jpeg",
 						"image": null
 					},
 					"title": "Why Decentralize?",
@@ -2190,7 +2190,7 @@ export default function Voices() {
 							"name": "Flashback:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*v0yKFPOhJpmXUHi_eob2Tw.png",
+						"image_url": "/images/1*v0yKFPOhJpmXUHi_eob2Tw.png",
 						"image": null
 					},
 					"title": "DWeb Camp: building a web that we deserve",
@@ -2207,7 +2207,7 @@ export default function Voices() {
 							"name": "Flashback:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*Nw6KCTDWkmZTrsGwDRlf2A.jpeg",
+						"image_url": "/images/1*Nw6KCTDWkmZTrsGwDRlf2A.jpeg",
 						"image": null
 					},
 					"title": "DWeb Camp Powered by Play: New Paths to Authentic Learning",
@@ -2224,7 +2224,7 @@ export default function Voices() {
 							"name": "Flashback:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/1000/1*iXrZ7HE-aAARL7HkD0GGUA.jpeg",
+						"image_url": "/images/1*iXrZ7HE-aAARL7HkD0GGUA.jpeg",
 						"image": null
 					},
 					"title": "Decentralized WebCamp 2019 Experience | PLAN Systems",
@@ -2241,7 +2241,7 @@ export default function Voices() {
 							"name": "Flashback:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*SuUu9KViRBEFJw6c2pY1vA.jpeg",
+						"image_url": "/images/1*SuUu9KViRBEFJw6c2pY1vA.jpeg",
 						"image": null
 					},
 					"title": "The Internet’s Old Guard",
@@ -2275,7 +2275,7 @@ export default function Voices() {
 							"name": "Profile:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/225/1*dD58krYkvYSzSyAsXe4ctQ.jpeg",
+						"image_url": "/images/1*dD58krYkvYSzSyAsXe4ctQ.jpeg",
 						"image": null
 					},
 					"title": "DWeb Camp Profile: Mary Lou Jepson on the Future of Practical Telepathy and Learning from Pioneers",
@@ -2292,7 +2292,7 @@ export default function Voices() {
 							"name": "Profile:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/700/1*5gC9YwWj7FmdRg0iniPHEQ.jpeg",
+						"image_url": "/images/1*5gC9YwWj7FmdRg0iniPHEQ.jpeg",
 						"image": null
 					},
 					"title": "DWeb Camp Profile: Ripple’s Former CTO Stefan Thomas",
@@ -2309,7 +2309,7 @@ export default function Voices() {
 							"name": "Opinion:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/641/1*Mt-7FOr3baH3lux8Xi20Aw.png",
+						"image_url": "/images/1*Mt-7FOr3baH3lux8Xi20Aw.png",
 						"image": null
 					},
 					"title": "Transforming Ourselves to Transform Our Networks",
@@ -2326,7 +2326,7 @@ export default function Voices() {
 							"name": "Profile:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://miro.medium.com/max/400/1*g5UzI4TE_qRD3l2Go4DBHw.png",
+						"image_url": "/images/1*g5UzI4TE_qRD3l2Go4DBHw.png",
 						"image": null
 					},
 					"title": "Introducing the 2019 DWeb Camp Global Fellows",
@@ -2380,7 +2380,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/01/DWeb-logo-story-black-for-voices.png"
+								"url": "/images/DWeb-logo-story-black-for-voices.png"
 							}
 						}
 					},
@@ -2415,7 +2415,7 @@ export default function Voices() {
 							"name": "Analysis:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://shared-digital.eu/content/images/2020/01/pie_infra-wide-1200.png",
+						"image_url": "/images/pie_infra-wide-1200.png",
 						"image": null
 					},
 					"title": "Shared Digital Europe Principle: Decentralise infrastructure",
@@ -2452,7 +2452,7 @@ export default function Voices() {
 						"image_url": null,
 						"image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/01/A02-hero-mob.png"
+								"url": "/images/A02-hero-mob.png"
 							}
 						}
 					},
@@ -2555,7 +2555,7 @@ export default function Voices() {
 							"name": "Analysis:"
 						},
 						"thumbnail_type": "url",
-						"image_url": "https://media.wired.com/photos/5a99edeeb4bf6c3e4d405aba/master/w_2560%2Cc_limit/baran_nets-FINAL.jpg",
+						"image_url": "/images/baran_nets-FINAL.jpg",
 						"image": null
 					},
 					"title": "The Decentralized Internet Is Here, With Some Glitches",

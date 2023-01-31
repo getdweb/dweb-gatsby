@@ -41,7 +41,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2023/01/https-cdn.evbuc_.com-images-425911579-154460368634-1-original.20230117-011057.jpeg"
+								"url": "/images/https-cdn.evbuc_.com-images-425911579-154460368634-1-original.20230117-011057.jpeg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -81,7 +81,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2022/10/DWebDesign-No4-eventbrite.jpg"
+								"url": "/images/DWebDesign-No4-eventbrite.jpg"
 							}
 						},
 						"hover_color": "#aae1d7",
@@ -301,7 +301,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2022/02/DWeb-Mozfest01-meetup.jpg"
+								"url": "/images/DWeb-Mozfest01-meetup.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -323,7 +323,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2022/02/METRO-session-02-v-1.jpg"
+								"url": "/images/METRO-session-02-v-1.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -417,7 +417,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/09/DWeb-sept-2021-eventbrite.png"
+								"url": "/images/DWeb-sept-2021-eventbrite.png"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -457,7 +457,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/05/DWeb-eventbrite-The-latest-in-DWeb-SF-cover-June2021.jpg"
+								"url": "/images/DWeb-eventbrite-The-latest-in-DWeb-SF-cover-June2021.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -497,7 +497,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/04/DWeb-eventbrite-cover-NFT-03.jpg"
+								"url": "/images/DWeb-eventbrite-cover-NFT-03.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -537,7 +537,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/02/DWeb-eventbrite-The-latest-in-DWeb-SF-cover.jpg"
+								"url": "/images/DWeb-eventbrite-The-latest-in-DWeb-SF-cover.jpg"
 							}
 						},
 						"hover_color": "#eeee22",
@@ -559,7 +559,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/03/Desert-Blockchain-March-event.png"
+								"url": "/images/Desert-Blockchain-March-event.png"
 							}
 						},
 						"hover_color": "#dd9933",
@@ -581,7 +581,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/02/Perm-winter-school-2021.jpeg"
+								"url": "/images/Perm-winter-school-2021.jpeg"
 							}
 						},
 						"hover_color": "#e9e0cb",
@@ -621,7 +621,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/02/DWebCover-2.jpg"
+								"url": "/images/DWebCover-2.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -661,7 +661,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/01/DWeb-Holiday-Social-SF-eventbrite-cover.jpg"
+								"url": "/images/DWeb-Holiday-Social-SF-eventbrite-cover.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -701,7 +701,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2021/01/DWeb-eventbrite-The-latest-in-DWeb-SF-cover.png"
+								"url": "/images/DWeb-eventbrite-The-latest-in-DWeb-SF-cover.png"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -831,7 +831,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/DWeb-eventbrite-SocialDilemma-SF-cover.png"
+								"url": "/images/DWeb-eventbrite-SocialDilemma-SF-cover.png"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -857,7 +857,7 @@ export default function Events() {
 						],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/dwebcamp.png"
+								"url": "/images/dwebcamp.png"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -897,7 +897,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/DWeb-eventbrite-one-year-after-DWebCamp-SF-cover.png"
+								"url": "/images/DWeb-eventbrite-one-year-after-DWebCamp-SF-cover.png"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -923,7 +923,7 @@ export default function Events() {
 						],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/DWebFeb_cover.png"
+								"url": "/images/DWebFeb_cover.png"
 							}
 						},
 						"hover_color": "#8dd2c5",
@@ -945,7 +945,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/PWS-2020.jpeg"
+								"url": "/images/PWS-2020.jpeg"
 							}
 						},
 						"hover_color": "#44c068",
@@ -985,7 +985,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/shanghai-applications-and-tools.png"
+								"url": "/images/shanghai-applications-and-tools.png"
 							}
 						},
 						"hover_color": "#9dbcb6",
@@ -1025,7 +1025,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/OSD-eventbrite-01-1024x516-1.png"
+								"url": "/images/OSD-eventbrite-01-1024x516-1.png"
 							}
 						},
 						"hover_color": "#8dd2c5",
@@ -1141,7 +1141,7 @@ export default function Events() {
 						],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/PSS-2020.jpg"
+								"url": "/images/PSS-2020.jpg"
 							}
 						},
 						"hover_color": "#44c068",
@@ -1199,7 +1199,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/Stammtisch-meetup2.png"
+								"url": "/images/Stammtisch-meetup2.png"
 							}
 						},
 						"hover_color": "#8dd2c5",
@@ -1221,7 +1221,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/Typonight_cover-dribbble-insta01.jpg"
+								"url": "/images/Typonight_cover-dribbble-insta01.jpg"
 							}
 						},
 						"hover_color": "#8dd2c5",
@@ -1261,7 +1261,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/UseCase-meetup2-logos-new.png"
+								"url": "/images/UseCase-meetup2-logos-new.png"
 							}
 						},
 						"hover_color": "#8dd2c5",
@@ -1319,7 +1319,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/Dribbble-meetup-cover-Eventbrite.jpg"
+								"url": "/images/Dribbble-meetup-cover-Eventbrite.jpg"
 							}
 						},
 						"hover_color": "#8dd2c5",
@@ -1395,7 +1395,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/12/DWeb-Summit2018.png"
+								"url": "/images/DWeb-Summit2018.png"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -1417,7 +1417,7 @@ export default function Events() {
 						}],
 						"event_image": {
 							"localFile": {
-								"url": "https://getdweb.net/wp-content/uploads/2020/05/DWeb-event-cover-DWebSummit2016.jpg"
+								"url": "/images/DWeb-event-cover-DWebSummit2016.jpg"
 							}
 						},
 						"hover_color": "#ffff00",
@@ -1509,7 +1509,7 @@ export default function Events() {
 				"events_top_button_link": "https://dwebcamp.org/",
 				"events_top_image": {
 					"localFile": {
-						"url": "https://getdweb.net/wp-content/uploads/2020/11/dweb-camp-hero.jpg"
+						"url": "/images/dweb-camp-hero.jpg"
 					}
 				},
 				"events_list_header": "Events around the world",
