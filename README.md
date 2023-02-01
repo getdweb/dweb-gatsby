@@ -109,6 +109,7 @@ details
 
 - [X] CSS build process is working, but needs to be updated. Once node-sass enables compatibility with Node v18, the project should be able to build in Node v18 (currently stuck in v16). See [here](https://github.com/sass/node-sass/pull/3257) for information regarding the node-sass compatibility update.
 - [ ] Images needs alt tags
+- [ ] [Minified React error #418](https://reactjs.org/docs/error-decoder.html?invariant=418) and [Minified React error #423](https://reactjs.org/docs/error-decoder.html?invariant=423) began appearing in site build after upgrading to Gatsby v5 and React v18. The errors do not appear to affect site funcitonality, and are most likely caused by references to the global `window` as described [here](https://github.com/gatsbyjs/gatsby/discussions/36232#discussioncomment-3229914).
 - [ ] The page [using-the-dweb-brand.js](src/pages/using-the-dweb-brand.js) isn't linked to anywhere and thus is inaccessible. Is this intentional?
 - [ ] [events-archive.yaml](static/page-data/events-archive.yaml) is left unpretty
 - [ ] The video element on the frontpage does not appear to be loading the video properly, it appears to be a change on the Internet Archive's end because previous version's of the site cannot load it either.
