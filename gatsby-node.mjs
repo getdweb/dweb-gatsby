@@ -44,18 +44,34 @@ let onPostBuild = async () => {
   const paths = await globby(['public/**/*.html']);
 
   await pMap(paths, async (path) => {
-    const buffer = await readFileAsync(path);
-    let contents = buffer.toString();
+    if (path.includes('public/index.html')){
+      const buffer = await readFileAsync(path);
+      let contents = buffer.toString();
 
-    // Skip if there's nothing to do
-    if (!contents.includes('/images')) {
-      return;
+      // Skip if there's nothing to do
+      if (!contents.includes('/images')) {
+        return;
+      }
+
+      contents = contents
+        .replace(/\/images\//g, () => './images/');
+
+      await writeFileAsync(path, contents);
+    } else {
+      const buffer = await readFileAsync(path);
+      let contents = buffer.toString();
+
+      // Skip if there's nothing to do
+      if (!contents.includes('/images')) {
+        return;
+      }
+
+      contents = contents
+        .replace(/\/images\//g, () => '../images/');
+
+      await writeFileAsync(path, contents);
     }
 
-    contents = contents
-      .replace(/\/images\//g, () => '../images/');
-
-    await writeFileAsync(path, contents);
   }, { concurrency: TRANSFORM_CONCURRENCY });
 };
 
