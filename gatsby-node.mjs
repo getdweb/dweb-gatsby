@@ -8,6 +8,30 @@ import pMap from 'p-map'
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
+const COMPONENT_ARR = []
+
+let onPreBootstrap = async () => {
+  const indexTemplate = path.resolve(`./src/templates/index.js`)
+  const buffer = await readFileAsync(indexTemplate);
+  let contents = buffer.toString();
+
+  // collect components used by index page
+  const contentRegex = / *<div>([ \n<>\w\/]*?)*<\/div>/g
+  const div = contentRegex.exec(contents)[0];
+  const componentsRegex = /<([\w]*) \/>/g
+  const components = div.matchAll(componentsRegex)
+
+  for (const matchItem of components) {
+    // clone components used by index
+    const componentName = matchItem[1]
+    COMPONENT_ARR.push([`./src/components/${componentName}--index.js`, componentName])
+    fs.copyFileSync(`./src/components/${componentName}.js`, `./src/components/${componentName}--index.js`)
+    console.log(`./src/components/${componentName}.js COPIED to ./src/components/${componentName}--index.js`)
+  }
+
+
+}
+
 let createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -40,6 +64,12 @@ let createPages = ({ actions, graphql }) => {
 let TRANSFORM_CONCURRENCY = 10
 
 let onPostBuild = async () => {
+
+  for (const url of COMPONENT_ARR) {
+    fs.unlinkSync(url[0])
+    console.log(`${url[0]} REMOVED`)
+  }
+
   // Replaces all image urls with the correct relative paths
   const paths_html = await globby(['public/**/*.html']);
   const paths_js = await globby(['public/**/*.js']);
@@ -79,4 +109,4 @@ let onPostBuild = async () => {
   }, { concurrency: TRANSFORM_CONCURRENCY });
 };
 
-export default { createPages, onPostBuild }
+export default { onPreBootstrap, createPages, onPostBuild }
