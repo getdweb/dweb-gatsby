@@ -4,6 +4,7 @@ import * as util from 'util'
 import { globby } from 'globby'
 import * as yaml from 'js-yaml'
 import pMap from 'p-map'
+import chalk from 'chalk'
 
 const readFileAsync = util.promisify(fs.readFile)
 const writeFileAsync = util.promisify(fs.writeFile)
@@ -25,7 +26,7 @@ let onPreBootstrap = async () => {
       `./src/data/${data_file.slice(0, -5)}--index.yaml`
     )
     console.log(
-      `./src/data/${data_file} COPIED TO ./src/data/${data_file.slice(
+      chalk.cyan("clone-success ") + `./src/data/${data_file} copied to ./src/data/${data_file.slice(
         0,
         -5
       )}--index.yaml`
@@ -55,17 +56,17 @@ let onPreBootstrap = async () => {
       `./src/components/${componentName}--index.js`
     )
     console.log(
-      `./src/components/${componentName}.js COPIED TO ./src/components/${componentName}--index.js`
+      chalk.cyan("clone-success ") + `./src/components/${componentName}.js copied to ./src/components/${componentName}--index.js`
     )
   }
 
   // modify index imports to be the clone components
   contents = contents.replace(
-    /(import [\w]* from '\.\.\/components\/)([^Layout][\w]*)(')/g,
+    /(import [\w]* from (?:'|"|`)\.\.\/components\/)([^Layout][\w]*)('|"|`)/g,
     '$1$2--index$3'
   )
   await writeFileAsync(indexTemplate, contents)
-  console.log(`Updated Imports of ${indexTemplate}`)
+  console.log(chalk.green("success ") + `updated imports in ${indexTemplate}`)
 
   // modify clone components to use clone data
   for (const component of COMPONENT_ARR) {
@@ -131,26 +132,25 @@ let onPostBuild = async () => {
   // delete --index variant components
   for (const url of COMPONENT_ARR) {
     fs.unlinkSync(url[0])
-    console.log(`REMOVED ${url[0]}`)
+    console.log(chalk.cyan("clone-success ") + `removed ${url[0]}`)
   }
 
   // delete --index variant data files
   for (const url of DATA_ARR) {
     fs.unlinkSync(url[0])
-    console.log(`REMOVED ${url[0]}`)
+    console.log(chalk.cyan("clone-success ") + `removed ${url[0]}`)
   }
 
   // restore index
   const indexTemplate = path.resolve(`./src/templates/index.js`)
   await writeFileAsync(indexTemplate, originalIndexContent)
-  console.log(`RESTORED ${indexTemplate}`)
+  console.log(chalk.green("success ") + `restored import in ${indexTemplate}`)
 
   // Replaces all image urls with the correct relative paths
   const paths_html = await globby(['public/**/*.html'])
   const paths_js = await globby(['public/**/*.js'])
   const paths_json = await globby(['public/**/*.json'])
   const paths = paths_html.concat(paths_js).concat(paths_json)
-  // console.log(paths);
 
   await pMap(
     paths,
@@ -159,7 +159,6 @@ let onPostBuild = async () => {
         path.includes('public/index.html') ||
         path.includes('src-templates-index-js')
       ) {
-        console.log('INSIDE PUBLIC TINY WIN')
         const buffer = await readFileAsync(path)
         let contents = buffer.toString()
 
@@ -200,9 +199,9 @@ let onPostBuild = async () => {
     { concurrency: TRANSFORM_CONCURRENCY }
   )
 
-  console.log('FINISHED WITH CONCURRENCY')
+  console.log(chalk.green("success ") + `finished relativizing paths`)
 
-  // correct Index-specific paths
+  // correct index-specific paths
   const indexPageDataBuffer = await readFileAsync(
     `./public/page-data/index/page-data.json`
   )
@@ -219,6 +218,7 @@ let onPostBuild = async () => {
 
     await writeFileAsync(`./public/page-data/sq/d/${hash}.json`, indexHashData)
   }
+  console.log(chalk.green("success ") + `finished relativizing index paths`)
 }
 
 export default { onPreBootstrap, createPages, onPostBuild }
