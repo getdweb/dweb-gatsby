@@ -20,6 +20,12 @@ export default function Hero() {
             url
           }
         }
+        allHeroVideoOptionsYaml {
+          nodes {
+            video_url
+            preview_image_url
+          }
+        }
       }
     `
   )
@@ -126,7 +132,7 @@ export default function Hero() {
               height="235"
             >
               <source
-                src="https://archive.org/details/goodbye-facebook-hello-decentralized-social-media"
+                src={data.allHeroVideoOptionsYaml.nodes[0].video_url}
                 type="video/mp4"
               />
               Your browser does not support HTML5 video.
@@ -134,7 +140,7 @@ export default function Hero() {
             <div
               className={`hero__video-preview ${previewDisplay}`}
               style={{
-                backgroundImage: `url(/images/METRO-DWeb-home-ditther.png)`,
+                backgroundImage: `url(${data.allHeroVideoOptionsYaml.nodes[0].preview_image_url})`,
               }}
             />
           </div>
