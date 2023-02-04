@@ -41,7 +41,11 @@ let TRANSFORM_CONCURRENCY = 10
 
 let onPostBuild = async () => {
   // Replaces all image urls with the correct relative paths
-  const paths = await globby(['public/**/*.html']);
+  const paths_html = await globby(['public/**/*.html']);
+  const paths_js = await globby(['public/**/*.js']);
+  const paths_json = await globby(['public/**/*.json']);
+  const paths = paths_html.concat(paths_js).concat(paths_json);
+  console.log(paths);
 
   await pMap(paths, async (path) => {
     if (path.includes('public/index.html')){
