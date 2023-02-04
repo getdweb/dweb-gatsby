@@ -19,7 +19,7 @@ export default function MenuSecondary() {
   const menu_items = data.menuYaml.items
 
   // set initial windowPathname state
-  const [windowPathname, setWindowPathname] = useState('');
+  const [windowPathname, setWindowPathname] = useState('')
 
   // update windowPathname
   useEffect(() => {
@@ -29,8 +29,7 @@ export default function MenuSecondary() {
   return (
     <div className="navbar__menus__item menu-secondary" id="menu-secondary">
       {Object.entries(menu_items).map(([key, item]) => {
-        const activeClass =
-          item.url == windowPathname ? ' active ' : ''
+        const activeClass = item.url == windowPathname ? ' active ' : ''
         let link
         if (item.url.substr(0, 1) == '/') {
           link = (

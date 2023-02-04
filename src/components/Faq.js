@@ -7,7 +7,7 @@ export default function Faq() {
   const data = useStaticQuery(
     graphql`
       query {
-        allFaqYaml(sort: {title: ASC}) {
+        allFaqYaml(sort: { title: ASC }) {
           nodes {
             id
             title

@@ -11,12 +11,14 @@ export default function Faq(props) {
       <a className="faq-pair__question" onClick={() => setOpen(!open)}>
         {pair.question}
       </a>
-      <div
-        className="faq-pair__answer"
-      >
-        <ReactMarkdown components={{
-          a: ({ node, ...props }) => <a target="_blank" {...props} />
-        }}>{pair.answer}</ReactMarkdown>
+      <div className="faq-pair__answer">
+        <ReactMarkdown
+          components={{
+            a: ({ node, ...props }) => <a target="_blank" {...props} />,
+          }}
+        >
+          {pair.answer}
+        </ReactMarkdown>
       </div>
     </div>
   )
