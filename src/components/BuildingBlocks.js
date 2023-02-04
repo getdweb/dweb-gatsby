@@ -45,7 +45,7 @@ export default function BuildingBlocks() {
           )
         }
         return (
-          <div className="building-block" key={block.id}>
+          <div className="building-block" key={block.title}>
             <div
               className="building-block__right"
               style={{
