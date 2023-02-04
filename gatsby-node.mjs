@@ -13,12 +13,20 @@ const DATA_ARR = []
 let originalIndexContent;
 
 let onPreBootstrap = async () => {
+  // clone contents of data folder
+  const data_list = fs.readdirSync('./src/data')
+  data_list.forEach(data_file => {
+    DATA_ARR.push([`./src/data/${data_file.slice(0, -5)}--index.yaml`, `${data_file.slice(0, -5)}--index.yaml`])
+    fs.copyFileSync(`./src/data/${data_file}`, `./src/data/${data_file.slice(0, -5)}--index.yaml`)
+    console.log(`./src/data/${data_file} COPIED TO ./src/data/${data_file.slice(0, -5)}--index.yaml`)
+  })
+
+  // collect components used by index page
   const indexTemplate = path.resolve(`./src/templates/index.js`)
   const buffer = await readFileAsync(indexTemplate)
   let contents = buffer.toString()
   originalIndexContent = contents
 
-  // collect components used by index page
   const contentRegex = / *<div>([ \n<>\w\/]*?)*<\/div>/g
   const div = contentRegex.exec(contents)[0];
   const componentsRegex = /<([\w]*) \/>/g
@@ -38,13 +46,28 @@ let onPreBootstrap = async () => {
   await writeFileAsync(indexTemplate, contents);
   console.log(`Updated Imports of ${indexTemplate}`)
 
-  // clone contents of data folder
-  const data_list = fs.readdirSync('./src/data')
-  data_list.forEach(data_file => {
-    DATA_ARR.push([`./src/data/${data_file.slice(0, -5)}--index.yaml`, `${data_file.slice(0, -5)}--index.yaml`])
-    fs.copyFileSync(`./src/data/${data_file}`, `./src/data/${data_file.slice(0, -5)}--index.yaml`)
-    console.log(`./src/data/${data_file} COPIED TO ./src/data/${data_file.slice(0, -5)}--index.yaml`)
-  })
+  // modify clone components to use clone data
+  for (const component of COMPONENT_ARR) {
+    let url = component[0]
+    const buffer = await readFileAsync(url)
+    let componentText = buffer.toString()
+
+    // extract static query from component
+    const queryRegex = /graphql`\s*(query[A-Za-z_}{\s\(\)":,]*})\s*`/g
+    const queryRegexResult = queryRegex.exec(componentText);
+    if (queryRegexResult != null) {
+      // extract nodes being accessed on Gatsby data layer
+      let queryText = queryRegexResult[0]
+      const queryHeaderRegex = /([\w]*)(Yaml)/g
+      const queryHeaderRegexResult = queryText.matchAll(queryHeaderRegex)
+      // replace all instances of data with clone data
+      for (const queryHeader of queryHeaderRegexResult) {
+        const headerRegex = new RegExp(queryHeader[0], "g")
+        componentText = componentText.replace(headerRegex, `${queryHeader[1]}IndexYaml`)
+      }
+      await writeFileAsync(url, componentText);
+    }
+  }
 
 }
 
@@ -99,14 +122,36 @@ let onPostBuild = async () => {
   console.log(`RESTORED ${indexTemplate}`)
 
   // Replaces all image urls with the correct relative paths
+  // const pathsHtmlIndex = await globby(['public/**/*--index.html']);
+  // const pathsJsIndex = await globby(['public/**/*.js']);
+  // const pathsJsonIndex = await globby(['public/**/*.json']);
+  // const pathsIndex = paths_html.concat(paths_js).concat(paths_json);
+  // console.log(paths);
+
+
+  // Replaces all image urls with the correct relative paths
   const paths_html = await globby(['public/**/*.html']);
   const paths_js = await globby(['public/**/*.js']);
   const paths_json = await globby(['public/**/*.json']);
   const paths = paths_html.concat(paths_js).concat(paths_json);
-  console.log(paths);
+  // console.log(paths);
 
   await pMap(paths, async (path) => {
-    if (path.includes('public/index.html')) {
+    if (path.includes('public/index.html') || path.includes('src-templates-index-js')) {
+      console.log("INSIDE PUBLIC TINY WIN")
+      const buffer = await readFileAsync(path);
+      let contents = buffer.toString();
+
+      // Skip if there's nothing to do
+      if (!contents.includes('/images')) {
+        return;
+      }
+
+      contents = contents
+        .replace(/\/images\//g, () => './images/');
+
+      await writeFileAsync(path, contents);
+    } else if (path.includes('public/index.html')) {
       const buffer = await readFileAsync(path);
       let contents = buffer.toString();
 
@@ -135,6 +180,30 @@ let onPostBuild = async () => {
     }
 
   }, { concurrency: TRANSFORM_CONCURRENCY });
+
+  console.log("FINISHED WITH CONCURRENCY")
+
+  // correct Index-specific paths
+  const indexPageDataBuffer = await readFileAsync(`./public/page-data/index/page-data.json`)
+  let indexPageData = indexPageDataBuffer.toString()
+  let indexPageDataJSON = JSON.parse(indexPageData)
+  let indexHashArray = indexPageDataJSON.staticQueryHashes
+  for (const hash of indexHashArray) {
+    const indexHashDataBuffer = await readFileAsync(`./public/page-data/sq/d/${hash}.json`)
+    let indexHashData = indexHashDataBuffer.toString()
+
+    // Skip if there's nothing to do
+    // if (!indexHashData.includes('/images')) {
+    //   return;
+    // }
+
+    indexHashData = indexHashData
+      .replace(/\.\.\/images\//g, () => './images/');
+
+    // console.log("HASH DATA ++\n" + indexHashData)
+
+    await writeFileAsync(`./public/page-data/sq/d/${hash}.json`, indexHashData);
+  }
 };
 
 export default { onPreBootstrap, createPages, onPostBuild }
