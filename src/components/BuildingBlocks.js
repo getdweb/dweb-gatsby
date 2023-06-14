@@ -45,7 +45,7 @@ export default function BuildingBlocks() {
           )
         }
         return (
-          <div className="building-block" key={block.id}>
+          <div className="building-block" key={block.title}>
             <div
               className="building-block__right"
               style={{
@@ -59,12 +59,17 @@ export default function BuildingBlocks() {
                     <div className="header building-block__header">
                       {block.title}
                     </div>
-                    <div className="building-block__text" >
-                      <ReactMarkdown components={{
-                        a: ({ node, ...props }) => <a target="_blank" {...props} />
-                      }}>
+                    <div className="building-block__text">
+                      <ReactMarkdown
+                        components={{
+                          a: ({ node, ...props }) => (
+                            <a target="_blank" {...props} />
+                          ),
+                        }}
+                      >
                         {block.text}
-                      </ReactMarkdown></div>
+                      </ReactMarkdown>
+                    </div>
                     {button}
                   </div>
                 </div>

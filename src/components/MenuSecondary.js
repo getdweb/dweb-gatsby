@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 export default function MenuSecondary() {
@@ -18,12 +18,18 @@ export default function MenuSecondary() {
 
   const menu_items = data.menuYaml.items
 
+  // set initial windowPathname state
+  const [windowPathname, setWindowPathname] = useState('')
+
+  // update windowPathname
+  useEffect(() => {
+    setWindowPathname(window.location.pathname)
+  })
+
   return (
     <div className="navbar__menus__item menu-secondary" id="menu-secondary">
       {Object.entries(menu_items).map(([key, item]) => {
-        if (typeof window === `undefined`) return
-        const activeClass =
-          item.url == window.location.pathname ? ' active ' : ''
+        const activeClass = item.url == windowPathname ? ' active ' : ''
         let link
         if (item.url.substr(0, 1) == '/') {
           link = (

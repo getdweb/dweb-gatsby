@@ -18,7 +18,7 @@ export default function Footer() {
             header
           }
         }
-        allNetworkYaml(sort: {title: ASC}) {
+        allNetworkYaml(sort: { title: ASC }) {
           nodes {
             color
             title

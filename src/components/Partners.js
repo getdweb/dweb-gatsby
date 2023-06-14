@@ -9,6 +9,7 @@ export default function Partners() {
           nodes {
             id
             url
+            alt
           }
         }
       }
@@ -55,6 +56,7 @@ export default function Partners() {
           return (
             <div
               className="logos__item"
+              title={sponsor.alt}
               key={sponsor.id + i}
               style={{ backgroundImage: `url(${sponsorLogoUrl})` }}
             />
