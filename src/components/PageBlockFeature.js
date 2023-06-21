@@ -35,9 +35,11 @@ export default function PageBlockFeature(props) {
                 {fields.title}
               </div>
               <div className="building-block__text">
-                <ReactMarkdown components={{
-                  a: ({ node, ...props }) => <a target="_blank" {...props} />
-                }}>
+                <ReactMarkdown
+                  components={{
+                    a: ({ node, ...props }) => <a target="_blank" {...props} />,
+                  }}
+                >
                   {fields.text}
                 </ReactMarkdown>
               </div>

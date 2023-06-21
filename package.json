@@ -39,7 +39,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run develop",
-    "clean": "rimraf .cache public",
+    "clean": "rimraf .cache public && node scripts/cleanup_clone.mjs",
     "build": "npm run clean && gatsby build --prefix-paths",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
@@ -49,6 +49,7 @@
     "lint": "eslint --fix --ext .js,.jsx ."
   },
   "devDependencies": {
+    "chalk": "^5.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.3",
