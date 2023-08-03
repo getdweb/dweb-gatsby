@@ -46,3 +46,7 @@
   color: '#ffc6cc'
   link: https://www.eventbrite.com/o/55990397323
   city_image_url: /images/DWebDC-node-cover.png
+- title: New York
+  color: '#ff6b00'
+  link: https://mobilizon.us/@dwebny
+  city_image_url: /images/DWebNY-node-cover02.png
