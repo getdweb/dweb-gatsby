@@ -23,7 +23,25 @@ export default function Voices() {
   const data = JSON.parse(`{
 	"data": {
 		"allWordpressWpVoices": {
-			"nodes": [{
+			"nodes": [
+				{
+					"acf": {
+						"author": "Holochain",
+						"date": "2023-07-11#11 July 2023",
+						"intro": "Breath in, Breath out. Another DWeb Camp has come and gone.",
+						"link": "https://blog.holochain.org/dweb-camp-2023-holochain/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Camp 2023 + Holochain",
+					"wordpress_id": 1288
+				},
+				{
 					"acf": {
 						"author": "Dana Beltrán Barbosa and María Alvarez Malvido",
 						"date": "2022-12-07#7 Dec 2022",
