@@ -20,10 +20,276 @@ export default function Voices() {
   if (typeof window !== `undefined`)
     voicesLoadedEvent = new Event('voicesLoaded') // This event is used in ./templates/index.js
 
+		// term ids
+		/*
+			{
+				"Flashback:": 9,
+				"Profile:": 10,
+				"Opinion:": 8,
+				"Newsletter:": 19,
+				"Analysis:": 11,
+				"Guide:": 12,
+			}
+		*/
   const data = JSON.parse(`{
 	"data": {
 		"allWordpressWpVoices": {
 			"nodes": [
+				{
+					"acf": {
+						"author": "kev nguyen",
+						"date": "#23 October 2023",
+						"intro": "Coolab Camp is a continuing experiment in the DWeb movement — weaving together technologists, dreamers, builders, and organizers in a beautiful outdoor setting, providing food and shelter for the week, then letting the sharing, imagination, and community building fly.",
+						"link": "https://blog.archive.org/2023/10/23/regenerating-community-in-the-rainforest-at-dwebcoolab-camp-brazil/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Regenerating Community in the Rainforest at DWeb+Coolab Camp Brazil",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Emaline Friedman",
+						"date": "#7 July 2023",
+						"intro": "Organized by the Internet Archive, DWeb Camp is home to some of the most offbeat voices in the distributed web space. The ‘DWeb’ term itself is intentionally contrasted with ‘Web3’; inconspicuously absent from the talks, workshops, and brain melds unfolding in tree-shrouded tents and amphitheaters were token shills, gamified pitches, and naive optimism around degen crypto culture per se.",
+						"link": "https://blog.neighbourhoods.network/social-coordination-sensemaking-at-dweb-camp-2023-335d5e3726b1",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Social Coordination & Sensemaking at DWeb Camp 2023",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Paul Krafel",
+						"date": "#27 July 2023",
+						"intro": "As we gain experience, we refine scripts by which to smoothly navigate various situations with less effort. Much of the time, I am performing well-honed scripts. This might be fine for brushing my teeth and getting ready for bed but my scripts might dominate my focus, blinding me to at-that-moment opportunities beyond the script.",
+						"link": "https://roamingupward.net/dweb-and-grief/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb and Grief",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Val Elefante, Jenny Fan, Dazza Greenwood, Cent Hosten, Ronen Tamari, Joshua Tan, Riley Wong, and Jacky Zhao",
+						"date": "#22 August 2023",
+						"intro": "The Metagovernance Project (aka- Metagov) returned to DWeb Camp for our second year in a row, this year as a DWeb Sponsor, supporting the event by curating some of the camp’s governance and AI sessions. In this blog, we hear from Josh Tan, co-curator of the AI track, and governance researchers from Metagov who helped co-create the governance track.",
+						"link": "https://blog.archive.org/2023/08/22/dweb-camp-exploring-governance-ai/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Camp: Exploring Governance & AI",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Lia Holland",
+						"date": "#29 June 2023",
+						"intro": "At Dweb Camp my organization Fight for the Future looked to further bridge the gap between tech projects and the front-line activists, journalists, and marginalized people they aim to serve. Amid our advocacy work for the First Amendment right to code and against financial surveillance, we’ve found that a lot is getting lost in translation. First and foremost, what’s missing between tech and activism is trust.",
+						"link": "https://www.shareable.net/uniting-tech-and-activism-how-dweb-camp-is-elevating-decentralized-technology/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Uniting tech and activism: How Dweb Camp is elevating decentralized technology",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Val Elefante",
+						"date": "#10 July 2023",
+						"intro": "DWeb Camp was founded on the idea that we need a “third path” for technology that exists somewhere in-between the venture-backed startup “move fast and break things” model and the too-slow and too-bureaucratic academic research-paper-based model. This middle path could take the best elements of the other two: be a path for conscious tech development, building tools for a better world, and getting those tools into the hands of the people and communities who need it most.",
+						"link": "https://valelefante.substack.com/p/dweb-camp-2023-coalition-building",
+						"voice_category": {
+							"term_id": 11,
+							"name": "Analysis:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Camp 2023: Coalition-Building Across the Tech Stack",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Christian Memije",
+						"date": "#27 June 2023",
+						"intro": "Micah told me about DWeb Camp, and how much he loved the community. So when the opportunity arrived for me to join as a space steward of the Mycelium Pavilion (a space in the event), I took it.",
+						"link": "https://memije.substack.com/p/dweb-camp-2023",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "A reflection on my experience at DWeb Camp 2023",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Jacky Zhao",
+						"date": "#27 July 2023",
+						"intro": "DWeb Camp exists because the founders believed that we couldn’t just have the technologists and entrepreneurs building away in one realm and the academics, philosophers, and critics theory-making in another. Rather, they wanted to create a space where both of these types of people could co-exist, learn from each other, and leave eventually having become a bit of the other — the technologist a little more critical, and the critic a little more pragmatic.",
+						"link": "https://jzhao.xyz/posts/DWeb-Camp-2023",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Camp: Gather by the Campfire",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Xin Xin and TB Dinesh",
+						"date": "#29 June 2023",
+						"intro": "Interview with TB Dinesh at DWeb Camp 2023",
+						"link": "https://soundcloud.com/xin-757599911/location-intelligence-ant-hill-hacks?si=8fb2126642c24f1395fdac0e26919e00",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Location Intelligence | A Conversation with TB Dinesh",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Mai Ishikawa Sutton and Nicolás Pace",
+						"date": "#11 August 2023",
+						"intro": "The DWeb Fellowship invites people from around the world to come to California for DWeb Camp. This year, we had 36 Fellows – they traveled from India, Cambodia, Argentina, Cuba, Kenya, Malawi, Germany, Italy, and from many other places overseas, as well as from across North America and the Bay Area. We selected these exceptional individuals because they invite and challenge us to transform our reality and co-create a vision of a better Web.",
+						"link": "https://blog.archive.org/2023/08/11/dweb-fellows-2023-lighting-the-path-towards-a-better-web/",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Fellows 2023: Lighting the Path Towards a Better Web",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Filecoin Foundation",
+						"date": "#11 August 2023",
+						"intro": "Mauve, Jacky Zhao, and Fauno from the team behind Distributed Press, a tool designed to simplify the process of publishing on the decentralized web. Hear from the team as they discuss their roles, the technologies they use, and their approach to privacy and data security. Get a glimpse of what the future holds for Distributed Press in the rapidly evolving landscape of the decentralized Web.",
+						"link": "https://www.youtube.com/watch?v=zZqPomT1Teo",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Decentralized Publishing with Distributed Press",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Andi Argast",
+						"date": "#22 August 2023",
+						"intro": "A week-long gathering in the California hills, DWeb Camp was a good antidote to the existential dread I sometimes carry; a vital response to the now-is-end-of-the-world feelings that many seem to share in this age of burning forests, warming oceans, and democratic failings. Technology frames my dystopian sentiments and DWeb Camp opened a space to envision different techno-futures than the extractive stare of Big Tech.",
+						"link": "https://hypha.coop/dripline/technological-futures-under-the-redwoods/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Technological futures under the redwoods",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Yavuz Selim Kiyak",
+						"date": "#10 August 2023",
+						"intro": "Imagine a stunning forest characterized by majestic redwood trees towering hundreds of meters in height, with a nearby river beautifully meandering through the landscape. Everywhere is a stage: Under the tree, across the field, alongside the river… There is no feeling of urgency, the titles of the participants are not important, and the joy of missing out is encouraged. This is the spirit of DWeb Camp.",
+						"link": "https://blog.holochain.org/the-joy-of-missing-out-with-holochain-at-dweb-camp/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "The Joy of Missing Out with Holochain at DWeb Camp",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Eric Harris-Braun",
+						"date": "#20 July 2023",
+						"intro": "In March 2023 Holochain began conversations with DWeb Camp about sponsorship and offered to create a simple application for note taking and community connection (via a tag cloud and shared space for documentation). This was intended to increase the collective intelligence of the camp and to help document the conference sessions.",
+						"link": "https://blog.holochain.org/emergence-lessons-in-contextual-complexity/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Emergence: Lessons in Contextual Complexity",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Paul d'Aoust",
+						"date": "#3 August 2023",
+						"intro": "It’s a rare thing at a tech conference to hear cheers when someone says the internet is down. But then, DWeb Camp is a rare sort of tech conference.",
+						"link": "https://blog.holochain.org/whats-next-for-the-dweb/",
+						"voice_category": {
+							"term_id": 8,
+							"name": "Opinion:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "What's Next for the DWeb?",
+					"wordpress_id": 1288
+				},
 				{
 					"acf": {
 						"author": "Holochain",

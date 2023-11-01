@@ -1503,9 +1503,9 @@ export default function Events() {
 		},
 		"wordpressAcfOptions": {
 			"options": {
-				"events_top_header": "Save the date: DWeb Camp 2023",
-				"events_top_intro": "<p>We locked in our dates for the next DWeb Camp: June 21-25, 2023, with the build starting on June 19. We selected this date so it would not conflict with as many related events as possible. It will be held again at Camp Navarro in the redwoods of northern California.</p>\\n<p>Please add it to your calendar and spread the word!</p>\\n",
-				"events_top_button_caption": "DWeb Camp 2023",
+				"events_top_header": "Save the date: DWeb Camp 2024",
+				"events_top_intro": "<p>We locked in our dates for the next DWeb Camp: August 7-11, 2024. It will be held again at Camp Navarro in the redwoods of northern California.</p>\\n<p>Please add it to your calendar and spread the word!</p>\\n",
+				"events_top_button_caption": "DWeb Camp 2024",
 				"events_top_button_link": "https://dwebcamp.org/",
 				"events_top_image": {
 					"localFile": {
