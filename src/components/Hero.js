@@ -118,7 +118,7 @@ export default function Hero() {
           href="https://dwebcamp.org/"
           dangerouslySetInnerHTML={{
             __html:
-              'DWeb Camp is back in 2023!<br>\r\nJune 21-25, Navarro, CA.',
+              'Save the date for DWeb Camp 2024!<br>\r\nAugust 7-11, Navarro, CA.',
           }}
           rel="noreferrer"
         />
