@@ -50,3 +50,11 @@
   color: '#ff6b00'
   link: https://mobilizon.us/@dwebny
   city_image_url: /images/DWebNY-node-cover02.png
+- title: Vancouver
+  color: '#cf4c6a'
+  link: https://dwebyvr.org
+  city_image_url: /images/DWeb-Vancouver-node-cover.png
+- title: Sudaka
+  color: '#8438af'
+  link: https://dweb.sutty.nl
+  city_image_url: /images/DWeb-sudaka-node-cover.png
