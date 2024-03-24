@@ -1245,7 +1245,7 @@ a.btn {
   justify-content: flex-start;
   flex-wrap: wrap;
   &__item {
-    background-size: cover;
+    background-size: calc(100%);
     background-position: center center;
     background-repeat: no-repeat;
     height: 0;
