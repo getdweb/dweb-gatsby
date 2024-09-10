@@ -37,6 +37,23 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Antonia Bustamante",
+						"date": "#14 November 2023",
+						"intro": "Allí Coolab (laboratorio cooperativo de redes libres) organizó el primer DWeb+Coolab Camp, versión brasilera del DWeb Camp.",
+						"link": "https://blog.archive.org/2023/11/14/descentralizar-para-fortalecer-comunidades-dwebcoolab-camp-brasil/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Descentralizar para fortalecer comunidades: DWeb+Coolab Camp Brasil",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
 						"author": "kev nguyen",
 						"date": "#23 October 2023",
 						"intro": "Coolab Camp is a continuing experiment in the DWeb movement — weaving together technologists, dreamers, builders, and organizers in a beautiful outdoor setting, providing food and shelter for the week, then letting the sharing, imagination, and community building fly.",
