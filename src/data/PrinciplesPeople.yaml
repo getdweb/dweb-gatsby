@@ -1,113 +1,121 @@
 - label: STEWARDS
   people:
-  - Mai Ishikawa Sutton
-  - John Ryan
+    - Mai Ishikawa Sutton
+    - John Ryan
 - label: CONTRIBUTORS
   people:
-  - Adam Uhlir
-  - "Allen \u201CGunner\u201D Gunn"
-  - Andi Wong
-  - Aya Miyaguchi
-  - Benedict Lau
-  - Brandon Wallace
-  - Brewster Kahle
-  - Cynthia El Khoury
-  - Dawn Walker
-  - Gerben
-  - Jay Carpenter
-  - Jay Graber
-  - Joachim Lohkamp
-  - Karissa McKelvey
-  - Kelsey Breseman
-  - Mark Seery
-  - Nathan Schneider
-  - "Nicol\xE1s Pace"
-  - Wendy Hanamura
-  - Yisi Liu
+    - Adam Uhlir
+    - "Allen \u201CGunner\u201D Gunn"
+    - Andi Wong
+    - Aya Miyaguchi
+    - Benedict Lau
+    - Brandon Wallace
+    - Brewster Kahle
+    - Cynthia El Khoury
+    - Dawn Walker
+    - Gerben
+    - Jay Carpenter
+    - Jay Graber
+    - Joachim Lohkamp
+    - Karissa McKelvey
+    - Kelsey Breseman
+    - Mark Seery
+    - Nathan Schneider
+    - "Nicol\xE1s Pace"
+    - Wendy Hanamura
+    - Yisi Liu
 - label: SUPPORTERS
   people:
-  - Adil Ishaq
-  - Aimee Fenech
-  - Ajay Jadhav
-  - Albert Ni
-  - "Alejandro Mayoral Ba\xF1os"
-  - Alexander Praetorius
-  - "Alicia Urquidi D\xEDaz"
-  - Ana Jamborcic
-  - Andy Tudhope
-  - Brooke Kuhlmann
-  - Celine Nguyen
-  - Charles E. Lehner
-  - chee rabbits
-  - Christina Bowen
-  - Claire Kelley
-  - Code Red
-  - Colin Hayhurst
-  - Daniel Chan
-  - Daniel Helm
-  - Dennis Kibbe
-  - Diana Greer
-  - Dima Matison
-  - Divya Siddarth
-  - "Eddie Casta\xF1eda"
-  - Eduardo Mercovich
-  - Ese Ojo
-  - Ether
-  - Evan Hahn
-  - Golda Velez
-  - Gyuri Lajos
-  - Heather Murschel
-  - Heather Shall
-  - Ian Davis
-  - James Young
-  - Jerome Lindberg
-  - "Jo\xE3o Monge Ferreira"
-  - Jodi Blanton
-  - Johannes Ernst
-  - John A. Kunze
-  - Joy Zhang
-  - "Juan Jos\xE9 Ventre Tab\xE1rez"
-  - Julieta Keldjian Etchessarry
-  - Kai Wagner
-  - Kayhan Alizadeh
-  - Knyckolas Sutherland
-  - Lotus Leaf
-  - Ludwig Schuster
-  - Masood Kord
-  - Merlin van Lawick
-  - Michael McCallister
-  - Miguel Abambres
-  - Nameshop
-  - Naomi Joy Smith
-  - Nathan Montone
-  - นิรุตต์ อมรวุฒิพงศ์ # "\u0E19\u0E34\u0E23\u0E38\u0E15\u0E15\u0E4C \u0E2D\u0E21\u0E23\u0E27\u0E38\u0E12\u0E34\u0E1E\u0E07\u0E28\u0E4C"
-  - Olufemi Olabode
-  - Paul Frazee
-  - Paul Lindner
-  - Paul Trevithick
-  - Paulo Sales
-  - Phuoc Kev Nguyen
-  - Rabble aka Evan Henshaw-Plath
-  - Rhonda Pemberton
-  - Rich Jensen
-  - Riley Wong
-  - Robert Best
-  - Robert Mao
-  - Robi Roy
-  - Roland Osborne
-  - Sandro Hawke
-  - Scott Moore
-  - Sean MacMannis
-  - Sergej van Middendorp
-  - Stacco Troncoso
-  - Steffen Fritz
-  - Steven McKie
-  - Suhail Saqan
-  - T B Dinesh
-  - "Tom\xE1s Susemihl"
-  - Toni Santos
-  - Tony Lai
-  - Vera Gillies
-  - Yangbo Du
-  - Yann Mauchamp
-  - Zack Walsh
+    - Adil Ishaq
+    - Aimee Fenech
+    - Ajay Jadhav
+    - Albert Ni
+    - "Alejandro Mayoral Ba\xF1os"
+    - Alexander Praetorius
+    - "Alicia Urquidi D\xEDaz"
+    - Ana Jamborcic
+    - Andy Tudhope
+    - Brooke Kuhlmann
+    - Celine Nguyen
+    - Charles E. Lehner
+    - chee rabbits
+    - Christina Bowen
+    - Claire Kelley
+    - Code Red
+    - Colin Hayhurst
+    - Dana Baker
+    - Daniel Chan
+    - Daniel Helm
+    - Day Waterbury
+    - Dennis Kibbe
+    - Diana Greer
+    - Diego Gonzalez-Medina
+    - Dima Matison
+    - Divya Siddarth
+    - Drummond Reed
+    - "Eddie Casta\xF1eda"
+    - Eduardo Mercovich
+    - Ese Ojo
+    - Ether
+    - Evan Hahn
+    - Golda Velez
+    - Gyuri Lajos
+    - Hamza Abass
+    - Heather Murschel
+    - Heather Shall
+    - Ian Davis
+    - James Young
+    - Jerome Lindberg
+    - "Jo\xE3o Monge Ferreira"
+    - Jodi Blanton
+    - Johannes Ernst
+    - John A. Kunze
+    - Joy Zhang
+    - "Juan Jos\xE9 Ventre Tab\xE1rez"
+    - Julieta Keldjian Etchessarry
+    - Kai Wagner
+    - Kayhan Alizadeh
+    - Knyckolas Sutherland
+    - Lotus Leaf
+    - Ludwig Schuster
+    - Mark Corbett Wilson
+    - Masood Kord
+    - Merlin van Lawick
+    - Michael McCallister
+    - Miguel Abambres
+    - Nameshop
+    - Naomi Joy Smith
+    - Nathan Montone
+    - นิรุตต์ อมรวุฒิพงศ์ # "\u0E19\u0E34\u0E23\u0E38\u0E15\u0E15\u0E4C \u0E2D\u0E21\u0E23\u0E27\u0E38\u0E12\u0E34\u0E1E\u0E07\u0E28\u0E4C"
+    - Olufemi Olabode
+    - Paul Frazee
+    - Paul Lindner
+    - Paul Trevithick
+    - Paulo Sales
+    - Phuoc Kev Nguyen
+    - Rabble aka Evan Henshaw-Plath
+    - Razali Samsudin
+    - Rhonda Pemberton
+    - Rich Jensen
+    - Riley Wong
+    - Robert Best
+    - Robert Mao
+    - Robi Roy
+    - Roland Osborne
+    - Sandro Hawke
+    - Scott Moore
+    - Sean MacMannis
+    - Sergej van Middendorp
+    - Stacco Troncoso
+    - Steffen Fritz
+    - Steven McKie
+    - Suhail Saqan
+    - T B Dinesh
+    - "Tom\xE1s Susemihl"
+    - Toni Santos
+    - Tony Lai
+    - Tyler Childs
+    - Vera Gillies
+    - Yangbo Du
+    - Yann Mauchamp
+    - Zack Walsh
