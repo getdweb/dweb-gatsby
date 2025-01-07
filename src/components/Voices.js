@@ -20,8 +20,8 @@ export default function Voices() {
   if (typeof window !== `undefined`)
     voicesLoadedEvent = new Event('voicesLoaded') // This event is used in ./templates/index.js
 
-		// term ids
-		/*
+  // term ids
+  /*
 			{
 				"Flashback:": 9,
 				"Profile:": 10,
@@ -36,6 +36,158 @@ export default function Voices() {
 		"allWordpressWpVoices": {
 			"nodes": [
 				{
+					"acf": {
+						"author": "Vincent Charlebois",
+						"date": "#26 November 2024",
+						"intro": "DWeb Camp is a space for people to connect, share, and envision the future of the internet, and to explore how the decentralized web can foster healthier relationships with technology. Throughout our week-long gathering, we discussed decentralized governance, transparency, cooperation, ethical AI, and ecological metaphors that could inspire new ways of structuring interactions, embodying trust, human agency, and sustainability.",
+						"link": "https://hypha.coop/dripline/dweb-camp-recap-a-cybernetic-ecology/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "A Cybernetic Ecology",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Juan Cruz",
+						"date": "#05 November 2024",
+						"intro": "El objetivo principal de este campamento fue crear un espacio donde activistas, desarrolladores, artistas, investigadores y acompañantes comunitarios nos conectamos, aprendimos y compartimos experiencias e ideas para transformar nuestros contextos a través de la tecnología descentralizada teniendo en cuenta principios como la confianza, el respeto mutuo y la conciencia ambiental.",
+						"link": "https://redescomunitarias.co/es/noticias/dweb-camp-2024-un-espacio-para-la-innovacion-colaboracion-y-bienestar-comunitario",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Dweb Camp 2024: Un Espacio para la innovación, colaboración y bienestar comunitario ",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Kiado Cruz",
+						"date": "#October 2024",
+						"intro": "A lo largo de la historia, nuestros pueblos han sido incorporados a imperios y naciones sin nuestro consentimiento. Esta inclusión forzada ha generado explotación, despojo de recursos y pérdida de nuestras culturas. Ante el avance de la inteligencia artificial (IA), debemos recordar esta historia de opresión y colonialismo.",
+						"link": "https://zapotecoxidza.com/inteligencia-artificial-para-todxs/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "¿Inteligencia artificial para todxs? Inclusión en la IA",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Dave Thompson",
+						"date": "#26 September 2024",
+						"intro": "In lieu of a traditional conference space, DWeb Camp takes place at a campground in the redwood forests of northern California. On top being outdoors, the event has several layers of COVID mitigations in place to help protect public safety. It's a unique setting for discussing all the problems facing the decentralized web and the solutions currently being developed. Getting there from the east coast of the US was a long journey, but DWeb Camp was worth it!",
+						"link": "https://www.spritely.institute/news/spritely-went-to-dweb-camp-2024-recap.html",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Spritely went to DWeb Camp: 2024 Recap",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "The Feathers Crew",
+						"date": "#19 August 2024",
+						"intro": "We were looking forward to conversations about how technology can become more sustainable not just as a business but also for our communities and the planet. It was also one of the first opportunities to share what we've been working on with Feathers Cloud Auth, a scalable, secure and decentralized authentication system for modern web runtimes.",
+						"link": "https://feathers.cloud/blog/posts/2024-08-19-dwebcamp-2024",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWebcamp 2024",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Doc Searls",
+						"date": "#15 August 2024",
+						"intro": "The challenge now isn’t to save the newspapers, magazines, and TV news reports that served us before we all started carrying glowing rectangles in our pockets and purses—and getting our news on those. It’s to make facts matter and keep mattering after stories that use facts move off the screens, speakers, and earphones that feed our interests and appetites.",
+						"link": "https://doc.searls.com/2024/08/15/better-way-to-do-news/",
+						"voice_category": {
+							"term_id": 11,
+							"name": "Analysis:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "A Better Way to Do News",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Mindplex",
+						"date": "#15 August 2024",
+						"intro": "Mai Ishikawa Sutton explains how Dweb camp evolved from “Burning Man meets Hacker Camp” to being focused on creating decentralized projects that help humanity evolve in a positive way.",
+						"link": "https://magazine.mindplex.ai/introduction-to-dweb-camp-being-human-together-dweb-series-part-1/",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Introduction to Dweb Camp: Being Human Together: Dweb Series – Part 1",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "Johannes Ernst",
+						"date": "#8 August 2024",
+						"intro": "I had the opportunity to run a workshop on FediTest, and the larger question of how can we ever ensure the quality of large-scale decentralized, heterogeneous systems that we are now building, such as in the Fediverse.",
+						"link": "https://feditest.org/blog/2024-08-08-feditest-at-dwebcamp/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "FediTest presentation at DWebCamp",
+					"wordpress_id": 1288
+				},
+				{
+					"acf": {
+						"author": "mai ishikawa sutton",
+						"date": "#31 July 2024",
+						"intro": "Our Fellows represent a diverse tapestry of cultural and professional backgrounds. They are human rights activists, technologists, educators, community organizers, archivists, researchers, artists, musicians, scientists, cultural conservationists, civil society workers, and digital security experts. Through intersectional approaches to decentralization and decolonization, our Fellows fight for environmental and social justice.",
+						"link": "https://blog.archive.org/2024/07/31/moving-together-introducing-the-2024-dweb-fellows/",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile:"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Moving Together: Introducing the 2024 DWeb Fellows",
+					"wordpress_id": 1288
+				},
 					"acf": {
 						"author": "Antonia Bustamante",
 						"date": "#14 November 2023",
