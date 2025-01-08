@@ -188,6 +188,7 @@ export default function Voices() {
 					"title": "Moving Together: Introducing the 2024 DWeb Fellows",
 					"wordpress_id": 1288
 				},
+				{
 					"acf": {
 						"author": "Antonia Bustamante",
 						"date": "#14 November 2023",
