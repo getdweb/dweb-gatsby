@@ -3,12 +3,6 @@ import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 
 function SocialMediaCommsJobDescriptionPage() {
-  const styles = {
-    strong: {
-      color: 'white',
-    },
-  }
-
   const content = (
     <div>
       <div className="container">
@@ -53,13 +47,7 @@ function SocialMediaCommsJobDescriptionPage() {
                 <p>
                   <em>
                     We are accepting applications through{' '}
-                    <span
-                      style={{
-                        backgroundColor: '#ffcd03',
-                        color: 'black',
-                        padding: '3px',
-                      }}
-                    >
+                    <span className="highlight">
                       12:00 PM PST February 7, 2025.
                     </span>{' '}
                     We expect to begin conducting interviews at the end of
@@ -295,13 +283,7 @@ function SocialMediaCommsJobDescriptionPage() {
                 </ul>
                 <h2>Application Details</h2>{' '}
                 <p>
-                  <span
-                    style={{
-                      backgroundColor: '#ffcd03',
-                      color: 'black',
-                      padding: '3px',
-                    }}
-                  >
+                  <span className="highlight">
                     {' '}
                     This is a part-time contract position for short-term leave
                     coverage till July 2025. This position is expected to be an
@@ -316,13 +298,7 @@ function SocialMediaCommsJobDescriptionPage() {
                 <p>
                   <strong>Our Timeline: </strong>We are accepting applications
                   through{' '}
-                  <span
-                    style={{
-                      backgroundColor: '#ffcd03',
-                      color: 'black',
-                      padding: '3px',
-                    }}
-                  >
+                  <span className="highlight">
                     12:00 PM PST February 7, 2025.
                   </span>{' '}
                   We expect to begin conducting interviews at the end of
@@ -373,13 +349,7 @@ function SocialMediaCommsJobDescriptionPage() {
                 </p>
                 <p>
                   <strong>How to Apply:</strong> To apply{' '}
-                  <span
-                    style={{
-                      backgroundColor: '#ffcd03',
-                      color: 'black',
-                      padding: '3px',
-                    }}
-                  >
+                  <span className="highlight">
                     please send a resume, cover letter, and two (2) writing
                     samples to dweb @ archive.org.
                   </span>{' '}
