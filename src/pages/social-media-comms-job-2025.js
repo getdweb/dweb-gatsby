@@ -15,13 +15,14 @@ function SocialMediaCommsJobDescriptionPage() {
         <div className="row">
           <div className="col col-12 col-xs-12">
             <div className="job-description">
-              <h2>
-                <span style={{ fontSize: '40px' }}>Open Position:</span>
-                <br />
-                DWeb Social Media and Community Manager
-                <br />
-                [Leave Coverage]
-              </h2>
+              <h1 style={{ fontSize: '46px' }}>
+                Open Position:
+                <h2>
+                  DWeb Social Media and Community Manager
+                  <br />
+                  [Leave Coverage]
+                </h2>
+              </h1>
               <hr />
               <div className="building-block__text">
                 <p>
@@ -65,7 +66,7 @@ function SocialMediaCommsJobDescriptionPage() {
                     January/start of February.
                   </em>
                 </p>
-                <h3>Project Description: About DWeb </h3>
+                <h2>Project Description: About DWeb </h2>
                 <p>
                   Decentralized Web (
                   <a href="https://getdweb.net/" target="blank">
@@ -101,7 +102,7 @@ function SocialMediaCommsJobDescriptionPage() {
                     </strong>
                   </p>
                 </p>
-                <h3>Job Overview</h3>{' '}
+                <h2>Job Overview</h2>{' '}
                 <p>
                   We are seeking a dynamic and self-motivated{' '}
                   <strong>
@@ -113,10 +114,10 @@ function SocialMediaCommsJobDescriptionPage() {
                   platforms and communities as well as supports the smooth
                   execution of decentralized web projects and events.
                 </p>
-                <h3>Position Duties</h3>
-                <h4>
+                <h2>Position Duties</h2>
+                <h3>
                   <strong>Communications and Publicity (30%)</strong>
-                </h4>
+                </h3>
                 <ul>
                   <li>
                     Develop and execute communication strategies ensuring clear,
@@ -149,9 +150,9 @@ function SocialMediaCommsJobDescriptionPage() {
                     projects.
                   </li>
                 </ul>
-                <h4>
+                <h3>
                   <strong>Community Engagement (30%) </strong>
-                </h4>
+                </h3>
                 <ul>
                   <li>
                     Support the development of a strong community culture and
@@ -184,9 +185,9 @@ function SocialMediaCommsJobDescriptionPage() {
                     concerns, gather insights, and improve engagement efforts.
                   </li>
                 </ul>
-                <h4>
+                <h3>
                   <strong>Event Planning & Facilitation (20%) </strong>
-                </h4>
+                </h3>
                 <ul>
                   <li>
                     Work with the DWeb Core Organizers to support and facilitate
@@ -201,9 +202,9 @@ function SocialMediaCommsJobDescriptionPage() {
                     posts about events.
                   </li>
                 </ul>
-                <h4>
+                <h3>
                   <strong>Organizational Strategy and Admin (20%) </strong>
-                </h4>
+                </h3>
                 <ul>
                   <li>Participate in weekly strategy meetings.</li>
                   <li>
@@ -215,7 +216,7 @@ function SocialMediaCommsJobDescriptionPage() {
                     tasks related to the role.
                   </li>
                 </ul>
-                <h3>Required Skills & Experience </h3>
+                <h2>Required Skills & Experience </h2>
                 <ul>
                   <li>
                     <strong>
@@ -256,7 +257,7 @@ function SocialMediaCommsJobDescriptionPage() {
                     able to provide necessary coordination and feedback.
                   </li>
                 </ul>
-                <h3>Desired Qualities </h3>
+                <h2>Desired Qualities </h2>
                 <ul>
                   <li>
                     <strong>Self-Directed: </strong>Ability to identify and
