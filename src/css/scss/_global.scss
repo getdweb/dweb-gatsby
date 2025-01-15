@@ -847,10 +847,8 @@ a.btn {
 }
 
 .job-description {
-  .label {
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
+  & {
+    max-width: 650px;
   }
 
   strong {
@@ -863,7 +861,11 @@ a.btn {
 
   h3 {
     margin-bottom: -6px;
-    margin-top: 30px;
+    margin-top: 6px;
+  }
+
+    .building-block__text > ul {
+    margin-bottom: 18px;
   }
 }
 
