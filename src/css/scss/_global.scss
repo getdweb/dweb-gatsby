@@ -846,6 +846,26 @@ a.btn {
   }
 }
 
+.job-description {
+  .label {
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+
+  strong {
+    color: white;
+  }
+
+  h3 {
+    margin-bottom: -6px;
+  }
+
+  h4 {
+    margin-bottom: -14px;;
+  }
+}
+
 .hero {
   width: 100%;
   display: flex;
