@@ -44,7 +44,7 @@ export default function Partners() {
             </div>
             <div className="partners__buttons">{leftButton}</div>
             <div className="partners__middletext">
-              We are grateful for the generous support of sponsors:
+              We are grateful for the generous support of our previous sponsors:
             </div>
           </div>
         </div>

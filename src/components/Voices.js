@@ -50,7 +50,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "A Cybernetic Ecology",
-					"wordpress_id": 1288
+					"wordpress_id": 1313
 				},
 				{
 					"acf": {
@@ -67,7 +67,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Dweb Camp 2024: Un Espacio para la innovación, colaboración y bienestar comunitario ",
-					"wordpress_id": 1288
+					"wordpress_id": 1312
 				},
 				{
 					"acf": {
@@ -84,7 +84,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "¿Inteligencia artificial para todxs? Inclusión en la IA",
-					"wordpress_id": 1288
+					"wordpress_id": 1311
 				},
 				{
 					"acf": {
@@ -101,7 +101,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Spritely went to DWeb Camp: 2024 Recap",
-					"wordpress_id": 1288
+					"wordpress_id": 1310
 				},
 				{
 					"acf": {
@@ -118,7 +118,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "DWebcamp 2024",
-					"wordpress_id": 1288
+					"wordpress_id": 1309
 				},
 				{
 					"acf": {
@@ -135,7 +135,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "A Better Way to Do News",
-					"wordpress_id": 1288
+					"wordpress_id": 1308
 				},
 				{
 					"acf": {
@@ -152,7 +152,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Introduction to Dweb Camp: Being Human Together: Dweb Series – Part 1",
-					"wordpress_id": 1288
+					"wordpress_id": 1307
 				},
 				{
 					"acf": {
@@ -169,7 +169,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "FediTest presentation at DWebCamp",
-					"wordpress_id": 1288
+					"wordpress_id": 1306
 				},
 				{
 					"acf": {
@@ -186,7 +186,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Moving Together: Introducing the 2024 DWeb Fellows",
-					"wordpress_id": 1288
+					"wordpress_id": 1305
 				},
 				{
 					"acf": {
@@ -203,7 +203,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Descentralizar para fortalecer comunidades: DWeb+Coolab Camp Brasil",
-					"wordpress_id": 1288
+					"wordpress_id": 1304
 				},
 				{
 					"acf": {
@@ -220,7 +220,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Regenerating Community in the Rainforest at DWeb+Coolab Camp Brazil",
-					"wordpress_id": 1288
+					"wordpress_id": 1303
 				},
 				{
 					"acf": {
@@ -237,7 +237,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Social Coordination & Sensemaking at DWeb Camp 2023",
-					"wordpress_id": 1288
+					"wordpress_id": 1302
 				},
 				{
 					"acf": {
@@ -254,7 +254,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "DWeb and Grief",
-					"wordpress_id": 1288
+					"wordpress_id": 1301
 				},
 				{
 					"acf": {
@@ -271,7 +271,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "DWeb Camp: Exploring Governance & AI",
-					"wordpress_id": 1288
+					"wordpress_id": 1300
 				},
 				{
 					"acf": {
@@ -288,7 +288,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Uniting tech and activism: How Dweb Camp is elevating decentralized technology",
-					"wordpress_id": 1288
+					"wordpress_id": 1299
 				},
 				{
 					"acf": {
@@ -305,7 +305,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "DWeb Camp 2023: Coalition-Building Across the Tech Stack",
-					"wordpress_id": 1288
+					"wordpress_id": 1298
 				},
 				{
 					"acf": {
@@ -322,7 +322,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "A reflection on my experience at DWeb Camp 2023",
-					"wordpress_id": 1288
+					"wordpress_id": 1297
 				},
 				{
 					"acf": {
@@ -339,7 +339,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "DWeb Camp: Gather by the Campfire",
-					"wordpress_id": 1288
+					"wordpress_id": 1296
 				},
 				{
 					"acf": {
@@ -356,7 +356,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Location Intelligence | A Conversation with TB Dinesh",
-					"wordpress_id": 1288
+					"wordpress_id": 1295
 				},
 				{
 					"acf": {
@@ -373,7 +373,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "DWeb Fellows 2023: Lighting the Path Towards a Better Web",
-					"wordpress_id": 1288
+					"wordpress_id": 1294
 				},
 				{
 					"acf": {
@@ -390,7 +390,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Decentralized Publishing with Distributed Press",
-					"wordpress_id": 1288
+					"wordpress_id": 1293
 				},
 				{
 					"acf": {
@@ -407,7 +407,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Technological futures under the redwoods",
-					"wordpress_id": 1288
+					"wordpress_id": 1292
 				},
 				{
 					"acf": {
@@ -424,7 +424,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "The Joy of Missing Out with Holochain at DWeb Camp",
-					"wordpress_id": 1288
+					"wordpress_id": 1291
 				},
 				{
 					"acf": {
@@ -441,7 +441,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "Emergence: Lessons in Contextual Complexity",
-					"wordpress_id": 1288
+					"wordpress_id": 1290
 				},
 				{
 					"acf": {
@@ -458,7 +458,7 @@ export default function Voices() {
 						"image": null
 					},
 					"title": "What's Next for the DWeb?",
-					"wordpress_id": 1288
+					"wordpress_id": 1289
 				},
 				{
 					"acf": {
