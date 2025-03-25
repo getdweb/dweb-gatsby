@@ -115,10 +115,10 @@ export default function Hero() {
         <a
           className="hero__announcement"
           target="_blank"
-          href="https://dwebcamp.org/"
+          href="https://blog.archive.org/2024/11/12/we-want-to-decentralize-the-dweb-movement/"
           dangerouslySetInnerHTML={{
             __html:
-              'Save the date for DWeb Camp 2024!<br>\r\nAugust 7-11, Navarro, CA.',
+              'DWeb Camp will return in 2026! Find here what we have planned for 2025',
           }}
           rel="noreferrer"
         />
@@ -153,10 +153,7 @@ export default function Hero() {
             onClick={videoPauseBtnClick}
           />
           <div className="hero__video-caption marquee">
-            <span ref={marqueeEl}>
-              Webinar recording: "Goodbye Facebook. Hello Decentralized Social
-              Media?"
-            </span>
+            <span ref={marqueeEl}>DWeb Virtual Meetup: Bluesky and Beyond</span>
           </div>
         </div>
         <div className="hero__quotes">
