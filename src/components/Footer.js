@@ -63,7 +63,7 @@ export default function Footer() {
                       target="_blank"
                       key={md5(item.label)}
                       dangerouslySetInnerHTML={{ __html: item.icon_code }}
-                      rel="noreferrer"
+                      rel="noreferrer me"
                     />
                   ))}
                 </div>
