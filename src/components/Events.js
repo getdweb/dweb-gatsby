@@ -1503,13 +1503,13 @@ export default function Events() {
 		},
 		"wordpressAcfOptions": {
 			"options": {
-				"events_top_header": "Save the date: DWeb Camp 2024",
-				"events_top_intro": "<p>We locked in our dates for the next DWeb Camp: August 7-11, 2024. It will be held again at Camp Navarro in the redwoods of northern California.</p>\\n<p>Please add it to your calendar and spread the word!</p>\\n",
-				"events_top_button_caption": "DWeb Camp 2024",
-				"events_top_button_link": "https://dwebcamp.org/",
+				"events_top_header": "We Want to Decentralize the DWeb Movement",
+				"events_top_intro": "<p>Our community has come together for DWeb Camps in 2019, 2022, 2023, and 2024. Over the years, more than 2000 campers have journeyed to Northern California to connect, learn, share, and play as we build better, more decentralized network technologies. What started as an event has formed an emerging movement — informed by a set of shared principles about how we shape the web. A web that actualizes principles of trust, human agency, mutual respect, and ecological awareness. But, what’s next?</p>\\n",
+				"events_top_button_caption": "Read the blog",
+				"events_top_button_link": "https://blog.archive.org/2024/11/12/we-want-to-decentralize-the-dweb-movement/",
 				"events_top_image": {
 					"localFile": {
-						"url": "/images/dweb-camp-hero.jpg"
+						"url": "/images/dweb-camp-2023-hero.jpg"
 					}
 				},
 				"events_list_header": "Events around the world",
