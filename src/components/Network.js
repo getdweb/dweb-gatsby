@@ -38,6 +38,8 @@ export default function Network() {
                     className="network__node-link"
                     href={city.link}
                     style={{ color: city.color }}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {city.title}
                     <svg

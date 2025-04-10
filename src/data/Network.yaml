@@ -18,21 +18,13 @@
   color: '#F63139'
   link: https://www.meetup.com/DWeb-BOS/
   city_image_url: /images/Bos-c1-800.png
-- title: Perm
-  color: '#e9e0cb'
-  link: https://www.meetup.com/Permanently-decentralized/
-  city_image_url: /images/perm-c1-800.png
-- title: Prague
-  color: '#1e72ff'
-  link: https://www.meetup.com/dweb-prague
-  city_image_url: /images/prague-c2-800.png
 - title: San Francisco
   color: '#ffff00'
   link: https://www.meetup.com/dwebsf
   city_image_url: /images/sf-c1-800.png
 - title: Seattle
   color: '#38edb4'
-  link: https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/
+  link: https://lu.ma/dweb-seattle
   city_image_url: /images/seattle-c1-800.png
 - title: Shanghai
   color: '#9DBCB6'
