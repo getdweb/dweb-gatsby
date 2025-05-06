@@ -14,12 +14,14 @@ function CalendarPage() {
               style={{
                 background:
                   "url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;",
+                padding: 0,
               }}
-              src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?specification_url=https://gist.githubusercontent.com/lightandluck/59e9495f66c45dcdf3852b5925d03645/raw/64ea8f0f0325d36a8784891fc7a6535c47cba361/specs.json"
-              sandbox="allow-scripts allow-same-origin allow-popups"
-              height="600px"
+              src="https://dweb.events/calendar.html?specification_url=https://gitlab.com/lightandluck/open-web-calendar/-/snippets/4827957/raw/main/dweb-calendar-spec.json"
+              sandbox="allow-scripts allow-same-origin allow-popups allow-downloads"
+              title="DWeb Events"
+              height="791px"
               width="100%"
-              title="open-web-calendar"
+              frameBorder="1"
             />
 
             <br />

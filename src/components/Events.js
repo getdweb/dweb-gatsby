@@ -1513,7 +1513,7 @@ export default function Events() {
 					}
 				},
 				"events_list_header": "Events around the world",
-				"events_list_text": "Would you like to see an event listed?<br />Check out the <a href=\\"https://dweb.events/\\">DWeb events calendar</a>. You can subscribe to it and suggest events to be added.",
+				"events_list_text": "Would you like to see an event listed?<br />You can suggest events to be added here: <a target='_blank' href=\\"https://form.jotform.com/251250871665156\\">DWeb Events Submission</a>. ",
 				"events_show_more_url": "/events-archive"
 			}
 		}
@@ -1561,37 +1561,27 @@ export default function Events() {
 
   return (
     <div className="events" id="events">
-      <div className="building-block">
-        <div
-          className="building-block__right"
-          style={{
-            backgroundImage: `url(${options.events_top_image.localFile.url})`,
-          }}
-        />
-        <div className="building-block__left">
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <div className="header building-block__header">
-                  {options.events_top_header}
-                </div>
-                <div
-                  className="building-block__text"
-                  dangerouslySetInnerHTML={{ __html: options.events_top_intro }}
-                />
-                {events_top_button_link}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="container">
         <div className="row">
           <div className="col col-12 col-xs-12">
             <div className="header events__header">
               {options.events_list_header}
             </div>
-            <div className="events__headerlinks">
+            <iframe
+              id="open-web-calendar"
+              style={{
+                background:
+                  "url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;",
+                padding: 0,
+              }}
+              src="https://dweb.events/calendar.html?specification_url=https://gitlab.com/lightandluck/open-web-calendar/-/snippets/4827957/raw/main/dweb-calendar-spec.json"
+              sandbox="allow-scripts allow-same-origin allow-popups allow-downloads"
+              title="DWeb Events"
+              height="791px"
+              width="100%"
+              frameBorder="1"
+            />
+            {/* <div className="events__headerlinks">
               <a
                 className={`events__headerlink ${
                   period == 'upcoming' ? 'events__headerlink_active ' : ''
@@ -1609,7 +1599,7 @@ export default function Events() {
               >
                 recent
               </a>
-            </div>
+            </div> */}
             <div
               className="header-notice events__notice"
               dangerouslySetInnerHTML={{ __html: options.events_list_text }}
@@ -1647,6 +1637,30 @@ export default function Events() {
               >
                 Browse all past events
               </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="building-block">
+        <div
+          className="building-block__right"
+          style={{
+            backgroundImage: `url(${options.events_top_image.localFile.url})`,
+          }}
+        />
+        <div className="building-block__left">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="header building-block__header">
+                  {options.events_top_header}
+                </div>
+                <div
+                  className="building-block__text"
+                  dangerouslySetInnerHTML={{ __html: options.events_top_intro }}
+                />
+                {events_top_button_link}
+              </div>
             </div>
           </div>
         </div>
