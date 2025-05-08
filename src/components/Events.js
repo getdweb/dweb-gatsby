@@ -1513,7 +1513,7 @@ export default function Events() {
 					}
 				},
 				"events_list_header": "Events around the world",
-				"events_list_text": "Would you like to see an event listed?<br />You can suggest events to be added here: <a target='_blank' href=\\"https://form.jotform.com/251250871665156\\">DWeb Events Submission</a>. ",
+				"events_list_text": "Would you like to see an event listed?<br />You can suggest events to be added here: <a target='_blank' href=\\"https://airtable.com/appTI5ffWtVBghxjJ/pagtSqKejqCT4bI2T/form\\">DWeb Events Submission</a>. ",
 				"events_show_more_url": "/events-archive"
 			}
 		}
