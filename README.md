@@ -10,6 +10,8 @@ The following enhancements have been made to accomodate the web3 environment:
 
 This repo contains both the gatsby build pipeline and the getdweb.net site content. Factoring out a reusable template project is currently in progress, but you may clone the existing codebase and replace the content directories (pages, img, data, etc) for your own use.
 
+Deployed on https://distributed.press/
+
 ## Getting Started
 
 These instructions will give you a copy of the project up and running on
