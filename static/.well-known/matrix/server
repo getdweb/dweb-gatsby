@@ -1,1 +1,3 @@
-matrix.getdweb.net:443
+{
+  "m.server": "matrix.getdweb.net:443"
+}
