@@ -1,14 +1,14 @@
-  # using-the-dweb-brand.yaml
+# using-the-dweb-brand.yaml
 - PageBlockOpening:
     text: "The DWeb visual world is built on three pillars:\n
 
-          1. The personality that defined the design direction,\n
-          1. A legacy that gave us the core components of the visual language, and\n
-          1. Scale that continues to keep us from designing something ultra-finished or choosing too narrow a style.\n
+      1. The personality that defined the design direction,\n
+      1. A legacy that gave us the core components of the visual language, and\n
+      1. Scale that continues to keep us from designing something ultra-finished or choosing too narrow a style.\n
 
-          The DWeb brand reflects the personality of the community. It's friendly and open-minded. It's dynamic and vibrant.  It's the feeling that we are part of a bigger puzzle. It's a commitment to always put people over technology.\n
+      The DWeb brand reflects the personality of the community. It's friendly and open-minded. It's dynamic and vibrant.  It's the feeling that we are part of a bigger puzzle. It's a commitment to always put people over technology.\n
 
-          We wanted to reflect those characteristics in our design to make the movement (and the community brand) more human and more welcoming, and attract those who share our values."
+      We wanted to reflect those characteristics in our design to make the movement (and the community brand) more human and more welcoming, and attract those who share our values."
     title: Using the DWeb brand
     hero_image_desktop_url: /images/DWeb-master-top-line-black.png
     hero_image_mobile_url: /images/DWeb-master-top-line-black.png
@@ -16,12 +16,12 @@
     image_url: /images/DWeb-design-Nezhynska-visual-language-01-scaled.jpg
 - PageBlockContent:
     text: "Built for and by the community, we've built this as an open
-          and adaptable brand. We want it to evolve as the decentralization movement
-          grows.\n
+      and adaptable brand. We want it to evolve as the decentralization movement
+      grows.\n
 
-          Feel free to use all the available assets today, but
-          we ask that you please follow the guidelines below. This will help the
-          community build a consistent visual image worldwide."
+      Feel free to use all the available assets today, but
+      we ask that you please follow the guidelines below. This will help the
+      community build a consistent visual image worldwide."
 - PageBlockFeature:
     button_caption: Download logos
     button_link_url: https://dweb.link/ipfs/QmekVddHZTdYRtwK8r4LnbjWwCimH946bMpYeS2N7X5iAE?filename=DWeb-logo-assets-2021.zip
@@ -31,43 +31,44 @@
 - PageBlockContent:
     text: "### Here are a few ways to treat the DWeb logo with respect:\n
 
-          1. Allow enough clearspace on all sides of the logo. The minimum clear space equals the double distance between dots on the logo grid.\n
-          1. Place the logo on a non-busy area within an image. Use white/black versions of the logo when placing it on a photo background.\n
-          1. Use high contrast color combinations for logo dots and the background.\n
-          1. Use our logo and DWeb Principles graphics (see below) to show your support.\n
+      1. Allow enough clearspace on all sides of the logo. The minimum clear space equals the double distance between dots on the logo grid.\n
+      1. Place the logo on a non-busy area within an image. Use white/black versions of the logo when placing it on a photo background.\n
+      1. Use high contrast color combinations for logo dots and the background.\n
+      1. Use our logo and DWeb Principles graphics (see below) to show your support.\n
 
-          ### And here are a few logo crimes to avoid:\n
+      ### And here are a few logo crimes to avoid:\n
 
-          1. Use outlined dots on the logo.\n
-          1. Place the color version of the logo on a busy or light area within a photo, making it hard to see.\n
-          1. Apply color on the rectangular label “Web” in the logo. It should always be in white outline (primary lookup on the dark background) or filled white/black on color backgrounds.\n
-          1. Modify the logo shape in an excessive way. For example, don't add more dots, create a new letter, or replace dots with other shapes."
+      1. Use outlined dots on the logo.\n
+      1. Place the color version of the logo on a busy or light area within a photo, making it hard to see.\n
+      1. Apply color on the rectangular label “Web” in the logo. It should always be in white outline (primary lookup on the dark background) or filled white/black on color backgrounds.\n
+      1. Modify the logo shape in an excessive way. For example, don't add more dots, create a new letter, or replace dots with other shapes."
 - PageBlockOpening:
     title: Colors
-    text: "DWeb has three color palettes that balance the vibrance of the community with the beauty of code.\n
+    text:
+      "DWeb has three color palettes that balance the vibrance of the community with the beauty of code.\n
 
-          ### UI color palette\n
+      ### UI color palette\n
 
-          We sought to make our content more legible for people with color blindness or lower contrast sensitivity. That's why we use black (000003) and white as our main color palette, for both brand communication and user interface design.\n
+      We sought to make our content more legible for people with color blindness or lower contrast sensitivity. That's why we use black (000003) and white as our main color palette, for both brand communication and user interface design.\n
 
-          Those who joined us for DWeb Camp in 2019 may remember the warm sunny yellow color that we used for all our published materials. That yellow became the main color for user interface interactions. We call it
-          <span style=\"color: #ffcd03;\">the Camp Yellow (ffcd03)</span>.\n
+      Those who joined us for DWeb Camp in 2019 may remember the warm sunny yellow color that we used for all our published materials. That yellow became the main color for user interface interactions. We call it
+      <span style=\"color: #ffcd03;\">the Camp Yellow (ffcd03)</span>.\n
 
-          ### Logo colors\n
+      ### Logo colors\n
 
-          The colors of the DWeb logo draw inspiration from the colorfulness of written code:
-          <span style=\"color: #bbe022;\">bbe022</span>,
-          <span style=\"color: #ff4f2c;\">ff4f2c</span>,
-          <span style=\"color: #00d6c6;\">00d6c6</span>,
-          <span style=\"color: #fcc924;\">fcc924</span>,
-          <span style=\"color: #e16ef9;\">e16ef9</span>
-          and
-          <span style=\"color: #00b3f1;\">00b3f1</span>.
-          These colors are also used in the animated dots on the DWeb website.\n
+      The colors of the DWeb logo draw inspiration from the colorfulness of written code:
+      <span style=\"color: #bbe022;\">bbe022</span>,
+      <span style=\"color: #ff4f2c;\">ff4f2c</span>,
+      <span style=\"color: #00d6c6;\">00d6c6</span>,
+      <span style=\"color: #fcc924;\">fcc924</span>,
+      <span style=\"color: #e16ef9;\">e16ef9</span>
+      and
+      <span style=\"color: #00b3f1;\">00b3f1</span>.
+      These colors are also used in the animated dots on the DWeb website.\n
 
-          ### Node color pairs\n
+      ### Node color pairs\n
 
-          Each node has their own color too: one primary color (for labels and hashtags in UI), and one secondary color which we use for color overlays on the photography."
+      Each node has their own color too: one primary color (for labels and hashtags in UI), and one secondary color which we use for color overlays on the photography."
     text_includes_raw_html: True
     hero_image_desktop_url: /images/DWeb-colors-hor-01.png
     hero_image_mobile_url: /images/DWeb-colors-hor-alt.png
@@ -91,8 +92,8 @@
     title: Typography
 - PageBlockFeature:
     button_caption: Download Node assets
-    button_link_direction: internal
-    button_link_url: ../principles
+    button_link_direction: external
+    button_link_url: https://archive.org/download/dweb-node-assets-2021/DWeb%20-%20Node%20assets%202021.zip
     text: All the DWeb Nodes are different from each other and bring in their
       own local vibes into every meetup their host. Because of this, every
       Node has its own style under the overarching visual identity of DWeb.
@@ -100,8 +101,8 @@
     image_url: /images/perm-c1-800.png
 - PageBlockFeature:
     button_caption: Get DWeb Principles images
-    button_link_direction: internal
-    button_link_url: ../principles
+    button_link_direction: external
+    button_link_url: https://archive.org/download/dweb-principles-graphics/Principles%20Graphics.zip
     text: About requesting the media kit. What to do and how to share. Something else to add as a link.
     title: DWeb Principles
     image_url: /images/DWeb-Principles-graphics-square-03.png
@@ -109,5 +110,5 @@
     button_caption: DWeb on Figma
     button_link_direction: external
     button_link_url: https://www.figma.com/@DWeb
-    text: "We will open-source the brand to the DWeb community in early 2022. If you want to contribute and be a part of the launch, message [Iryna](https://getdweb.net/website-team/). Or follow our team on Figma and get design-in-progress updates."
+    text: 'We will open-source the brand to the DWeb community in early 2022. If you want to contribute and be a part of the launch, message [Iryna](https://getdweb.net/website-team/). Or follow our team on Figma and get design-in-progress updates.'
     title: More design files
