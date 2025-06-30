@@ -10,7 +10,7 @@ function SocialMediaCommsJobDescriptionPage() {
           <div className="col col-12 col-xs-12">
             <div className="job-description">
               <h1 style={{ fontSize: '46px' }}>
-                Open Position:
+                <s>Open Position:</s> Closed
                 <h2>
                   DWeb Social Media and Community Manager
                   <br />
