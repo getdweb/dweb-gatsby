@@ -69,7 +69,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className=" footer__distributedpress">
+              <div className=" footer__distributedpress d-none d-md-inline-block">
                 <h3>Powered by</h3>
                 <a
                   className=""
@@ -138,6 +138,7 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
+
               <div className="footer__menus">
                 {options.map((block) => (
                   <div className="footer__menu" key={md5(block.header)}>
@@ -200,6 +201,35 @@ export default function Footer() {
                   __html: `©${new Date().getFullYear()}`,
                 }}
               />
+              <div className=" footer__distributedpress d-md-none">
+                <h3>Powered by</h3>
+                <a
+                  className=""
+                  href="https://distributed.press"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/images/logo-distributedpress-grey.png"
+                    alt="Distributed Press Logo"
+                    width="70%"
+                  />
+                </a>
+                <br />
+                <a
+                  className="footer__distributedpress-link"
+                  href="ipns://distributed.press"
+                >
+                  ipns://
+                </a>
+
+                <a
+                  className="footer__distributedpress-link"
+                  href="hyper://distributed.press"
+                >
+                  hyper://
+                </a>
+              </div>
             </div>
           </div>
         </div>
