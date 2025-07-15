@@ -6,7 +6,7 @@ export default function Footer() {
   const data = useStaticQuery(
     graphql`
       query {
-        allFooterYaml {
+        allFooterIndexYaml {
           nodes {
             links {
               direction
@@ -18,14 +18,14 @@ export default function Footer() {
             header
           }
         }
-        allNetworkYaml(sort: { title: ASC }) {
+        allNetworkIndexYaml(sort: { title: ASC }) {
           nodes {
             color
             title
             link
           }
         }
-        allSocialMediaYaml {
+        allSocialMediaIndexYaml {
           nodes {
             icon_code
             label
@@ -36,9 +36,9 @@ export default function Footer() {
     `
   )
 
-  const social = data.allSocialMediaYaml.nodes
-  const options = data.allFooterYaml.nodes
-  const cities = data.allNetworkYaml.nodes
+  const social = data.allSocialMediaIndexYaml.nodes
+  const options = data.allFooterIndexYaml.nodes
+  const cities = data.allNetworkIndexYaml.nodes
 
   return (
     <div className="footer">
@@ -67,6 +67,36 @@ export default function Footer() {
                     />
                   ))}
                 </div>
+              </div>
+
+              <div className=" footer__distributedpress">
+                <h3>Powered by</h3>
+                <a
+                  className=""
+                  href="https://distributed.press"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="/images/logo-distributedpress-grey.png"
+                    alt="Distributed Press Logo"
+                    width="70%"
+                  />
+                </a>
+                <br />
+                <a
+                  className="footer__distributedpress-link"
+                  href="ipns://distributed.press"
+                >
+                  ipns://
+                </a>
+
+                <a
+                  className="footer__distributedpress-link"
+                  href="hyper://distributed.press"
+                >
+                  hyper://
+                </a>
               </div>
             </div>
 
