@@ -86,14 +86,14 @@ export default function Footer() {
                 <br />
                 <a
                   className="footer__distributedpress-link"
-                  href="ipns://distributed.press"
+                  href="ipns://getdweb.net"
                 >
                   ipns://
                 </a>
 
                 <a
                   className="footer__distributedpress-link"
-                  href="hyper://distributed.press"
+                  href="hyper://getdweb.net"
                 >
                   hyper://
                 </a>
@@ -218,14 +218,14 @@ export default function Footer() {
                 <br />
                 <a
                   className="footer__distributedpress-link"
-                  href="ipns://distributed.press"
+                  href="ipns://getdweb.net"
                 >
                   ipns://
                 </a>
 
                 <a
                   className="footer__distributedpress-link"
-                  href="hyper://distributed.press"
+                  href="hyper://getdweb.net"
                 >
                   hyper://
                 </a>
