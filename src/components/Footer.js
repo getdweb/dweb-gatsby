@@ -6,7 +6,7 @@ export default function Footer() {
   const data = useStaticQuery(
     graphql`
       query {
-        allFooterIndexYaml {
+        allFooterYaml {
           nodes {
             links {
               direction
@@ -18,14 +18,14 @@ export default function Footer() {
             header
           }
         }
-        allNetworkIndexYaml(sort: { title: ASC }) {
+        allNetworkYaml(sort: { title: ASC }) {
           nodes {
             color
             title
             link
           }
         }
-        allSocialMediaIndexYaml {
+        allSocialMediaYaml {
           nodes {
             icon_code
             label
@@ -36,9 +36,9 @@ export default function Footer() {
     `
   )
 
-  const social = data.allSocialMediaIndexYaml.nodes
-  const options = data.allFooterIndexYaml.nodes
-  const cities = data.allNetworkIndexYaml.nodes
+  const social = data.allSocialMediaYaml.nodes
+  const options = data.allFooterYaml.nodes
+  const cities = data.allNetworkYaml.nodes
 
   return (
     <div className="footer">
