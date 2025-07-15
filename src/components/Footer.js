@@ -69,7 +69,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className=" footer__distributedpress d-none d-md-inline-block">
+              <div className=" footer__distributedpress d-none d-xl-inline-block">
                 <h3>Powered by</h3>
                 <a
                   className=""
@@ -201,7 +201,7 @@ export default function Footer() {
                   __html: `©${new Date().getFullYear()}`,
                 }}
               />
-              <div className=" footer__distributedpress d-md-none">
+              <div className=" footer__distributedpress d-xl-none">
                 <h3>Powered by</h3>
                 <a
                   className=""
