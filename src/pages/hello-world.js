@@ -17,10 +17,25 @@ function SocialMediaCommsJobDescriptionPage() {
               <div className="building-block__text">
                 <ul>
                   <li>
+                    <a href="/principles" target="blank">
+                      DWeb Principles
+                    </a>
+                  </li>
+                  <li>
                     <a href="/dweb-webinar-series" target="blank">
                       What is the DWeb? - DWeb webinar series
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="https://hypha.coop/dripline/debate-over-dweb-vs-web3/"
+                      target="blank"
+                    >
+                      The Debate Over DWeb vs. Web3 & The Decentralized Elephant
+                      in the Room
+                    </a>
+                  </li>
+                  
                   <li>
                     <a href="//dweb.events" target="blank">
                       DWeb Events - Calendar of events from around the world
