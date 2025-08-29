@@ -37,6 +37,227 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Val Elefante",
+						"date": "#26 August 2025",
+						"intro": "A behind-the-scenes look at the Cookie Jar Collective convening, where artists, technologists, and policy leaders came together to reimagine savings as a shared resource and explore new models of digital public infrastructure.",
+						"link": "https://r2i-lab.org/shaping-collective-futures-co-designing-a-new-social-safety-net-for-artists-and-gig-workers/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Shaping Collective Futures: Co-Designing A New Social Safety Net for Artists and Gig Workers",
+					"wordpress_id": 1326
+				},
+				{
+					"acf": {
+						"author": "Val Elefante",
+						"date": "#2024",
+						"intro": "The following list of Decentralized Web use cases, examples solutions, and tools was curated by Accelerating Makers, a program of Public Good App House and TechSoup that is helping technology builders and nonprofits co-create purpose-built tools for public good.",
+						"link": "https://acceleratingmakers.notion.site/DWeb-for-Impact-Use-Case-Database-8b7e0449d56a4c66905ac7e3fad3a597",
+						"voice_category": {
+							"term_id": 12,
+							"name": "Guide"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb for Impact: Use Case Database",
+					"wordpress_id": 1325
+				},
+				{
+					"acf": {
+						"author": "11th Hour Project, Raft Foundation",
+						"date": "#July 2025",
+						"intro": "Float - the funding lab for open agroecological technologies - is an experiment in community-led innovation prioritization and resource allocation that seeks to bridge the experience and expertise of agroecological farmers, technologists, researchers, and civil society to generate collective commons*.",
+						"link": "https://float.ag/",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Float - Funding lab for open agroecological technologies",
+					"wordpress_id": 1324
+				},
+				{
+					"acf": {
+						"author": "EU Social Economy Gateway",
+						"date": "#28 November 2024",
+						"intro": "The sharing and use of data is one of the ways in which the European Commission seeks to boost the development of social economy organisations and allow them to contribute to an inclusive, green and fair economy and society. Data driven processes and sharing of data can foster robust and efficient collaborations, increase knowledge and innovation, enhance civic empowerment and help to open up new markets and business models.",
+						"link": "https://social-economy-gateway.ec.europa.eu/eu-initiatives/code-conduct-data-sharing-social-economy_en",
+						"voice_category": {
+							"term_id": 11,
+							"name": "Analysis"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Code of conduct data sharing in the social economy",
+					"wordpress_id": 1323
+				},
+				{
+					"acf": {
+						"author": "Rithikha Rajamohan",
+						"date": "#August 2024",
+						"intro": "In August 2024, a transdisciplinary group of contributors in the public goods funding, technology, farming and food systems spaces gathered in Navarro, California. Our purpose was to develop a vision for the future of agriculture, its supporting technologies, and how we might go about resourcing the first steps towards it.",
+						"link": "https://dfood.webflow.io",
+						"voice_category": {
+							"term_id": 11,
+							"name": "Analysis"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "D:Food Web - The Distributed Past & Future of Agriculture",
+					"wordpress_id": 1322
+				},
+				{
+					"acf": {
+						"author": "Nigini Oliveira",
+						"date": "#9 April 2025",
+						"intro": "What better way to bootstrap this blog than by covering a DWeb event we co-hosted? On the 28th of February, Will and I partnered with the INTDEV team to host the first Seattle Node Gathering of 2025. In past node meetings, a group of us identified an opportunity to start conversations about the usability and user experience of DWeb software and services. Investing in UX is one of the most crucial steps to creating software and services that promote human agency and collective benefits. Hence, we proposed the general topic 'UX Challenges for DWeb systems' for our usually intimate and friendly gathering.",
+						"link": "https://dweb.observer/seattle-node-gathering-feb-2025/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Seattle Node Gathering (Feb, 2025)",
+					"wordpress_id": 1321
+				},
+				{
+					"acf": {
+						"author": "mai ishikawa sutton",
+						"date": "#26 March 2025",
+						"intro": "In late February, members of the DWeb Core Team and the DWeb community were in Taipei to attend the 13th edition of RightsCon, the largest global summit on human rights in the digital age. Namely, we were there to connect with the digital rights community. We wanted to participate in an event where thousands of people travel from around the world to discuss the current and future state of the internet, and to meet others who were involved in building decentralized, distributed, and peer-to-peer network technologies.",
+						"link": "https://blog.archive.org/2025/03/26/dweb-and-digital-rights-a-report-back-from-rightscon-in-taipei/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb and Digital Rights: A Report Back from RightsCon in Taipei",
+					"wordpress_id": 1320
+				},
+				{
+					"acf": {
+						"author": "Chad Kohalyk, Emily McGill",
+						"date": "#20 September 2024",
+						"intro": "Phew! It was a whirlwind nine days in July as volunteers stepped to host a number of events wrapped around the Internet Engineering Task Force's (IETF) meeting in Vancouver. We would like to thank all the LOCALHOST and related community organizers, as well as other community members that volunteered their time and energy.",
+						"link": "https://dwebyvr.org/localhost-2025-wrap-up/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "LOCALHOST 2025 Wrap-up",
+					"wordpress_id": 1319
+				},
+				{
+					"acf": {
+						"author": "Chad Kohalyk",
+						"date": "#21 November 2024",
+						"intro": "'Interdependence' is a key value highlighted in the DWeb Principles. Local community-building is core to the DWeb movement, striving for more technical agency and an equitable world. There are DWeb Nodes popping up all over the world, but I believe we it is also important to link nearby nodes into a wider DWeb network. The best way to do that is in person so a few of us from the Vancouver DWeb node piled into my car (other Canadian friends took the train or the bus) and made a pilgrimage across the southern border for the DWeb Seattle Social. This is a first pass trip report of the event to share some of photos and next actions.",
+						"link": "https://dwebyvr.org/dweb-seattle-social-trip-report/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Seattle Social Trip Report",
+					"wordpress_id": 1318
+				},
+				{
+					"acf": {
+						"author": "Chad Kohalyk, David Luecke",
+						"date": "#30 January 2025",
+						"intro": "On January 11th and 12th 2025, more than two dozen technologists gathered in Vancouver, coming from as far away as Seattle, Vancouver Island and Salt Spring Island to hear talks from some of the people on the forefront of the local-first movement, and then learn together in a collaborative hackathon.",
+						"link": "https://dwebyvr.org/dweb-local-first-weekend-roundup-2/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Local-First Weekend roundup",
+					"wordpress_id": 1317
+				},
+				{
+					"acf": {
+						"author": "Christine Lemmer-Webber",
+						"date": "#13 December 2024",
+						"intro": "A few weeks ago I wrote How decentralized is Bluesky really?, a blogpost which received far more attention than I expected on the fediverse and Bluesky both. Thankfully, the blogpost was received well generally, including by Bluesky's team. Bryan Newbold, core Bluesky engineer, wrote a thoughtful response article: Reply on Bluesky and Decentralization, which I consider worth reading.",
+						"link": "https://dustycloud.org/blog/re-re-bluesky-decentralization/",
+						"voice_category": {
+							"term_id": 8,
+							"name": "Opinion"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Re: Re: Bluesky and Decentralization",
+					"wordpress_id": 1316
+				},
+				{
+					"acf": {
+						"author": "Bryan Newbold",
+						"date": "#26 November 2024",
+						"intro": "This is a reply to Christine Lemmer-Webber's thoughtful (and widely read) 'How decentralized is Bluesky really?' blog post. I am so happy and grateful that Christine took the time to write up her thoughts and put them out in public. Her writing sheds light on substantive differences between protocols and projects, and raises the bar on analysis in this space. However, I disagree with some of the analysis, and have a couple specific points to correct.",
+						"link": "https://whtwnd.com/bnewbold.net/3lbvbtqrg5t2t",
+						"voice_category": {
+							"term_id": 8,
+							"name": "Opinion"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Reply on Bluesky and Decentralization",
+					"wordpress_id": 1315
+				},
+				{
+					"acf": {
+						"author": "Christine Lemmer-Webber",
+						"date": "#22 November 2024",
+						"intro": "Recently due to various events (namely a lot of people getting off of X-Twitter), Bluesky has become a lot more popular, and excitement for its underlying protocol, ATProto, is growing. Since I worked on ActivityPub which connects together Mastodon, Sharkey, Peertube, GotoSocial, etc, etc, etc in the present-day fediverse, I often get asked whether or not I have opinions about ATProto vs ActivityPub, and the answer is that I do have opinions",
+						"link": "https://dustycloud.org/blog/how-decentralized-is-bluesky/",
+						"voice_category": {
+							"term_id": 8,
+							"name": "Opinion"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "How decentralized is Bluesky really?",
+					"wordpress_id": 1314
+				},
+				{
+					"acf": {
 						"author": "Vincent Charlebois",
 						"date": "#26 November 2024",
 						"intro": "DWeb Camp is a space for people to connect, share, and envision the future of the internet, and to explore how the decentralized web can foster healthier relationships with technology. Throughout our week-long gathering, we discussed decentralized governance, transparency, cooperation, ethical AI, and ecological metaphors that could inspire new ways of structuring interactions, embodying trust, human agency, and sustainability.",
