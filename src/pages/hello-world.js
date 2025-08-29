@@ -35,7 +35,7 @@ function SocialMediaCommsJobDescriptionPage() {
                       in the Room
                     </a>
                   </li>
-                  
+
                   <li>
                     <a href="//dweb.events" target="blank">
                       DWeb Events - Calendar of events from around the world
@@ -57,6 +57,14 @@ function SocialMediaCommsJobDescriptionPage() {
                       target="blank"
                     >
                       Subscribe to our newsletter
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://opencollective.com/dweb-network"
+                      target="blank"
+                    >
+                      Support us on OpenCollective
                     </a>
                   </li>
                 </ul>
