@@ -2,13 +2,13 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 
-function SocialMediaCommsJobDescriptionPage() {
+function HelloWorldPage() {
   const content = (
     <div>
       <div className="container">
         <div className="row">
           <div className="col col-12 col-xs-12">
-            <div className="job-description">
+            <div className="custom-content">
               <h1 style={{ fontSize: '46px' }}>
                 Hello World!
                 <h2 className="highlight">Links to welcome you to the DWeb</h2>
@@ -81,4 +81,4 @@ function SocialMediaCommsJobDescriptionPage() {
   return <Layout content={content} />
 }
 
-export default SocialMediaCommsJobDescriptionPage
+export default HelloWorldPage

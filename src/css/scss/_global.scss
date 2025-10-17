@@ -847,7 +847,13 @@ a.btn {
   }
 }
 
-.job-description {
+.custom-content {
+  b {
+    color: $yellow;
+  }
+  b.speaker1 {
+    color: #93e193;
+  }
   & {
     max-width: 650px;
   }
