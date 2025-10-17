@@ -37,6 +37,40 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Wendy Hanamura",
+						"date": "#26 August 2025",
+						"intro": "As I understand it, the concept of the “adjacent possible” describes changes just within reach given the current state of a system’s knowledge, resources, and components. It’s a “shadow future” of the possibilities on the edge of the present. The adjacent possible asks: what can you learn from existing building blocks to create new ones? That is, at heart, what the DWeb Seminar set out to do.",
+						"link": "https://blog.archive.org/2025/09/03/the-adjacent-possible-in-the-decentralized-web/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "The Adjacent Possible in the Decentralized Web",
+					"wordpress_id": 1328
+				},
+				{
+					"acf": {
+						"author": "mai ishikawa sutton",
+						"date": "#3 September 2025",
+						"intro": "We’re thrilled to see how much our hope for DWeb to decentralize globally has been fulfilled this year.",
+						"link": "https://blog.archive.org/2025/09/03/dweb-camp-cascadia-2025-canadas-first-regional-decentralized-web-camp-in-the-pacific-northwest/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "DWeb Camp Cascadia 2025: Canada’s First Regional Decentralized Web Camp in the Pacific Northwest",
+					"wordpress_id": 1327
+				},
+				{
+					"acf": {
 						"author": "Val Elefante",
 						"date": "#26 August 2025",
 						"intro": "A behind-the-scenes look at the Cookie Jar Collective convening, where artists, technologists, and policy leaders came together to reimagine savings as a shared resource and explore new models of digital public infrastructure.",
