@@ -12,8 +12,50 @@ function JustusInterviewPage() {
               <h1 style={{ fontSize: '46px' }}>
                 Interview with Justus Perlwitz
               </h1>
-              <hr />
+              <img
+                src="/images/justus-avatar-white.png"
+                alt="Portrait of Justus Perlwitz"
+                style={{
+                  float: 'right',
+                  maxWidth: '140px',
+                }}
+              />
+
               <div className="building-block__text">
+                <em>
+                  <a
+                    href="https://www.justus.pw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Justus Perlwitz
+                  </a>{' '}
+                  is a DWeb volunteer whose work has been key in updating and
+                  refactoring the code of{' '}
+                  <a
+                    href="https://dwebcamp.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    DWeb Camp's website
+                  </a>
+                  . He is an active and enthusiastic member of the global DWeb
+                  Community, and he is based in Tokyo, Japan.
+                  <br />
+                  <br />
+                  Tommi, from the DWeb Core Team, interviewed him. Here is the
+                  full transcript of their conversation.
+                </em>
+                <hr />
+                <h2
+                  style={{
+                    fontSize: '28px',
+                    marginTop: '20px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  Discovering DWeb: From Berlin to Tokyo
+                </h2>
                 <p>
                   <b className="speaker1">Tommi:</b> Your story is so
                   incredible, a German person living in Tokyo and getting
@@ -78,6 +120,15 @@ function JustusInterviewPage() {
                   that got me taking care of the site now.
                 </p>
 
+                <h2
+                  style={{
+                    fontSize: '28px',
+                    marginTop: '40px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  Life in Tokyo: Work, Culture, and Community Challenges
+                </h2>
                 <p>
                   <b className="speaker1">Tommi:</b> Wow, you already touched
                   upon all the things I wanted to ask you! Let's unpack them one
@@ -157,12 +208,22 @@ function JustusInterviewPage() {
                   try!
                 </p>
 
+                <h2
+                  style={{
+                    fontSize: '28px',
+                    marginTop: '40px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  DWeb Camp Experience: Technology Meets Community
+                </h2>
                 <p>
-                  At DWeb Camp, everything was in front of me: people brought
-                  their little gadgets and tools, some brought Meshtastic
-                  receivers, but it wasn't just that. What do you actually do
-                  with it, what are the ideas behind the tech? Can we use this
-                  to self-organize? How can we make our own "Internet"?
+                  <b>Justus:</b> At DWeb Camp, everything was in front of me:
+                  people brought their little gadgets and tools, some brought
+                  Meshtastic receivers, but it wasn't just that. What do you
+                  actually do with it, what are the ideas behind the tech? Can
+                  we use this to self-organize? How can we make our own
+                  "Internet"?
                 </p>
                 <p>
                   It's not only about the tech! It was so cool to be at camp and
@@ -191,14 +252,23 @@ function JustusInterviewPage() {
                   planet.
                 </p>
 
+                <h2
+                  style={{
+                    fontSize: '28px',
+                    marginTop: '40px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  Philosophy on Open Source and Collaboration
+                </h2>
                 <p>
-                  I think a lot of economic activity is wasted on just
-                  implementing the same thing over and over again, instead of
-                  just using more standardized components for everything. This
-                  is especially the case with proprietary software development:
-                  as a developer who's writing code for a company, if you leave
-                  it or if that company goes bankrupt, that code just
-                  disappears.
+                  <b>Justus:</b> I think a lot of economic activity is wasted on
+                  just implementing the same thing over and over again, instead
+                  of just using more standardized components for everything.
+                  This is especially the case with proprietary software
+                  development: as a developer who's writing code for a company,
+                  if you leave it or if that company goes bankrupt, that code
+                  just disappears.
                 </p>
                 <p>
                   Code is not a property that is tangible, like the balance of
@@ -250,6 +320,15 @@ function JustusInterviewPage() {
                   things also in this sense.
                 </p>
 
+                <h2
+                  style={{
+                    fontSize: '28px',
+                    marginTop: '40px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  Technical Work: Building the DWeb Camp Website
+                </h2>
                 <p>
                   <b className="speaker1">Tommi:</b> Let's get to the tech talk,
                   then! What did you do for dwebcamp.org, and how is it going?
@@ -355,13 +434,24 @@ function JustusInterviewPage() {
                   don't have any documentation I won't know how it works myself!
                 </p>
 
+                <h2
+                  style={{
+                    fontSize: '28px',
+                    marginTop: '40px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  Looking Towards the Future: Building for Longevity and
+                  Reusability
+                </h2>
                 <p>
-                  I really care about making things for longevity. I hope that
-                  out of all the things I can do for the DWeb Camp site, I can
-                  make it still work in 10 years. It's nice if we have enough
-                  time to add cool features, but if we can make it a thing that
-                  DWeb can use for the next 10 years, that's a great victory. I
-                  think we're pretty close to that now.
+                  <b>Justus:</b> I really care about making things for
+                  longevity. I hope that out of all the things I can do for the
+                  DWeb Camp site, I can make it still work in 10 years. It's
+                  nice if we have enough time to add cool features, but if we
+                  can make it a thing that DWeb can use for the next 10 years,
+                  that's a great victory. I think we're pretty close to that
+                  now.
                 </p>
                 <p>
                   Gosh, you know what? Out of all the things we've discussed
