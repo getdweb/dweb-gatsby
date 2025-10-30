@@ -166,7 +166,7 @@ function JustusInterviewPage() {
                   <b>Justus:</b> There's not much widely connected hacker
                   culture happening here… One big issue is the language divide:
                   a lot of native Japanese speakers don't speak English well,
-                  and the same goes for people who come from abroad: if you
+                  and the same goes for people who come from abroad. If you
                   don't speak Japanese very well, it makes it quite hard for the
                   communities to interact with each other.
                 </p>
@@ -394,7 +394,7 @@ function JustusInterviewPage() {
 
                 <p>
                   It's almost boring that I'm mostly talking about libraries,
-                  but that's the reality: if you have a really old software
+                  but that's the reality:if you have a really old software
                   project and you have a lot of outdated libraries, you have to
                   spend a lot of time just trying to fix those essential things
                   before you can even get started on doing anything interesting
@@ -414,14 +414,47 @@ function JustusInterviewPage() {
                 </p>
 
                 <p>
-                  Lastly, the most important thing I did for the DWeb Camp site
-                  is not technical at all: I wrote documentation on how to
-                  install everything and how to build the site, because there
-                  wasn't a lot of documentation. I understand why it happened,
-                  because a lot of people worked on it, and they focused on
-                  making the things rather than writing about them. I learned
-                  the value of documentation over the last few years, as I
-                  develop a lot of software, then I give it to people and ask
+                  <em>
+                    <b style={{ color: '#b266ff' }}>Side note from Arkadiy:</b>{' '}
+                    We previously used PostgreSQL as a database backend, mostly
+                    as a holdover from the early days when the site ran like a
+                    normal "live" Django instance. This caused us a lot of
+                    maintenance headaches and wasn't really the right tool for
+                    the job -- the backend doesn't handle any reader traffic. At
+                    some point I came across a{' '}
+                    <a
+                      href="https://dunkels.com/adam/git-diff-sqlite3/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      blog post about legible SQLite diffs in git
+                    </a>{' '}
+                    and a lightbulb went off -- we can use this lightweight
+                    file-based DB in "single player mode" during editing, which
+                    lets us keep all content changes (templates and markup plus
+                    the database diffs) together. CMSes like Django tend to mix
+                    code and content, but we came up with a branching strategy
+                    solution that I'm pretty satisfied with: the main branch is
+                    used for functional development and base templates, then
+                    each year's edition branches off from that and the "content"
+                    is applied on top. If the core changes significantly, we
+                    just merge `main` to the edition branch to "backport" the
+                    updates. This means that we can publish a clean version of
+                    the repository with just `main` and folks that want to use
+                    it for their own events can create their own content
+                    branches. I'm excited to release this to the community!
+                  </em>
+                </p>
+
+                <p>
+                  <b>Justus:</b> Lastly, the most important thing I did for the
+                  DWeb Camp site is not technical at all: I wrote documentation
+                  on how to install everything and how to build the site,
+                  because there wasn't a lot of documentation. I understand why
+                  it happened, because a lot of people worked on it, and they
+                  focused on making the things rather than writing about them. I
+                  learned the value of documentation over the last few years, as
+                  I develop a lot of software, then I give it to people and ask
                   them to test it for me.
                 </p>
                 <p>
