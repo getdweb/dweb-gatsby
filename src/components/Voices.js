@@ -37,6 +37,23 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Tommi Marmo",
+						"date": "#30 October 2025",
+						"intro": "The DWeb crowd is made up of people who are excited to build and try out alternative and cutting edge technologies that align with our values. In order to welcome everyone in our community, we prioritize stability, reliability, and ease of use for all our public-facing tech infrastructure.",
+						"link": "https://getdweb.net/dweb-tech-stack/",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Behind the Scenes of DWeb’s Decentralized Tech Stack",
+					"wordpress_id": 1329
+				},
+				{
+					"acf": {
 						"author": "Wendy Hanamura",
 						"date": "#26 August 2025",
 						"intro": "As I understand it, the concept of the “adjacent possible” describes changes just within reach given the current state of a system’s knowledge, resources, and components. It’s a “shadow future” of the possibilities on the edge of the present. The adjacent possible asks: what can you learn from existing building blocks to create new ones? That is, at heart, what the DWeb Seminar set out to do.",
