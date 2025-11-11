@@ -9,9 +9,7 @@ function JustusInterviewPage() {
         <div className="row">
           <div className="col col-12 col-xs-12">
             <div className="custom-content">
-              <h1 style={{ fontSize: '46px' }}>
-                Interview with Justus Perlwitz
-              </h1>
+              <h1>Interview with Justus Perlwitz</h1>
               <img
                 src="/images/justus-avatar-white.png"
                 alt="Portrait of Justus Perlwitz"
@@ -47,15 +45,7 @@ function JustusInterviewPage() {
                   full transcript of their conversation.
                 </em>
                 <hr />
-                <h2
-                  style={{
-                    fontSize: '28px',
-                    marginTop: '20px',
-                    marginBottom: '20px',
-                  }}
-                >
-                  Discovering DWeb: From Berlin to Tokyo
-                </h2>
+                <h2>Discovering DWeb: From Berlin to Tokyo</h2>
                 <p>
                   <b className="speaker1">Tommi:</b> Your story is so
                   incredible, a German person living in Tokyo and getting
@@ -120,15 +110,7 @@ function JustusInterviewPage() {
                   that got me taking care of the site now.
                 </p>
 
-                <h2
-                  style={{
-                    fontSize: '28px',
-                    marginTop: '40px',
-                    marginBottom: '20px',
-                  }}
-                >
-                  Life in Tokyo: Work, Culture, and Community Challenges
-                </h2>
+                <h2>Life in Tokyo: Work, Culture, and Community Challenges</h2>
                 <p>
                   <b className="speaker1">Tommi:</b> Wow, you already touched
                   upon all the things I wanted to ask you! Let's unpack them one
@@ -208,15 +190,7 @@ function JustusInterviewPage() {
                   try!
                 </p>
 
-                <h2
-                  style={{
-                    fontSize: '28px',
-                    marginTop: '40px',
-                    marginBottom: '20px',
-                  }}
-                >
-                  DWeb Camp Experience: Technology Meets Community
-                </h2>
+                <h2>DWeb Camp Experience: Technology Meets Community</h2>
                 <p>
                   <b>Justus:</b> At DWeb Camp, everything was in front of me:
                   people brought their little gadgets and tools, some brought
@@ -252,15 +226,7 @@ function JustusInterviewPage() {
                   planet.
                 </p>
 
-                <h2
-                  style={{
-                    fontSize: '28px',
-                    marginTop: '40px',
-                    marginBottom: '20px',
-                  }}
-                >
-                  Philosophy on Open Source and Collaboration
-                </h2>
+                <h2>Philosophy on Open Source and Collaboration</h2>
                 <p>
                   <b>Justus:</b> I think a lot of economic activity is wasted on
                   just implementing the same thing over and over again, instead
@@ -320,15 +286,7 @@ function JustusInterviewPage() {
                   things also in this sense.
                 </p>
 
-                <h2
-                  style={{
-                    fontSize: '28px',
-                    marginTop: '40px',
-                    marginBottom: '20px',
-                  }}
-                >
-                  Technical Work: Building the DWeb Camp Website
-                </h2>
+                <h2>Technical Work: Building the DWeb Camp Website</h2>
                 <p>
                   <b className="speaker1">Tommi:</b> Let's get to the tech talk,
                   then! What did you do for dwebcamp.org, and how is it going?
@@ -467,13 +425,7 @@ function JustusInterviewPage() {
                   don't have any documentation I won't know how it works myself!
                 </p>
 
-                <h2
-                  style={{
-                    fontSize: '28px',
-                    marginTop: '40px',
-                    marginBottom: '20px',
-                  }}
-                >
+                <h2>
                   Looking Towards the Future: Building for Longevity and
                   Reusability
                 </h2>
