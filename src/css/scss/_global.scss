@@ -1381,6 +1381,9 @@ a.btn {
     @include typed;
     color: #ffffffcc;
     text-align: left;
+    a {
+      @include natgeo-effect(40px, $yellow, 1px, 1px);
+    }
   }
   &__btn {
     margin-top: 40px;
