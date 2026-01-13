@@ -37,6 +37,23 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Ira Nezhynska",
+						"date": "#7 January 2026",
+						"intro": "Since the inception of the DWeb network in 2018 and the launch of the DWeb website in 2020, our networked community has grown to 12 DWeb Nodes and more than 2,000 members, most of whom attended the annual DWeb Camps. It's been an honor for me to contribute to the community as its designer and Creative Director for the DWeb Camps.",
+						"link": "https://nezhynska.com/work/dweb2",
+						"voice_category": {
+							"term_id": 11,
+							"name": "Analysis"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Design rules, mimicry and natural elements in the DWeb visual identity",
+					"wordpress_id": 1330
+				},
+				{
+					"acf": {
 						"author": "Tommi Marmo",
 						"date": "#30 October 2025",
 						"intro": "The DWeb crowd is made up of people who are excited to build and try out alternative and cutting edge technologies that align with our values. In order to welcome everyone in our community, we prioritize stability, reliability, and ease of use for all our public-facing tech infrastructure.",
