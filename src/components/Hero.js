@@ -115,10 +115,10 @@ export default function Hero() {
         <a
           className="hero__announcement"
           target="_blank"
-          href="https://blog.archive.org/2024/11/12/we-want-to-decentralize-the-dweb-movement/"
+          href="https://airtable.com/appO6XXgm4TUQXMTX/pagGHDCSWQUTxIjSC/form"
           dangerouslySetInnerHTML={{
             __html:
-              'DWeb Camp will return in 2026! Find here what we have planned for 2025',
+              'DWeb Camp is returning in 2026! Help us plan by taking our survey',
           }}
           rel="noreferrer"
         />
