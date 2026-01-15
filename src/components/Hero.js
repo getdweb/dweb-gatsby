@@ -118,7 +118,7 @@ export default function Hero() {
           href="https://airtable.com/appO6XXgm4TUQXMTX/pagGHDCSWQUTxIjSC/form"
           dangerouslySetInnerHTML={{
             __html:
-              'DWeb Camp is returning in 2026! Help us plan by taking our survey',
+              'DWeb Camp is back July 8-12, 2026 near Berlin! Take our survey to help us plan',
           }}
           rel="noreferrer"
         />

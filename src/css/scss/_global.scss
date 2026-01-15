@@ -951,11 +951,13 @@ a.btn {
   }
   &__announcement {
     @include typed;
-    color: rgba(255, 255, 255, 0.9);
+    background-color: $yellow;
+    color: black;
+    font-weight: 700;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    padding: 5px 80px 5px 44px;
+    padding: 0 10px;
     height: 100%;
     min-height: 80px;
     margin-top: 7px;
@@ -968,7 +970,6 @@ a.btn {
       justify-content: center;
       min-height: unset;
       text-align: left;
-      padding: 5px 44px;
       margin-top: 0;
       margin-bottom: 0;
     }
