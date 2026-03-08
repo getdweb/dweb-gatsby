@@ -52,7 +52,7 @@ export default function Faq() {
               Have a question of your own?
               <br />
               Let us know via{' '}
-              <a href="https://matrix.to/#/!WBhcGXTDMlzyTPWoJv:matrix.org?via=matrix.org&via=tomesh.net&via=privacytools.io">
+              <a href="https://matrix.to/#/#getdweb:getdweb.net">
                 community chat
               </a>{' '}
               or by emailing us at dweb [at] archive.org.

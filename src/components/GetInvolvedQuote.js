@@ -14,7 +14,7 @@ export default function GetInvolvedQuote() {
         That&apos;s the opportunity, and we need lots of participation.
         Let&apos;s do this as a global project together!
       </div>
-      <div className="get-involved-main-quote__person">- Brewster Kale</div>
+      <div className="get-involved-main-quote__person">- Brewster Kahle</div>
     </div>
   )
 }

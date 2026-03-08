@@ -266,7 +266,7 @@ function JustusInterviewPage() {
                   To join our Matrix space, from which you can join any of its
                   channels, just{' '}
                   <a
-                    href="https://matrix.to/#/!KfSkhKqPiXJIpjaRgY:getdweb.net"
+                    href="https://matrix.to/#/#getdweb:getdweb.net"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
