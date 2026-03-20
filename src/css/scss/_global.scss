@@ -848,6 +848,19 @@ a.btn {
 }
 
 .custom-content {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  figure {
+    margin: 60px 0;
+    @include media-breakpoint-up(md) {
+      margin: 80px 0;
+    }
+  }
+
   h1 {
     font-size: 46px;
   }
