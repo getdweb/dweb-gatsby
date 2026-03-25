@@ -37,6 +37,23 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Tommi Marmo",
+						"date": "#20 March 2026",
+						"intro": "As our group of DWeb Camp organizers arrived at Wiesenburg station, frazzled by countless train delays in Berlin, a light rain and a blossoming gray winter sky welcomed us. Moments after our arrival, a car and a van swooped up in front of us. Two of Alte Hölle’s stewards, Marv and Störte, had come to pick us up.",
+						"link": "https://getdweb.net/alte-hoelle/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Introducing the DWeb Camp 2026 Venue: Alte Hölle",
+					"wordpress_id": 1331
+				},
+				{
+					"acf": {
 						"author": "Ira Nezhynska",
 						"date": "#7 January 2026",
 						"intro": "Since the inception of the DWeb network in 2018 and the launch of the DWeb website in 2020, our networked community has grown to 12 DWeb Nodes and more than 2,000 members, most of whom attended the annual DWeb Camps. It's been an honor for me to contribute to the community as its designer and Creative Director for the DWeb Camps.",
