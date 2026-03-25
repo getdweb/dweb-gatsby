@@ -115,10 +115,10 @@ export default function Hero() {
         <a
           className="hero__announcement"
           target="_blank"
-          href="https://airtable.com/appO6XXgm4TUQXMTX/pagGHDCSWQUTxIjSC/form"
+          href="https://dwebcamp.org/tickets/"
           dangerouslySetInnerHTML={{
             __html:
-              'DWeb Camp is back July 8-12, 2026 near Berlin! Take our survey to help us plan',
+              'DWeb Camp is back July 8-12, 2026 near Berlin. Tickets are now available!',
           }}
           rel="noreferrer"
         />
@@ -153,7 +153,7 @@ export default function Hero() {
             onClick={videoPauseBtnClick}
           />
           <div className="hero__video-caption marquee">
-            <span ref={marqueeEl}>DWeb Virtual Meetup: Bluesky and Beyond</span>
+            <span ref={marqueeEl}>Jan 2026 : Latest in the DWeb Ecosystem</span>
           </div>
         </div>
         <div className="hero__quotes">

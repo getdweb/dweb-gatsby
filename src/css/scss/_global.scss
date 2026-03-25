@@ -977,7 +977,7 @@ a.btn {
     margin-bottom: 100px;
     text-decoration: none;
     position: relative;
-    text-align: right;
+    text-align: left;
     @include media-breakpoint-up(md) {
       align-items: center;
       justify-content: center;
@@ -1045,7 +1045,7 @@ a.btn {
       // height: 235px;
     }
     &-preview {
-      background-size: cover;
+      background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
       position: absolute;
