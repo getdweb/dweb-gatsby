@@ -42,6 +42,7 @@
     "clean": "rimraf .cache public && node scripts/cleanup_clone.mjs",
     "build": "npm run clean && gatsby build --prefix-paths",
     "develop": "npm run clean && gatsby develop",
+    "develop:lan": "npm run clean && gatsby develop --host 0.0.0.0",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1",

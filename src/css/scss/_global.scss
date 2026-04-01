@@ -1357,7 +1357,7 @@ a.btn {
   &__left {
     padding: 40px 0 80px;
     @include media-breakpoint-up(md) {
-      padding: 120px 0;
+      padding: 80px 0;
     }
     .container {
       width: 100%;
@@ -1423,6 +1423,36 @@ a.btn {
 }
 .building-block {
   @include building-block;
+}
+
+// Events (and similar): show full photo without cropping; gives image column more room.
+.building-block--fit-bg-image {
+  min-height: 480px;
+  .building-block__right {
+    background-size: contain;
+    background-color: $black;
+    background-position: top center;
+  }
+  @include media-breakpoint-up(md) {
+    min-height: 560px;
+    .building-block__left .container {
+      padding-right: 480px;
+    }
+    .building-block__right {
+      width: 480px;
+      min-height: 560px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    min-height: 780px;
+    .building-block__left .container {
+      padding-right: 720px;
+    }
+    .building-block__right {
+      width: 780px;
+      // min-height: 780px;
+    }
+  }
 }
 
 .get-involved-hero {

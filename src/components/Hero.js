@@ -93,7 +93,6 @@ export default function Hero() {
       if (marqueeEl.current !== null) {
         const captionLength = +marqueeEl.current.offsetWidth
         const period = captionLength / 80
-        marqueeEl.current.style.textShadow = `${captionLength}px 0 currentColor, calc(${captionLength}px * 2) 0 currentColor`
         marqueeEl.current.style.animationDuration = `${period}s`
       }
     }, 1000)
@@ -153,7 +152,7 @@ export default function Hero() {
             onClick={videoPauseBtnClick}
           />
           <div className="hero__video-caption marquee">
-            <span ref={marqueeEl}>Jan 2026 : Latest in the DWeb Ecosystem</span>
+            <span ref={marqueeEl}>Fireside chat with Brewster Kahle</span>
           </div>
         </div>
         <div className="hero__quotes">

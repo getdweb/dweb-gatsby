@@ -1503,13 +1503,13 @@ export default function Events() {
 		},
 		"wordpressAcfOptions": {
 			"options": {
-				"events_top_header": "We Want to Decentralize the DWeb Movement",
-				"events_top_intro": "<p>Our community has come together for DWeb Camps in 2019, 2022, 2023, and 2024. Over the years, more than 2000 campers have journeyed to Northern California to connect, learn, share, and play as we build better, more decentralized network technologies. What started as an event has formed an emerging movement — informed by a set of shared principles about how we shape the web. A web that actualizes principles of trust, human agency, mutual respect, and ecological awareness. But, what’s next?</p>\\n",
-				"events_top_button_caption": "Read the blog",
-				"events_top_button_link": "https://blog.archive.org/2024/11/12/we-want-to-decentralize-the-dweb-movement/",
+				"events_top_header": "DWeb Camp 2026: Root Systems",
+				"events_top_intro": "<p>DWeb Camp is back July 8-12, 2026 at Alte Hölle, near Berlin, Germany.</p><p>Our gathering is conceived as a place where technologists, artists, organizers, and policymakers come together to begin building a more decentralized web.</p>",
+				"events_top_button_caption": "Get your tickets",
+				"events_top_button_link": "https://dwebcamp.org/tickets/",
 				"events_top_image": {
 					"localFile": {
-						"url": "/images/dweb-camp-2023-hero.jpg"
+						"url": "/images/DWeb-camp-section-teaser.jpg"
 					}
 				},
 				"events_list_header": "Events around the world",
@@ -1641,7 +1641,7 @@ export default function Events() {
           </div>
         </div>
       </div>
-      <div className="building-block">
+      <div className="building-block building-block--fit-bg-image">
         <div
           className="building-block__right"
           style={{
