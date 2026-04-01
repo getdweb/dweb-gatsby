@@ -855,10 +855,25 @@ a.btn {
   }
 
   figure {
-    margin: 60px 0;
+    margin: 40px 0;
     @include media-breakpoint-up(md) {
-      margin: 80px 0;
+      margin: 60px 0;
     }
+  }
+
+  h2 + figure {
+    margin-top: 10px;
+  }
+
+  figcaption {
+    font-style: italic;
+    font-family: LabMono;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: -0.1px;
+    color: #ffffffcc;
+    text-align: left;
+    margin-top: 10px;
   }
 
   h1 {
