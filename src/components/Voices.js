@@ -37,6 +37,23 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Wendy Hanamura",
+						"date": "#1 April 2026",
+						"intro": "At the legendary c-base, technologists, activists, and artists gathered to shape the next chapter of the decentralized web.",
+						"link": "https://getdweb.net/berlin-trip/",
+						"voice_category": {
+							"term_id": 9,
+							"name": "Flashback"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "How DWeb Camp is Being Built in Berlin",
+					"wordpress_id": 1332
+				},
+				{
+					"acf": {
 						"author": "Tommi Marmo",
 						"date": "#20 March 2026",
 						"intro": "As our group of DWeb Camp organizers arrived at Wiesenburg station, frazzled by countless train delays in Berlin, a light rain and a blossoming gray winter sky welcomed us. Moments after our arrival, a car and a van swooped up in front of us. Two of Alte Hölle’s stewards, Marv and Störte, had come to pick us up.",
