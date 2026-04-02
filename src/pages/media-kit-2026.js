@@ -21,7 +21,7 @@ function MediaKit2026Page() {
               </p>
               <p>
                 Access all media resources and boilerplate materials in the info
-                kit below .
+                kit below.
               </p>
               <a
                 href="https://dwebcamp.org/static/media-kit-2026.zip"
