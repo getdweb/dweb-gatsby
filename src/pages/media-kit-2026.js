@@ -20,14 +20,11 @@ function MediaKit2026Page() {
                 <a href="mailto:dwebcamp@archive.org">dwebcamp@archive.org</a>.
               </p>
               <p>
-                Access all media resources and boilerplate materials in the{' '}
-                <a href="https://office.dod.ngo/drive/#/2/drive/view/8TXa+iRz9u7OmhlAdrNU9mM-wpijo9fJV23Si0H79tc/">
-                  info kit folder
-                </a>
-                .
+                Access all media resources and boilerplate materials in the info
+                kit below .
               </p>
               <a
-                href="https://office.dod.ngo/drive/#/2/drive/view/8TXa+iRz9u7OmhlAdrNU9mM-wpijo9fJV23Si0H79tc/"
+                href="https://dwebcamp.org/static/media-kit-2026.zip"
                 className="btn building-block__btn"
                 target="_blank"
                 rel="noreferrer"
@@ -229,11 +226,8 @@ function MediaKit2026Page() {
 
               <h2>Images from Past Camps</h2>
               <p>
-                View a selection of images from past camps in the{' '}
-                <a href="https://office.dod.ngo/drive/#/2/drive/view/8TXa+iRz9u7OmhlAdrNU9mM-wpijo9fJV23Si0H79tc/">
-                  info kit folder
-                </a>{' '}
-                and explore the full archive on the{' '}
+                View a selection of images from past camps in the info kit and
+                explore the full archive on the{' '}
                 <a href="https://archive.org/search?query=dweb+camp&sort=-downloads">
                   Internet Archive
                 </a>
