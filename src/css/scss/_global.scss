@@ -876,6 +876,13 @@ a.btn {
     margin-top: 10px;
   }
 
+  blockquote {
+    border-left: 4px solid $yellow;
+    padding-left: 20px;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+
   h1 {
     font-size: 46px;
   }
