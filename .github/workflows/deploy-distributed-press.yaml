@@ -29,8 +29,10 @@ jobs:
         run: npm run build
 
       # Step 4: Deploy to Distributed Press
+      # non-fatal: a pub outage here must not block the GitHub Pages deploy below
       - name: Publish to Distributed Press
         uses: hyphacoop/actions-distributed-press@v1.1.0
+        continue-on-error: true
         with:
           publish_dir: public
           dp_url: https://api.distributed.press
