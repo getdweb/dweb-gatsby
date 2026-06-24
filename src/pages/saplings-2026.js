@@ -109,7 +109,7 @@ function Saplings2026Page() {
                   conference - is complete without fun! Learn self-defense from a Chi Gong master, sip tea 
                   and play Go in the Chaos Infusion tent, do improv, build dough murals with the Seedlings, 
                   and create cyanotype images with the sun. In the evenings teens can go on a hike, play in 
-                  the pool, toss a frisbee, or learn about the festival music culture of Berlin.
+                  the pool, or toss a frisbee.
                 </p>
 
                 <figure>
