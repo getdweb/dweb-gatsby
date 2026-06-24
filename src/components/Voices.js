@@ -42,7 +42,7 @@ export default function Voices() {
 						"intro": "For the first time, DWeb Camp will have a track dedicated to teens.",
 						"link": "https://getdweb.net/saplings-2026/",
 						"voice_category": {
-							"term_id": 9,
+							"term_id": 10,
 							"name": "Profile"
 						},
 						"thumbnail_type": "image",
@@ -59,7 +59,7 @@ export default function Voices() {
 						"intro": "Tools are most powerful when built with, not just for, the communities they serve. This is why the Pollinator Program seeks out those who are already doing the work: past DWeb Fellows and Node leaders who continue to imagine and actively build a better web.",
 						"link": "https://getdweb.net/pollinators-2026/",
 						"voice_category": {
-							"term_id": 9,
+							"term_id": 10,
 							"name": "Profile"
 						},
 						"thumbnail_type": "image",
