@@ -37,6 +37,23 @@ export default function Voices() {
 			"nodes": [
 				{
 					"acf": {
+						"author": "Tommi Marmo",
+						"date": "#5 July 2026",
+						"intro": "Looking back, DWeb Camp 2026 would have been impossible without the help we got from the incredible humans of DoD. They welcomed us with open arms, and now, we want to introduce them to you before you can meet them all at Camp.",
+						"link": "https://getdweb.net/dod/",
+						"voice_category": {
+							"term_id": 10,
+							"name": "Profile"
+						},
+						"thumbnail_type": "image",
+						"image_url": null,
+						"image": null
+					},
+					"title": "Introducing Department of Decentralization, DWeb Camp 2026 partner",
+					"wordpress_id": 1335
+				},
+				{
+					"acf": {
 						"author": "Ryder Morton",
 						"date": "#21 June 2026",
 						"intro": "For the first time, DWeb Camp will have a track dedicated to teens.",
